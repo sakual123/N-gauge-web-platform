@@ -1,0 +1,149 @@
+# 本地部署教材 · 中文
+
+[返回 README](../README.md) · [日本語](DEPLOYMENT.ja.md) · [English](DEPLOYMENT.en.md)
+
+目标：用电脑、树莓派或香橙派提供网页，让同一局域网内的 iPad mini 显示发车标。网页为静态文件，部署不需要摄像头、GPU、NPU、YOLO、LVGL、数据库或 npm 安装。
+
+## 1. 准备源码与 Python
+
+在 [GitHub 仓库](https://github.com/sakual123/N-gauge-web-platform) 点击 **Code → Download ZIP**，解压到普通文件夹。也可以安装 [Git](https://git-scm.com/downloads/) 后执行：
+
+```sh
+git clone https://github.com/sakual123/N-gauge-web-platform.git
+cd N-gauge-web-platform
+```
+
+打开终端并进入解压后的仓库根目录；运行 `dir`（Windows）或 `ls`（Linux／macOS）应看到 `README.md`、`dist/`、`tools/`。不是进入 `docs/` 或 `dist/`。
+
+- Windows：从 [Python 官网](https://www.python.org/downloads/) 安装 Python 3，验证 `py --version` 或 `python --version`。安装后重新打开 PowerShell。
+- Linux／树莓派／香橙派：验证 `python3 --version`。使用 Debian、Ubuntu、Raspberry Pi OS 或基于 Debian／Ubuntu 的 Armbian，若没有 Python，可执行下面的安装命令。
+- macOS：安装 Python 3 后验证 `python3 --version`。
+
+```sh
+sudo apt update
+sudo apt install python3 git
+```
+
+上述 `apt` 命令仅用于采用该包管理器的 Linux。仅下载 ZIP 和运行网页时不需要 Git，也不需要 Node.js。
+
+## 2. 先在服务器本机验证
+
+Windows PowerShell：
+
+```powershell
+py -m http.server 8769 --bind 127.0.0.1 --directory dist
+```
+
+若 `py` 不可用但 `python --version` 正常，把 `py` 换成 `python`。Linux／macOS：
+
+```sh
+python3 -m http.server 8769 --bind 127.0.0.1 --directory dist
+```
+
+保持终端打开，浏览器访问 **http://127.0.0.1:8769/**。应看到两站台、四行列车和下部案内，而不是文件目录列表。按 `Ctrl+C` 停止。
+
+## 3. 让 iPad 访问
+
+重新启动，监听局域网连接：
+
+```powershell
+# Windows
+py -m http.server 8769 --bind 0.0.0.0 --directory dist
+```
+
+```sh
+# Linux / macOS
+python3 -m http.server 8769 --bind 0.0.0.0 --directory dist
+```
+
+在 Windows 执行 `ipconfig`，查当前 Wi-Fi 或以太网适配器的 **IPv4 地址**；Linux 执行 `hostname -I`，选择实际局域网网卡的地址；macOS 在系统设置的网络连接详情中查看 IP。
+
+例如服务器地址为 `192.168.1.50`，让 iPad 与它连接同一个局域网，在 Safari 输入：
+
+```text
+http://192.168.1.50:8769/
+```
+
+把示例 IP 换成自己的地址。iPad 上的 `127.0.0.1` 指向 iPad 自己；`0.0.0.0` 是监听参数，也不是访问地址。Windows 若提示防火墙访问，按家庭／模型桌所用的专用网络允许该服务器；不需要开放路由器公网端口。Python 的这个服务器适合受信任的本地展示，不用它承载公网生产服务。[Python 官方说明](https://docs.python.org/3/library/http.server.html)
+
+## 4. iPad 显示与日常操作
+
+1. 推荐横屏；Safari 分享菜单 → 添加到主屏幕，可获得更简洁的入口。
+2. 点击右上角 `···`，选择 1 站台外圈或 2 站台内圈。
+3. 按地区 → 类型 → 线路 → 车辆选择，再选参考班次，或编辑固定时间、行先和模型节数。
+4. 选择“日本当前时钟”时，滚动栏按 JST 找最近待发班次；模型展示可改为“指定模型时刻”。
+5. 常亮和全屏取决于浏览器及安全上下文。局域网 HTTP 不保证常亮 API 可用，可手动调整 iPad 自动锁定；没有该能力仍能正常显示。
+
+添加主屏幕不会自动离线缓存；当前没有 Service Worker。服务器需持续运行，浏览器刷新或重新打开页面时需要能连接服务器。
+
+## 5. 保存、更新和数据
+
+修改会保存到当前浏览器的本地存储。浏览器清理站点数据、无痕模式结束、更换设备或改变 IP／端口／HTTP 与 HTTPS，都可能无法继续读取原设置。建议固定设备 IP，并在编辑器中点击“导出设置备份”。当前提供 JSON 导出，尚无图形化导入按钮，也不会在设备间同步。
+
+用 Git 获取的源码可以在仓库根目录执行 `git pull --ff-only` 更新；如果有本地修改，先保存自己的改动并处理提示。ZIP 用户重新下载并解压到新文件夹即可。更新后重新加载网页；先检查时刻与编组，再按需套用参考班次。
+
+当前是 V6 的 425 条代表班次，日期固定为 2026-10-25 周日 JST；完整全天班次仍未合入。旧表、停运、工作日和运行日待确认的条目有独立标记。来源页是 `http://服务器IP:8769/timetable.html`。
+
+## 6. Linux 开机启动（可选）
+
+适用于使用 systemd 的树莓派／香橙派 Linux。在**仓库根目录**运行 `whoami` 和 `pwd`，记录普通用户名及绝对路径，再执行：
+
+```sh
+sudo nano /etc/systemd/system/n-gauge-board.service
+```
+
+写入以下内容，将 `YOUR_USER` 和两处 `/home/YOUR_USER/N-gauge-web-platform` 都替换为实际值；`which python3` 若不是 `/usr/bin/python3`，也要替换对应路径。示例仓库路径不要包含空格。
+
+```ini
+[Unit]
+Description=N gauge platform board
+After=network.target
+
+[Service]
+Type=simple
+User=YOUR_USER
+WorkingDirectory=/home/YOUR_USER/N-gauge-web-platform
+ExecStart=/usr/bin/python3 -m http.server 8769 --bind 0.0.0.0 --directory /home/YOUR_USER/N-gauge-web-platform/dist
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+```
+
+保存退出。先停止前面手动运行的同端口服务器，再启动服务：
+
+```sh
+sudo systemctl daemon-reload
+sudo systemctl enable --now n-gauge-board.service
+systemctl status n-gauge-board.service
+journalctl -u n-gauge-board.service -n 30 --no-pager
+```
+
+更新源码后可执行 `sudo systemctl restart n-gauge-board.service`。不再需要自动启动时：
+
+```sh
+sudo systemctl disable --now n-gauge-board.service
+```
+
+## 7. 排错与检查
+
+| 现象 | 检查方法 |
+|---|---|
+| 出现目录列表／404 | 确认在仓库根目录执行，且 `dist/index.html` 存在；保留 `--directory dist` |
+| 本机能开、iPad 不能 | 检查绑定 `0.0.0.0`、IP、端口、防火墙及 Wi-Fi 客户端隔离；避免访客网络隔离 |
+| Address already in use | 停止旧服务器或将 `8769` 改为 `8770`，同时更改浏览器地址；新端口使用独立设置存储 |
+| 修改似乎丢失 | 检查是否换了 IP、端口、协议、浏览器或隐私模式 |
+| 时间与本地时钟不同 | 页面使用日本时间；资料固定为 10/25，滚动栏还可使用模型时钟 |
+| 某车型只有一两班 | 本版本是代表班次库；不是完整全天表 |
+| 中文设置、日英发车标 | 当前设计如此；三语说明文件不改变编辑器语言 |
+
+开发者安装 [Node.js 受支持的 LTS](https://nodejs.org/en/download)，在根目录运行 `npm test`；无需安装 npm 依赖。如果只有 `node` 而没有 `npm`，可分别运行：
+
+```sh
+node tools/check-timetable.cjs
+node tools/check-special.cjs
+node tools/check-ticker.cjs
+```
+
+这些是数据和模型逻辑检查，不代替实体 iPad Safari 的触摸与浏览器兼容性验证。

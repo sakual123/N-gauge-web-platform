@@ -1,5 +1,5 @@
 {
-  "name": "n-gauge-platform-board",
+  "name": "n-gauge-web-platform",
   "version": "0.6.0",
   "private": true,
   "description": "Japanese railway platform departure board simulator for N gauge layouts and iPad",
@@ -8,6 +8,11 @@
     "test": "node tools/check-timetable.cjs && node tools/check-special.cjs && node tools/check-ticker.cjs"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
+  },
+  "homepage": "https://n-gauge-platform-board.clear-seal-8717.chatgpt.site/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sakual123/N-gauge-web-platform.git"
   }
 }
