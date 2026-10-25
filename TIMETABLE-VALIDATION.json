@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "date": "2026-10-25",
+  "presets": 237,
+  "departures": 425,
+  "statusCounts": {
+    "legacy": 2,
+    "dated": 219,
+    "holiday": 174,
+    "weekday": 2,
+    "daily": 20,
+    "outdated": 2,
+    "calendar": 6
+  },
+  "referencesWithStops": 148,
+  "manualPinsAndReload": true,
+  "legacyRowsPreserved": true,
+  "sourceAndTimeValidation": true,
+  "specialSeatAndVariantRules": true,
+  "japanClockAndMidnight": true,
+  "allScenesUseReferenceTrips": true
+}

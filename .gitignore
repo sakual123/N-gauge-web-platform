@@ -1,0 +1,12 @@
+# Local and generated state
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+node_modules/
+.openai/
+work/
+*.log
+*.tar.gz
+*.zip

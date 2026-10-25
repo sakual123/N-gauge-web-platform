@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-25",
+  "result": "PASS",
+  "browser": "Codex In-app Browser, desktop engine",
+  "physicalIPadSafariTested": false,
+  "landscape": {
+    "width": 1024,
+    "height": 768,
+    "documentScrollWidth": 1024,
+    "fourRowsVisible": true
+  },
+  "portrait": {
+    "width": 768,
+    "height": 1024,
+    "documentScrollWidth": 768,
+    "rowHeights": [
+      175.5,
+      175.5,
+      175.5,
+      175.5
+    ],
+    "boardAndTickerBottom": 1024
+  },
+  "editorHorizontalOverflow": false,
+  "referenceSelection": "Second Keihin reference 08:08 selected successfully",
+  "manualTime": "13:42 persisted after blur, reload, route change and return",
+  "restoreReference": "Restored the selected official time and cleared modified label",
+  "applyFourRows": "Applied four default reference trips, preserving model car counts",
+  "specialTrip": "Wing Seat 52 at Sengakuji 08:45; only dedicated car reserved; no all-car reserved claim",
+  "audit": {
+    "totalRows": 425,
+    "outdatedFilterRows": 2,
+    "bothOldMetroTablesExplicitlyLabeled": true
+  },
+  "consoleErrors": [],
+  "duplicateVehicleRows": "Editing first row to 13:42 and switching away/back retains 13:42 while the other row stays 08:02"
+}

@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "presets": 237,
+  "features": 18,
+  "brands": 27,
+  "markedPresets": 111,
+  "allPresetsHaveSources": true,
+  "metadataRules": "PASS",
+  "migration": "PASS",
+  "allScenes": "PASS"
+}

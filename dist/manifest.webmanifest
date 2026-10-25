@@ -1,0 +1,13 @@
+{
+  "name": "模型駅 · 列車ご案内",
+  "short_name": "模型駅",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#090909",
+  "lang": "ja",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml"},
+    {"src":"icon-180.png","sizes":"180x180","type":"image/png"}
+  ]
+}

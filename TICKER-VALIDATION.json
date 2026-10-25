@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "presets": 237,
+  "newPresets": 103,
+  "allDefaultAndPresetDestinations": true,
+  "nearestAndMidnight": true,
+  "customStopsAndReverse": true,
+  "realFormationSeatNumbers": true,
+  "privateFareDistinction": true,
+  "persistenceAndMigration": true
+}
