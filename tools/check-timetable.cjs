@@ -16,6 +16,19 @@ for(const v of D.vehicles){
  }
 }
 assert.equal(count,data.departureCount);assert.deepEqual(JSON.parse(JSON.stringify(statuses)),JSON.parse(JSON.stringify(data.statusCounts)));
+assert.deepEqual(JSON.parse(JSON.stringify(data)),JSON.parse(fs.readFileSync(path.join(root,'data/timetables.json'),'utf8')),'Packed browser data must preserve every source fact');
+const coverageCounts={};for(const [id,entry] of Object.entries(data.presets)){const level=TT.coverage(id).level;assert(TT.coverageLabels[level]);coverageCounts[level]=(coverageCounts[level]||0)+1;assert.equal(entry.coverage.count,entry.departures.length);}
+assert.deepEqual(coverageCounts,JSON.parse(JSON.stringify(data.coverageCounts)));
+const filterId='e233-keihin',before=JSON.stringify(TT.trips(filterId)),filtered=TT.filterTrips(filterId,{origin:'東京',period:'18-21',q:'大宮'});
+assert(filtered.length>2);assert(filtered.every(t=>t.origin==='東京'&&t.destination==='大宮'&&t.time>='18:00'&&t.time<'21:00'));
+assert.equal(JSON.stringify(TT.trips(filterId)),before,'Filtering must not mutate canonical order/default');
+assert.equal(TT.filterTrips(filterId,{q:'不存在の列車xyz'}).length,0);assert.equal(TT.filterTrips(filterId,{q:'１８：'}).length,TT.filterTrips(filterId,{q:'18:'}).length);
+assert(TT.filterTrips(filterId,{period:'00-06'}).some(t=>t.time==='00:00'&&t.sourceTime==='24:00'&&t.serviceDayOffset===1));
+assert(TT.trips(filterId).some(t=>t.type==='快速'&&t.time>='11:00'&&t.time<'15:00'),'Keihin daytime rapid services must not be omitted');
+assert(TT.trips('e233-chuo').some(t=>t.type==='中央特快'),'Chuo Special Rapid must be included');
+assert.equal(TT.trips('500-kodama').length,6,'10/25 official 500-series plan has six services');
+assert.equal(TT.trips('500-kodama').find(t=>t.number==='947号').time,'10:37','Use the dated train table rather than erroneous campaign HTML');
+assert(TT.trips('so12000').some(t=>t.destination==='海老名'&&t.stops?.includes('羽沢横浜国大')),'Do not truncate operator-boundary through services');
 const old=M.defaults();Object.assign(old.rows[0],{time:'22:38',origin:'品川',destination:'模型町',number:'模型17号',referenceId:''});old.formations['e5-hayabusa']=8;
 const migrated=M.normalize(JSON.parse(JSON.stringify(old)));assert.equal(migrated.rows[0].time,'22:38');assert.equal(migrated.rows[0].destination,'模型町');assert.equal(M.carsFor(migrated,'e5-hayabusa'),8);assert(TT.modified(migrated.rows[0]));
 const s=M.defaults(),r=s.rows[0],vid=r.vehicleId,second=TT.trips(vid)[1];TT.apply(r,second.id);r.time='13:42';TT.remember(r,s);const normalized=M.normalize(JSON.parse(JSON.stringify(s)));assert.equal(normalized.rows[0].time,'13:42');assert.equal(normalized.timetablePins[vid].referenceId,second.id);
@@ -31,4 +44,4 @@ assert.equal(TT.trips('e257-shonan')[0].status,'weekday');assert.equal(TT.trips(
 const clock=M.defaults();clock.ticker.clock='wall';clock.rows.forEach((r,i)=>r.time=['08:30','09:01','08:59','07:00'][i]);assert.equal(J.nearest(clock,new Date('2026-10-25T00:00:00Z')).id,'outer-next');
 clock.rows.forEach((r,i)=>r.time=['00:02','23:59','00:01','23:57'][i]);assert.equal(J.nearest(clock,new Date('2026-10-25T14:58:00Z')).id,'outer-next');
 for(const file of fs.readdirSync(path.join(root,'dist')).filter(f=>f.endsWith('.js')))new vm.Script(fs.readFileSync(path.join(root,'dist',file),'utf8'),{filename:file});
-const result={result:'PASS',date:data.date,presets:237,departures:count,statusCounts:statuses,referencesWithStops:fullCalls,manualPinsAndReload:true,legacyRowsPreserved:true,sourceAndTimeValidation:true,specialSeatAndVariantRules:true,japanClockAndMidnight:true,allScenesUseReferenceTrips:true};fs.writeFileSync(path.join(root,'TIMETABLE-VALIDATION.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+const result={result:'PASS',date:data.date,presets:237,departures:count,statusCounts:statuses,coverageCounts,referencesWithStops:fullCalls,manualPinsAndReload:true,legacyRowsPreserved:true,sourceAndTimeValidation:true,specialSeatAndVariantRules:true,japanClockAndMidnight:true,allScenesUseReferenceTrips:true,packedSourceRoundTrip:true,nonMutatingOriginDirectionTimeSearchFilters:true,rapidServiceCoverageRegression:true,operatorBoundaryAnd500SeriesRegression:true};fs.writeFileSync(path.join(root,'TIMETABLE-VALIDATION.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

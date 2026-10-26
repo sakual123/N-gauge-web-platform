@@ -1,261 +1,257 @@
-# 2026-10-25 周日固定参考班次
+# 固定周日班次库 · V7
 
-日期固定为 2026-10-25，星期日，Asia/Tokyo。237 个车辆/服务预设，425 条可选班次。
+参考日 **2026-10-25（周日）· Asia/Tokyo**。237 个车辆／服务预设，17,030 条参考记录。多个车型可能共用实际班次，记录数不等于独立列车数。
 
-每预设核对状态：{"holiday": 95, "dated": 117, "daily": 15, "calendar": 4, "outdated": 2, "legacy": 2, "weekday": 2}
+## 核对范围
 
-## 使用
+- 所列范围全天：233 个预设。
+- 仍有缺口：0 个预设。
+- 周日无运行或历史参考：4 个预设。
 
-右上角 ··· 选择参考班次，或修改固定出发时间；每车型固定设置保存在浏览器。旧四行保留，点击四行套用默认参考班次才覆盖。参考站台不改变模型的 1 外圈 / 2 内圈。
+“全天”按 coverage.scope 所列的出发站、方向、种别核对，不表示全网络或每个车底的运用。具体车型混用时，只保证同线路服务参考。运行日状态另行标注：dated 已核对指定日；holiday 土休日；daily 每日参考；calendar 班次公布但日期仍需核对；weekday 其他运行日；legacy 怀旧参考。
 
-## 数据边界
+## 使用与维护
 
-- outdated：官方旧表，银座／丸之内2026-09-19改正后的现行时间尚未核实。
-- 不是全天全量时刻表，也不是实时列车运行数据库。
-- dated 已核对当天运行日；holiday/daily 来自当前官网周期表，未逐班证明当日没有临时变更。
-- calendar 运行日需再核对；weekday 是周日不运行的其他日期参考；legacy 是官方历史资料。
-- model 没有取得可靠时刻，12:00 是模型占位，不能当作官方班次。
-- 不承诺混用车辆的具体运用。改节数继续按模型编组显示。
-- 手动改变号数、方向或种别后，完整停站回退为线路样例，避免错用另一班的完整停站。仅改时间可保留同一路径的停站。
+右上角设置 → 出发站、方向、时段、关键词 → 选择参考班次。筛选不修改当前行，选班后仍可修改时间。午夜后的末班显示00:xx；原表24:xx保留在sourceTime和serviceDayOffset。
 
-## 来源与逐项记录
+在线核对页 timetable.html 每页显示50条。编辑 data/timetables.json 后运行 `node tools/build-timetable.cjs`，再运行 `node tools/check-timetable.cjs` 和 `node tools/check-ticker.cjs`。浏览器版本仅共享重复字符串，完整来源证据保留。
 
-完整可筛选记录在 dist/timetable.html；机器可读事实在 dist/timetable-data.js。只收录选定事实，不复制官方整本时刻表或研究原件。
-
-- **789 超级白鸟**：函館 08:08 → 新青森 16号；已停运 · 怀旧参考。[来源](https://www.jrhokkaido.co.jp/press/2015/150916-4.pdf) 已停运，10/25没有此列车。采用2015年运营公告列出的超级白鸟16号原定历史发车时刻；该公告涉及2016元旦设备切换停运，时间仅作怀旧参考。
-- **E233 京滨东北线**：東京 08:02 → 大船 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/055/056391.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 上野东京**：東京 08:01 → 宇都宮 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/040/040621.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E5 Hayabusa**：東京 08:18 → 新函館北斗 5号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/110/111081.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E6 Komachi**：東京 08:37 → 秋田 7号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/110/111141.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **寝台特急 北斗星**：上野 16:20 → 札幌 ；已停运 · 怀旧参考。[来源](https://www.jrhokkaido.co.jp/press/2015/150123-2.pdf) 已于2015年结束运营，今天没有班次。采用JR北海道2015年1月23日公告的历史临时列车时刻：上野16:20→翌日札幌11:15。
-- **近铁 8A 天理线**：平端 08:02 → 天理 ；官方土休日参考。[来源](https://eki.kintetsu.co.jp/norikae/T5?USR=PC&slCode=354-0&d=1&dw=1&time=0800) 官方2026-03-14土休日普通班次；8A系具体配车未在站表中公布。
-- **近铁 80000 火鸟**：大阪難波 09:00 → 近鉄名古屋 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/railway/Dia/pdf/A_osakanamba_nagoya.pdf) 采用2026-03-14官方土休日名阪特急表；完整停站跟随本次所选班次。
-- **E235 山手线**：東京 08:05 → 上野・池袋方面 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/015/015541.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E235 横须贺线**：東京 08:09 → 逗子 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/110/114572.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E235 总武快速线**：東京 08:04 → 千葉 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/115/115551.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 中央线快速**：東京 08:03 → 青梅 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/160/160531.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E231 中央总武各停**：新宿 08:03 → 三鷹 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/175/175851.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 埼京川越线**：新宿 08:01 → 大宮 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/060/060631.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 京叶线**：東京 08:06 → 蘇我 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/160/164931.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 南武线**：川崎 08:01 → 稲城長沼 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/140/140651.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 横滨线**：橋本 08:04 → 八王子 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/145/145651.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 常磐线各停**：綾瀬 09:10 → 我孫子 ；官方土休日参考。[来源](https://timetables.jreast.co.jp/2611/timetable-v/641d2.html) JR东日本发布的现行東京Metro土休日线路表；跨公司延续的相同列车编号已合并。时刻对应线路，具体系列运用不保证。
-- **E531 常磐线**：上野 08:24 → 勝田 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/050/050441.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E231 常磐快速线**：上野 08:02 → 取手 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/080/081081.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 东海道线**：東京 08:05 → 小田原 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/035/039981.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 宇都宫线**：上野 08:07 → 宇都宮 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/040/040621.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 高崎线**：上野 08:19 → 籠原 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/040/040471.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E233 湘南新宿线**：新宿 08:00 → 小田原 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/035/035661.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E231 武藏野线**：東京 08:03 → 府中本町 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/130/133821.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E131 相模线**：橋本 08:10 → 茅ケ崎 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/080/084401.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E353 梓 Azusa**：新宿 08:00 → 白馬 5号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/110/111501.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E353 甲斐路 Kaiji**：新宿 08:30 → 甲府 7号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/050/054842.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E353 富士回游**：新宿 08:30 → 河口湖 7号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/050/054842.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E657 日立 Hitachi**：東京 08:53 → いわき 5号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/050/050281.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E657 常磐 Tokiwa**：東京 08:23 → 勝田 53号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/075/076411.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E259 成田特快 N’EX**：東京 08:30 → 成田空港 9号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/050/054701.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E257 踊子**：東京 09:00 → 修善寺 1号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/095/099001.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E257 湘南**：東京 17:30 → 平塚 1号；周日无班次 · 其他运行日参考。[来源](https://timetables.jreast.co.jp/2611/train/085/087711.html) 官方时刻表明确「平日運転」，10/25周日无此班次。保留工作日参考用于模型展示，切勿视为周日运行。
-- **E261 蓝宝石踊子**：東京 11:00 → 伊豆急下田 1号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/060/063541.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E257 赤城 Akagi**：上野 18:00 → 鴻巣 1号；周日无班次 · 其他运行日参考。[来源](https://timetables.jreast.co.jp/2611/train/085/087691.html) 官方时刻表明确「平日運転」，10/25周日无此班次。保留工作日参考用于模型展示，切勿视为周日运行。
-- **E257 草津四万**：上野 09:00 → 長野原草津口 31号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/095/098841.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E5 山彦 Yamabiko**：東京 08:07 → 仙台 127号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/000/002071.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E5 那须野 Nasuno**：東京 08:26 → 郡山 253号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/020/021971.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E7 光辉 Kagayaki**：東京 08:11 → 敦賀 505号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/095/098501.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E7 白鹰 Hakutaka**：東京 08:41 → 金沢 555号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/035/038631.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E7 浅间 Asama**：東京 08:30 → 長野 653号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/065/067831.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E7 朱鹭 Toki**：東京 08:22 → 新潟 307号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/035/038231.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E7 谷川 Tanigawa**：東京 08:03 → 越後湯沢 403号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/075/076041.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **E8 翼 Tsubasa**：東京 08:07 → 山形 127号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/000/002071.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **225 新快速**：大阪 08:15 → 姫路 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796012001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **223 新快速**：大阪 08:15 → 姫路 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796012001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **321 JR京都・神户线**：大阪 08:01 → 京都 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796011001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **207 JR宝塚线**：大阪 08:00 → 新三田 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796025001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **207 学研都市・东西线**：京橋 08:28 → 同志社前 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2842067001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **323 大阪环状线**：大阪 08:00 → 大阪環状線 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796017001?date=20261025) 已选10/25日期；官网行先为「環状運転」，界面用大阪環状線表示。
-- **323 JR梦咲线**：大阪 08:07 → 桜島 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796017001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **221 大和路快速**：大阪 08:11 → 奈良 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796017001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **223 关空快速**：大阪 08:03 → 関西空港 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796017001?date=20261025) 关空／纪州路快速同发并在日根野分割，取关西机场编组；223/225系具体运用不保证。
-- **225 纪州路快速**：大阪 08:03 → 和歌山 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796017001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **205 奈良线**：京都 08:37 → 奈良 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2784064001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **221 嵯峨野线**：京都 08:00 → 園部 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2784055001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **221 大阪东线**：久宝寺 08:02 → 大阪 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2990073001?date=20261025) 已选择2026-10-25。普通班次；221系具体编组以实际运用为准。
-- **227 广岛地区**：広島 08:10 → 岩国 ；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/3863022001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **683 雷鸟 Thunderbird**：新大阪 08:14 → 敦賀 7号；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2815076003?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **281 遥 Haruka**：新大阪 08:14 → 関西空港 9号；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2815076001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **287 黑潮 Kuroshio**：新大阪 08:58 → 白浜 3号；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2815076001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **289 白鹳 Kounotori**：大阪 08:12 → 城崎温泉 1号；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2796025001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **287 城崎 Kinosaki**：京都 11:25 → 城崎温泉 5号；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2784055001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **273 八云 Yakumo**：岡山 08:13 → 出雲市 3号；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/3449046001?date=20261025) 官方站表已选择 2026-10-25；表示同线路班次，不保证混用车型。
-- **285 Sunrise 出云**：東京 21:26 → 出雲市 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/010/012852.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **285 Sunrise 濑户**：東京 21:26 → 高松 ；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/010/012852.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **500 回声 Kodama**：岡山 06:31 → 博多 933号；已核对 10/25 运行日。[来源](https://www.jr-odekake.net/navi/the_last_run/) 官方500系运用日历已核对2026-10-25运行；运用可能临时更换。
-- **700 光 Rail Star**：新下関 06:11 → 岡山 680号；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/3905002001?date=20261025) 已核对10/25新下关站表，官方明确标注「ひかり680号レールスター」。
-- **N700 樱 Sakura**：新大阪 06:25 → 鹿児島中央 741号；官方每日时刻参考。[来源](https://www.jrkyushu.co.jp/english/pdf/timetable_20260314_20270228.pdf) 官方主要列车时刻表有效期 2026-03-14～2027-02-28；混用车型与临时替换以当日运用为准。
-- **N700 瑞穗 Mizuho**：新大阪 06:00 → 鹿児島中央 601号；官方每日时刻参考。[来源](https://www.jrkyushu.co.jp/english/pdf/timetable_20260314_20270228.pdf) 官方主要列车时刻表有效期 2026-03-14～2027-02-28；混用车型与临时替换以当日运用为准。
-- **W7 光辉 Kagayaki**：東京 08:11 → 敦賀 505号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/095/098501.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **W7 剑 Tsurugi**：福井 08:12 → 敦賀 7号；已核对 10/25 运行日。[来源](https://timetable.jr-odekake.net/station-timetable/2645006002?date=20261025) 已选择2026-10-25，取福井站中途发车。E7/W7系共用时刻，不能据此锁定W7编组。
-- **50000 岛风**：大阪難波 10:40 → 賢島 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/senden/shimakaze/) 采用官方土休日栏；观光列车可能因检修停运，运行日以官网日历为准。
-- **23000 伊势志摩 Liner**：大阪難波 09:20 → 賢島 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/railway/Dia/pdf/B_osakanamba_kyoto_kashikojima.pdf) 2026-03-14土休日表3901列車，伊势志摩Liner标识，贤岛11:44着。
-- **30000 Vista EX**：京都 08:10 → 賢島 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/railway/Dia/pdf/B_osakanamba_kyoto_kashikojima.pdf) 2026-03-14土休日表801列車，Vista标识，贤岛10:59着；※可能与其他车辆连结。
-- **22600 Ace**：大阪上本町 07:45 → 宇治山田 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/railway/Dia/pdf/B_osakanamba_kyoto_kashikojima.pdf) 2026-03-14土休日705列車，上本町7:45→宇治山田9:37。此列未注明具体系列，作为一般近铁特急班次，不能保证22600系运用。
-- **21000 Urban Liner Plus**：大阪難波 08:30 → 近鉄名古屋 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/railway/Dia/pdf/A_osakanamba_nagoya.pdf) 2026-03-14土休日表108列車，UL标识，名古屋10:49着。21000／21020的具体分配未在表中区分。
-- **21020 Urban Liner Next**：大阪難波 08:30 → 近鉄名古屋 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/railway/Dia/pdf/A_osakanamba_nagoya.pdf) 2026-03-14土休日表108列車，UL标识，名古屋10:49着。21000／21020的具体分配未在表中区分。
-- **19200 青丹吉**：大阪難波 09:10 → 京都 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/senden/aoniyoshi/) 采用官方土休日栏；观光列车可能因检修停运，运行日以官网日历为准。
-- **16200 青之交响曲**：大阪阿部野橋 10:10 → 吉野 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/senden/blue_symphony/) 采用官方土休日栏；观光列车可能因检修停运，运行日以官网日历为准。
-- **26000 樱 Liner**：大阪阿部野橋 09:10 → 吉野 ；官方土休日参考。[来源](https://www.kintetsu.co.jp/railway/Dia/pdf/F_osakaabenobashi_yoshino.pdf) 2026-03-14土休日909列車，さくらライナー标识，吉野10:21着。
-- **5800 奈良线 L/C**：近鉄奈良 08:06 → 大阪難波 ；官方土休日参考。[来源](https://eki.kintetsu.co.jp/norikae/T5?USR=PC&slCode=350-23&d=1&dw=1&time=0800) 官方2026-03-14土休日快速急行；5800系具体配车未公布。
-- **9820 Series 21**：大阪難波 09:02 → 東花園 ；官方土休日参考。[来源](https://eki.kintetsu.co.jp/norikae/T5?USR=PC&slCode=350-0&d=1&dw=1&time=0900) 官方2026-03-14土休日普通班次，系列21具体车辆未公布。
-- **5820 大阪线 L/C**：大阪上本町 08:07 → 青山町 ；官方土休日参考。[来源](https://eki.kintetsu.co.jp/norikae/T5?USR=PC&slCode=356-0&d=1&dw=1&time=0800) 官方2026-03-14土休日急行；5820系具体配车未公布。
-- **8000 京阪特急**：淀屋橋 08:02 → 出町柳 ；官方土休日参考。[来源](https://www.keihan.co.jp/traffic/station/assets/pdf/time/01012.pdf) 2026-08-22官方土休日表，一颗★标记8000系Premium Car，行先无印出町柳。特殊代运以当天为准。
-- **3000 京阪快速急行**：淀屋橋 08:37 → 出町柳 ；官方土休日参考。[来源](https://www.keihan.co.jp/traffic/station/assets/pdf/time/01012.pdf) 2026-08-22官方土休日表，两颗★标记3000系Premium Car。本班实际为特急，已覆盖预设原来的快速急行种别。
-- **13000 京阪本线**：淀屋橋 05:33 → 出町柳 ；官方土休日参考。[来源](https://www.keihan.co.jp/traffic/station/assets/pdf/time/01012.pdf) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **13000 宇治线**：中書島 08:07 → 宇治 ；官方土休日参考。[来源](https://www.keihan.co.jp/traffic/time-fare/pdf/time03-4.pdf) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **9300 阪急京都线**：大阪梅田 09:00 → 京都河原町 ；官方土休日参考。[来源](https://www.hankyu.co.jp/station/html/HK-01_ky_2_h.html) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **2300 阪急 PRiVACE**：大阪梅田 09:00 → 京都河原町 ；官方土休日参考。[来源](https://www.hankyu.co.jp/station/html/HK-01_ky_2_h.html) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **1300 阪急京都线**：大阪梅田 08:01 → 京都河原町 ；官方土休日参考。[来源](https://www.hankyu.co.jp/station/html/HK-01_ky_2_h.html) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **1000 阪急神户线**：大阪梅田 08:00 → 新開地 ；官方土休日参考。[来源](https://www.hankyu.co.jp/station/html/HK-01_ko_2_h.html) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **9000 阪急宝塚线**：大阪梅田 08:00 → 宝塚 ；官方土休日参考。[来源](https://www.hankyu.co.jp/station/html/HK-01_ta_2_h.html) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **7000 京 TRAIN 雅洛**：大阪梅田 09:32 → 京都河原町 ；官方土休日参考。[来源](https://www.hankyu.co.jp/kyotrain-garaku/service/) 官方土休日运行表。检修时可能由普通车辆代运。
-- **1000 阪神难波线**：大阪難波 08:17 → 神戸三宮 ；官方土休日参考。[来源](https://eki.kintetsu.co.jp/norikae/sp/T5?USR=PC&slCode=350-0&d=2&dw=1&time=0800) 阪神官网大阪难波站链接的近铁官方站表；2026-03-14土休日班次，车型混用不保证。
-- **8000 阪神直通特急**：大阪梅田 08:10 → 山陽姫路 ；官方土休日参考。[来源](https://www.hanshin.co.jp/search/umeda_h2.pdf) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **5700 阪神普通**：大阪梅田 08:01 → 高速神戸 ；官方土休日参考。[来源](https://www.hanshin.co.jp/search/umeda_h2.pdf) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **50000 Rapi:t**：なんば 08:00 → 関西空港 ；官方土休日参考。[来源](https://kensaku.nankai.co.jp/sp/T5?USR=PC&d=1&dw=1&slCode=306-0) 官方南海土休日站表：特急ラピートα。站表没有号数，不虚构号数。
-- **12000 Southern**：なんば 08:15 → 和歌山市 ；官方土休日参考。[来源](https://kensaku.nankai.co.jp/sp/T5?USR=PC&d=1&dw=1&slCode=306-0) 官方土休日栏「特急サザン(一部指定)」。12000系/10000系运用以当天为准。
-- **30000 高野 Koya**：なんば 10:00 → 極楽橋 ；官方土休日参考。[来源](https://kensaku.nankai.co.jp/sp/T5?USR=PC&slCode=309-0&d=1&dw=1&time=0800) 官方2026-03-28高野线土休日表「こうや」。站表未标注号数；车辆更换以当天为准。
-- **8300 南海机场急行**：なんば 08:10 → 関西空港 ；官方土休日参考。[来源](https://kensaku.nankai.co.jp/sp/T5?USR=PC&d=1&dw=1&slCode=306-0) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **8300 南海高野线**：なんば 08:14 → 河内長野 ；官方土休日参考。[来源](https://kensaku.nankai.co.jp/sp/T5?USR=PC&slCode=309-0&d=1&dw=1&time=0800) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **5000 山阳直通特急**：山陽姫路 08:18 → 阪神大阪梅田 ；官方土休日参考。[来源](https://www.sanyo-railway.co.jp/railway/exp_timetable2025.pdf) 山阳官网直通特急土休日表。山阳/阪神车辆混用，5000系的具体运用不以此表保证。
-- **6000 山阳普通**：山陽天満 08:03 → 飾磨 ；官方土休日参考。[来源](https://www.sanyo-railway.co.jp/tt/index.php?code_direction=1&code_station_from=374-4&weekend=1) 山阳官网2025-02-22土休日网干线站表；官网查询现维护，采用其公开索引中的普通班次。具体6000系及编组未锁定。
-- **30000 御堂筋线**：なかもず 08:00 → 箕面萱野 ；官方土休日参考。[来源](https://kensaku.osakametro.co.jp/timetable/ja/subway/dia/station/26088/1019/2) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **400 中央线**：夢洲 08:08 → 学研奈良登美ヶ丘 ；官方土休日参考。[来源](https://kensaku.osakametro.co.jp/timetable/subway/dia/station/29998/1022/1) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **900 叡山 Kirara**：出町柳 08:15 → 鞍馬 ；官方土休日参考。[来源](https://eizandensha.co.jp/uploads/499_file_path2.pdf) 现行2026-08-22展望列车きらら土休日表；11月红叶特别日表尚未实施，不套用。车辆检查时可能改车。
-- **6500 神户电铁**：横山 08:06 → 三田 ；官方土休日参考。[来源](https://www.shintetsu.co.jp/cms/wp-content/uploads/station-docs/20250315/yokoyama-timetable.pdf) 官方横山站土休日普通班次，选无3辆框的时刻；6500系实际运用未固定。
-- **H5 隼 Hayabusa**：東京 08:18 → 新函館北斗 5号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/110/111081.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **H5 疾风 Hayate**：新青森 06:33 → 新函館北斗 91号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/040/044991.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **789 丁香 Lilac**：札幌 08:00 → 旭川 5号；已核对 10/25 运行日。[来源](https://www3.jrhokkaido.co.jp/webunkou/timetable.html?id=091) 10/25公开发车时刻数据的定刻；车辆运用可能替换。
-- **789 神威 Kamui**：札幌 09:00 → 旭川 7号；已核对 10/25 运行日。[来源](https://www3.jrhokkaido.co.jp/webunkou/timetable.html?id=091) 10/25公开发车时刻数据的定刻；车辆运用可能替换。
-- **261 北斗 Hokuto**：札幌 08:43 → 函館 6号；已核对 10/25 运行日。[来源](https://www3.jrhokkaido.co.jp/webunkou/timetable.html?id=091) 10/25公开发车时刻数据的定刻；车辆运用可能替换。
-- **261 大空 Ozora**：札幌 08:52 → 釧路 3号；已核对 10/25 运行日。[来源](https://www3.jrhokkaido.co.jp/webunkou/timetable.html?id=091) 10/25公开发车时刻数据的定刻；车辆运用可能替换。
-- **261 十胜 Tokachi**：札幌 10:45 → 帯広 3号；已核对 10/25 运行日。[来源](https://www3.jrhokkaido.co.jp/webunkou/timetable.html?id=091) 10/25公开发车时刻数据的定刻；车辆运用可能替换。
-- **733 快速 Airport**：札幌 08:02 → 新千歳空港 30号；已核对 10/25 运行日。[来源](https://www3.jrhokkaido.co.jp/webunkou/timetable.html?id=091) 10/25公开发车时刻数据的定刻；车辆运用可能替换。
-- **733 函馆 Liner**：函館 08:50 → 新函館北斗 ；已核对 10/25 运行日。[来源](https://www3.jrhokkaido.co.jp/webunkou/timetable.html?id=028) 10/25公开发车时刻数据的定刻；车辆运用可能替换。
-- **N700S のぞみ**：東京 08:00 → 広島 61号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/085/089361.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **N700S ひかり**：東京 08:03 → 岡山 703号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/125/128501.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **N700S こだま**：東京 08:27 → 名古屋 809号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/125/128991.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **N700A のぞみ**：東京 08:00 → 広島 61号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/085/089361.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **N700A ひかり**：東京 08:03 → 岡山 703号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/125/128501.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **N700A こだま**：東京 08:27 → 名古屋 809号；已核对 10/25 运行日。[来源](https://timetables.jreast.co.jp/2611/train/125/128991.html) 10月25日の運行日カレンダーを確認。車種の割当は時刻表だけでは保証されません。
-- **HC85 飞驒 Hida**：名古屋 07:43 → 高山 1号；官方土休日参考。[来源](https://railway.jr-central.co.jp/time-schedule/srch/_pdf/data/202603/tokaido_Nagoya_A_h_d.pdf) JR东海官网当前链接的2026年3月改正土休日站时刻表；固定采用其中一班，非实时运行信息。
-- **HC85 南纪 Nanki**：名古屋 08:02 → 紀伊勝浦 1号；官方土休日参考。[来源](https://railway.jr-central.co.jp/time-schedule/srch/_pdf/data/202603/kansai_Nagoya_B_wh_d.pdf) JR东海官网当前链接的2026年3月改正土休日站时刻表；固定采用其中一班，非实时运行信息。
-- **383 信浓 Shinano**：名古屋 07:00 → 長野 1号；官方土休日参考。[来源](https://railway.jr-central.co.jp/time-schedule/srch/_pdf/data/202603/chuo_Nagoya_A_h_d.pdf) JR东海官网当前链接的2026年3月改正土休日站时刻表；固定采用其中一班，非实时运行信息。
-- **315 中央本线**：名古屋 08:02 → 中津川 ；官方土休日参考。[来源](https://railway.jr-central.co.jp/time-schedule/srch/_pdf/data/202603/chuo_Nagoya_A_h_d.pdf) JR东海官网当前链接的2026年3月改正土休日站时刻表；固定采用其中一班，非实时运行信息。 站表确认班次，不确认当天具体编成或车型运用。
-- **315 东海道名古屋地区**：名古屋 05:37 → 大垣 ；官方土休日参考。[来源](https://railway.jr-central.co.jp/time-schedule/srch/_pdf/data/202603/tokaido_Nagoya_A_h_d.pdf) JR东海官网当前链接的2026年3月改正土休日站时刻表；固定采用其中一班，非实时运行信息。 站表确认班次，不确认当天具体编成或车型运用。
-- **315 东海道静冈地区**：静岡 08:07 → 熱海 ；官方土休日参考。[来源](https://railway.jr-central.co.jp/time-schedule/srch/_pdf/data/202603/tokaido_Shizuoka_A_h_u.pdf) JR东海官网当前链接的2026年3月改正土休日站时刻表；固定采用其中一班，非实时运行信息。 站表确认班次，不确认当天具体编成或车型运用。
-- **315 关西本线名古屋地区**：名古屋 08:11 → 亀山 ；官方土休日参考。[来源](https://railway.jr-central.co.jp/time-schedule/srch/_pdf/data/202603/kansai_Nagoya_B_wh_d.pdf) JR东海官网当前链接的2026年3月改正土休日站时刻表；固定采用其中一班，非实时运行信息。 站表确认班次，不确认当天具体编成或车型运用。
-- **313 东海道新快速**：名古屋 08:18 → 大垣 ；官方土休日参考。[来源](https://railway.jr-central.co.jp/time-schedule/srch/_pdf/data/202603/tokaido_Nagoya_A_h_d.pdf) JR东海官网当前链接的2026年3月改正土休日站时刻表；固定采用其中一班，非实时运行信息。 站表确认班次，不确认当天具体编成或车型运用。
-- **2000 名铁 μSKY**：名鉄名古屋 06:02 → 中部国際空港 2号；官方土休日参考。[来源](https://www.meitetsu.co.jp/train/timetable/__icsFiles/afieldfile/2026/02/25/20260314_TA_H1.pdf) 官网休日表234页，第2列车为μS，名铁名古屋06:02发、中部国际机场06:31到。
-- **2200 名铁特急**：名鉄名古屋 06:06 → 中部国際空港 ；官方土休日参考。[来源](https://www.meitetsu.co.jp/train/timetable/__icsFiles/afieldfile/2026/02/25/20260314_TA_H1.pdf) 名铁官网2026-03-14改正土休日线路时刻表。站表给出种别、发站和时刻；具体编成或系列可能混用，不以该班次保证当天车型。
-- **N100 SPACIA X**：浅草 07:50 → 東武日光 1号；官方每日时刻参考。[来源](https://www.tobu.co.jp/pdf/timetable/time-table_01_kudari.pdf?202603) 2026-03-14官方表N100系列；日光9:39着。
-- **100 SPACIA**：浅草 10:30 → 東武日光 17号；官方土休日参考。[来源](https://www.tobu.co.jp/pdf/timetable/time-table_01_kudari.pdf?202603) 红字土休日运转，100系けごん17号，日光12:21着。
-- **500 Revaty Kegon**：浅草 07:00 → 東武日光 3号；官方土休日参考。[来源](https://www.tobu.co.jp/pdf/timetable/time-table_01_kudari.pdf?202603) 绿色土休日班次，500系リバティけごん3号，日光8:54着。
-- **500 Revaty Aizu**：浅草 06:30 → 会津田島 111号；官方每日时刻参考。[来源](https://www.tobu.co.jp/pdf/timetable/time-table_01_kudari.pdf?202603) 500系リバティ会津111号，与けごん1号併结，会津田岛9:49着。
-- **200 两毛**：浅草 08:40 → 赤城 5号；官方每日时刻参考。[来源](https://www.tobu.co.jp/pdf/timetable/time-table_02_kudari.pdf?202603) 2026-03-14改正官方特急表；200系りょうもう5号6辆，赤城10:39着。
-- **50090 TJ Liner**：池袋 17:00 → 小川町 1号；官方土休日参考。[来源](https://www.tobu.co.jp/railway/tj/timetable/) 官网土休日下行表；小川町18:02着。
-- **70090 TH Liner**：久喜 08:13 → 恵比寿 2号；官方土休日参考。[来源](https://www.tobu.co.jp/railway/th/timetable/) 官网土休日上行表，惠比寿9:43着。北千住不是上客站。
-- **50050 东武通勤**：渋谷 08:00 → 中央林間 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/tokyu/pc/diagram/TrainRouteTimetable?day=25&hour=08&kind=%E6%9D%B1%E6%80%A5%E7%94%B0%E5%9C%92%E9%83%BD%E5%B8%82%E7%B7%9A%E5%90%84%E5%81%9C&minutes=00&month=10&posType=1&rrCd=00000789&stCd=00003544&trCd=81a9019c&updown=1&year=2026) 田园都市线南行官方班次，中央林间8:57着。东急/Metro/东武通勤车辆混用，本班只作线路时刻模板，不保证选定车型。
-- **001 Laview Chichibu**：池袋 08:30 → 西武秩父 7号；官方土休日参考。[来源](https://www.seiburailway.jp/railway/reservedtrain/file/20250315_tokkyuujikoku__ikebukurosen_1.pdf) 官网当前链接的2025-03-15改正土休日栏；西武秩父9:51着。
-- **10000 New Red Arrow**：西武新宿 08:30 → 本川越 63号；官方土休日参考。[来源](https://www.seiburailway.jp/railway/reservedtrain/file/20250315_tokkyuujikoku__shinjukusen.pdf) 官网土休日栏；2026-09-19～2027-01-03土休日另有田无临时停车，需结合公告。
-- **40000 S-TRAIN**：元町・中華街 07:46 → 西武秩父 1号；官方土休日参考。[来源](https://www.seiburailway.jp/railway/reservedtrain/file/20260314_S-TRAIN_timetable.pdf) 2026-03-14一部更改官方土休日表，S-TRAIN1号，西武秩父10:03着。全车指定席。
-- **30000 Smile Train**：池袋 08:55 → 飯能 ；官方土休日参考。[来源](https://seibu.ekitan.com/norikae/timetable/station/235-0/d1?dw=1) 铁路官网链接的官方时刻表；30000系等通勤车型混用，本班不保证车型。
-- **70000 GSE Hakone**：新宿 07:20 → 箱根湯本 31号；官方土休日参考。[来源](https://www.odakyu.jp/romancecar/timetable/holiday/down/o5oaa100000009c8-att/holiday_down2026.pdf) 2026-03-14土休日表0331列，GSE展望车标记，箱根汤本8:47着。
-- **60000 MSE Metro Hakone**：北千住 08:33 → 箱根湯本 91号；官方土休日参考。[来源](https://www.odakyu.jp/romancecar/timetable/holiday/down/o5oaa100000009c8-att/holiday_down2026.pdf) 2026-03-14土休日表0491列MSE标记，箱根汤本10:24着。
-- **30000 EXEα Hakone**：新宿 07:00 → 箱根湯本 1号；官方土休日参考。[来源](https://www.odakyu.jp/romancecar/timetable/holiday/down/o5oaa100000009c8-att/holiday_down2026.pdf) 2026-03-14土休日表0001列EXE/EXEα标记，箱根汤本8:26着。
-- **5000 小田急快速急行**：新宿 08:01 → 小田原 ；官方土休日参考。[来源](https://www.odakyu.jp/station/pdf/shinjuku.pdf) 2026-03-14改正新宿站土休日表；橙底快字小=快速急行小田原。5000形等混用，车型不保证。
-- **4000 小田急急行**：新宿 08:05 → 本厚木 ；官方土休日参考。[来源](https://www.odakyu.jp/station/pdf/shinjuku.pdf) 2026-03-14改正新宿站土休日表；蓝字厚=各站停车本厚木。4000形等混用，车型不保证。
-- **AE Skyliner**：京成上野 08:00 → 成田空港 ；官方土休日参考。[来源](https://keisei.ekitan.com/search/timetable/station/254-0/d1?dw=1) 2025-12-13改正官方土休日表；スカイライナー，成田空港8:44着。官网站表未列号数，留空。
-- **3100 Access特急**：京成高砂 08:17 → 成田空港 ；官方土休日参考。[来源](https://keisei.ekitan.com/search/timetable/station/682-0/d1?dw=1) 官方土休日表；成田空港8:59着。アクセス特急有多种车型，3100形不保证。
-- **3000 京成本线**：京成上野 08:11 → 成田空港 ；官方土休日参考。[来源](https://keisei.ekitan.com/search/timetable/station/254-0/d1?dw=1) 2025-12-13改正官方土休日表；普通通勤车辆担当的无特急费列车，3000形不保证。
-- **2100 京急快特**：泉岳寺 08:45 → 三崎口 52号；官方土休日参考。[来源](https://www.keikyu.co.jp/ride/train/wing_detail.html) 周日采用ウィング・シート52号，指定席仅2号车，其余车辆为普通快特。不是工作日イブニング・ウィング号。三崎口9:58着。
-- **1000 京急机场线**：押上 08:05 → 羽田空港 ；官方土休日参考。[来源](https://www.kotsu.metro.tokyo.jp/subway/timetable/asakusa/A20SH.html) 采用浅草线直通京急机场线班次；都营线内各站停、京急线急行。京急/京成/都营等混用，1000形不保证。
-- **2100 Wing号**：泉岳寺 08:45 → 三崎口 52号；官方土休日参考。[来源](https://www.keikyu.co.jp/ride/train/wing_detail.html) 周日采用ウィング・シート52号，指定席仅2号车，其余车辆为普通快特。不是工作日イブニング・ウィング号。三崎口9:58着。
-- **5000 Keio Liner**：京王八王子 08:20 → 新宿 2号；官方土休日参考。[来源](https://www.keio.co.jp/zasekishitei/) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **9000 京王特急**：新宿 08:01 → 京王八王子 ；已核对 10/25 运行日。[来源](https://transfer-train.navitime.biz/keio/directions/timetable?station=4254&line=1&target=holiday&direction=1) 官网链接的Navitime公开时刻表；班次日期为2026-10-25，车型并非时刻表保证。内部列车编号0015，不作旅客号数显示。
-- **1000 井之头线**：渋谷 08:00 → 吉祥寺 ；已核对 10/25 运行日。[来源](https://transfer-train.navitime.biz/keio/directions/timetable?station=3544&line=7&target=holiday&direction=1) 官网链接的Navitime公开时刻表；班次日期为2026-10-25，车型并非时刻表保证。内部列车编号017，不作旅客号数显示。
-- **5050 东横线**：渋谷 09:09 → 元町・中華街 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/tokyu/pc/diagram/TrainRouteTimetable?day=25&hour=09&kind=%E6%9D%B1%E6%80%A5%E6%9D%B1%E6%A8%AA%E7%B7%9AF%E3%83%A9%E3%82%A4%E3%83%8A%E3%83%BC&minutes=09&month=10&posType=1&rrCd=00000790&stCd=00003544&trCd=81ab01b3&updown=1&year=2026) 东横线内特急标准的F-Liner；元町・中华街9:46着，车型不保证。 官网称Fライナー为直通列车爱称，东横线内实际种别为特急；不是收费特急。
-- **2020 田园都市线**：渋谷 08:00 → 中央林間 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/tokyu/pc/diagram/TrainRouteTimetable?day=25&hour=08&kind=%E6%9D%B1%E6%80%A5%E7%94%B0%E5%9C%92%E9%83%BD%E5%B8%82%E7%B7%9A%E5%90%84%E5%81%9C&minutes=00&month=10&posType=1&rrCd=00000789&stCd=00003544&trCd=81a9019c&updown=1&year=2026) 田园都市线南行官方班次，中央林间8:57着。东急/Metro/东武通勤车辆混用，本班只作线路时刻模板，不保证选定车型。
-- **3020 目黑线**：三田 09:01 → 日吉 ；官方土休日参考。[来源](https://www.kotsu.metro.tokyo.jp/subway/timetable/mita/I04SH.html) 2026-03-14都营三田线官方土休日表；无⑥标记为8辆。都营/东急等车辆混用，本班车型不保证。
-- **6020 大井町线**：大井町 08:50 → 溝の口 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/tokyu/pc/diagram/TrainRouteTimetable?day=25&hour=08&kind=%E6%9D%B1%E6%80%A5%E5%A4%A7%E4%BA%95%E7%94%BA%E7%B7%9A%E6%80%A5%E8%A1%8C&minutes=50&month=10&posType=1&rrCd=00000787&stCd=00005517&trCd=81a903b0&updown=1&year=2026) 2026-10-25官方逐车时刻表，急行7辆运用，可由6000/6020系担当，具体车型不保证；周日不实施Q SEAT收费服务。
-- **12000 相铁JR直通**：海老名 08:13 → 新宿 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/sotetsu/pc/diagram/TrainRouteTimetable?datetime=2026-10-25T08%3A13%3A00&direction=up&linkId=00000736&node=00001174&operation=022c0009) 相铁线内特急、羽泽横滨国大起进入JR埼京线；12000系/E233等混用，车型不保证。
-- **20000 相铁东横直通**：海老名 07:56 → 和光市 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/sotetsu/pc/diagram/TrainRouteTimetable?datetime=2026-10-25T07%3A56%3A00&direction=up&linkId=00000736&node=00001174&operation=022c01e6) 相铁线内各停、东急东横线内急行、副都心线各停；和光市9:37着。时刻表不保证车型。
-- **21000 相铁目黑直通**：海老名 08:16 → 浦和美園 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/sotetsu/pc/diagram/TrainRouteTimetable?datetime=2026-10-25T08%3A16%3A00&direction=up&linkId=00000736&node=00001174&operation=022c01ec) 相铁线内各停、东急目黑线内急行、南北/埼玉高速线各停；浦和美园10:23着。时刻表不保证车型。
-- **1000 銀座線**：浅草 08:04 → 渋谷 ；官方旧表参考 · 现行未核实。[来源](https://www.tokyometro.jp/station/timetable/pdf/202511/G19.pdf) 2025-11官方旧土休日表参考。银座线在2026-09-19再次改正，尚不能证明本时刻适用于10/25，需核对现行表。
-- **2000 丸ノ内線**：新宿 08:00 → 池袋 ；官方旧表参考 · 现行未核实。[来源](https://www.tokyometro.jp/station/timetable/pdf/202503/M08.pdf) 官方旧表（2024年12月改正、202503目录）8:00新宿→池袋。丸之内线2026-09-19再次改正，现行官方逐班查询未能取得，本条只作旧表参考，不表示10/25仍按此时刻运行。
-- **13000 日比谷線**：南千住 05:02 → 北千住 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/tokyu/pc/diagram/TrainRouteTimetable?day=25&hour=05&kind=%E6%9D%B1%E4%BA%AC%E3%83%A1%E3%83%88%E3%83%AD%E6%97%A5%E6%AF%94%E8%B0%B7%E7%B7%9A&minutes=02&month=10&posType=1&rrCd=00000773&stCd=00009268&trCd=019d0132&updown=0&year=2026) 东急官网公开提供的日比谷线时刻源，2026-10-25南千住始发、北千住5:05着；只参考班次时刻，13000系等混用，不保证当班车型。
-- **15000 東西線**：西船橋 08:09 → 中野 ；官方土休日参考。[来源](https://timetables.jreast.co.jp/2611/timetable-v/671u2.html) JR东日本发布的现行東京Metro土休日线路表；跨公司延续的相同列车编号已合并。时刻对应线路，具体系列运用不保证。
-- **16000 千代田線**：代々木上原 08:09 → 我孫子 ；官方土休日参考。[来源](https://timetables.jreast.co.jp/2611/timetable-v/641d2.html) JR东日本发布的现行東京Metro土休日线路表；跨公司延续的相同列车编号已合并。时刻对应线路，具体系列运用不保证。
-- **17000 副都心線**：渋谷 05:05 → 和光市 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/tokyu/pc/diagram/TrainRouteTimetable?day=25&hour=05&kind=%E6%9D%B1%E4%BA%AC%E3%83%A1%E3%83%88%E3%83%AD%E5%89%AF%E9%83%BD%E5%BF%83%E7%B7%9A&minutes=05&month=10&posType=1&rrCd=00000776&stCd=00003544&trCd=019f0215&updown=0&year=2026) 渋谷始发副都心线各停。17000系等混用，车型不保证。
-- **18000 半蔵門線**：渋谷 08:02 → 押上 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/tokyu/pc/diagram/TrainRouteTimetable?day=25&hour=08&kind=%E6%9D%B1%E4%BA%AC%E3%83%A1%E3%83%88%E3%83%AD%E5%8D%8A%E8%94%B5%E9%96%80%E7%B7%9A&minutes=02&month=10&posType=1&rrCd=00000774&stCd=00003544&trCd=019e013d&updown=0&year=2026) 东急官网链接的半藏门线官方班次，车型不保证。
-- **9000 南北線**：目黒 08:08 → 浦和美園 ；已核对 10/25 运行日。[来源](https://transfer.navitime.biz/tokyu/pc/diagram/TrainRouteTimetable?day=25&hour=08&kind=%E6%9D%B1%E4%BA%AC%E3%83%A1%E3%83%88%E3%83%AD%E5%8D%97%E5%8C%97%E7%B7%9A&minutes=08&month=10&posType=1&rrCd=00000772&stCd=00008684&trCd=819c0257&updown=1&year=2026) 东急官网链接的南北线时刻表；9000系等混用，车型不保证。
-- **5500 都营浅草线**：押上 08:19 → 西馬込 ；官方土休日参考。[来源](https://www.kotsu.metro.tokyo.jp/subway/timetable/asakusa/A20SH.html) 2025-12-13改正官方土休日表，8时②19；无种别和行先符号为普通西马込，②是终点站台。车型不保证。
-- **6500 都营三田线**：三田 09:01 → 日吉 ；官方土休日参考。[来源](https://www.kotsu.metro.tokyo.jp/subway/timetable/mita/I04SH.html) 2026-03-14都营三田线官方土休日表；无⑥标记为8辆。都营/东急等车辆混用，本班车型不保证。
-- **TX-3000 筑波快线**：秋葉原 08:02 → つくば ；已核对 10/25 运行日。[来源](https://transfer-train.navitime.biz/tx/timetable?station=3494&line=1&target=holiday&direction=1) 官网链接的Navitime公开时刻表；班次日期为2026-10-25，车型并非时刻表保证。内部列车编号3009，不作旅客号数显示。
-- **300 江之电**：藤沢 08:10 → 鎌倉 ；官方每日时刻参考。[来源](https://www.enoden.co.jp/train/station/fujisawa/time-table/) 官网藤泽站通用时刻表；车辆系列并非时刻表保证，300形为模型所选车辆。
-- **3000 Allegra**：強羅 08:00 → 箱根湯本 ；官方土休日参考。[来源](https://www.hakonenavi.jp/_wp/wp-content/uploads/2026/02/dea7e989e1d5e7a7dd432f62889824d8.pdf) 2026-03-14土休日上行表，箱根湯本8:33着；3000形等混用，车型不保证。
-- **1200 Panorama super**：名鉄名古屋 06:20 → 名鉄岐阜 ；官方土休日参考。[来源](https://www.meitetsu.co.jp/train/timetable/__icsFiles/afieldfile/2026/02/25/20260314_NH_H1_1.pdf) 名铁官网2026-03-14改正土休日线路时刻表。站表给出种别、发站和时刻；具体编成或系列可能混用，不以该班次保证当天车型。
-- **9500 名铁通勤**：名鉄名古屋 05:57 → 名鉄岐阜 ；官方土休日参考。[来源](https://www.meitetsu.co.jp/train/timetable/__icsFiles/afieldfile/2026/02/25/20260314_NH_H1_1.pdf) 名铁官网2026-03-14改正土休日线路时刻表。站表给出种别、发站和时刻；具体编成或系列可能混用，不以该班次保证当天车型。
-- **3500 名铁通勤**：名鉄名古屋 05:57 → 名鉄岐阜 ；官方土休日参考。[来源](https://www.meitetsu.co.jp/train/timetable/__icsFiles/afieldfile/2026/02/25/20260314_NH_H1_1.pdf) 名铁官网2026-03-14改正土休日线路时刻表。站表给出种别、发站和时刻；具体编成或系列可能混用，不以该班次保证当天车型。
-- **4000 名铁濑户线**：栄町 08:05 → 尾張瀬戸 ；官方土休日参考。[来源](https://www.meitetsu.co.jp/train/timetable/__icsFiles/afieldfile/2026/02/25/20260314_ST_H1.pdf) 名铁官网2026-03-14改正土休日线路时刻表。站表给出种别、发站和时刻；具体编成或系列可能混用，不以该班次保证当天车型。
-- **A3000 静冈清水线**：新静岡 08:00 → 新清水 ；官方土休日参考。[来源](https://train.shizutetsu.co.jp/wp-content/uploads/2025/03/01_%E6%96%B0%E9%9D%99%E5%B2%A1.pdf) 官网当前新静冈站链接PDF，2025-03-29起标准发车表，取土・日・祝日栏。普通车型运用可能变化。
-- **2000 远州铁道**：新浜松 06:00 → 西鹿島 ；官方土休日参考。[来源](https://www.entetsu.co.jp/tetsudou/english/pdf/pdf_table-fare.pdf) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **3000 伊豆箱根骏豆线**：修善寺 08:18 → 三島 ；官方每日时刻参考。[来源](https://www.izuhakone.co.jp/sunzudaiyu/sunzu-recommendation-article/p010438_d/fil/20250315_sunzu_kaise.pdf) 官网当前「骏豆线时刻表」链接，2025-03-15改正普通列车30/32，无土休日停运注记。车型运用不保证。
-- **7000 伊豆箱根骏豆线**：修善寺 08:18 → 三島 ；官方每日时刻参考。[来源](https://www.izuhakone.co.jp/sunzudaiyu/sunzu-recommendation-article/p010438_d/fil/20250315_sunzu_kaise.pdf) 官网当前「骏豆线时刻表」链接，2025-03-15改正普通列车30/32，无土休日停运注记。车型运用不保证。
-- **8000 伊豆急**：伊豆急下田 05:31 → 伊東 ；官方每日时刻参考。[来源](https://camel3.com/cms/files/izukyu/MASTER/1300/kGg2JheW.pdf) 伊豆急官网「每日运行」上行表，2026-03-14改正，第624列车。普通列车系列未指定，不保证8000系当天运用。
-- **2100 Kinme Train**：伊豆急下田 08:25 → 伊東 ；官方每日时刻参考。[来源](https://camel3.com/cms/files/izukyu/MASTER/1300/kGg2JheW.pdf) 官网每日上行表明确标作「リゾート21」第5636M列车；伊东以后转乘JR普通列车。仅凭时刻表不能保证当天一定是金目电车，可能更换其他车辆。
-- **3000 Aloha Train**：伊豆急下田 10:11 → 伊東 ；官方每日时刻参考。[来源](https://camel3.com/cms/files/izukyu/MASTER/1300/kGg2JheW.pdf) 官网每日上行表明确标作「アロハ電車」第5644M列车；伊东以后转乘JR普通列车，设备调整日可能更换其他车辆。
-- **2000 爱知环状铁道**：岡崎 06:14 → 高蔵寺 ；官方土休日参考。[来源](https://www.aikanrailway.co.jp/pdf/timetable/01okazaki_timetable.pdf) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **1000 青波线**：名古屋 11:00 → 金城ふ頭 ；官方土休日参考。[来源](https://www.aonamiline.co.jp/sys/wp-content/uploads/timetable_holidown2026.pdf) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **TH2100 天龙滨名湖**：掛川 08:18 → 新所原 ；官方每日时刻参考。[来源](https://www.tenhama.co.jp/wp-content/uploads/937378b40dcf9b17e60de8f9274a577c-2.pdf) 天浜线官网当前全体时刻表，2026-03-14改正，第915列车无土休日停运注记；具体车辆或涂装不保证。
-- **KiHa40 道南渔火**：函館 10:33 → 木古内 ；官方每日时刻参考。[来源](https://www.shr-isaribi.jp/wp-content/uploads/2016/03/16f46b99d1519556f8086abe9e60f954-1.pdf) 2026-03-14官方全线表122D，木古内11:36着。普通列车车身涂装不保证。
-- **KiHa40 Nagamare海峡号**：函館 13:36 → 木古内 ；已核对 10/25 运行日。[来源](https://www.shr-isaribi.jp/wp-content/uploads/2026/09/2613092509861c00e4f185516666497e.pdf) 10/25车辆运用表标注な9（ながまれ号）执行普通列车；这是同款车辆的日常班次，不是提供餐食的临时观光「ながまれ海峡号」。
-- **5000 札幌南北线**：麻生 06:00 → 真駒内 ；官方土休日参考。[来源](https://www.city.sapporo.jp/st/subway/route_time/h26/n01.html) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **8000 札幌东西线**：宮の沢 06:00 → 新さっぽろ ；官方土休日参考。[来源](https://www.callcenter.city.sapporo.jp/sapporo/cc/web/category153.html) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **9000 札幌东丰线**：栄町（札幌） 06:00 → 福住 ；官方土休日参考。[来源](https://www.callcenter.city.sapporo.jp/sapporo/cc/web/category153.html) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **A1200 Polaris**：電車事業所前 08:08 → 内回り ；官方土休日参考。[来源](https://www.stsp.or.jp/wp-content/uploads/2025/11/time_sc11.pdf) 采用官网2025-12-01改正土休日循环班次；时刻表公开索引可核对，官网现处维护。未承诺此班为低床车或区分Polaris／Sirius。
-- **1100 Sirius**：電車事業所前 08:08 → 内回り ；官方土休日参考。[来源](https://www.stsp.or.jp/wp-content/uploads/2025/11/time_sc11.pdf) 采用官网2025-12-01改正土休日循环班次；时刻表公开索引可核对，官网现处维护。未承诺此班为低床车或区分Polaris／Sirius。
-- **9600 函馆市电**：湯の川 09:34 → 谷地頭 ；官方土休日参考。[来源](https://www.city.hakodate.hokkaido.jp/docs/2014012100939/file_contents/teishou_holiday_20260510.pdf) 官方低床车辆土日祝时刻，不保证具体由9600系执行；其他低床车/检修代车以实际运用为准。
-- **N700 Mizuho**：博多 08:30 → 鹿児島中央 601号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0009/00090901.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **N700 Sakura**：博多 09:06 → 鹿児島中央 741号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0034/00347301.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **800 Sakura**：博多 08:40 → 鹿児島中央 403号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0034/00348901.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **800 Tsubame**：博多 08:10 → 熊本 313号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0035/00350101.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **N700S Kamome**：武雄温泉 08:28 → 長崎 5号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0019/00190701.html?c=28395&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **883 Sonic**：博多 08:20 → 大分 7号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0001/00013801.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **885 白色Sonic**：博多 08:02 → 大分 5号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0001/00013601.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **885 Relay Kamome**：博多 08:12 → 武雄温泉 9号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0019/00190801.html?c=28283&ym=202610&d=25) 10/25駅別表已确认。车辆系列运用可能替换；括号内长崎为接续新干线的去向，Relay实际终点武雄温泉。
-- **787 Relay Kamome**：博多 08:12 → 武雄温泉 9号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0019/00190801.html?c=28283&ym=202610&d=25) 10/25駅別表已确认。车辆系列运用可能替换；括号内长崎为接续新干线的去向，Relay实际终点武雄温泉。
-- **783 Midori**：博多 08:39 → 佐世保 11号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0008/00087001.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **783 Huis Ten Bosch**：博多 08:39 → ハウステンボス 11号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0008/00087001.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **787 Nichirin**：大分 08:19 → 宮崎空港 3号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0008/00088401.html?c=28742&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **787 Kirishima**：宮崎 09:20 → 鹿児島中央 5号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0004/00047401.html?c=28903&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **787 Hyuga**：宮崎 09:17 → 宮崎空港 7号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0008/00088101.html?c=28903&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **KiHa185 Yufu**：博多 12:14 → 別府 3号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0016/00168601.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **KiHa72 由布院之森**：博多 09:17 → 由布院 1号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0016/00167901.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **KiHa183 Aso Boy**：熊本 09:57 → 宮地 1号；官方时刻 · 运行日需确认。[来源](https://www.jrkyushu.co.jp/trains/asoboy/index.html) 2026-03-14改正；现行终点为宫地，已纠正旧预设的阿苏终点。需查运行日及代运公告。
-- **KiHa47 指宿玉手箱**：鹿児島中央 09:56 → 指宿 1号；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0016/00169101.html?c=29007&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **787 36plus3**：大分 10:48 → 博多 ；官方时刻 · 运行日需确认。[来源](https://www.jrkyushu-36plus3.jp/about/dia/) 采用官网2026-03-14日曜日路线：大分10:48→博多16:41。途中门司港折返；具体出行仍须核对运行日历。
-- **KiHa47 Futatsuboshi4047**：武雄温泉 10:22 → 長崎 ；官方时刻 · 运行日需确认。[来源](https://www.jrkyushu.co.jp/english/train/two_stars4047.html) 上午便，长崎本线经由；另有下午14:53长崎发大村线经由。运行日以官网日历为准。
-- **KiHa47 Kanpachi**：別府 11:00 → 博多 ；官方时刻 · 运行日需确认。[来源](https://www.jrkyushu-kanpachiichiroku.jp/info/) 周日采用同一编组反方向「いちろく」：別府11:00→博多15:47；かんぱち是周一、四、六。运行日仍按官网日历确认。
-- **813 鹿儿岛本线**：博多 08:08 → 門司港 ；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0012/00120601.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **817 福北丰线**：博多 08:03 → 直方 ；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0009/00093401.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **821 鹿儿岛本线**：博多 08:08 → 門司港 ；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0012/00120601.html?c=28283&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **815 熊本地区**：熊本 08:01 → 八代 ；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0010/00102901.html?c=28626&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **YC1 长崎地区**：長崎 10:07 → 佐世保 ；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0030/00300901.html?c=28533&ym=202610&d=25) 10/25駅別表快速シーサイドライナー；竹松起各站停，车型实际运用仍可能调整。
-- **KiHa200 大分地区**：大分 09:13 → 豊後竹田 ；已核对 10/25 运行日。[来源](https://www.jrkyushu-timetable.jp/jr-k_time/2611/0031/00312401.html?c=28742&ym=202610&d=25) 已选择10月25日；车辆运用仍可能替换。
-- **3000 西铁特急**：西鉄福岡（天神） 08:00 → 大牟田 ；官方土休日参考。[来源](https://www.nnr.co.jp/pdf/train/diagram_print/T01-2026.pdf) 官方2026-03-14土休日表。3000系／其他车型的实际运用未在站表中固定。
-- **9000 西铁急行**：西鉄福岡（天神） 09:07 → 花畑 ；官方土休日参考。[来源](https://www.nnr.co.jp/pdf/train/diagram_print/T01-2026.pdf) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **6050 西铁旅人**：太宰府 08:06 → 西鉄二日市 ；官方土休日参考。[来源](https://www.nnr.co.jp/pdf/train/diagram_print/D02-2026.pdf) 官方太宰府线普通班次。站表不承诺旅人涂装车辆执行本班，作为同线路固定参考。
-- **4000 福冈机场线**：福岡空港 08:10 → 姪浜 ；官方土休日参考。[来源](https://subway.city.fukuoka.lg.jp/pdf/daiya/kuko.pdf) 采用官方土休日站表的一班线路参考；本时刻表不保证具体车型当天运用。
-- **3000 福冈七隈线**：橋本 06:00 → 博多 ；官方土休日参考。[来源](https://subway.city.fukuoka.lg.jp/pdf/daiya/hashimoto.pdf) 选用该线路的一班实际列车作固定参考；通勤车型及混用车辆的具体运用不保证。
-- **03 熊本电铁**：御代志 08:11 → 藤崎宮前 ；官方土休日参考。[来源](https://www.kumamotodentetsu.co.jp/train/search/station.php?st=18) 御代志站官网日曜祝日栏8:11，终点藤崎宫前。具体03系配车未公布。
-- **HSOR100 肥萨橙铁**：八代 07:58 → 川内 ；官方每日时刻参考。[来源](https://www.hs-orange.com/station/uploadfiles/D011_下り.pdf) 2026-07-01第2版官方普通列车时刻；取橙色「おれんじ八代」发车栏，非JR八代到达时间；临时停运以公告为准。
-- **MT4000 南阿苏铁道**：高森 10:28 → 立野 ；官方每日时刻参考。[来源](https://www.mt-torokko.com/information/timetable/) 2026-03-14官方普通8列车，高森10:28→立野10:59。时刻表未指定MT4000系列。
+| 车辆／服务 | 记录数 | 完整度 | 实际范围 |
+|---|---:|---|---|
+| 50000 岛风 (`kt50000-shimakaze`) | 6 | 所列范围全天 | 官网所列各出发站与方向・土休日／周日全日表 |
+| 16200 青之交响曲 (`kt16200-symphony`) | 4 | 所列范围全天 | 官网所列各出发站与方向・土休日／周日全日表 |
+| 19200 青丹吉 (`kt19200-aoniyoshi`) | 8 | 所列范围全天 | 官网所列各出发站与方向・土休日／周日全日表 |
+| 近铁 80000 火鸟 (`kintetsu-hinotori`) | 46 | 所列范围全天 | 2026-03-14改正・掲載土休日特急・両方向・掲載始発駅全天 |
+| 9300 阪急京都线 (`hk9300`) | 74 | 所列范围全天 | 大阪梅田・ky線・特急・土休日全天 |
+| 2300 阪急 PRiVACE (`hk2300`) | 74 | 所列范围全天 | 大阪梅田・ky線・特急・土休日全天 |
+| 1300 阪急京都线 (`hk1300`) | 52 | 所列范围全天 | 大阪梅田・ky線・準急・土休日全天 |
+| 1000 阪急神户线 (`hk1000-kobe`) | 90 | 所列范围全天 | 大阪梅田・ko線・特急・土休日全天 |
+| 9000 阪急宝塚线 (`hk9000-takarazuka`) | 97 | 所列范围全天 | 大阪梅田・ta線・急行・土休日全天 |
+| 7000 京 TRAIN 雅洛 (`hk7000-garaku`) | 4 | 所列范围全天 | 官网所列各出发站与方向・土休日／周日全日表 |
+| 225 新快速 (`225-shinkaisoku`) | 62 | 所列范围全天 | 大阪駅・姫路方面・新快速・2026-10-25全天 |
+| 223 新快速 (`223-shinkaisoku`) | 62 | 所列范围全天 | 大阪駅・姫路方面・新快速・2026-10-25全天 |
+| 321 JR京都・神户线 (`321-kyoto`) | 142 | 所列范围全天 | 大阪駅・京都方面・普通・2026-10-25全天 |
+| 207 JR宝塚线 (`207-takarazuka`) | 68 | 所列范围全天 | 大阪駅・新三田方面・普通・2026-10-25全天 |
+| 225 纪州路快速 (`225-kishuji`) | 54 | 所列范围全天 | 大阪駅・和歌山方面・紀州路快速・2026-10-25全天 |
+| 323 JR梦咲线 (`323-yumesaki`) | 37 | 所列范围全天 | 大阪駅・桜島方面・普通・2026-10-25全天 |
+| 221 嵯峨野线 (`221-sagano`) | 66 | 所列范围全天 | 京都駅・園部方面・普通・2026-10-25全天 |
+| 207 学研都市・东西线 (`207-gakkentoshi`) | 67 | 所列范围全天 | 京橋駅・同志社前方面・快速・2026-10-25全天 |
+| 683 雷鸟 Thunderbird (`683-thunderbird`) | 27 | 所列范围全天 | 新大阪駅・敦賀方面・特急サンダーバード・2026-10-25全天 |
+| 281 遥 Haruka (`281-haruka`) | 30 | 所列范围全天 | 新大阪駅・関西空港方面・関空特急はるか・2026-10-25全天 |
+| 287 黑潮 Kuroshio (`287-kuroshio`) | 18 | 所列范围全天 | 新大阪駅・白浜方面・特急くろしお・2026-10-25全天 |
+| 289 白鹳 Kounotori (`289-kounotori`) | 14 | 所列范围全天 | 大阪駅・城崎温泉方面・特急こうのとり・2026-10-25全天 |
+| 287 城崎 Kinosaki (`287-kinosaki`) | 9 | 所列范围全天 | 京都駅・城崎温泉方面・特急きのさき・2026-10-25全天 |
+| 273 八云 Yakumo (`273-yakumo`) | 15 | 所列范围全天 | 岡山駅・出雲市方面・特急やくも・2026-10-25全天 |
+| 221 大和路快速 (`221-yamatoji`) | 54 | 所列范围全天 | 大阪駅・奈良方面・大和路快速・2026-10-25全天 |
+| 227 广岛地区 (`227-hiroshima`) | 78 | 所列范围全天 | 広島駅・岩国方面・普通・2026-10-25全天 |
+| 205 奈良线 (`205-nara`) | 67 | 所列范围全天 | 京都駅・奈良方面・普通・2026-10-25全天 |
+| N700 Mizuho (`ky-n700-mizuho`) | 16 | 所列范围全天 | 博多駅・みずほ・掲載方向・2026-10-25全天 |
+| N700 瑞穗 Mizuho (`n700-mizuho`) | 16 | 所列范围全天 | 博多駅・みずほ・掲載方向・2026-10-25全天 |
+| N700 Sakura (`ky-n700-sakura`) | 44 | 所列范围全天 | 博多駅・さくら・掲載方向・2026-10-25全天 |
+| N700 樱 Sakura (`n700-sakura`) | 44 | 所列范围全天 | 博多駅・さくら・掲載方向・2026-10-25全天 |
+| 800 Sakura (`ky800-sakura`) | 44 | 所列范围全天 | 博多駅・さくら・掲載方向・2026-10-25全天 |
+| 800 Tsubame (`ky800-tsubame`) | 21 | 所列范围全天 | 博多駅・つばめ・掲載方向・2026-10-25全天 |
+| N700S Kamome (`ky-n700s-kamome`) | 26 | 所列范围全天 | 武雄温泉駅・かもめ・掲載方向・2026-10-25全天 |
+| 883 Sonic (`ky883-sonic`) | 32 | 所列范围全天 | 博多駅・ソニック・掲載方向・2026-10-25全天 |
+| 885 白色Sonic (`ky885-sonic`) | 32 | 所列范围全天 | 博多駅・ソニック・掲載方向・2026-10-25全天 |
+| 885 Relay Kamome (`ky885-relay`) | 24 | 所列范围全天 | 博多駅・リレーかもめ・掲載方向・2026-10-25全天 |
+| 787 Relay Kamome (`ky787-relay`) | 24 | 所列范围全天 | 博多駅・リレーかもめ・掲載方向・2026-10-25全天 |
+| 783 Midori (`ky783-midori`) | 13 | 所列范围全天 | 博多駅・みどり・掲載方向・2026-10-25全天 |
+| 783 Huis Ten Bosch (`ky783-htb`) | 7 | 所列范围全天 | 博多駅・ハウステンボス・掲載方向・2026-10-25全天 |
+| 787 Nichirin (`ky787-nichirin`) | 9 | 所列范围全天 | 大分駅・にちりん・掲載方向・2026-10-25全天 |
+| 787 Hyuga (`ky787-hyuga`) | 14 | 所列范围全天 | 宮崎駅・ひゅうが・掲載方向・2026-10-25全天 |
+| KiHa183 Aso Boy (`ky183-asoboy`) | 2 | 所列范围全天 | 熊本発あそぼーい！・宮地方面・2026-10-25全天 |
+| KiHa47 Futatsuboshi4047 (`ky47-4047`) | 2 | 所列范围全天 | 官网所列各出发站与方向・土休日／周日全日表 |
+| KiHa47 Kanpachi (`ky47-kanpachi`) | 1 | 所列范围全天 | 官网所列各出发站与方向・土休日／周日全日表 |
+| KiHa72 由布院之森 (`ky72-yufuin`) | 3 | 所列范围全天 | 博多駅・ゆふいんの森・掲載方向・2026-10-25全天 |
+| 5000 札幌南北线 (`sp5000`) | 151 | 所列范围全天 | 麻生→真駒内 / 全部列车 / 官网现行土曜日曜日祝日 |
+| 8000 札幌东西线 (`sp8000`) | 148 | 所列范围全天 | 宮の沢→新さっぽろ / 全部列车 / 官网现行土曜日曜日祝日 |
+| 9000 札幌东丰线 (`sp9000`) | 140 | 所列范围全天 | 栄町（札幌）→福住 / 全部列车 / 官网现行土曜日曜日祝日 |
+| 2000 爱知环状铁道 (`ak2000`) | 64 | 所列范围全天 | 冈崎站往高藏寺方向全部班次，含深夜濑户口/北野桝塚/新丰田短线；2026-03-14改正标准表 |
+| 1000 青波线 (`an1000`) | 73 | 所列范围全天 | 名古屋→金城埠头，2026现行土休日全部普通 |
+| 2000 远州铁道 (`et2000`) | 83 | 所列范围全天 | 西鹿岛→新滨松，上行标准表全部列车；官网2025-03-03起，编成随曜日变化 |
+| 3000 福冈七隈线 (`fk3000`) | 151 | 所列范围全天 | 橋本→博多 / 七隈线各站停车 / 2026-04-01土休日 |
+| 5000 Keio Liner (`ko5000-liner`) | 24 | 所列范围全天 | 新宿发京王ライナー／Mt.TAKAO号全天，2026-10-25 |
+| E233 京滨东北线 (`e233-keihin`) | 430 | 所列范围全天 | 東京駅・京浜東北・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E233 上野东京 (`e233-ueno-tokyo`) | 118 | 所列范围全天 | 東京駅・上野東京ライン(宇都宮・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E235 山手线 (`e235-yamanote`) | 501 | 所列范围全天 | 東京駅・山手線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E235 横须贺线 (`e235-yokosuka`) | 92 | 所列范围全天 | 東京駅・横須賀線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E235 总武快速线 (`e235-sobu`) | 115 | 所列范围全天 | 東京駅・総武線快速・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E233 中央线快速 (`e233-chuo`) | 248 | 所列范围全天 | 東京駅・中央線快速・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E231 中央总武各停 (`e231-sobu`) | 412 | 所列范围全天 | 新宿駅・中央・総武線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E233 埼京川越线 (`e233-saikyo`) | 239 | 所列范围全天 | 新宿駅・埼京線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E233 京叶线 (`e233-keiyo`) | 134 | 所列范围全天 | 東京駅・京葉線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・武蔵野線系統は除外、外房/内房直通含む・土曜休日、2026/10/25運行カレンダー |
+| E233 南武线 (`e233-nambu`) | 161 | 所列范围全天 | 川崎駅・南武線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E233 横滨线 (`e233-yokohama`) | 256 | 所列范围全天 | 橋本駅・横浜線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E531 常磐线 (`e531-joban`) | 59 | 所列范围全天 | 上野駅・常磐線快速・掲載方向全部・普通・特別快速（E231系快速は別預設）・土曜休日、2026/10/25運行カレンダー |
+| E231 常磐快速线 (`e231-joban`) | 75 | 所列范围全天 | 上野駅・常磐線快速・掲載方向全部・快速（E531系普通・特別快速は別預設）・土曜休日、2026/10/25運行カレンダー |
+| E233 东海道线 (`e233-tokaido`) | 123 | 所列范围全天 | 東京駅・東海道線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・常磐線からの品川終着直通は除外・土曜休日、2026/10/25運行カレンダー |
+| E233 宇都宫线 (`e233-utsunomiya`) | 69 | 所列范围全天 | 上野駅・宇都宮線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E233 高崎线 (`e233-takasaki`) | 69 | 所列范围全天 | 上野駅・高崎線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E233 湘南新宿线 (`e233-shonan`) | 128 | 所列范围全天 | 新宿駅・湘南新宿ライン・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E231 武藏野线 (`e231-musashino`) | 58 | 所列范围全天 | 東京駅・京葉線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・西船橋経由、府中本町/東所沢/西船橋終着の武蔵野線系統・土曜休日、2026/10/25運行カレンダー |
+| E131 相模线 (`e131-sagami`) | 56 | 所列范围全天 | 橋本駅・相模線・掲載方向全部・全無料種別（普通・快速・中央/青梅特快・特別快速等、收费特急除外）・土曜休日、2026/10/25運行カレンダー |
+| E353 梓 Azusa (`e353-azusa`) | 19 | 所列范围全天 | 新宿駅・中央本線・掲載両方向・種別記号 あ・土曜休日、10/25運行カレンダー |
+| E353 甲斐路 Kaiji (`e353-kaiji`) | 14 | 所列范围全天 | 新宿駅・中央本線・掲載両方向・種別記号 か・土曜休日、10/25運行カレンダー |
+| E353 富士回游 (`e353-fuji`) | 5 | 所列范围全天 | 新宿駅・中央本線・掲載両方向・種別記号 富・土曜休日、10/25運行カレンダー |
+| E657 日立 Hitachi (`e657-hitachi`) | 15 | 所列范围全天 | 東京駅・上野東京ライン(常磐線)・掲載両方向・種別記号 ひ・土曜休日、10/25運行カレンダー |
+| E657 常磐 Tokiwa (`e657-tokiwa`) | 18 | 所列范围全天 | 東京駅・上野東京ライン(常磐線)・掲載両方向・種別記号 と・土曜休日、10/25運行カレンダー |
+| E259 成田特快 N’EX (`e259-nex`) | 27 | 所列范围全天 | 東京駅・成田エクスプレス・成田空港方面・種別記号 NEX・土曜休日、10/25運行カレンダー |
+| E257 踊子 (`e257-odoriko`) | 6 | 所列范围全天 | 東京駅・東海道線・掲載両方向・種別記号 踊・土曜休日、10/25運行カレンダー |
+| E261 蓝宝石踊子 (`e261-saphir`) | 1 | 所列范围全天 | 東京駅・東海道線・掲載両方向・種別記号 S踊・土曜休日、10/25運行カレンダー |
+| E257 草津四万 (`e257-kusatsu`) | 3 | 所列范围全天 | 上野駅・高崎線・掲載両方向・種別記号 草四・土曜休日、10/25運行カレンダー |
+| E5 Hayabusa (`e5-hayabusa`) | 35 | 所列范围全天 | 東京駅・東北・北海道・掲載両方向・種別記号 はぶ・土曜休日、10/25運行カレンダー |
+| E6 Komachi (`e6-komachi`) | 20 | 所列范围全天 | 東京駅・秋田新幹線・掲載両方向・種別記号 こ・土曜休日、10/25運行カレンダー |
+| E5 山彦 Yamabiko (`e5-yamabiko`) | 43 | 所列范围全天 | 東京駅・東北・北海道・掲載両方向・種別記号 や・土曜休日、10/25運行カレンダー |
+| E5 那须野 Nasuno (`e5-nasuno`) | 14 | 所列范围全天 | 東京駅・東北・北海道・掲載両方向・種別記号 な・土曜休日、10/25運行カレンダー |
+| E7 光辉 Kagayaki (`e7-kagayaki`) | 20 | 所列范围全天 | 東京駅・北陸新幹線・掲載両方向・種別記号 か・土曜休日、10/25運行カレンダー |
+| E7 白鹰 Hakutaka (`e7-hakutaka`) | 15 | 所列范围全天 | 東京駅・北陸新幹線・掲載両方向・種別記号 は・土曜休日、10/25運行カレンダー |
+| E7 浅间 Asama (`e7-asama`) | 20 | 所列范围全天 | 東京駅・北陸新幹線・掲載両方向・種別記号 あ・土曜休日、10/25運行カレンダー |
+| E7 朱鹭 Toki (`e7-toki`) | 27 | 所列范围全天 | 東京駅・上越新幹線・掲載両方向・種別記号 と・土曜休日、10/25運行カレンダー |
+| E7 谷川 Tanigawa (`e7-tanigawa`) | 10 | 所列范围全天 | 東京駅・上越新幹線・掲載両方向・種別記号 た・土曜休日、10/25運行カレンダー |
+| E8 翼 Tsubasa (`e8-tsubasa`) | 20 | 所列范围全天 | 東京駅・山形新幹線・掲載両方向・種別記号 つ・土曜休日、10/25運行カレンダー |
+| N700S のぞみ (`n700s-nozomi`) | 153 | 所列范围全天 | 東京駅・東海道・山陽・掲載両方向・種別記号 の・土曜休日、10/25運行カレンダー |
+| N700S ひかり (`n700s-hikari`) | 31 | 所列范围全天 | 東京駅・東海道・山陽・掲載両方向・種別記号 ひ・土曜休日、10/25運行カレンダー |
+| N700S こだま (`n700s-kodama`) | 36 | 所列范围全天 | 東京駅・東海道・山陽・掲載両方向・種別記号 こ・土曜休日、10/25運行カレンダー |
+| N700A のぞみ (`n700a-nozomi`) | 153 | 所列范围全天 | 東京駅・東海道・山陽・掲載両方向・種別記号 の・土曜休日、10/25運行カレンダー |
+| N700A ひかり (`n700a-hikari`) | 31 | 所列范围全天 | 東京駅・東海道・山陽・掲載両方向・種別記号 ひ・土曜休日、10/25運行カレンダー |
+| N700A こだま (`n700a-kodama`) | 36 | 所列范围全天 | 東京駅・東海道・山陽・掲載両方向・種別記号 こ・土曜休日、10/25運行カレンダー |
+| W7 光辉 Kagayaki (`w7-kagayaki`) | 20 | 所列范围全天 | 東京駅・北陸新幹線・掲載両方向・種別記号 か・土曜休日、10/25運行カレンダー |
+| H5 隼 Hayabusa (`h5-hayabusa`) | 10 | 所列范围全天 | 東京駅・東北・北海道・掲載両方向・種別記号 はぶ・土曜休日、10/25運行カレンダー |
+| 285 Sunrise 出云 (`285-sunrise-izumo`) | 1 | 所列范围全天 | 東京駅・東海道線・掲載両方向・種別記号 サ出・土曜休日、10/25運行カレンダー |
+| 285 Sunrise 濑户 (`285-sunrise-seto`) | 1 | 所列范围全天 | 東京駅・東海道線・掲載両方向・種別記号 サ瀬・土曜休日、10/25運行カレンダー |
+| H5 疾风 Hayate (`h5-hayate`) | 2 | 所列范围全天 | 新青森駅・東北・北海道・掲載両方向・種別記号 はて・土曜休日、10/25運行カレンダー |
+| 813 鹿儿岛本线 (`ky813`) | 32 | 所列范围全天 | 博多駅・鹿児島本線・掲載方向・2026-10-25全天 |
+| 821 鹿儿岛本线 (`ky821`) | 32 | 所列范围全天 | 博多駅・鹿児島本線・掲載方向・2026-10-25全天 |
+| 817 福北丰线 (`ky817`) | 54 | 所列范围全天 | 博多駅・篠栗線・掲載方向・2026-10-25全天 |
+| 815 熊本地区 (`ky815`) | 97 | 所列范围全天 | 熊本駅・鹿児島本線・掲載方向・2026-10-25全天 |
+| KiHa200 大分地区 (`ky200`) | 34 | 所列范围全天 | 大分駅・豊肥本線・掲載方向・2026-10-25全天 |
+| KiHa185 Yufu (`ky185-yufu`) | 3 | 所列范围全天 | 博多駅・ゆふ・掲載方向・2026-10-25全天 |
+| 787 Kirishima (`ky787-kirishima`) | 9 | 所列范围全天 | 宮崎駅・きりしま・掲載方向・2026-10-25全天 |
+| KiHa47 指宿玉手箱 (`ky47-ibutama`) | 3 | 所列范围全天 | 鹿児島中央駅・指宿のたまて箱・掲載方向・2026-10-25全天 |
+| 789 丁香 Lilac (`789-lilac`) | 13 | 所列范围全天 | 札幌駅発・ライラック・2026-10-25全天・掲載方向 |
+| 789 神威 Kamui (`789-kamui`) | 8 | 所列范围全天 | 札幌駅発・カムイ・2026-10-25全天・掲載方向 |
+| 261 北斗 Hokuto (`261-hokuto`) | 11 | 所列范围全天 | 札幌駅発・北斗・2026-10-25全天・掲載方向 |
+| 261 大空 Ozora (`261-ozora`) | 6 | 所列范围全天 | 札幌駅発・おおぞら・2026-10-25全天・掲載方向 |
+| 261 十胜 Tokachi (`261-tokachi`) | 5 | 所列范围全天 | 札幌駅発・とかち・2026-10-25全天・掲載方向 |
+| 733 快速 Airport (`733-airport`) | 110 | 所列范围全天 | 札幌駅発・エアポート・2026-10-25全天・掲載方向 |
+| 733 函馆 Liner (`733-hakodate`) | 17 | 所列范围全天 | 函館駅発・はこだてライナー・2026-10-25全天・掲載方向 |
+| N100 SPACIA X (`tb-n100`) | 6 | 所列范围全天 | 浅草发スペーシア X・土休日・下り全天 |
+| 100 SPACIA (`tb100-spacia`) | 7 | 所列范围全天 | 浅草发スペーシア・土休日・下り全天 |
+| 500 Revaty Kegon (`tb500-kegon`) | 11 | 所列范围全天 | 浅草发リバティけごん・土休日・下り全天 |
+| 500 Revaty Aizu (`tb500-aizu`) | 4 | 所列范围全天 | 浅草发リバティ会津・土休日・下り全天 |
+| 50090 TJ Liner (`tb50090-tj`) | 14 | 所列范围全天 | TJライナー土休日上下双向全部，森林公園→池袋／池袋→小川町 |
+| 70090 TH Liner (`tb70090-th`) | 7 | 所列范围全天 | THライナー土休日上下双向全7班 |
+| 001 Laview Chichibu (`sb001-laview`) | 29 | 所列范围全天 | 池袋发特急ちちぶ・むさし，土休日全天 |
+| 10000 New Red Arrow (`sb10000-koedo`) | 50 | 所列范围全天 | 西武新宿↔本川越、特急小江戸、土休日上下全50班 |
+| 70000 GSE Hakone (`od70000-gse`) | 12 | 所列范围全天 | 新宿发・土休日下行・官方G车种标记和▲可变车种班次全天 |
+| 60000 MSE Metro Hakone (`od60000-mse`) | 7 | 所列范围全天 | 北千住站千代田線→小田急、全日メトロロマンスカー（含併结えのしま） |
+| 30000 EXEα Hakone (`od30000-exe`) | 39 | 所列范围全天 | 新宿发・土休日下行・官方E车种标记和▲可变车种班次全天 |
+| 1000 銀座線 (`tm1000-g`) | 303 | 所列范围全天 | 浅草发銀座線、渋谷方面、2026-10-25全天（含短线及午夜后末班） |
+| E233 常磐线各停 (`e233-joban-local`) | 52 | 所列范围全天 | 綾瀬発・掲載方向の普通・該当車種記号全日・土休日 |
+| 21000 Urban Liner Plus (`kt21000-urban`) | 34 | 所列范围全天 | 2026-03-14改正・掲載土休日特急・両方向・掲載始発駅全天 |
+| 21020 Urban Liner Next (`kt21020-urban`) | 34 | 所列范围全天 | 2026-03-14改正・掲載土休日特急・両方向・掲載始発駅全天 |
+| 23000 伊势志摩 Liner (`kt23000-iseshima`) | 12 | 所列范围全天 | 2026-03-14改正・掲載土休日特急・両方向・掲載始発駅全天 |
+| 30000 Vista EX (`kt30000-vista`) | 32 | 所列范围全天 | 2026-03-14改正・掲載土休日特急・両方向・掲載始発駅全天 |
+| 22600 Ace (`kt22600-ace`) | 23 | 所列范围全天 | 2026-03-14改正・掲載土休日特急・両方向・掲載始発駅全天 |
+| 26000 樱 Liner (`kt26000-sakura`) | 12 | 所列范围全天 | 2026-03-14改正・掲載土休日特急・両方向・掲載始発駅全天 |
+| KiHa40 道南渔火 (`is-kiha40`) | 31 | 所列范围全天 | 函館・木古内・上磯两方向全部普通 / 2026-10-25车辆运用表 |
+| 787 36plus3 (`ky787-36plus3`) | 1 | 所列范围全天 | 官网所列各出发站与方向・土休日／周日全日表 |
+| 03 熊本电铁 (`kd03`) | 32 | 所列范围全天 | 御代志→藤崎宮前・北熊本 / 普通 / 官方日曜祝日站表 |
+| MT4000 南阿苏铁道 (`ma4000`) | 22 | 所列范围全天 | 高森⇄立野（含普通直通肥後大津） / 每日固定普通班次；排除观光/条件8002・8003 / 2026-03-14 |
+| 近铁 8A 天理线 (`kintetsu-8a`) | 78 | 所列范围全天 | 平端駅・天理方面・一般列車・土休日全天 |
+| 5800 奈良线 L/C (`kt5800-nara`) | 158 | 所列范围全天 | 近鉄奈良駅・大阪難波方面・一般列車・土休日全天 |
+| 5820 大阪线 L/C (`kt5820-osaka`) | 191 | 所列范围全天 | 大阪上本町駅・伊勢中川方面・一般列車・土休日全天 |
+| 9820 Series 21 (`kt9820-nara`) | 256 | 所列范围全天 | 大阪難波駅・近鉄奈良方面・一般列車・土休日全天 |
+| 789 超级白鸟 (`789-hakucho`) | 1 | 周日无运行／历史 | 已停运；保留官方历史班次参考 |
+| E257 湘南 (`e257-shonan`) | 1 | 周日无运行／历史 | 2026-10-25周日不运行；保留官方其他运行日参考 |
+| E257 赤城 Akagi (`e257-akagi`) | 1 | 周日无运行／历史 | 2026-10-25周日不运行；保留官方其他运行日参考 |
+| YC1 长崎地区 (`ky-yc1`) | 43 | 所列范围全天 | 長崎駅・・掲載方向・2026-10-25全天 |
+| 寝台特急 北斗星 (`hokutosei`) | 1 | 周日无运行／历史 | 已停运；保留官方历史班次参考 |
+| HC85 飞驒 Hida (`hc85-hida`) | 10 | 所列范围全天 | 名古屋发往高山・飞驒古川・富山，ひだ全部定期下行；2026年3月改正土休日 |
+| HC85 南纪 Nanki (`hc85-nanki`) | 4 | 所列范围全天 | 名古屋发往纪伊胜浦・新宫，南紀全部定期下行；平休日共表 |
+| 383 信浓 Shinano (`383-shinano`) | 13 | 所列范围全天 | 名古屋发往长野，しなの全部定期下行；2026年3月改正土休日 |
+| 315 中央本线 (`315-chuo`) | 131 | 所列范围全天 | 名古屋发往多治见・中津川方向，普通・快速・区间快速全部；2026年3月改正土休日 |
+| 315 东海道名古屋地区 (`315-tokaido`) | 73 | 所列范围全天 | 名古屋发往岐阜・大垣・米原方向，普通全部；2026年3月改正土休日 |
+| 313 东海道新快速 (`313-tokaido`) | 35 | 所列范围全天 | 名古屋发往岐阜・大垣・米原方向，新快速全部；2026年3月改正土休日 |
+| 315 东海道静冈地区 (`315-shizuoka`) | 88 | 所列范围全天 | 静冈发往兴津・沼津・热海方向，普通全部；2026年3月改正土休日 |
+| 315 关西本线名古屋地区 (`315-kansai`) | 64 | 所列范围全天 | 名古屋发往四日市・龟山方向，普通・快速・区间快速全部（不含快速みえ）；平休日共表 |
+| 2000 名铁 μSKY (`meitetsu2000`) | 30 | 所列范围全天 | 名铁名古屋发往中部国际机场：全部μSKY；2026-03-14改正土休日 |
+| 2200 名铁特急 (`meitetsu2200`) | 27 | 所列范围全天 | 名铁名古屋发往中部国际机场：全部特急（不含μSKY）；2026-03-14改正土休日 |
+| 1200 Panorama super (`mt1200`) | 62 | 所列范围全天 | 名铁名古屋发往名铁岐阜：全部特急；2026-03-14改正土休日 |
+| 9500 名铁通勤 (`mt9500`) | 76 | 所列范围全天 | 名铁名古屋发往枇杷岛分岔方向：全部急行/快速急行，含一宫・岐阜・弥富等终点；2026-03-14改正土休日 |
+| 3500 名铁通勤 (`mt3500`) | 97 | 所列范围全天 | 名铁名古屋发往枇杷岛分岔方向：全部普通/准急，含岩仓・犬山・佐屋等终点；2026-03-14改正土休日 |
+| 4000 名铁濑户线 (`mt4000-seto`) | 110 | 所列范围全天 | 荣町发往尾张濑户方向：普通/准急/急行全部，含尾张旭及喜多山短线；2026-03-14改正土休日 |
+| A3000 静冈清水线 (`sz-a3000`) | 112 | 所列范围全天 | 新静冈→新清水，土日祝日全部普通；2025-03-29起官网当前标准表 |
+| 3000 伊豆箱根骏豆线 (`iz3000`) | 60 | 所列范围全天 | 修善寺→三岛，土休日全部普通始发；不含大场始发及踊り子；官网2025-03-15改正表 |
+| 7000 伊豆箱根骏豆线 (`iz7000`) | 60 | 所列范围全天 | 修善寺→三岛，土休日全部普通始发；不含大场始发及踊り子；官网2025-03-15改正表 |
+| 8000 伊豆急 (`iq8000`) | 22 | 所列范围全天 | 伊豆急下田发往伊豆高原/伊东，全部未标R21/Aloha/特急专名的普通；2026-03-14改正每日表 |
+| 2100 Kinme Train (`iq2100-kinme`) | 3 | 所列范围全天 | 每日上行表全部明确リゾート21的3班，含伊豆高原始发；仅收伊豆急线内区间 |
+| 3000 Aloha Train (`iq3000`) | 3 | 所列范围全天 | 每日上行表全部明确アロハ電車的3班，含伊豆高原始发2班和独立JR伊东线伊东始发1班 |
+| TH2100 天龙滨名湖 (`th2100`) | 28 | 所列范围全天 | 挂川发往天竜二俣/新所原方向全部28班，2026-03-14改正标准表；不复制途中始发班次 |
+| 300 江之电 (`en300`) | 76 | 所列范围全天 | 藤沢発・鎌倉方面（含江ノ島／極楽寺短线）全天 |
+| 30000 Smile Train (`sb30000`) | 260 | 所列范围全天 | 池袋→所沢・飯能方面、土休日、一般列车全种别全天 |
+| 2100 京急快特 (`kk2100`) | 95 | 所列范围全天 | 泉岳寺站京急本線、三崎口／京急久里浜／逗子方面（机场线除外）全种别全天 |
+| 2100 Wing号 (`kk2100-wing`) | 15 | 所列范围全天 | 土休日ウィング・シート上下双向全部15班 |
+| 3000 Allegra (`hk3000-tozan`) | 138 | 所列范围全天 | 箱根湯本→強羅／強羅→箱根湯本、土休日全日双向 |
+| 6500 都营三田线 (`te6500`) | 350 | 所列范围全天 | 三田站都営三田線、目黒与西高島平双向全天 |
+| 3020 目黑线 (`mg3020`) | 217 | 所列范围全天 | 目黒站東急目黒線、日吉／新横浜／相鉄方面全种别全天 |
+| 5500 都营浅草线 (`te5500`) | 425 | 所列范围全天 | 押上站都営浅草線、西馬込／京急方面与京成方面双向全天 |
+| 1000 京急机场线 (`kk1000-airport`) | 99 | 所列范围全天 | 押上站浅草線→京急空港線、羽田空港方面全种别全天 |
+| AE Skyliner (`ks-ae`) | 41 | 所列范围全天 | 京成上野発スカイライナー，土休日全天 |
+| 3000 京成本线 (`ks3000`) | 171 | 所列范围全天 | 京成上野发京成本线一般列车，全种别土休日全天 |
+| 3100 Access特急 (`ks3100`) | 27 | 所列范围全天 | 京成高砂→成田空港方面アクセス特急，土休日全天 |
+| 5000 小田急快速急行 (`od5000`) | 333 | 所列范围全天 | 代々木上原站小田急線、小田原／片瀬江ノ島方面一般列车全种别全天 |
+| 4000 小田急急行 (`od4000`) | 333 | 所列范围全天 | 代々木上原站小田急線、小田原／片瀬江ノ島方面一般列车全种别全天 |
+| 200 两毛 (`tb200-ryomo`) | 13 | 所列范围全天 | 浅草发りょうもう・土休日・下り全天 |
+| 40000 S-TRAIN (`sb40000-strain`) | 5 | 所列范围全天 | S-TRAIN土休日上下双向全部5班 |
+| 9000 京王特急 (`ko9000`) | 264 | 所列范围全天 | 新宿・下り・全種別（收费ライナー另列）全天，2026-10-25 |
+| 1000 井之头线 (`in1000`) | 267 | 所列范围全天 | 渋谷・下り・全種別（收费ライナー另列）全天，2026-10-25 |
+| TX-3000 筑波快线 (`tx3000`) | 186 | 所列范围全天 | 秋葉原・下り・全種別（收费ライナー另列）全天，2026-10-25 |
+| 12000 相铁JR直通 (`so12000`) | 46 | 所列范围全天 | 新宿发JR埼京線→相鉄線直通、海老名方面、2026-10-25全天46班 |
+| 21000 相铁目黑直通 (`so21000`) | 43 | 所列范围全天 | 目黒站目黒線→相鉄直通、海老名／湘南台方面全天 |
+| 20000 相铁东横直通 (`so20000`) | 35 | 所列范围全天 | 渋谷站東横線→相鉄直通、海老名／湘南台方面全天 |
+| 9000 南北線 (`tm9000-n`) | 103 | 所列范围全天 | 目黒站南北線、赤羽岩淵・浦和美園方面全天 |
+| 5050 东横线 (`ty5050`) | 319 | 所列范围全天 | 渋谷站東横線、元町・中華街／相鉄方面、一般列车全种别全天 |
+| 2020 田园都市线 (`dt2020`) | 216 | 所列范围全天 | 渋谷站田園都市線、中央林間方面全种别全天 |
+| 50050 东武通勤 (`tb50050`) | 89 | 所列范围全天 | 渋谷站半蔵門線→東武スカイツリーライン直通、久喜／南栗橋方面全天 |
+| 18000 半蔵門線 (`tm18000-z`) | 209 | 所列范围全天 | 渋谷站半蔵門線、押上・東武方面全天 |
+| 17000 副都心線 (`tm17000-f`) | 238 | 所列范围全天 | 渋谷站副都心線、和光市方面全天（含東武／西武直通及S-TRAIN） |
+| 6020 大井町线 (`om6020`) | 38 | 所列范围全天 | 大井町发・溝の口／田園都市線直通方面、日曜・祝日急行全38班（2026-03-14改正） |
+| 50000 Rapi:t (`nk50000-rapit`) | 33 | 所列范围全天 | なんば→関西空港 / ラピートα・β / 2024-12-21土休日 |
+| 12000 Southern (`nk12000-southern`) | 34 | 所列范围全天 | なんば→和歌山市・和歌山港 / サザン / 2024-12-21土休日 |
+| 8300 南海机场急行 (`nk8300-airport`) | 64 | 所列范围全天 | なんば→関西空港 / 空港急行 / 2024-12-21土休日 |
+| 323 大阪环状线 (`323-loop`) | 80 | 所列范围全天 | 大阪駅・大阪環状線方面・普通・2026-10-25全天 |
+| 223 关空快速 (`223-kanku`) | 59 | 所列范围全天 | 大阪駅・関西空港方面・関空快速・2026-10-25全天 |
+| 3000 西铁特急 (`nt3000`) | 32 | 所列范围全天 | 西鉄福岡（天神）→大牟田 / 特急 / 2026-03-14土休日 |
+| 9000 西铁急行 (`nt9000`) | 56 | 所列范围全天 | 西鉄福岡（天神）→各终点 / 急行 / 2026-03-14土休日 |
+| 6050 西铁旅人 (`nt6050-tabito`) | 73 | 所列范围全天 | 太宰府→西鉄二日市・西鉄小郡 / 普通 / 2026-03-14土休日 |
+| 4000 福冈机场线 (`fk4000`) | 67 | 所列范围全天 | 福岡空港→姪浜 / 黑字姪浜终着各站停车（JR贯通另列） / 2026-04-01土休日 |
+| 8000 京阪特急 (`kh8000`) | 52 | 所列范围全天 | 淀屋橋→出町柳等 / 8辆2门8000系栏全部种别 / 2026-08-22土休日 |
+| 3000 京阪快速急行 (`kh3000`) | 34 | 所列范围全天 | 淀屋橋→出町柳等 / 8辆3门Premium Car 3000系栏全部种别 / 2026-08-22土休日 |
+| 13000 京阪本线 (`kh13000-main`) | 4 | 所列范围全天 | 淀屋橋→出町柳・萱島等 / 普通全部班次（车型混用） / 2026-08-22土休日 |
+| 13000 宇治线 (`kh13000-uji`) | 89 | 所列范围全天 | 中書島→宇治 / 普通 / 2026-08-22土休日 |
+| 8000 阪神直通特急 (`hs8000`) | 69 | 所列范围全天 | 大阪梅田→神戸・姫路方向各终点 / 直通特急 / 2025-02-22土休日 |
+| 5700 阪神普通 (`hs5700`) | 106 | 所列范围全天 | 大阪梅田→神戸・姫路方向各终点 / 普通 / 2025-02-22土休日 |
+| 30000 御堂筋线 (`metro30000-m`) | 153 | 所列范围全天 | なかもず→官网所列各终点 / 全列车 / 2025-10-14土休日 |
+| 400 中央线 (`metro400-c`) | 88 | 所列范围全天 | 夢洲→官网所列各终点 / 全列车 / 2025-10-14土休日 |
+| 30000 高野 Koya (`nk30000-koya`) | 6 | 所列范围全天 | なんば→極楽橋 / こうや / 2026-03-28土休日（10月適用） |
+| 8300 南海高野线 (`nk8300-koya`) | 86 | 所列范围全天 | なんば→高野線各终点 / 各駅停車 / 2026-03-28土休日 |
+| 221 大阪东线 (`221-osakahigashi`) | 66 | 所列范围全天 | 久宝寺駅・大阪方面・普通・2026-10-25全天 |
+| W7 剑 Tsurugi (`w7-tsurugi`) | 26 | 所列范围全天 | 福井駅・敦賀方面・つるぎ・2026-10-25全天 |
+| 500 回声 Kodama (`500-kodama`) | 6 | 所列范围全天 | 2026-10-25・官方500系运用计划所列两组共6班，按各列车始发站、上下行收齐 |
+| 5000 山阳直通特急 (`sy5000`) | 68 | 所列范围全天 | 山陽姫路→阪神大阪梅田 / 直通特急全部班次 / 2025-02-22土休日 |
+| 1000 阪神难波线 (`hs1000-namba`) | 45 | 所列范围全天 | 大阪難波→神戸三宮・尼崎 / 快速急行 / 2026-03-14土休日 |
+| 6500 神户电铁 (`shintetsu6500`) | 77 | 所列范围全天 | 横山→三田 / 无3辆框的普通全部班次（4辆车型候补） / 2025-03-15土休日 |
+| KiHa40 Nagamare海峡号 (`is-nagamare`) | 8 | 所列范围全天 | ながまれ号车辆当天所有普通运用起点两方向 / 2026-10-25 |
+| 9600 函馆市电 (`hd9600`) | 13 | 所列范围全天 | 湯の川→谷地頭・函館どつく前 / 官方低床车辆固定表 / 2026-05-10土日祝 |
+| HSOR100 肥萨橙铁 (`or100`) | 15 | 所列范围全天 | 八代→川内・野田郷・出水・肥後高田 / 全部普通 / 2026-07-01每日表 |
+| 700 光 Rail Star (`700-railstar`) | 1 | 所列范围全天 | 2026-10-25・新下关站・冈山方面上行・ひかりレールスター全天1班 |
+| 900 叡山 Kirara (`eizan900`) | 17 | 所列范围全天 | 出町柳→鞍馬・市原 / きらら / 2026-08-22正常土休日 |
+| A1200 Polaris (`sp-a1200`) | 27 | 所列范围全天 | 電車事業所前→中央図書館前方面（内回り） / 全部低床计划班次（Polaris/Sirius共用，非全车型普通表） / 2025-12-01土曜・日曜・祝日，2026-10-25日曜参考 |
+| 1100 Sirius (`sp1100`) | 27 | 所列范围全天 | 電車事業所前→中央図書館前方面（内回り） / 全部低床计划班次（Polaris/Sirius共用，非全车型普通表） / 2025-12-01土曜・日曜・祝日，2026-10-25日曜参考 |
+| 6000 山阳普通 (`sy6000`) | 74 | 所列范围全天 | 山陽天満→飾磨 / 普通全部班次 / 2025-02-22土休日 |
+| 16000 千代田線 (`tm16000-c`) | 55 | 所列范围全天 | 代々木上原発・掲載方向の普通・該当車種記号全日・土休日 |
+| 15000 東西線 (`tm15000-t`) | 38 | 所列范围全天 | 西船橋発・掲載方向の普通・該当車種記号全日・土休日 |
+| 13000 日比谷線 (`tm13000-h`) | 416 | 所列范围全天 | 南千住站日比谷線、中目黒与北千住方面双向全天 |
+| 2000 丸ノ内線 (`tm2000-m`) | 487 | 所列范围全天 | 新宿站丸ノ内線、荻窪／方南町方面与池袋方面双向全天 |

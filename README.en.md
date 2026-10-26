@@ -6,7 +6,7 @@
 
 A Japanese railway departure-board simulator for N gauge layouts and iPad displays. It uses a JR East inspired overall layout with separate branding, service types and equipment indicators for private railways and special trains. Built with plain HTML, CSS and JavaScript; no framework or frontend dependencies are required.
 
-![iPad landscape preview](docs/images/ipad-landscape.jpg)
+![iPad landscape preview](docs/images/v7-landscape.png)
 
 ## Features
 
@@ -19,21 +19,15 @@ A Japanese railway departure-board simulator for N gauge layouts and iPad displa
 
 ## Timetable scope
 
-This release is **V6: 237 presets and 425 representative departures**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. Work on complete daily timetables is paused and is not included in this release. This is neither a live lookup service nor a timetable that changes automatically the next day.
+This release is **V7: 237 presets and 17,030 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 233 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
 
-| Presets | Verification scope |
-|---:|---|
-| 117 | The 25 October data source or operating date was checked |
-| 95 | Current official Saturday/holiday references |
-| 15 | Official daily references |
-| 4 | Official tourist-train times; operating dates still require confirmation |
-| 2 | Official older Ginza/Marunouchi tables; current times unconfirmed |
-| 2 | Historical references for the discontinued Hokutosei and Super Hakucho |
-| 2 | Weekday Shonan/Akagi references that do not run on Sunday |
+Coverage completeness and operating-date verification are separate: 11,248 records were checked for the specified day, 5,528 use official weekend/holiday tables, 230 use daily references, and 20 still require operating-calendar confirmation. Weekday-only and discontinued services remain labelled. Current official Ginza/Marunouchi data replaces the older samples.
 
-Routes may use mixed fleets, so a real departure does not guarantee the selected vehicle series. Model car counts are separate from real formations and seat-car numbering. Model platforms 1/2 do not represent actual station tracks. Full stopping patterns apply only when stored and when the service number, direction and type still match; typing a different service number does not fetch another train.
+The discreet settings drawer supports **origin, direction, time-period and keyword filters**, with matching and total counts. Filtering alone keeps the current service unchanged. Selecting a reference still allows a custom fixed time. The source audit renders 50 records per page, and after-midnight departures retain the source's 24-hour-plus notation.
 
-See [TIMETABLES.md](TIMETABLES.md), [special display research](SPECIAL-DISPLAYS.md) and [scrolling information research](SCROLL-RESEARCH.md) for individual sources and limits. These detailed research records are primarily in Chinese.
+Real services may use mixed fleets; individual vehicle assignments are not guaranteed. Model lengths and platforms are independent of real formations, seat-car numbers and station tracks. Full stopping patterns apply only to matching stored routes and services; editing a number does not fetch another train.
+
+See [TIMETABLES.md](TIMETABLES.md), [special-display research](SPECIAL-DISPLAYS.md) and [scrolling research](SCROLL-RESEARCH.md). Edit [data/timetables.json](data/timetables.json), then run `npm run build:timetable` and `npm test` to regenerate and verify the browser data (detailed research is primarily in Chinese).
 
 ## Quick start
 

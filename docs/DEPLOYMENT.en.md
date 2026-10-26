@@ -82,7 +82,7 @@ Settings live in the current browser's local storage. Clearing site data, ending
 
 For Git installations, run `git pull --ff-only` from the repository root. Save and reconcile local changes first if Git reports them. ZIP users can download again and extract to a new folder. Reload the page after updating, then check the times and formations before applying reference departures.
 
-V6 contains 425 representative departures frozen to Sunday, 25 October 2026 JST. Complete daily timetables are not yet integrated. Older tables, discontinued services, weekday-only trips and unconfirmed operating dates have separate labels. Open `http://SERVER_IP:8769/timetable.html` for individual sources.
+V7 contains 17,030 reference records frozen to Sunday, 25 October 2026 JST. 233 presets cover the full day within their stated scope, while 0 remain partial. Vehicle presets can share actual departures; this is not a count of unique trains. Operating-date verification is labelled separately. Open `http://SERVER_IP:8769/timetable.html` for filters and paginated sources. Existing browser settings are preserved; use the apply-default-references button to load the new defaults.
 
 ## 6. Linux startup service (optional)
 

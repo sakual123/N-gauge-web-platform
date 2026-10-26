@@ -95,6 +95,6 @@
   }
   function brandFor(row,v){return row.markerMode==='off'||row.showBrand===false?'':v.special.brand;}
   D.serviceFeatureIds=Object.keys(D.serviceFeatures);D.variantFor=variantFor;D.featureIds=featureIds;D.brandFor=brandFor;
-  const types={'通勤特急':'Commuter Ltd. Exp.','通勤快急':'Commuter Rapid Exp.','区間急行':'Regional Express','区間準急':'Regional Semi Exp.','ライナー':'Liner'};
+  const types={'通勤特急':'Commuter Ltd. Exp.','通勤快急':'Commuter Rapid Exp.','区間急行':'Regional Express','区間準急':'Regional Semi Exp.','ライナー':'Liner','エアポート快特':'Airport Rapid Ltd. Exp.'};
   Object.assign(D.typeEnglish,types);for(const type of Object.keys(types))if(!D.types.includes(type))D.types.push(type);
 })();

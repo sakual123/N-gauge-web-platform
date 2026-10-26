@@ -4,45 +4,44 @@
 
 ## 中文
 
-这是无需构建的静态网站。`dist/index.html` 按依赖顺序载入全局 `window.RAIL_*` 模块；不要随意调整脚本顺序。`dist/` 就是完整的可部署站点，`tools/` 只在开发检查时使用。
+纯静态网页，无需框架或安装依赖；部署整个 `dist/`。`index.html` 按依赖顺序加载 `window.RAIL_*` 模块，保持现有顺序。浏览器设置键 `n-gauge-platform-board-v2` 兼容旧 v1，编组、四行自定义内容、按车型固定时间保存在当前浏览器。
 
-| 模块 | 职责 |
+| 文件 | 职责 |
 |---|---|
-| `catalog.js`、`catalog-regions.js`、`catalog-expanded.js` | 237 预设、地区／类别／线路层级、行先和基础配置 |
-| `special-services.js`、`service-ui.js` | 设备、品牌、座席图标及显示配置 |
-| `journey-data.js` | 线路路径、停站和座席参考 |
-| `timetable-data.js` | 冻结日期的 425 条班次、来源、证据和状态 |
-| `timetable-model.js`、`timetable-ui.js` | 套用班次、手动修改标记、每车型记忆和来源面板 |
-| `model.js` | 四行模型、默认值、保存兼容、场景和模型节数 |
-| `journey-model.js`、`journey-ui.js` | 匹配停站、座席号车、最近待发、跨午夜和滚动呈现 |
-| `app.js`、`styles.css` | 页面编辑、事件、浏览器保存、显示样式和布局 |
+| `dist/catalog*.js` | 237 预设、地区、类型、线路、行先 |
+| `dist/special-services.js`、`service-ui.js` | 品牌、设备、座席图标与配置 |
+| `dist/journey-data.js` | 线路、停站、席别参考 |
+| `data/timetables.json` | 可编辑的固定日班次、完整度、官方来源、证据 |
+| `tools/build-timetable.cjs` | 生成浏览器班次库与 TIMETABLES.md；重复字符串共享以缩减体积，不丢弃证据 |
+| `dist/timetable-data.js` | 已生成、可直接静态部署的资料 |
+| `dist/timetable-model.js`、`timetable-ui.js` | 班次套用、按车型记忆、手动修改、出发站／方向／时段／关键词筛选 |
+| `dist/timetable.html`、`timetable-audit.js` | 来源与范围核对页，筛选后每页50条 |
+| `dist/model.js` | 默认值、四行、场景、设置兼容、模型编组 |
+| `dist/journey-model.js`、`journey-ui.js` | 停站、席别、跨午夜最近待发与滚动提示 |
+| `dist/app.js`、`styles.css` | 编辑事件、保存、版式和显示 |
 
-浏览器本地存储键为 `n-gauge-platform-board-v2`，兼容旧 `v1`。按车型记录的编组和固定时间不等同于所有班次共用实车编成。设置不会上传到服务器。
+修改 JSON 后运行 `npm run build:timetable`，再运行 `npm test`。检查包含浏览器资料与 JSON 一致性、时分与来源、筛选不修改原数据、固定时间记忆、旧设置兼容、标识、停站及跨午夜。保留车辆 ID 与已存在的班次 ID，避免破坏用户固定班次记忆。
 
-修改资料时保留稳定的车辆 ID；新参考班次必须带来源、时间、发站、行先、状态、冻结日期和时区，并使用唯一 ID。修改号数或路径后，不能继续套用不匹配的完整停站。`timetable.html` 是对应的可读核对页，也需要随数据更新。
+完整度 full 仅指 coverage.scope 的站点、方向和种别；运行日 dated／holiday／daily／calendar 是另一维度。具体车种混用、低床车代运、特别日历按备注处理。24:xx 转成 00:xx 显示时保留 sourceTime／serviceDayOffset。完整停站只在匹配的车次、方向、种别上使用，用户自定义号数不联网查询。
 
-V6 数据生成用的临时采集脚本与原始官网 PDF／HTML 不包含在本仓库。`tools/build-reference.cjs` 用于目录与既有研究页面，**不会生成完整的班次数据库**。源数据变更应同时维护可读记录，再执行三组检查。
+临时采集脚本和官方 PDF/HTML 原本保留在研究工作区，不放入公开仓库；公开 JSON 包含每条来源与证据，便于手动维护。`tools/build-reference.cjs` 属于既有目录／研究页生成器，不用于重建班次库。
 
 ## 日本語
 
-ビルド不要の静的サイトです。`dist/index.html` は依存順に `window.RAIL_*` のグローバルモジュールを読み込みます。スクリプト順序を不用意に変更しないでください。公開するのは `dist/` 全体で、`tools/` は開発用チェックです。
+フレームワーク不要の静的サイトです。`dist/` 全体を配信し、`index.html` の読込順を保持します。設定はブラウザーの `n-gauge-platform-board-v2` に保存し、旧 v1 と互換性があります。
 
-`catalog*.js` は車両・地域・路線、`special-services.js`／`service-ui.js` はブランドと設備、`journey-data.js` は経路資料です。`timetable-data.js` は基準日固定の 425 便と出典を持ち、`timetable-model.js`／`timetable-ui.js` が適用と手動編集の判定を担当します。`model.js` は 4 行の状態・互換性・シーン・模型編成、`journey-model.js`／`journey-ui.js` は停車駅・座席・日付をまたぐ直近便とスクロール、`app.js`／`styles.css` は画面と操作を担当します。
+編集元は `data/timetables.json` です。`npm run build:timetable` が出典・証拠を保持したブラウザー用データと範囲一覧を再生成します。繰り返す文字列だけを共有して容量を削減します。`npm test` でデータ一致、時刻・出典、絞り込み、固定時刻の保存、旧設定、ブランド、停車駅、日付をまたぐ案内を確認します。車両 ID・既存便 ID は変更しないでください。
 
-保存キーは `n-gauge-platform-board-v2` で、旧 `v1` と互換性があります。設定はブラウザー内のみで、サーバーへ送信しません。模型編成・固定時刻の記憶を実車の確定運用と解釈しないでください。
+`timetable-model.js`／`timetable-ui.js` が適用・保存・発駅／方向／時間帯／キーワード絞り込みを担当し、`timetable-audit.js` は確認一覧を50件ずつ描画します。`catalog*` は車両・路線、`special-services*` は設備とブランド、`journey-*` は停車駅・座席・スクロール、`model.js` は4行と設定、`app.js`／`styles.css` は画面です。
 
-車両 ID は安定させ、新しい参考便には一意 ID、公式出典、時刻、発駅、行先、状態、固定日、タイムゾーンを設定してください。号数・経路が変わった便には別便の全停車駅を流用せず、`timetable.html` の確認記録も更新します。
-
-V6 作成時の一時的な収集スクリプトと公式 PDF／HTML 原本は含みません。`tools/build-reference.cjs` は目録と既存調査ページ用で、班次データベース全体の生成器ではありません。データと可読資料を一緒に更新し、3 組のチェックを実行してください。
+full は明記した駅・方向・種別の終日範囲のみを表し、運転日確認とは別です。形式共用や代車を保証せず、24時以降の原表記も保持します。収集用一時スクリプトと公式PDF原本は公開せず、JSONには確認用の出典・証拠を保存します。
 
 ## English
 
-This is a buildless static site. `dist/index.html` loads global `window.RAIL_*` modules in dependency order; preserve that order. Deploy the complete `dist/` directory. `tools/` is used for development checks only.
+Deploy the complete `dist/` directory as a buildless static site and retain the script loading order. Settings use browser-local key `n-gauge-platform-board-v2`, with v1 compatibility.
 
-`catalog*.js` defines vehicles, regions and routes. `special-services.js`/`service-ui.js` handle brands and equipment, while `journey-data.js` contains route references. `timetable-data.js` contains the 425 frozen departures and provenance; `timetable-model.js`/`timetable-ui.js` apply references and track manual edits. `model.js` manages the four rows, defaults, migration, scenes and model formations. `journey-model.js`/`journey-ui.js` handle stopping patterns, seats, next departures across midnight and scrolling. `app.js`/`styles.css` implement the page and interactions.
+The editable source is `data/timetables.json`. Run `npm run build:timetable` to regenerate browser data and the scope inventory. Repeated strings are shared without dropping provenance. `npm test` verifies exact JSON/browser equivalence, times and sources, non-mutating filters, pinned custom times, migration, service marks, stops and midnight handling. Preserve vehicle IDs and existing departure IDs.
 
-The local-storage key is `n-gauge-platform-board-v2`, with legacy `v1` compatibility. Settings remain in the browser and are not sent to a server. Remembered model formations and fixed times do not establish real vehicle workings.
+`timetable-model.js`/`timetable-ui.js` apply and remember trips and filter by origin, direction, period and keywords. `timetable-audit.js` renders the audit 50 records at a time. `catalog*` defines vehicles/routes, `special-services*` handles marks, `journey-*` handles stops/seats/tickers, `model.js` manages the four rows and settings, and `app.js`/`styles.css` implement the UI.
 
-Preserve stable vehicle IDs. New departure references need unique IDs, official sources, times, origins, destinations, verification status, the frozen date and time zone. A changed service number or route must not retain an unrelated full stopping pattern. Keep the readable `timetable.html` audit in sync with source data.
-
-Temporary V6 collection scripts and original operator PDFs/HTML are not included. `tools/build-reference.cjs` generates the catalogue and existing research pages; it does **not** regenerate the entire timetable database. Maintain data and readable records together, then run all three existing checks.
+Full coverage applies only within the stated station/direction/service scope, separately from operating-date verification. Mixed fleets and substitutions remain qualified. Original 24-hour-plus notation is preserved for after-midnight departures. Temporary collection scripts and original operator PDFs are excluded from the public repository; the editable data retains sources and evidence. `tools/build-reference.cjs` remains the older catalogue/research-page generator, not the timetable builder.

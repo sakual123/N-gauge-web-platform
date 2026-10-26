@@ -2,21 +2,28 @@
   "result": "PASS",
   "date": "2026-10-25",
   "presets": 237,
-  "departures": 425,
+  "departures": 17030,
   "statusCounts": {
     "legacy": 2,
-    "dated": 219,
-    "holiday": 174,
+    "dated": 11248,
+    "holiday": 5528,
     "weekday": 2,
-    "daily": 20,
-    "outdated": 2,
-    "calendar": 6
+    "calendar": 20,
+    "daily": 230
   },
-  "referencesWithStops": 148,
+  "coverageCounts": {
+    "full": 233,
+    "inactive": 4
+  },
+  "referencesWithStops": 4384,
   "manualPinsAndReload": true,
   "legacyRowsPreserved": true,
   "sourceAndTimeValidation": true,
   "specialSeatAndVariantRules": true,
   "japanClockAndMidnight": true,
-  "allScenesUseReferenceTrips": true
+  "allScenesUseReferenceTrips": true,
+  "packedSourceRoundTrip": true,
+  "nonMutatingOriginDirectionTimeSearchFilters": true,
+  "rapidServiceCoverageRegression": true,
+  "operatorBoundaryAnd500SeriesRegression": true
 }

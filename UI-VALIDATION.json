@@ -1,37 +1,18 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
+  "version": "V7",
   "result": "PASS",
   "browser": "Codex In-app Browser, desktop engine",
   "physicalIPadSafariTested": false,
-  "landscape": {
-    "width": 1024,
-    "height": 768,
-    "documentScrollWidth": 1024,
-    "fourRowsVisible": true
-  },
-  "portrait": {
-    "width": 768,
-    "height": 1024,
-    "documentScrollWidth": 768,
-    "rowHeights": [
-      175.5,
-      175.5,
-      175.5,
-      175.5
-    ],
-    "boardAndTickerBottom": 1024
-  },
+  "landscape": {"width": 1024, "height": 768, "documentScrollWidth": 1024, "fourRowsVisible": true, "tickerBottom": 768},
+  "portrait": {"width": 768, "height": 1024, "documentScrollWidth": 768, "rowHeights": [175.5,175.5,175.5,175.5], "tickerBottom": 1024},
   "editorHorizontalOverflow": false,
-  "referenceSelection": "Second Keihin reference 08:08 selected successfully",
-  "manualTime": "13:42 persisted after blur, reload, route change and return",
-  "restoreReference": "Restored the selected official time and cleared modified label",
-  "applyFourRows": "Applied four default reference trips, preserving model car counts",
-  "specialTrip": "Wing Seat 52 at Sengakuji 08:45; only dedicated car reserved; no all-car reserved claim",
-  "audit": {
-    "totalRows": 425,
-    "outdatedFilterRows": 2,
-    "bothOldMetroTablesExplicitlyLabeled": true
-  },
-  "consoleErrors": [],
-  "duplicateVehicleRows": "Editing first row to 13:42 and switching away/back retains 13:42 while the other row stays 08:02"
+  "editorScrollAndClientWidth": [444,444],
+  "nonMutatingFilter": "18-21 + 大宮 reduced 305 to 20 references and kept 08:02 unchanged, selected reference then applied 18:08",
+  "emptyFilter": "Zero matches disabled the reference selector and restore button while preserving 18:08",
+  "filtersRetainedAfterSelection": true,
+  "finalDaytimeRapidFilter": "12-15 + 快速 returned 72 / 430 Keihin references; current 18:08 was preserved and labelled outside filter",
+  "reload": "Selected fixed time preserved through reload and data update",
+  "audit": {"totalReferences":17030,"fullPresets":233,"partialPresets":0,"pageSize":50,"secondPage":"2 / 341","fullWidthSearchNormalized":true,"500SeriesRows":6,"kodama947Departure":"10:37"},
+  "consoleErrors": []
 }
