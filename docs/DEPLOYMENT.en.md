@@ -152,3 +152,8 @@ These checks cover data and model logic. They do not replace physical iPad Safar
 ## V8 audio and themes
 
 Select a whole-board theme in display options. Click a train name for manual speech; automatic playback requires sound activation and the auto option. Japan time is matched against the four rows, with outer-circle jobs before inner-circle jobs and no speech overlap. Tap to re-enable after reload. Background or locked devices may suspend audio; missed minutes are not replayed. Audio uses device Japanese speech synthesis, not original station recordings.
+
+
+### N scale · V9
+
+Each train now has a “对应N比例车型” section showing copyable product numbers, packaged lengths and official sources. It follows vehicle selection and leaves your formation and service unchanged. After editing `data/nscale-products.json`, run `npm run build:nscale`, then deploy the complete `dist/` folder.

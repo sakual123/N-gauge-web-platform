@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "presets": 237,
+  "products": 227,
+  "makers": [
+    "KATO",
+    "TOMIX",
+    "MICROACE",
+    "POPONDETTA",
+    "GREENMAX",
+    "MODEMO",
+    "TOMYTEC",
+    "ONE_MILE"
+  ],
+  "verifiedPresets": 211,
+  "variantOnlyPresets": 7,
+  "unverifiedPresets": 19,
+  "exactDataRoundtrip": true,
+  "subseriesIsolation": true,
+  "settingsUnchanged": true,
+  "lazyDisclosure": true,
+  "officialSourceDomains": true
+}

@@ -16,3 +16,8 @@ owned by railway operators or other rights holders.
 原址、页面、文件大小、是否修改及 SHA-256 清单：[`dist/assets/special/sources.json`](dist/assets/special/sources.json)。来源和权利信息以各原始页面为准；使用第三方素材时应独立核对适用条件。
 
 时刻、停站和座席资料来自运营商公开资料，逐项出处与适用日期见 `dist/timetable-data.js`、`TIMETABLES.md`、`SCROLL-RESEARCH.md` 与 `SPECIAL-DISPLAYS.md`。仓库不含研究阶段下载的完整官方 PDF 或 HTML 原件。
+
+
+## N-scale product references · V9
+
+Manufacturer names, product numbers and model identities are referenced for identification. Product titles and facts are attributed through links in `data/nscale-products.json` and the in-app directory. KATO, TOMIX, MICRO ACE, Popondetta, GREENMAX, MODEMO, TOMYTEC and ONE MILE names and marks belong to their respective owners. Product photographs and extended manufacturer descriptions are not bundled. The source-code MIT license does not grant rights to third-party marks or referenced material.

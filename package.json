@@ -1,13 +1,14 @@
 {
   "name": "n-gauge-web-platform",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "description": "Japanese railway platform departure board simulator for N gauge layouts and iPad",
   "license": "MIT",
   "scripts": {
-    "test": "node tools/check-timetable.cjs && node tools/check-special.cjs && node tools/check-ticker.cjs && node tools/check-arrivals.cjs",
+    "test": "node tools/check-timetable.cjs && node tools/check-special.cjs && node tools/check-ticker.cjs && node tools/check-arrivals.cjs && node tools/check-nscale.cjs",
     "build:timetable": "node tools/build-timetable.cjs",
-    "build:announcements": "node tools/build-announcements.cjs"
+    "build:announcements": "node tools/build-announcements.cjs",
+    "build:nscale": "node tools/build-nscale.cjs"
   },
   "engines": {
     "node": ">=22"

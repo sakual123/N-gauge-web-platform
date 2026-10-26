@@ -16,5 +16,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Validate timetable, service marks and ticker
+      - name: Validate timetables, display, speech and N-scale references
         run: npm test

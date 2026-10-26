@@ -217,7 +217,8 @@
   ky('ky200','KiHa200 大分地区','キハ200系','豊肥本線','HOHI LINE',2,'ky-hohi','普通',['大分','豊後竹田'],{category:'commuter',seat:'ワンマン'});
   add('nt3000','3000 西铁特急','西鉄3000形','西鉄天神大牟田線','NISHITETSU TENJIN OMUTA LINE',6,'kyushu','nt-main','特急',['大牟田','西鉄福岡（天神）'],{seat:'乗車券のみ・予約不要'});
   add('nt9000','9000 西铁急行','西鉄9000形','西鉄天神大牟田線','NISHITETSU TENJIN OMUTA LINE',5,'kyushu','nt-main','急行',['大牟田','西鉄福岡（天神）'],{seat:'一般車'});
-  add('nt6050-tabito','6050 西铁旅人','西鉄6050形','旅人','TABITO',5,'kyushu','nt-dazaifu','普通',['太宰府','西鉄福岡（天神）'],{seat:'一般車・予約不要'});
+  // Retain the legacy ID for saved settings; the second-generation Tabito uses the 3000 series.
+  add('nt6050-tabito','3000 西铁旅人','西鉄3000形','旅人','TABITO',5,'kyushu','nt-dazaifu','普通',['太宰府','西鉄福岡（天神）'],{seat:'一般車・予約不要'});
   add('fk4000','4000 福冈机场线','福岡市地下鉄4000系','空港線','FUKUOKA AIRPORT LINE',6,'kyushu','fk-airport','各駅停車',['福岡空港','姪浜'],{seat:'公営地下鉄'});
   add('fk3000','3000 福冈七隈线','福岡市地下鉄3000系','七隈線','NANAKUMA LINE',4,'kyushu','fk-nanakuma','各駅停車',['博多','橋本'],{seat:'公営地下鉄'});
   add('kd03','03 熊本电铁','熊本電鉄03形','熊本電鉄','KUMAMOTO ELECTRIC RAILWAY',2,'kyushu','kd-main','普通',['御代志','藤崎宮前'],{seat:'ワンマン'});

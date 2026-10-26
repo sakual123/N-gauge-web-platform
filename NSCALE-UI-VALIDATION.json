@@ -1,0 +1,40 @@
+{
+  "result": "PASS",
+  "date": "2026-10-26",
+  "landscape": {
+    "viewport": [
+      1024,
+      768
+    ],
+    "pageWidth": 1024,
+    "editorContentWidth": 444,
+    "editorScrollWidth": 444
+  },
+  "portrait": {
+    "viewport": [
+      768,
+      1024
+    ],
+    "pageWidth": 768,
+    "pageHeight": 1024,
+    "editorContentWidth": 444,
+    "editorScrollWidth": 444,
+    "boardRows": 4
+  },
+  "perTrainDisclosure": true,
+  "vehicleChangeRefreshesOpenPanel": true,
+  "copyProductNumberFeedback": true,
+  "copyJANFeedback": true,
+  "fullWidthNumberSearch": {
+    "query": "９８６９５",
+    "matches": 1
+  },
+  "unknownModelExplanation": true,
+  "modelCarCountAndTimeUnchangedByLookup": true,
+  "consoleErrorsObserved": [],
+  "physicalIPadSafariTested": false,
+  "screenshots": [
+    "nscale-hinotori-landscape.png",
+    "nscale-hinotori-portrait.png"
+  ]
+}

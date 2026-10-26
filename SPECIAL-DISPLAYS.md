@@ -271,7 +271,7 @@
 | 通勤 / JR九州｜豊肥本線 | キハ200系 / 豊肥本線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.jrkyushu.co.jp/trains/) |
 | 私铁 / 地方交通 / 西鉄｜天神大牟田線 | 西鉄3000形 / 西鉄天神大牟田線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.nishitetsu.jp/train/sharyou/) |
 | 私铁 / 地方交通 / 西鉄｜天神大牟田線 | 西鉄9000形 / 西鉄天神大牟田線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.nishitetsu.jp/train/sharyou/) |
-| 私铁 / 地方交通 / 西鉄｜太宰府線・旅人 | 西鉄6050形 / 旅人 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.nishitetsu.jp/train/sharyou/) |
+| 私铁 / 地方交通 / 西鉄｜太宰府線・旅人 | 西鉄3000形 / 旅人 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.nishitetsu.jp/train/sharyou/) |
 | 私铁 / 地方交通 / 福岡市地下鉄｜空港線 | 福岡市地下鉄4000系 / 空港線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://subway.city.fukuoka.lg.jp/subway_webapp/files/uploads/第２章　施策体系と主要事業.pdf) |
 | 私铁 / 地方交通 / 福岡市地下鉄｜七隈線 | 福岡市地下鉄3000系 / 七隈線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://subway.city.fukuoka.lg.jp/subway_webapp/files/uploads/第２章　施策体系と主要事業.pdf) |
 | 私铁 / 地方交通 / 熊本電鉄｜菊池・藤崎線 | 熊本電鉄03形 / 熊本電鉄 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.kumamotodentetsu.co.jp/train/vehicles/) |

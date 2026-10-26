@@ -54,3 +54,8 @@ Full coverage applies only within the stated station/direction/service scope, se
 `data/announcements.json` is the editable station/template source; `npm run build:announcements` regenerates `announcement-data.js`. `announcement-model.js` builds adapted Japanese messages and computes Japan-time batches. `announcements.js` requires user activation, maintains a serial speech queue, handles stop/cancel races, and stores daily row/time deduplication under `n-gauge-arrival-seen-v1`. Voice availability comes from the device. Audio settings and whole-board theme remain in the existing v2 browser state.
 
 `check-arrivals.cjs` covers 12 theme permutations, 151 route mappings, settings migration, serial speech callbacks, simultaneous outer/inner priority, minute/day deduplication, cancellation and blocked playback. Mocked events do not prove real-device audibility; browser event checks and physical-device listening are separate.
+
+
+## N 比例产品查询 · V9
+
+`data/nscale-products.json` 是厂家、品号、套装内容、来源和逐车型覆盖状态的可编辑来源；`tools/build-nscale.cjs` 生成 `dist/nscale-data.js`。`nscale-model.js` 只按明确的 `vehicleIds` 建索引，不按地区或系列字符串模糊套用。`nscale-ui.js` 在每行设置中惰性展开资料，`nscale-models.html` 提供可搜索的全目录。查询不写入 v2 用户状态，也不改动班次或模型编组。
