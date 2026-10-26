@@ -6,7 +6,7 @@
 
 A Japanese railway departure-board simulator for N gauge layouts and iPad displays. It uses a JR East inspired overall layout with separate branding, service types and equipment indicators for private railways and special trains. Built with plain HTML, CSS and JavaScript; no framework or frontend dependencies are required.
 
-![iPad landscape preview](docs/images/v7-landscape.png)
+![iPad landscape preview](docs/images/v8-kintetsu-landscape.png)
 
 ## Features
 
@@ -19,7 +19,7 @@ A Japanese railway departure-board simulator for N gauge layouts and iPad displa
 
 ## Timetable scope
 
-This release is **V7: 237 presets and 17,030 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 233 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
+This release is **V8: 237 presets and 17,030 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 233 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
 
 Coverage completeness and operating-date verification are separate: 11,248 records were checked for the specified day, 5,528 use official weekend/holiday tables, 230 use daily references, and 20 still require operating-calendar confirmation. Weekday-only and discontinued services remain labelled. Current official Ginza/Marunouchi data replaces the older samples.
 
@@ -28,6 +28,16 @@ The discreet settings drawer supports **origin, direction, time-period and keywo
 Real services may use mixed fleets; individual vehicle assignments are not guaranteed. Model lengths and platforms are independent of real formations, seat-car numbers and station tracks. Full stopping patterns apply only to matching stored routes and services; editing a number does not fetch another train.
 
 See [TIMETABLES.md](TIMETABLES.md), [special-display research](SPECIAL-DISPLAYS.md) and [scrolling research](SCROLL-RESEARCH.md). Edit [data/timetables.json](data/timetables.json), then run `npm run build:timetable` and `npm test` to regenerate and verify the browser data (detailed research is primarily in Chinese).
+
+## Whole-board themes and arrival announcements · V8
+
+Open `···` → display options → whole-board style to choose 12 representative themes: the six JR companies, Kintetsu, Hankyu, Keihan, Nankai, Hanshin and Tokyo Metro. Column order, headings, direction panels, platform blocks and colors change together, while services, brands and model formations remain intact. These are adaptations of specific display examples, not universal official templates.
+
+Click a train name or its arrival-announcement button to play device-provided Japanese speech synthesis. Representative-station mappings cover 151 routes and 237 presets, with 17 vehicle exceptions. Audio is an adapted script, not an original station recording or cloned announcer. Representative stations do not change reference times or replace model platform numbers with real ones.
+
+Enable sound and the automatic option to compare Japan's current time with the four displayed fixed times. A simultaneous batch plays outer first → outer next → inner first → inner next, waiting for each announcement to finish. Each row/time is automatically queued once per Japan calendar day. The departure time is a model-arrival trigger, not live train-position information. Stop clears the queue; manual playback can repeat.
+
+iPad/Safari needs another explicit tap after reload. Background pages, switching apps and screen locking may suspend playback; missed minutes are not replayed. Voice availability and sound quality depend on the device. See [sources and limitations](DISPLAY-AUDIO-RESEARCH.md).
 
 ## Quick start
 
@@ -62,7 +72,7 @@ Use Node.js 22 or a newer supported LTS for checks. No `npm install` is needed:
 npm test
 ```
 
-Alternatively run `node tools/check-timetable.cjs`, `node tools/check-special.cjs` and `node tools/check-ticker.cjs`. GitHub Actions runs the same checks on pushes and pull requests.
+Alternatively run `node tools/check-timetable.cjs`, `node tools/check-special.cjs`, `node tools/check-ticker.cjs` and `node tools/check-arrivals.cjs`. GitHub Actions runs the same checks on pushes and pull requests.
 
 `dist/` is the static website. `catalog*.js` defines regions/routes/vehicles; `timetable-*.js` provides reference departures; `special-services.js` and `service-ui.js` handle brands/equipment; `journey-*.js` handles stops, seats and scrolling. See the [architecture notes](docs/ARCHITECTURE.md).
 

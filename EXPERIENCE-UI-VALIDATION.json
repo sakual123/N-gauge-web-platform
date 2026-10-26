@@ -1,0 +1,24 @@
+{
+  "version": "V8",
+  "date": "2026-10-26",
+  "result": "PASS",
+  "browser": "Codex In-app Browser desktop engine",
+  "physicalIPadSafariTested": false,
+  "themes": ["jreast","jrwest","jrtokai","jrhokkaido","jrkyushu","jrshikoku","kintetsu","hankyu","keihan","nankai","hanshin","tokyometro"],
+  "landscape": {"width":1024,"height":768,"all12DocumentWidths":1024,"all12Rows":4,"all12TickerBottoms":768},
+  "portrait": {"width":768,"height":1024,"all12DocumentWidths":768,"all12Rows":4,"all12TickerBottoms":1024,"all12RowHeights":[175.5,175.5,175.5,175.5]},
+  "columnsAndDataReorderedTogether": true,
+  "themeChangesPreservedTimes": "08:02 was retained while switching every theme",
+  "themeReloadPersistence": "Kintetsu and Tokyo Metro selection survived reload",
+  "headerContrastAndPlatformBlocksVisuallyChecked": ["kintetsu","jrwest","keihan"],
+  "speech": {
+    "japaneseVoicesEnumerated": ["Microsoft Haruka","Microsoft Ichiro","Microsoft Sayaka","Microsoft Ayumi"],
+    "manualNameClick": "Real speech onstart event observed for Keihin-Tohoku",
+    "automaticSameMinute": "Outer-first and inner-first were both set to 16:53 JST; enabling auto showed outer-first speaking with one queued job",
+    "serialCompletion": "After the outer speech ended, inner-first started with zero pending jobs",
+    "deduplicationAndDayRollover": "Covered by check-arrivals.cjs with mocked speech events",
+    "actualAudioRecordedOrAudiblyEvaluated": false,
+    "deviceVoiceQuality": "Depends on OS/browser; no original station recording or cloned voice"
+  },
+  "consoleErrors": []
+}

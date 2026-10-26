@@ -147,3 +147,8 @@ node tools/check-ticker.cjs
 ```
 
 These checks cover data and model logic. They do not replace physical iPad Safari touch and compatibility testing.
+
+
+## V8 audio and themes
+
+Select a whole-board theme in display options. Click a train name for manual speech; automatic playback requires sound activation and the auto option. Japan time is matched against the four rows, with outer-circle jobs before inner-circle jobs and no speech overlap. Tap to re-enable after reload. Background or locked devices may suspend audio; missed minutes are not replayed. Audio uses device Japanese speech synthesis, not original station recordings.

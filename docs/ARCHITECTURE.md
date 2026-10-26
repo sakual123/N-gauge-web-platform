@@ -45,3 +45,12 @@ The editable source is `data/timetables.json`. Run `npm run build:timetable` to 
 `timetable-model.js`/`timetable-ui.js` apply and remember trips and filter by origin, direction, period and keywords. `timetable-audit.js` renders the audit 50 records at a time. `catalog*` defines vehicles/routes, `special-services*` handles marks, `journey-*` handles stops/seats/tickers, `model.js` manages the four rows and settings, and `app.js`/`styles.css` implement the UI.
 
 Full coverage applies only within the stated station/direction/service scope, separately from operating-date verification. Mixed fleets and substitutions remain qualified. Original 24-hour-plus notation is preserved for after-midnight departures. Temporary collection scripts and original operator PDFs are excluded from the public repository; the editable data retains sources and evidence. `tools/build-reference.cjs` remains the older catalogue/research-page generator, not the timetable builder.
+
+
+## V8 display and speech modules
+
+`themes.js` / `themes.css` control whole-board layouts independently of per-row brands. `data/themes.json` records research, not a universal operator display specification. Edit runtime themes in `themes.js` and preserve column/header agreement.
+
+`data/announcements.json` is the editable station/template source; `npm run build:announcements` regenerates `announcement-data.js`. `announcement-model.js` builds adapted Japanese messages and computes Japan-time batches. `announcements.js` requires user activation, maintains a serial speech queue, handles stop/cancel races, and stores daily row/time deduplication under `n-gauge-arrival-seen-v1`. Voice availability comes from the device. Audio settings and whole-board theme remain in the existing v2 browser state.
+
+`check-arrivals.cjs` covers 12 theme permutations, 151 route mappings, settings migration, serial speech callbacks, simultaneous outer/inner priority, minute/day deduplication, cancellation and blocked playback. Mocked events do not prove real-device audibility; browser event checks and physical-device listening are separate.

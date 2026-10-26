@@ -7,11 +7,12 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="模型駅">
-  <meta name="description" content="JR 東日本風の模型列車発車案内。東日本・西日本・北海道・東海を地区、種別、路線で選択。関西私鉄と東海道新幹線、編成両数の手動設定。">
+  <meta name="description" content="JR6社・私鉄の表示テーマを切替できる模型列車発車案内。日本語合成到着放送、手動・日本時刻連動、模型編成設定。">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon-180.png">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="themes.css?v=8">
   <title>模型駅 · 列車ご案内</title>
 </head>
 <body>
@@ -26,6 +27,7 @@
     <section class="train-ticker" id="train-ticker" aria-label="滚动列车案内"><div class="ticker-badge"><span>列車案内</span><small id="ticker-platform">1番線</small></div><div class="ticker-window"><div class="ticker-track" id="ticker-track"></div></div></section>
   </main>
   <button type="button" class="settings-trigger" id="open-settings" aria-label="打开列车设置" aria-controls="settings" aria-expanded="false" title="列车设置"><span aria-hidden="true">···</span></button>
+  <button type="button" class="sound-trigger" id="sound-toggle" title="启用日语到站播报" aria-label="切换到站播报声音" aria-pressed="false">♫</button>
   <div class="shade" id="shade" hidden></div>
   <aside class="editor" id="settings" role="dialog" aria-modal="true" aria-labelledby="settings-title" hidden>
     <div class="editor-header"><h1 id="settings-title">列车与编组设置</h1><button type="button" class="done" id="close-settings">完成</button></div>
@@ -33,6 +35,15 @@
     <div class="reference-toolbar"><button type="button" class="secondary" id="apply-timetable">四行套用默认参考班次</button><a class="reference-source" href="timetable.html" target="_blank" rel="noopener">10/25 周日班次与来源 ↗</a></div>
     <div class="platform-tabs" role="tablist" aria-label="选择站台"><button type="button" class="platform-tab" id="tab-1" role="tab" aria-selected="true" aria-controls="platform-form" data-platform="1">1 站台 · 外圈</button><button type="button" class="platform-tab" id="tab-2" role="tab" aria-selected="false" aria-controls="platform-form" data-platform="2">2 站台 · 内圈</button></div>
     <div class="editor-scroll" id="editor-scroll"><div id="platform-form" role="tabpanel" aria-labelledby="tab-1"></div>
+      <details class="appearance announcement-settings"><summary>到站播报 · 日本时间</summary>
+        <p class="service-help">点击站台画面中的列车名，或每行“播报这班到站”。采用设备日语语音合成，按代表站句式模拟，非车站原声录音。</p>
+        <div class="announcement-actions"><button type="button" class="secondary" id="enable-audio">启用声音 · 试听</button><button type="button" class="secondary" id="stop-announcements">停止并清空队列</button></div>
+        <label class="check-label"><input type="checkbox" id="announcement-auto">按日本实时时钟自动播报到站</label>
+        <p class="service-help">仅匹配当前四行固定时刻，到分钟触发一次；同分钟先外圈再内圈，依次播完。发车时刻在这里作为模型到站触发点，参考站不改变你的时间或模型番线。刷新后需重新点击启用；页面在后台或设备锁屏时可能停播，不补播错过的分钟。</p>
+        <div class="form-group"><label class="form-label" for="announcement-voice">日语声音（由设备提供）</label><select class="control" id="announcement-voice"><option value="">系统日语</option></select></div>
+        <div class="field-grid"><div class="form-group"><label class="form-label" for="announcement-rate">语速</label><select class="control" id="announcement-rate"><option value="0.8">慢 · 0.8</option><option value="0.9">稍慢 · 0.9</option><option value="1">标准 · 1.0</option><option value="1.1">稍快 · 1.1</option></select></div><div class="form-group"><label class="form-label" for="announcement-volume">音量</label><input id="announcement-volume" type="range" min="0" max="1" step="0.1" value="0.8"></div></div>
+        <p id="announcement-status" class="announcement-status" role="status" aria-live="polite"></p><details><summary>最近一次播报文案</summary><p id="announcement-transcript" class="announcement-preview"></p></details><a class="reference-source" href="display-audio-research.html" target="_blank" rel="noopener">屏幕与报站资料说明 ↗</a>
+      </details>
       <details class="appearance ticker-settings"><summary>底部滚动提示</summary>
         <label class="check-label"><input type="checkbox" id="ticker-enabled" checked>显示底部滚动提示</label><label class="check-label"><input type="checkbox" id="ticker-paused">暂停滚动</label>
         <div class="form-group"><label class="form-label" for="ticker-target">跟随的班次</label><select class="control" id="ticker-target"><option value="nearest">自动：四班中最近待发时刻</option><option value="platform1">自动：1 站台最近待发</option><option value="platform2">自动：2 站台最近待发</option><option value="outer-first">固定：1 站台先发</option><option value="outer-next">固定：1 站台次发</option><option value="inner-first">固定：2 站台先发</option><option value="inner-next">固定：2 站台次发</option></select></div>
@@ -42,7 +53,8 @@
         <p class="service-help">选择模型时刻后，可按场景时间演示。已录入完整停站的参考班次会自动显示该班停站；其余采用线路代表样例。可在该班“滚动停站与座席”中编辑。开启系统减少动态效果时显示静态提示，可横向滑动阅读。</p>
       </details>
       <details class="appearance"><summary>显示选项与场景</summary>
-        <div class="form-group"><label class="form-label" for="display-mode">总框架：JR 东日本</label><select class="control" id="display-mode"><option value="lcd">现代 LCD · 白字与分类色</option><option value="led">传统 LED · 绿字时刻与点阵感</option></select></div>
+        <div class="form-group"><label class="form-label" for="display-theme">整屏站台风格</label><select class="control" id="display-theme"><option value="auto">自动匹配首行（未收录用JR东）</option></select><p class="theme-note" id="theme-info"></p></div>
+        <div class="form-group"><label class="form-label" for="display-mode">显示材质</label><select class="control" id="display-mode"><option value="lcd">现代 LCD · 白字与分类色</option><option value="led">传统 LED · 绿字时刻与点阵感</option></select></div>
         <label class="check-label"><input type="checkbox" id="show-english" checked>显示英文信息</label><label class="check-label"><input type="checkbox" id="show-matrix">叠加 LED 点阵质感</label><label class="check-label"><input type="checkbox" id="show-series" checked>备注中显示车辆型号</label><label class="check-label"><input type="checkbox" id="keep-awake">保持屏幕常亮（浏览器支持时）</label>
         <div class="form-group"><label class="form-label" for="custom-message">底部提示</label><input class="control" id="custom-message" maxlength="100" autocomplete="off"></div>
         <div class="form-group"><label class="form-label" for="scene">快速载入四班车（保留自定义节数）</label><select class="control" id="scene"><option value="kantoPrivate">关东私铁 · SPACIA X / Laview / GSE / Skyliner</option><option value="tokaiPrivate">东海私铁 · 名铁 / 静铁 / 伊豆</option><option value="hokkaidoLocal">北海道 · 道南 / 札幌 / 函馆地方交通</option><option value="kyushu">九州 · Kamome / Sonic / 由布院之森 / 西铁</option><option value="specialJR">特殊标识 · Saphir / GranClass / N’EX / 寝台</option><option value="specialPrivate">私铁标识 · しまかぜ / あをによし / 京阪 / 阪急</option><option value="specialSeats">座席对照 · Green Car / u-seat</option><option value="mixed">JR × 近铁 · 混合展示</option><option value="east">关东通勤线路</option><option value="express">JR 东日本特急</option><option value="shinkansen">东日本新干线</option><option value="west">JR 西日本 · 通勤与特急</option><option value="kansai">关西私铁 · 阪急 / 京阪 / 南海 / 近铁</option><option value="tokai">东海 · 东海道新干线与在来线</option><option value="hokkaido">北海道 · 新干线 / 特急 / Airport</option><option value="original">怀旧列车 × 东日本新干线</option></select></div>
@@ -55,6 +67,6 @@
   </aside>
   <div class="toast" id="toast" role="status" hidden></div>
   <noscript>此信息牌需要启用 JavaScript 才能显示列车与设置。</noscript>
-  <script src="catalog.js?v=7"></script><script src="catalog-regions.js?v=7"></script><script src="catalog-expanded.js?v=7"></script><script src="special-services.js?v=7"></script><script src="journey-data.js?v=7"></script><script src="service-ui.js?v=7"></script><script src="timetable-data.js?v=7"></script><script src="timetable-model.js?v=7"></script><script src="timetable-ui.js?v=7"></script><script src="model.js?v=7"></script><script src="journey-model.js?v=7"></script><script src="journey-ui.js?v=7"></script><script src="app.js?v=7"></script>
+  <script src="catalog.js?v=8"></script><script src="catalog-regions.js?v=8"></script><script src="catalog-expanded.js?v=8"></script><script src="special-services.js?v=8"></script><script src="journey-data.js?v=8"></script><script src="service-ui.js?v=8"></script><script src="timetable-data.js?v=8"></script><script src="timetable-model.js?v=8"></script><script src="timetable-ui.js?v=8"></script><script src="themes.js?v=8"></script><script src="announcement-data.js?v=8"></script><script src="announcement-model.js?v=8"></script><script src="model.js?v=8"></script><script src="journey-model.js?v=8"></script><script src="journey-ui.js?v=8"></script><script src="announcements.js?v=8"></script><script src="app.js?v=8"></script>
 </body>
 </html>

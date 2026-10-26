@@ -1,0 +1,527 @@
+{
+  "version": 1,
+  "researchedAt": "2026-10-26",
+  "purpose": "模型四行双平台的代表性主题建议，非精确官方复刻",
+  "invariants": [
+    "不更改用户的固定时刻和参考班次",
+    "不更改车型编组和双圈平台编号",
+    "手动全局主题优先，车型切换不应强制改主题",
+    "栏目头与行数据必须使用相同排列",
+    "颜色是实现建议而非官方精确规范"
+  ],
+  "profiles": [
+    {
+      "id": "jreast",
+      "label": "JR東日本",
+      "referenceStation": "東京支社 LCD 案内",
+      "deviceFamily": "lcd",
+      "columnOrder": [
+        "type",
+        "service",
+        "time",
+        "destination",
+        "cars",
+        "track"
+      ],
+      "gridColumns": "1.16fr 2.25fr 1.12fr 2.05fr .58fr .55fr",
+      "header": "灰色双语大标题；线路色细条与两平台导向；番线右置",
+      "palette": {
+        "background": "#0c1011",
+        "header": "#30383d",
+        "accent": "#80b748",
+        "time": "#f5f8f4",
+        "text": "#f5f8f4"
+      },
+      "structuralChanges": [
+        "保留双语灰色栏头",
+        "列车/线路名称独立大栏，车型为附属小字",
+        "右侧大号番线与主体分隔"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.jreast.co.jp/press/2019/tokyo/20191015_1_to.pdf",
+          "kind": "operator",
+          "evidence": "2019 LCD更新公告与到达剩余时间说明"
+        },
+        {
+          "url": "https://www.mlit.go.jp/common/001065963.pdf",
+          "kind": "government",
+          "evidence": "历史设备色彩调研"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "jrwest",
+      "label": "JR西日本",
+      "referenceStation": "京阪神・大阪 LED 家族",
+      "deviceFamily": "fullcolor-led",
+      "columnOrder": [
+        "type",
+        "time",
+        "destination",
+        "service",
+        "cars",
+        "track"
+      ],
+      "gridColumns": "1.12fr 1.08fr 2.1fr 2.25fr .6fr .55fr",
+      "header": "黑色方向栏；线路符号和大番线箭头，压缩大标题",
+      "palette": {
+        "background": "#080909",
+        "header": "#101213",
+        "accent": "#418cc7",
+        "time": "#fff7a5",
+        "text": "#f8f8f0"
+      },
+      "structuralChanges": [
+        "时刻与行先前移",
+        "种别紧凑色块，时间淡黄色",
+        "header使用のりば用语和线路符号"
+      ],
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.westjr.co.jp/smt/company/action/service/easy_to_understand/",
+          "kind": "operator",
+          "evidence": "发车标全彩化、段数和路线符号说明"
+        },
+        {
+          "url": "https://www.westjr.co.jp/company/action/service/cs_poster/pdf/vol_12.pdf",
+          "kind": "operator",
+          "evidence": "发车标整备实例"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "jrtokai",
+      "label": "JR東海",
+      "referenceStation": "東海道線改札 LCD 2019",
+      "deviceFamily": "concourse-lcd",
+      "columnOrder": [
+        "type",
+        "time",
+        "destination",
+        "track",
+        "service",
+        "cars"
+      ],
+      "gridColumns": "1.12fr 1.15fr 2.2fr .55fr 2.05fr .55fr",
+      "header": "棕色线路方向条；小号黑色列标题",
+      "palette": {
+        "background": "#040604",
+        "header": "#442708",
+        "accent": "#ff9b18",
+        "time": "#42ef37",
+        "text": "#79f45b"
+      },
+      "structuralChanges": [
+        "时刻/行先/番线在左侧主导",
+        "橙色速达种别、绿字普通",
+        "暗灰隔行并常驻橙绿ticker；原示意3列车扩为模型4行"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://jr-central.co.jp/news/release/_pdf/000039358.pdf",
+          "kind": "operator-visual-inspected",
+          "evidence": "2019改札LCD公告图，已渲染目视确认列顺序与颜色"
+        },
+        {
+          "url": "https://jr-central.co.jp/news/release/_pdf/000009716.pdf",
+          "kind": "operator-visual-inspected",
+          "evidence": "历史新干线列车名/时刻/行先/自由席示例，不复用旧席位规则"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "jrhokkaido",
+      "label": "JR北海道",
+      "referenceStation": "札幌改札 LED 家族",
+      "deviceFamily": "led",
+      "columnOrder": [
+        "type",
+        "service",
+        "time",
+        "destination",
+        "track",
+        "cars"
+      ],
+      "gridColumns": "1.1fr 2.05fr 1.15fr 2.15fr .6fr .55fr",
+      "header": "深绿色线路方向条；紧凑列名",
+      "palette": {
+        "background": "#030904",
+        "header": "#16452b",
+        "accent": "#56c17e",
+        "time": "#6ef36c",
+        "text": "#69f56d",
+        "special": "#ffad49"
+      },
+      "structuralChanges": [
+        "特急车名暖橙与普通绿字区分",
+        "密度更紧凑，番线方格",
+        "运行信息LCD与发车LED是不同设备，不将信息屏错当发车屏"
+      ],
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20231115_KO_winter.pdf",
+          "kind": "operator-visual-inspected",
+          "evidence": "第8页札幌改札照片，细字不足以证明精确列顺序"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "jrkyushu",
+      "label": "JR九州",
+      "referenceStation": "次世代案内系统参考",
+      "deviceFamily": "lcd-concept",
+      "columnOrder": [
+        "time",
+        "type",
+        "service",
+        "destination",
+        "cars",
+        "track"
+      ],
+      "gridColumns": "1.1fr 1.1fr 2.2fr 2.1fr .6fr .55fr",
+      "header": "简洁深色方向头，细红强调条",
+      "palette": {
+        "background": "#090b0d",
+        "header": "#222326",
+        "accent": "#d94346",
+        "time": "#fff8ee",
+        "text": "#f3f5f4"
+      },
+      "structuralChanges": [
+        "时间最左",
+        "列车名和目的地分列",
+        "红色导向边与白字；列顺序为模型适配"
+      ],
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.jrkyushu.co.jp/company/ir/news/__icsFiles/afieldfile/2025/11/06/FY2026.2q.material.ja.pdf",
+          "kind": "operator-concept",
+          "evidence": "第30页次世代案内示意明确非最终设计"
+        },
+        {
+          "url": "https://www.jrkyushu.co.jp/company/ir/news/__icsFiles/afieldfile/2026/06/19/9142.FY2026.securities_report.pdf",
+          "kind": "operator",
+          "evidence": "第44页LCD发车标更换工程"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "jrshikoku",
+      "label": "JR四国",
+      "referenceStation": "高松改札 LED",
+      "deviceFamily": "led",
+      "columnOrder": [
+        "type",
+        "service",
+        "time",
+        "destination",
+        "track",
+        "cars"
+      ],
+      "gridColumns": "1.1fr 2.0fr 1.2fr 2.15fr .65fr .6fr",
+      "header": "茶灰线路方向顶框，两平台分组",
+      "palette": {
+        "background": "#070a08",
+        "header": "#45413b",
+        "accent": "#38c7bd",
+        "time": "#f9ee87",
+        "text": "#f6eb8b",
+        "local": "#62e680",
+        "special": "#ff6055"
+      },
+      "structuralChanges": [
+        "高松方向分块压为双平台导向",
+        "紧凑多色文本，特急红、快速绿/青",
+        "番线右小格，附属车辆信息弱化"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.jr-shikoku.co.jp/02_information/care/support_equipment/",
+          "kind": "operator-visual-inspected",
+          "evidence": "LED発車時刻標高松照片已目视确认；茶灰顶框与多色文字"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "kintetsu",
+      "label": "近畿日本鉄道",
+      "referenceStation": "四日市改札 / 河内国分站台 LCD",
+      "deviceFamily": "lcd",
+      "columnOrder": [
+        "time",
+        "type",
+        "destination",
+        "service",
+        "cars",
+        "track"
+      ],
+      "gridColumns": "1.05fr 1.15fr 2.25fr 2fr .6fr .55fr",
+      "header": "侧向线路方向信息；番线白底蓝字大方块",
+      "palette": {
+        "background": "#111820",
+        "header": "#26313e",
+        "accent": "#2861b8",
+        "time": "#f9faff",
+        "text": "#f9faff",
+        "trackBackground": "#eef3ff",
+        "trackText": "#142d70",
+        "local": "#2362c7",
+        "subsemi": "#21a765",
+        "express": "#ed8c19"
+      },
+      "structuralChanges": [
+        "时刻最左，种别方形色块",
+        "番线用白底蓝字而非通篇红色",
+        "每平台先发次发之间加入停站备注小行；保留品牌图标"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://hoshimitsu.co.jp/product/ct-board/954/",
+          "kind": "manufacturer-visual-inspected",
+          "evidence": "2019四日市实际LCD，时刻/种别/行先/番线"
+        },
+        {
+          "url": "https://hoshimitsu.co.jp/product/ct-board/1858/",
+          "kind": "manufacturer-visual-inspected",
+          "evidence": "2024河内国分实际LCD，时刻/种别/行先/両数＋右侧大番线"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "hankyu",
+      "label": "阪急電鉄",
+      "referenceStation": "大阪梅田改札 LED 家族参考",
+      "deviceFamily": "led-inspired",
+      "columnOrder": [
+        "track",
+        "type",
+        "destination",
+        "time",
+        "service",
+        "cars"
+      ],
+      "gridColumns": ".6fr 1.15fr 2.15fr 1.1fr 2.1fr .55fr",
+      "header": "按线路分块的方向头，深棕酒红装饰",
+      "palette": {
+        "background": "#100b0d",
+        "header": "#3b222c",
+        "accent": "#a95c76",
+        "time": "#f6edcd",
+        "text": "#fff7ed"
+      },
+      "structuralChanges": [
+        "番线移到最左且字号最大",
+        "行先优先于时间",
+        "右侧列车小字/备注层；配色与顺序为代表性模型改编"
+      ],
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.hankyu.co.jp/station/umeda.html",
+          "kind": "operator",
+          "evidence": "大阪梅田站线路信息，不是视觉设计规范"
+        },
+        {
+          "url": "https://itec.hankyu-hanshin.co.jp/product/industry-t/information.html",
+          "kind": "supplier",
+          "evidence": "LED/LCD混合制御及行先、接近、延误功能"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:%E9%98%AA%E6%80%A5%E5%A4%A7%E9%98%AA%E6%A2%85%E7%94%B0%E9%A7%85%E8%8C%B6%E5%B1%8B%E7%94%BA%E5%8F%A3%E7%A5%9E%E6%88%B8%E7%B7%9A%E7%99%BA%E8%BB%8A%E6%A8%99.jpg",
+          "kind": "firsthand-photo-metadata",
+          "evidence": "2023 own-work CC0；图片网络失败，未逐像素核对"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "keihan",
+      "label": "京阪電車",
+      "referenceStation": "蓝色表格 LCD 家族",
+      "deviceFamily": "lcd",
+      "columnOrder": [
+        "track",
+        "time",
+        "type",
+        "destination",
+        "service",
+        "cars"
+      ],
+      "gridColumns": ".6fr 1.15fr 1.1fr 2.2fr 2.05fr .55fr",
+      "header": "蓝色表格和白色栏线；先发次发小侧签",
+      "palette": {
+        "background": "#080e22",
+        "header": "#141d52",
+        "accent": "#6579dc",
+        "time": "#f8faff",
+        "text": "#fff",
+        "destinationBackground": "#1825af",
+        "local": "#193ca8",
+        "limited": "#d12c3d"
+      },
+      "structuralChanges": [
+        "番线最左蓝底白字",
+        "行先蓝底表格与时刻黑底明显区分",
+        "车型栏为模型扩展；不混称2026中书岛新黑底布局"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://hoshimitsu.co.jp/business/board/",
+          "kind": "manufacturer-visual-inspected",
+          "evidence": "board01.jpg实际京阪LCD：のりば/発車時刻/種別/行先，非南海照片"
+        },
+        {
+          "url": "https://hoshimitsu.co.jp/product/ct-board/2089/",
+          "kind": "manufacturer-visual-inspected",
+          "evidence": "2026中书岛新版作为年代差异对照"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "nankai",
+      "label": "南海電鉄",
+      "referenceStation": "なんば LCD",
+      "deviceFamily": "lcd",
+      "columnOrder": [
+        "time",
+        "type",
+        "destination",
+        "track",
+        "service",
+        "cars"
+      ],
+      "gridColumns": "1.05fr 1.15fr 2.25fr .6fr 2.05fr .55fr",
+      "header": "黑色紧凑标题；下部停站图/备注空间感",
+      "palette": {
+        "background": "#070b12",
+        "header": "#111c2b",
+        "accent": "#7eafd6",
+        "time": "#fff",
+        "text": "#fff",
+        "trackBackground": "#69a4d7",
+        "trackText": "#fff",
+        "semi": "#3d9fd6",
+        "express": "#e9bb54",
+        "section": "#14b98d"
+      },
+      "structuralChanges": [
+        "每行主白字，下方窄种别色带",
+        "浅蓝大番线移近行先",
+        "独立停站细行而不是把所有资料塞进列车名"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://hoshimitsu.co.jp/business/board/",
+          "kind": "manufacturer-visual-inspected",
+          "evidence": "南海なんば实绩sec01_bg.jpg：白主字、浅蓝番线、下方色带、停站备注"
+        },
+        {
+          "url": "https://hoshimitsu.co.jp/product/ct-board/2082/",
+          "kind": "manufacturer",
+          "evidence": "林间田园都市LCD后续实例"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "hanshin",
+      "label": "阪神電車",
+      "referenceStation": "经典案内显示器参考",
+      "deviceFamily": "led-inspired",
+      "columnOrder": [
+        "time",
+        "type",
+        "destination",
+        "track",
+        "service",
+        "cars"
+      ],
+      "gridColumns": "1.05fr 1.1fr 2.25fr .6fr 2.1fr .55fr",
+      "header": "灰白方向顶栏、蓝圆番线、平台两行分块",
+      "palette": {
+        "background": "#090a08",
+        "header": "#c8cfca",
+        "headerText": "#192523",
+        "accent": "#367ab9",
+        "time": "#ffd846",
+        "text": "#ffd846",
+        "local": "#28a1b5",
+        "limited": "#e6bd40"
+      },
+      "structuralChanges": [
+        "时刻领先、行先黄橙大字",
+        "两行平台块和灰白顶框；蓝色圆番线可外置于方向头",
+        "普通青蓝，速达黄/红；非现代大阪梅田精确复刻"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.hanshin.co.jp/safety/barrierfree/",
+          "kind": "operator-visual-inspected",
+          "evidence": "列车案内显示器照片已目视确认：时刻/种别/行先，灰白顶框，蓝圆番线，黑底黄字"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    },
+    {
+      "id": "tokyometro",
+      "label": "東京メトロ",
+      "referenceStation": "2016 新型 LCD 案内",
+      "deviceFamily": "lcd",
+      "columnOrder": [
+        "time",
+        "type",
+        "destination",
+        "cars",
+        "track",
+        "service"
+      ],
+      "gridColumns": "1.1fr 1.1fr 2.25fr .6fr .6fr 2.1fr",
+      "header": "线路色横条、圆形路线标、先发次发状态区",
+      "palette": {
+        "background": "#0a1118",
+        "header": "#183542",
+        "accent": "#40afcd",
+        "time": "#f7fcff",
+        "text": "#f7fcff"
+      },
+      "structuralChanges": [
+        "时刻/行先主导，列车名后置弱化",
+        "路线色带和圆形路线符号",
+        "下方停站/接续区；不伪造列车当前位置"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://www.tokyometro.jp/news/2016/156536.html",
+          "kind": "operator",
+          "evidence": "2016全线新LCD公告：行先、发时、位置、停站及多语言"
+        },
+        {
+          "url": "https://www.tokyometro.jp/support/trademark/pdf/guideline.pdf",
+          "kind": "operator",
+          "evidence": "路线符号色彩背景，不作为LCD布局规范"
+        }
+      ],
+      "disclaimer": "代表性参考复现；四行双平台适配，并非该公司所有车站统一界面或官方作品。"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "themes": 12,
+  "routes": 151,
+  "presets": 237,
+  "simultaneousPriority": "outer-first, outer-next, inner-first, inner-next",
+  "serialSpeechEvents": true,
+  "minuteAndDayDeduplication": true,
+  "stopAndPermissionRace": true,
+  "userActivationAndVisibility": true,
+  "settingsMigration": true,
+  "realAudioAudibilityTested": false
+}
