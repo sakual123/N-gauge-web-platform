@@ -1,10 +1,12 @@
-# 对应N比例车型 · V10
+# 对应N比例车型 · V11
 
-核对日期：2026-10-27。收录 458 项厂家产品资料；237 个车辆预设中，214 个有车型对应产品，6 个仅有注明差别的版本参考，17 个尚未收录可核实品号。共用同型车辆的不同线路／服务预设会引用相同产品，预设覆盖数不等于独立车型数。
+核对日期：2026-10-27。收录 541 项厂家产品资料；237 个车辆预设中，216 个有车型对应产品，5 个仅有注明差别的版本参考，16 个尚未收录可核实品号。共用同型车辆的不同线路／服务预设会引用相同产品，预设覆盖数不等于独立车型数。
 
 ## 简体中文
 
-右上角“···”→ 列车 → 选择站台和先发／次发 → 每班车设置下的“对应N比例车型”。默认收起；切换车辆后更新厂家、品号、套装节数和来源。可复制品号，并打开厂家资料。目录支持地区、类型、线路、厂家、模型形态及对应情况筛选，可复制当前查询链接。厂家未公布品号的两项套件单列，不把商店商品ID冒充厂家编号。全文搜索目录位于 [dist/nscale-models.html](dist/nscale-models.html)，需通过本地服务器或已部署网站打开。
+右上角“···”→ 列车 → 选择站台和先发／次发 → 每班车设置下的“对应N比例车型”。默认收起；切换车辆后更新厂家、品号、套装节数和来源。可复制品号，并打开厂家资料。目录支持地区、类型、线路、厂家、模型形态及对应情况筛选，可复制当前查询链接。已确认商品但未核实整套官方编号的 5 项单列，不把商店商品ID或单辆车底编号冒充整套编号。全文搜索目录位于 [dist/nscale-models.html](dist/nscale-models.html)，需通过本地服务器或已部署网站打开。
+
+已核对 47 组编成搭配，覆盖 52 个预设；15 项产品有厂商明确的最小半径资料。
 
 收录厂家：KATO、TOMIX、MICRO ACE · MA、ポポンデッタ · PP、GREENMAX、MODEMO、TOMYTEC · 鉄道コレクション、ONE MILE · ワンマイル、模型工房パーミル、部屋の中こうぼう。MA 表示 MICRO ACE；PP 表示 Popondetta（ポポンデッタ）。这是一份经核对的产品参考索引，不是厂家历年全部品号，也不表示当前库存或已发售状态。已知预告产品在备注中标注。
 
@@ -15,19 +17,23 @@
 - 查询不改变模型节数、班次时间、行先或用户设置。N 比例含日本常见的 1:150 与新干线 1:160；不将 HO 产品混入。
 - 未列出的厂家或产品仅表示未收录已核对资料，不等于没有出品。无确认品号的车型显示明确提示。
 
-本轮同时修正旧目录的二代西铁“旅人”：由误写的6050形改为3000形，保留内部旧标识以兼容已保存设置。[TOMYTEC产品与车型说明](https://www.tomytec.co.jp/diocolle/lineup/tetsudou/5set_11.html)。
+“快速找车”可按系列、日文/中文车名、线路跨地区选车；全角英数字和日文假名形式会统一检索。选择只应用到当前正在编辑的那一班。
+
+每家产品下的“编成搭配”按官方资料列出基本、增结或附属编成，可复制整组品号。小车图按包装数量分组，不能当作实际号车顺序；真实排列请打开官方编成图。不同厂商或不同版本不能只因节数相加相同就混配。最小半径信息只用于核对所列产品或有明确条件的组合，不自动承诺适配R282/R315、道岔、S弯或坡度。未标半径表示此目录未核实，不等于没有限制。
+
+V9曾修正旧目录的二代西铁“旅人”：由误写的6050形改为3000形，保留内部旧标识以兼容已保存设置。[TOMYTEC产品与车型说明](https://www.tomytec.co.jp/diocolle/lineup/tetsudou/5set_11.html)。
 
 ## 日本語
 
 各列車の設定にある「对应N比例车型」を開くと、メーカー品番、セット両数、基本／増結と公式資料を表示します。MA は MICRO ACE、PP はポポンデッタです。車両選択に追従し、模型両数・便・行先は変更しません。
 
-型式・番台・塗装が対応する製品と、相違点のある参考仕様を区別します。過去製品・予告品も含み、在庫や販売中を保証する一覧ではありません。鉄道コレクション等のディスプレイモデルは動力・走行パーツ別売を明記します。未収録は未製品化を意味しません。旧プリセットの二代目「旅人」は3000形に訂正し、保存済み設定の識別子を維持しています。
+型式・番台・塗装が対応する製品と、相違点のある参考仕様を区別します。過去製品・予告品も含み、在庫や販売中を保証する一覧ではありません。鉄道コレクション等のディスプレイモデルは動力・走行パーツ別売を明記します。未収録は未製品化を意味しません。V11では「快速找车」で形式・列車名・路線を横断検索できます。「编成搭配」には公式資料に基づく基本／増結の組合せと合計両数を表示し、品番をまとめてコピーできます。図は箱単位の模式図で、実際の号車順ではありません。最小半径は確認できた商品・条件に限定し、レイアウト全体の走行を保証しません。旧プリセットの二代目「旅人」は3000形に訂正し、保存済み設定の識別子を維持しています。
 
 ## English
 
 Open “对应N比例车型” under each train in the settings drawer. Results follow the selected vehicle and show copyable manufacturer numbers, packaged car counts, basic/add-on status, version differences and official sources. Your formation, service and destination remain unchanged.
 
-Matching versions and explicitly different reference versions are labelled separately. The directory includes historical and announced products and does not represent current stock. Static Railway Collection models require separately purchased running parts and motor units as noted. Missing entries do not imply that no model exists. The second-generation Nishitetsu Tabito has been corrected to series 3000 while retaining its legacy settings identifier.
+Matching versions and explicitly different reference versions are labelled separately. The directory includes historical and announced products and does not represent current stock. Static Railway Collection models require separately purchased running parts and motor units as noted. Missing entries do not imply that no model exists. V11 adds cross-region vehicle search and verified basic/add-on recipes with copyable part-number lists. Diagrams group cars by retail package, not actual train order. Minimum-radius data is limited to the specified product or qualified combination and does not guarantee operation on an entire layout. The second-generation Nishitetsu Tabito has been corrected to series 3000 while retaining its legacy settings identifier.
 
 ## 数据维护 / Maintenance
 
@@ -38,6 +44,8 @@ npm run build:nscale
 npm test
 ~~~
 
-有官方编号的 product 的 id 为 maker:sku；官方产品存在但未列编号时使用 codeType: unlisted、sku 留空、稳定内部 id，页面显示“厂家未列品号”且不提供虚构编号复制。format 可为 ready／static／kit；vehicleIds 必须明确列出匹配的预设。cars 是盒内车辆数，setKind 为 set／basic／addon／single；match 为 exact 或 variant。source、sourceTitle、checkedAt 和中文 note 保留可核查来源及差异。官方仅列13位JAN时完整保留，并使用 codeType: JAN 标明检索码，不自行截成未核实的六位品番。coverage 按预设区分 verified、variant、unverified，不能用线路或系列名称模糊继承其他车型品号。
+有官方编号的 product 的 id 为 maker:sku；官方产品存在但未核实整套编号时使用 codeType: unlisted、sku 留空、稳定内部 id，页面显示“资料未列品号”且不提供虚构编号复制。format 可为 ready／static／kit；vehicleIds 必须明确列出匹配的预设。cars 是盒内车辆数，setKind 为 set／basic／addon／single；match 为 exact 或 variant。source、sourceTitle、checkedAt 和中文 note 保留可核查来源及差异。官方仅列13位JAN时完整保留，并使用 codeType: JAN 标明检索码，不自行截成未核实的六位品番。coverage 按预设区分 verified、variant、unverified，不能用线路或系列名称模糊继承其他车型品号。
+
+assemblies 的组件用 productId 与 quantity 明确引用，cars 必须等于实际盒内数乘数量的和；同一条组合不跨厂家，车型、版本、来源需逐组核实。minimumRadiusMm 仅在官方明确规格时填写，radiusNote 保留部件更换、限定编组等条件。
 
 逐车型与品号见数据 JSON 及网页查询；自动检查结果见 [NSCALE-VALIDATION.json](NSCALE-VALIDATION.json)。发布时复制整个 dist 目录。厂家名称、商标与产品资料的权利归各权利人；本项目未转载产品图片和长篇说明。

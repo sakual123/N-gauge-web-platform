@@ -162,3 +162,9 @@ Each train now has a “对应N比例车型” section showing copyable product 
 ## V10
 
 Settings use Train / Display / Audio tabs (列车／屏幕／声音). Choose a platform and first/next departure before editing. The N-scale shortcut opens that vehicle’s products; the footer opens the complete filterable directory. Copy the search link to share a selection. Replace the entire dist folder when updating, then refresh. Existing formations, times and destinations are retained.
+
+
+
+## V11
+
+Quick vehicle search finds presets across regions by series, name and route. Each manufacturer may offer verified basic/add-on recipes with copyable code lists. Diagrams group cars by package, not real train order. Filter the directory to show only vehicles with recipes. Products without confirmed complete-set codes retain a product-name/official-source lookup. Minimum radius and conditional curve compatibility are distinct and do not guarantee operation on an entire layout.

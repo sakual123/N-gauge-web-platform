@@ -4,13 +4,31 @@
   const E=(tag,cls,value)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined)el.textContent=value;return el;};
   function link(title,url){const a=E('a','reference-source',title);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;}
   function productCard(p){
-    const unlisted=p.codeType==='unlisted',codeName=p.codeType==='JAN'?'JAN':'品号',card=E('article','nscale-product'),head=E('div','nscale-product-head'),sku=E('code','nscale-sku',unlisted?'厂家未列品号':p.sku),copy=E('button','nscale-copy','复制'+codeName);
+    const unlisted=p.codeType==='unlisted',codeName=p.codeType==='JAN'?'JAN':'品号',card=E('article','nscale-product'),head=E('div','nscale-product-head'),sku=E('code','nscale-sku',unlisted?'资料未列品号':p.sku),copy=E('button','nscale-copy','复制'+codeName);
     card.dataset.match=p.match;card.dataset.format=N.format(p);copy.type='button';copy.setAttribute('aria-label','复制 '+N.makers.get(p.maker).label+' '+codeName+' '+p.sku);const status=E('span','nscale-copy-status');status.setAttribute('role','status');
     copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(p.sku);status.textContent='已复制';}catch(_){status.textContent='请长按品号复制';}});
     head.append(sku);if(!unlisted)head.append(copy);card.append(head,E('p','nscale-title',p.title));
     const tags=E('div','nscale-tags');if(p.codeType==='JAN')tags.append(E('span','','JAN 检索码'));tags.append(E('span','',N.description(p)),E('span','nscale-format',N.formats[N.format(p)]),E('span',p.match==='variant'?'nscale-variant':'nscale-exact',p.match==='variant'?'版本参考':'车型对应'));card.append(tags);
     if(p.note)card.append(E('p','nscale-note',p.note));
-    const footer=E('div','nscale-product-footer'),source=link('厂家资料 ↗',p.source);source.title=p.sourceTitle;footer.append(source,status);card.append(footer);return card;
+    if(p.minimumRadiusMm){const radius=E('div','nscale-radius');radius.append(E('span','','厂家标示最小半径'),E('strong','','R'+p.minimumRadiusMm));card.append(radius);}else if(p.radiusNote)card.append(E('div','nscale-radius','官方曲线条件'));
+    if(p.radiusNote)card.append(E('p','nscale-radius-note',p.radiusNote));
+    const footer=E('div','nscale-product-footer'),source=link(p.verificationUrl?'运营商官方资料 ↗':'厂家资料 ↗',p.source);source.title=p.sourceTitle;footer.append(source);if(p.radiusSource&&p.radiusSource!==p.source){const radiusLink=link('曲线条件资料 ↗',p.radiusSource);radiusLink.title=p.radiusSourceTitle||'厂家官方曲线条件';footer.append(radiusLink);}footer.append(status);card.append(footer);return card;
+  }
+  function assemblyCard(a,v){
+    const card=E('section','nscale-assembly'),heading=E('div','assembly-heading'),diagram=E('div','assembly-diagram'),formula=E('p','assembly-formula');
+    heading.append(E('h4','',a.label),E('strong','',a.totalCars+' 节'));card.append(heading);diagram.setAttribute('aria-label',a.parts.map(c=>c.product.sku+' '+c.product.cars*c.quantity+'节').join('，'));
+    diagram.style.setProperty('--assembly-color',window.RAIL_DATA.lines[v.line].color);
+    for(const part of a.parts){const cars=part.product.cars*part.quantity,group=E('div','assembly-part'),train=E('div','assembly-cars');group.style.setProperty('--part-cars',String(cars));for(let i=0;i<cars;i++)train.append(E('span','assembly-car'));group.append(train,E('span','assembly-part-code',part.product.sku+(part.quantity>1?' ×'+part.quantity:'')));diagram.append(group);}
+    formula.textContent=a.parts.map(p=>p.product.sku+(p.quantity>1?' ×'+p.quantity:'')+'（'+p.product.cars*p.quantity+'节）').join(' + ')+' = '+a.totalCars+'节';card.append(diagram,formula);
+    if(a.match==='variant')card.append(E('p','assembly-version','版本参考 · 请留意涂装与年代差别'));
+    if(a.note)card.append(E('p','assembly-note',a.note));
+    if(a.minimumRadiusMm)card.append(E('p','assembly-radius','此编成厂家标示最小半径 R'+a.minimumRadiusMm+(a.radiusNote?' · '+a.radiusNote:'')));
+    const actions=E('div','assembly-actions'),copy=E('button','nscale-copy','复制搭配品号'),status=E('span','nscale-copy-status');copy.type='button';status.setAttribute('role','status');copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(a.parts.map(p=>p.product.sku+(p.quantity>1?' ×'+p.quantity:'')).join(' + '));status.textContent='已复制搭配';}catch(_){status.textContent='可长按上方品号复制';}});actions.append(copy,link('官方编成资料 ↗',a.source),status);card.append(actions);return card;
+  }
+  function assemblyPanel(group,v){
+    const plans=N.assemblies(v.id,group.products);if(!plans.length)return null;
+    const panel=E('details','nscale-assemblies'),summary=E('summary','','编成搭配 · '+plans.length+' 种'),body=E('div','assembly-plans'+(plans.length===1?' assembly-single':''));panel.append(summary);let rendered=false;
+    panel.addEventListener('toggle',()=>{if(panel.open&&!rendered){plans.forEach(a=>body.append(assemblyCard(a,v)));body.append(E('p','assembly-help','按同厂家、对应版本组合；这里是产品搭配示例，不改变你的模型节数。实车号车顺序以官方编成图为准。'));panel.append(body);rendered=true;}});return panel;
   }
   function content(container,v,options={}){
     const initial=N.lookup(v.id,options.filters),identity=E('div','nscale-identity');identity.append(E('p','nscale-current',v.label),E('p','nscale-series',v.series));if(!options.hideIdentity)container.append(identity);
@@ -23,7 +41,7 @@
     function draw(){
       list.replaceChildren();const filters={...options.filters};if(options.showFilters!==false&&choice.value)filters.maker=choice.value;const found=filters.q?N.search({...filters,vehicle:v.id})[0]||{products:[],groups:[],note:'没有符合检索条件的产品'}:N.lookup(v.id,filters);
       count.textContent=found.products.length?'显示 '+found.products.length+' 项 · 套装节数按实物标注':'暂未收录可核对品号';
-      if(found.products.length){for(const g of found.groups){const group=E('section','nscale-maker');group.dataset.maker=g.maker.id;const heading=E('h3','nscale-maker-name');heading.append(E('span','',g.maker.label),E('small','',String(g.products.length)));group.append(heading);const cards=E('div','nscale-maker-products');g.products.forEach(p=>cards.append(productCard(p)));group.append(cards);list.append(group);}}
+      if(found.products.length){for(const g of found.groups){const group=E('section','nscale-maker');group.dataset.maker=g.maker.id;const heading=E('h3','nscale-maker-name');heading.append(E('span','',g.maker.label),E('small','',String(g.products.length)));group.append(heading);const plans=assemblyPanel(g,v);if(plans)group.append(plans);const cards=E('div','nscale-maker-products');g.products.forEach(p=>cards.append(productCard(p)));group.append(cards);list.append(group);}}
       else list.append(E('p','nscale-empty',found.note));
     }
     choice.addEventListener('change',()=>{makerChoice.set(v.id,choice.value);draw();});draw();

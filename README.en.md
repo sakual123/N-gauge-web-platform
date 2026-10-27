@@ -17,19 +17,21 @@ A Japanese railway departure-board simulator for N gauge layouts and iPad displa
 - **Scrolling train information:** stops and non-reserved/reserved/Green seating for the next departure. Choose a fixed row, model clock, speed, pause or custom text.
 - **LCD/LED appearance:** Japanese/English board information, optional dot texture, landscape/portrait layouts, browser-local persistence and JSON settings export.
 
-## Matching N-scale models · V10
+## Matching N-scale models · V11
 
-The directory contains **458 product records covering 220 of 237 presets** (214 matching, 6 with different reference versions only). The remaining 17 presets explain what could not be verified.
+**541 product records covering 221 of 237 presets** (216 matching, 5 with explicitly different reference versions only). The remaining 16 explain unresolved evidence. Ten makers are covered, and 71 presets offer multiple makers.
 
-![N-scale model lookup](docs/images/v10-catalogue-landscape.png)
+![Formation recipes](docs/images/v11-assembly-landscape.png)
 
-Open `···` → **对应N比例车型** under each train to see verified manufacturer product numbers, set lengths, basic/add-on status, version differences and official sources. Numbers can be copied. The directory includes KATO, TOMIX, MICRO ACE (MA), Popondetta (PP) and other manufacturers.
+Open `···` → Train (列车) → platform and first/next departure → **对应N比例车型**. Quick vehicle search accepts series, train names and routes, including full-width letters/numbers and kana variants. Selection changes only the row being edited.
 
-Results follow the selected vehicle without changing your formation, departure time or destination. Historical products are included; this is not a stock listing. Missing entries do not imply that no model exists. See [N-scale model notes](NSCALE-MODELS.md) for scope, matching rules and data maintenance. The directory covers 10 makers; 66 presets offer multiple makers. 456 records have official codes and 2 are verified kits without published manufacturer numbers. Filter by region, category, route, maker and model format, then share the search link. Settings now have train, display and audio tabs, with direct platform and first/next selection.
+There are 47 verified basic/add-on recipes with copyable part-number lists. Diagrams group cars by retail package, not actual train order, and leave your model car count unchanged. The directory can show only vehicles with recipes and share a filtered search link.
+
+536 records have official codes; 5 verified products without a confirmed complete-set code use their product name and official source instead of an invented number. Assembled, static and kit products are labelled separately. Explicit minimum-radius specifications and conditional curve compatibility are kept distinct. Historical/announced products are included; this is not a stock listing. Missing entries do not imply no model exists. See [matching and maintenance notes](NSCALE-MODELS.md).
 
 ## Timetable scope
 
-This release is **V10: 237 presets and 17,030 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 233 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
+This release is **V11: 237 presets and 17,030 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 233 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
 
 Coverage completeness and operating-date verification are separate: 11,248 records were checked for the specified day, 5,528 use official weekend/holiday tables, 230 use daily references, and 20 still require operating-calendar confirmation. Weekday-only and discontinued services remain labelled. Current official Ginza/Marunouchi data replaces the older samples.
 

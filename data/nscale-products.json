@@ -373,9 +373,9 @@
       ],
       "match": "exact",
       "note": "E261蓝宝石踊子完整8节特别企划套装，非普通踊子E257。",
-      "source": "https://www.katomodels.com/product?search=10-1644",
-      "sourceTitle": "KATO 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "https://www.katomodels.com/product/n/e261",
+      "sourceTitle": "KATO E261系サフィール踊り子 官方产品资料",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1644",
       "format": "ready"
     },
@@ -396,9 +396,11 @@
       "note": "JR东日本E7，附北陆与上越方向行先；另配10-1981三节及10-1982六节组成12节，非JR西日本W7。",
       "source": "https://www.katomodels.com/product/n/e7kei",
       "sourceTitle": "KATO 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1980",
-      "format": "ready"
+      "format": "ready",
+      "minimumRadiusMm": 315,
+      "radiusNote": "厂家标注最小通行半径R315（315 mm）；仍需核对实际线轨、曲线连接与车体净空。"
     },
     {
       "maker": "KATO",
@@ -415,9 +417,11 @@
       "note": "E5系行李架改造后版本，非H5；本套只有基本3节，实际完整编成为10节。",
       "source": "https://www.katomodels.com/product/n/e5kei_hayabusa_slm",
       "sourceTitle": "KATO 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1969",
-      "format": "ready"
+      "format": "ready",
+      "minimumRadiusMm": 315,
+      "radiusNote": "厂家标注最小通行半径R315（315 mm）；仍需核对实际线轨、曲线连接与车体净空。"
     },
     {
       "maker": "KATO",
@@ -859,9 +863,9 @@
       ],
       "match": "exact",
       "note": "快特及Wing号使用的红色2100形；基本4节，完整实车为8节。",
-      "source": "https://www.katomodels.com/product?search=2100",
-      "sourceTitle": "KATO 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "https://www.katomodels.com/product/n/keikyu2100_2027",
+      "sourceTitle": "KATO 官方产品详情：10-1815 京急2100形 基本セット(4両)",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1815",
       "format": "ready"
     },
@@ -1046,9 +1050,9 @@
       ],
       "match": "exact",
       "note": "Laview G编成8节N比例完整套装，非HO展示用先头车。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A1030.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：西武鉄道001系 Laview G編成 8両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A1030",
       "format": "ready"
     },
@@ -1063,9 +1067,9 @@
       ],
       "match": "exact",
       "note": "第四批次空调更换后小江户7节，非Laview或红箭复古特别涂装。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A1983.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：西武鉄道10000系 4次車 クーラー交換後 特急「小江戸」7両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A1983",
       "format": "ready"
     },
@@ -1080,9 +1084,9 @@
       ],
       "match": "exact",
       "note": "两毛200型标准色、带TOBU标志6节，不是1800型复刻红色或台湾涂装。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A2656.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：東武200型特急「りょうもう」標準色 TOBUロゴマーク付 6両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A2656",
       "format": "ready"
     },
@@ -1097,9 +1101,9 @@
       ],
       "match": "exact",
       "note": "现代成田Sky Access用3100形3157编成8节，非早期同名3100形。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A1221.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：京成3100形 3157編成 8両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A1221",
       "format": "ready"
     },
@@ -1148,9 +1152,9 @@
       ],
       "match": "exact",
       "note": "银色更新EXEα基本6节，可配A6597四节；非铜色旧EXE。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A6596R.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：小田急30000形・EXEα・リニューアル 基本6両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A6596",
       "format": "ready"
     },
@@ -1165,9 +1169,9 @@
       ],
       "match": "exact",
       "note": "EXEα新宿侧4节增结，与A6596配为10节；动力配置按厂家说明核对。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A6596R.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：小田急30000形・EXEα・リニューアル 増結4両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A6597",
       "format": "ready"
     },
@@ -1216,9 +1220,9 @@
       ],
       "match": "exact",
       "note": "9732编成都营新宿线直通规格；基本6节配A7476四节组成10节。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A7475.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：京王9000系 9732F 基本6両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A7475",
       "format": "ready"
     },
@@ -1233,9 +1237,9 @@
       ],
       "match": "exact",
       "note": "9732编成中间4节增结，与A7475组成10节。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A7475.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：京王9000系 9732F 増結4両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A7476",
       "format": "ready"
     },
@@ -1250,9 +1254,9 @@
       ],
       "match": "exact",
       "note": "井之头线蓝绿色前脸1000系改良版5节；同系有多种前脸颜色，此套不是浅蓝或粉红。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A0067.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：京王1000系 ブルーグリーン 改良品 5両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A0067",
       "format": "ready"
     },
@@ -1267,9 +1271,9 @@
       ],
       "match": "exact",
       "note": "南北线9000系更新车6节版本，非8节化后的编成。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A8498R.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：東京メトロ9000系・リニューアル 6両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A8498",
       "format": "ready"
     },
@@ -1288,7 +1292,10 @@
       "sourceTitle": "TOMIX 官方产品资料",
       "checkedAt": "2026-10-26",
       "id": "TOMIX:98804",
-      "format": "ready"
+      "format": "ready",
+      "radiusNote": "官方产品页及兼容名单明确支持TOMIX迷你曲线轨道；官方1112轨道页定义该等级为R140/R177。这是厂家轨道等级兼容说明，并非逐车标示的最小通过半径，不据此填写最小值；不能延伸为支持R103超级迷你曲线或任意其他车辆混编。 本款官方另注明不对应车体安装式TN车钩，不应将换装后状态套用原兼容声明。",
+      "radiusSource": "https://www.tomytec.co.jp/tomix/products/smc-mc-list.html",
+      "radiusSourceTitle": "TOMIX官方超级迷你／迷你曲线走行车辆名单；1112页定义R140/R177"
     },
     {
       "maker": "GREENMAX",
@@ -1390,7 +1397,10 @@
       "sourceTitle": "TOMIX 官方产品资料",
       "checkedAt": "2026-10-26",
       "id": "TOMIX:98149",
-      "format": "ready"
+      "format": "ready",
+      "radiusNote": "官方产品页及兼容名单明确支持TOMIX迷你曲线轨道；官方1112轨道页定义该等级为R140/R177。这是厂家轨道等级兼容说明，并非逐车标示的最小通过半径，不据此填写最小值；不能延伸为支持R103超级迷你曲线或任意其他车辆混编。",
+      "radiusSource": "https://www.tomytec.co.jp/tomix/products/smc-mc-list.html",
+      "radiusSourceTitle": "TOMIX官方超级迷你／迷你曲线走行车辆名单；1112页定义R140/R177"
     },
     {
       "maker": "KATO",
@@ -1483,9 +1493,11 @@
       "note": "与10-1969基本三节及10-1971增结B四节组成10节E5，非H5。",
       "source": "https://www.katomodels.com/product/n/e5kei_hayabusa_slm",
       "sourceTitle": "KATO 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1970",
-      "format": "ready"
+      "format": "ready",
+      "minimumRadiusMm": 315,
+      "radiusNote": "厂家标注最小通行半径R315（315 mm）；仍需核对实际线轨、曲线连接与车体净空。"
     },
     {
       "maker": "KATO",
@@ -1502,9 +1514,11 @@
       "note": "配同版10-1969及10-1970组成10节，不是早版10-1665。",
       "source": "https://www.katomodels.com/product/n/e5kei_hayabusa_slm",
       "sourceTitle": "KATO 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1971",
-      "format": "ready"
+      "format": "ready",
+      "minimumRadiusMm": 315,
+      "radiusNote": "厂家标注最小通行半径R315（315 mm）；仍需核对实际线轨、曲线连接与车体净空。"
     },
     {
       "maker": "KATO",
@@ -2268,9 +2282,9 @@
       ],
       "match": "exact",
       "note": "标准蓝色Rapi:t，更新车且更换台车规格；不是泉北Liner或彩绘。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A0757.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：南海50000系 更新車(台車交換) 6両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A0757",
       "format": "ready"
     },
@@ -2285,9 +2299,9 @@
       ],
       "match": "exact",
       "note": "更新后红色编成、白色前照灯；与黄色编成区分。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A6666.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：近鉄23000系 伊勢志摩ライナー 白色ヘッドライト 赤編成 6両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A6666",
       "format": "ready"
     },
@@ -2302,9 +2316,9 @@
       ],
       "match": "exact",
       "note": "更新后黄色编成、白色前照灯；与红色编成区分。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A6667.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：近鉄23000系 伊勢志摩ライナー 白色ヘッドライト 黄編成 6両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A6667",
       "format": "ready"
     },
@@ -2319,9 +2333,9 @@
       ],
       "match": "exact",
       "note": "含Premium Car的8000系8节；不是旧3000系电视车。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A2859R3.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：京阪8000系・京阪特急プレミアムカー 8両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A2859",
       "format": "ready"
     },
@@ -2353,9 +2367,9 @@
       ],
       "match": "exact",
       "note": "8225～8226更新编成6节；与旧涂装产品区分。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A6493f.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：阪神8000系「8225～8226」リニューアル 6両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A6493",
       "format": "ready"
     },
@@ -2370,9 +2384,9 @@
       ],
       "match": "exact",
       "note": "奈良线灰色床下、体质改善后4节；不是阪和线登场时水蓝带。厂家另有裙板修正公告，购买时核对修正部件。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/ec_c.html",
-      "sourceTitle": "MICROACE 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A2466.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：205系1000番代 体質改善工事施工車 奈良線(床下グレー) 4両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A2466",
       "format": "ready"
     },
@@ -2593,9 +2607,11 @@
       "note": "Maple Red两节，厂家说明可通过R150；不是时期限定青枫绿色。",
       "source": "https://www.katomodels.com/product/n/eiden900_kirara_pc",
       "sourceTitle": "KATO 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1471",
-      "format": "ready"
+      "format": "ready",
+      "minimumRadiusMm": 150,
+      "radiusNote": "KATO本商品页明确可通过R150急曲线；仍需核对S弯、坡度及邻线净空。"
     },
     {
       "maker": "KATO",
@@ -2610,9 +2626,11 @@
       "note": "Maple Orange两节，车型相同、涂色与红色版本区分。",
       "source": "https://www.katomodels.com/product/n/eiden900_kirara_pc",
       "sourceTitle": "KATO 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1472",
-      "format": "ready"
+      "format": "ready",
+      "minimumRadiusMm": 150,
+      "radiusNote": "KATO本商品页明确可通过R150急曲线；仍需核对S弯、坡度及邻线净空。"
     },
     {
       "maker": "KATO",
@@ -2789,9 +2807,11 @@
       "note": "JR西日本W7系，行李区窗封堵后规格，6+6组成12节；非JR东日本E7系。",
       "source": "https://www.katomodels.com/product/n/e7kei",
       "sourceTitle": "KATO 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1975",
-      "format": "ready"
+      "format": "ready",
+      "minimumRadiusMm": 315,
+      "radiusNote": "KATO本商品官方规格为最小通过半径R315；不代表其他厂家的W7。轨道条件、坡度、S弯仍需自行核对。"
     },
     {
       "maker": "KATO",
@@ -2807,9 +2827,11 @@
       "note": "JR西日本W7系，行李区窗封堵后规格，6+6组成12节；非JR东日本E7系。",
       "source": "https://www.katomodels.com/product/n/e7kei",
       "sourceTitle": "KATO 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1976",
-      "format": "ready"
+      "format": "ready",
+      "minimumRadiusMm": 315,
+      "radiusNote": "KATO本商品官方规格为最小通过半径R315；不代表其他厂家的W7。轨道条件、坡度、S弯仍需自行核对。"
     },
     {
       "maker": "TOMIX",
@@ -2948,7 +2970,10 @@
       "sourceTitle": "TOMIX 官方产品资料：JR 789-0系特急電車（スーパー白鳥）セット",
       "checkedAt": "2026-10-26",
       "id": "TOMIX:98895",
-      "format": "ready"
+      "format": "ready",
+      "radiusNote": "官方98896页仅对98895六辆＋98896两辆的八辆连接状态注明曲线半径280mm以上；须按说明将专用幌框及裙板TN装到六辆侧クハ789-200。此条件不等于98895六辆独立运行的最小通过半径，六辆本身数值仍未填。",
+      "radiusSource": "https://www.tomytec.co.jp/tomix/products/n/98896.html",
+      "radiusSourceTitle": "TOMIX 98896官方：八辆连接状态R280与专用连接件条件"
     },
     {
       "maker": "TOMIX",
@@ -2965,7 +2990,9 @@
       "sourceTitle": "TOMIX 官方产品资料：JR 789-0系特急電車（スーパー白鳥）増結セット",
       "checkedAt": "2026-10-26",
       "id": "TOMIX:98896",
-      "format": "ready"
+      "format": "ready",
+      "minimumRadiusMm": 280,
+      "radiusNote": "仅限98895六辆＋98896两辆连结为八辆的官方条件：半径280mm以上；须将附属幌框/带裙板TN连结器装到六辆组クハ789-200。R282仅略高于此值，弯道间距、反向曲线及轨道状态仍需实测。"
     },
     {
       "maker": "TOMIX",
@@ -3406,9 +3433,9 @@
       ],
       "match": "variant",
       "note": "789系1000番台五辆，但商品为快速Airport时代的历史版本；神威爱称/行先需自行更换，不是现行Kamui专属版本。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/ec_l.html",
-      "sourceTitle": "MICROACE 官方产品资料：789系1000番台 快速「エアポート」 5両セット",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A0844R.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：789系1000番台 快速「エアポート」 5両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A0844",
       "format": "ready"
     },
@@ -3440,9 +3467,9 @@
       ],
       "match": "exact",
       "note": "Huis Ten Bosch新涂装橙色四辆套装；不是原来的绿/红涂装。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/ec_l.html",
-      "sourceTitle": "MICROACE 官方产品资料：783系 特急ハウステンボス 新塗装 4両セット",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A3667.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：783系 特急ハウステンボス 新塗装 4両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A3665",
       "format": "ready"
     },
@@ -3457,9 +3484,9 @@
       ],
       "match": "exact",
       "note": "783系Midori四辆完整套装；与885系Midori及HTB橙色编成不同。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/ec_l.html",
-      "sourceTitle": "MICROACE 官方产品资料：783系 特急みどり 4両セット",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A3666R.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：783系 特急みどり 4両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A3666",
       "format": "ready"
     },
@@ -3474,9 +3501,9 @@
       ],
       "match": "exact",
       "note": "KiHa72由布院之森增编后的五辆完整套装；不是KiHa71四辆版，也不是KiHa183森II。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/dc.html",
-      "sourceTitle": "MICROACE 官方产品资料：キハ72系・ゆふいんの森・編成増強 5両セット",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A7892R2.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：キハ72系・ゆふいんの森・編成増強 5両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A7892",
       "format": "ready"
     },
@@ -3491,9 +3518,9 @@
       ],
       "match": "exact",
       "note": "KiHa183形1000番台阿苏男孩四辆完整套装；不是同车曾用的由布院之森II涂装。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/dc.html",
-      "sourceTitle": "MICROACE 官方产品资料：キハ183形1000番代 D&S列車「あそぼーい！」4両セット",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A8263.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：キハ183形1000番代 D&S列車「あそぼーい！」4両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A8263",
       "format": "ready"
     },
@@ -3508,9 +3535,9 @@
       ],
       "match": "exact",
       "note": "KiHa47＋KiHa140指宿玉手箱三辆完整套装；与登场时只有KiHa47的两辆A6073不同。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/dc.html",
-      "sourceTitle": "MICROACE 官方产品资料：キハ47+キハ140・指宿のたまて箱 3両セット",
-      "checkedAt": "2026-10-26",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A6076R.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：キハ47+キハ140・指宿のたまて箱 3両セット",
+      "checkedAt": "2026-10-27",
       "id": "MICROACE:A6076",
       "format": "ready"
     },
@@ -3836,7 +3863,10 @@
       "sourceTitle": "TOMIX 官方产品资料：肥薩おれんじ鉄道 HSOR-100形セット",
       "checkedAt": "2026-10-26",
       "id": "TOMIX:98025",
-      "format": "ready"
+      "format": "ready",
+      "radiusNote": "官方产品页及兼容名单明确支持TOMIX迷你曲线轨道；官方1112轨道页定义该等级为R140/R177。这是厂家轨道等级兼容说明，并非逐车标示的最小通过半径，不据此填写最小值；不能延伸为支持R103超级迷你曲线或任意其他车辆混编。",
+      "radiusSource": "https://www.tomytec.co.jp/tomix/products/smc-mc-list.html",
+      "radiusSourceTitle": "TOMIX官方超级迷你／迷你曲线走行车辆名单；1112页定义R140/R177"
     },
     {
       "maker": "TOMIX",
@@ -3853,7 +3883,10 @@
       "sourceTitle": "TOMIX 官方产品资料：天竜浜名湖鉄道 TH2100形",
       "checkedAt": "2026-10-26",
       "id": "TOMIX:8620",
-      "format": "ready"
+      "format": "ready",
+      "radiusNote": "官方产品页及兼容名单明确支持TOMIX迷你曲线轨道；官方1112轨道页定义该等级为R140/R177。这是厂家轨道等级兼容说明，并非逐车标示的最小通过半径，不据此填写最小值；不能延伸为支持R103超级迷你曲线或任意其他车辆混编。",
+      "radiusSource": "https://www.tomytec.co.jp/tomix/products/smc-mc-list.html",
+      "radiusSourceTitle": "TOMIX官方超级迷你／迷你曲线走行车辆名单；1112页定义R140/R177"
     },
     {
       "maker": "TOMIX",
@@ -3884,9 +3917,9 @@
       ],
       "match": "exact",
       "note": "885系2次车蓝带AROUND THE KYUSHU六辆版，可按Sonic/Relay Kamome运用调整行先；不是黄色带初期白色Kamome，也非1次车前灯造型。",
-      "source": "https://www.katomodels.com/product?search=10-1952",
-      "sourceTitle": "KATO 官方产品资料：885系（2次車）<アラウンド・ザ・九州> 6両セット",
-      "checkedAt": "2026-10-26",
+      "source": "https://www.katomodels.com/product/n/885kei_2nd_around_vc",
+      "sourceTitle": "KATO 官方产品详情：10-1952 885系(2次車)〈アラウンド・ザ・九州〉6両セット",
+      "checkedAt": "2026-10-27",
       "id": "KATO:10-1952",
       "format": "ready"
     },
@@ -4883,7 +4916,9 @@
       "note": "JR东日本E7中间三节增结A，配10-1980三节基本及10-1982六节增结B为12节。",
       "source": "https://www.katomodels.com/product/n/e7kei",
       "sourceTitle": "KATO 官方产品品号与编成资料",
-      "checkedAt": "2026-10-27"
+      "checkedAt": "2026-10-27",
+      "minimumRadiusMm": 315,
+      "radiusNote": "厂家标注最小通行半径R315（315 mm）；仍需核对实际线轨、曲线连接与车体净空。"
     },
     {
       "id": "KATO:10-1982",
@@ -4904,7 +4939,9 @@
       "note": "配10-1980与10-1981组成E7十二节；非JR西日本W7。",
       "source": "https://www.katomodels.com/product/n/e7kei",
       "sourceTitle": "KATO 官方产品品号与编成资料",
-      "checkedAt": "2026-10-27"
+      "checkedAt": "2026-10-27",
+      "minimumRadiusMm": 315,
+      "radiusNote": "厂家标注最小通行半径R315（315 mm）；仍需核对实际线轨、曲线连接与车体净空。"
     },
     {
       "id": "KATO:10-1759",
@@ -4971,8 +5008,8 @@
       "match": "exact",
       "format": "ready",
       "note": "京急2100标准色中间四节，配10-1815基本四节为8节。",
-      "source": "https://www.katomodels.com/schedule",
-      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "source": "https://www.katomodels.com/product/n/keikyu2100_2027",
+      "sourceTitle": "KATO 官方产品详情：10-1308 京急2100形 増結セット(4両)",
       "checkedAt": "2026-10-27"
     },
     {
@@ -5126,8 +5163,8 @@
       "match": "exact",
       "format": "ready",
       "note": "标准红色京急2100八节较早产品；与GM更新版及KATO四＋四套装的生产时期、细节不同。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品品号与编成资料",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A3861.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：京急2100形 8両セット",
       "checkedAt": "2026-10-27"
     },
     {
@@ -5144,8 +5181,8 @@
       "match": "variant",
       "format": "ready",
       "note": "2100形Blue Sky Train蓝色特别涂装八节，非一般红色；作为同系列涂装版本参考。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品品号与编成资料",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A3861.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：京急2100形「KEIKYU BLUE SKY TRAIN」8両セット",
       "checkedAt": "2026-10-27"
     },
     {
@@ -6411,8 +6448,8 @@
       ],
       "match": "exact",
       "note": "近铁26000系Sakura Liner第一编成、新涂装的完整4节套装；不要与旧绿色帯版本或第二编成A9935混同。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料：近鉄26000系さくらライナー第一編成新塗装4両セット",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A9932.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：近鉄26000系さくらライナー第一編成新塗装4両セット",
       "checkedAt": "2026-10-27",
       "id": "MICROACE:A9932",
       "format": "ready"
@@ -6428,8 +6465,8 @@
       ],
       "match": "exact",
       "note": "近铁26000系Sakura Liner第二编成、新涂装的完整4节套装；与A9932第一编成有编成区别，不是旧涂装。",
-      "source": "http://www.microace-arii.co.jp/products/itemlist/pr.html",
-      "sourceTitle": "MICROACE 官方产品资料：近鉄26000系さくらライナー第二編成新塗装4両セット",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A9932.pdf",
+      "sourceTitle": "MICROACE 官方产品发布 PDF：近鉄26000系さくらライナー第二編成新塗装4両セット",
       "checkedAt": "2026-10-27",
       "id": "MICROACE:A9935",
       "format": "ready"
@@ -7361,7 +7398,9 @@
       "sourceTitle": "KATO 官方产品资料：N700S新幹線「のぞみ」基本セット(4両)",
       "checkedAt": "2026-10-27",
       "format": "ready",
-      "id": "KATO:10-1697S"
+      "id": "KATO:10-1697S",
+      "minimumRadiusMm": 315,
+      "radiusNote": "KATO本页该版N700S（10-1697S／10-1698／10-1699）明确最小通过曲线半径R315 mm，并设车体倾斜机构。组成本版列车时以R315及以上核对；不适用于其他厂家、其他型号或旧版。最小半径数据不替代站台、邻线及道岔的净空核对。"
     },
     {
       "maker": "KATO",
@@ -7380,7 +7419,9 @@
       "sourceTitle": "KATO 官方产品资料：N700S新幹線「のぞみ」増結セットA(4両)",
       "checkedAt": "2026-10-27",
       "format": "ready",
-      "id": "KATO:10-1698"
+      "id": "KATO:10-1698",
+      "minimumRadiusMm": 315,
+      "radiusNote": "KATO本页该版N700S（10-1697S／10-1698／10-1699）明确最小通过曲线半径R315 mm，并设车体倾斜机构。组成本版列车时以R315及以上核对；不适用于其他厂家、其他型号或旧版。最小半径数据不替代站台、邻线及道岔的净空核对。"
     },
     {
       "maker": "KATO",
@@ -7399,7 +7440,9 @@
       "sourceTitle": "KATO 官方产品资料：N700S新幹線「のぞみ」増結セットB(8両)",
       "checkedAt": "2026-10-27",
       "format": "ready",
-      "id": "KATO:10-1699"
+      "id": "KATO:10-1699",
+      "minimumRadiusMm": 315,
+      "radiusNote": "KATO本页该版N700S（10-1697S／10-1698／10-1699）明确最小通过曲线半径R315 mm，并设车体倾斜机构。组成本版列车时以R315及以上核对；不适用于其他厂家、其他型号或旧版。最小半径数据不替代站台、邻线及道岔的净空核对。"
     },
     {
       "maker": "KATO",
@@ -7517,8 +7560,8 @@
       ],
       "match": "exact",
       "note": "2010 年前后 JR 北海道＋JR 东日本混成北斗星客车。10-831 基本 6 辆＋10-832 增结 6 辆＝客车 12 辆；不含机车和动力，牵引机需另购，用户的 6 节可作缩编。",
-      "source": "https://www.katomodels.com/product/n/24kei_hokutosei_",
-      "sourceTitle": "KATO 官方产品资料：24系寝台特急「北斗星」<デラックス編成> 6両基本セット",
+      "source": "https://www.katomodels.com/product/n/24kei_hokutosei_dx",
+      "sourceTitle": "KATO 官方24系北斗星Deluxe编成与牵引说明",
       "checkedAt": "2026-10-27",
       "format": "ready",
       "id": "KATO:10-831"
@@ -7534,8 +7577,8 @@
       ],
       "match": "exact",
       "note": "2010 年前后 JR 北海道＋JR 东日本混成北斗星客车。10-831 基本 6 辆＋10-832 增结 6 辆＝客车 12 辆；不含机车和动力，牵引机需另购，用户的 6 节可作缩编。",
-      "source": "https://www.katomodels.com/product/n/24kei_hokutosei_",
-      "sourceTitle": "KATO 官方产品资料：24系寝台特急「北斗星」<デラックス編成> 6両増結セット",
+      "source": "https://www.katomodels.com/product/n/24kei_hokutosei_dx",
+      "sourceTitle": "KATO 官方24系北斗星Deluxe编成与牵引说明",
       "checkedAt": "2026-10-27",
       "format": "ready",
       "id": "KATO:10-832"
@@ -8001,6 +8044,1441 @@
       "format": "kit",
       "id": "HEYANONAKA:fukuoka4000-body-kit",
       "codeType": "unlisted"
+    },
+    {
+      "id": "KATO:10-1874",
+      "maker": "KATO",
+      "sku": "10-1874",
+      "title": "E657系〈E653系リバイバルカラー(橙)〉10両セット",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "e657-hitachi",
+        "e657-tokiwa"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "K3编成、E653复刻橙色整列10节；车辆本体仍为E657，而非E653。与预设通常白色E657涂装不同，作为特殊涂装参考。",
+      "source": "https://www.katomodels.com/product/n/e657_revival_k3",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-1875",
+      "maker": "KATO",
+      "sku": "10-1875",
+      "title": "E657系〈E653系リバイバルカラー(紅)〉10両セット",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "e657-hitachi",
+        "e657-tokiwa"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "K12编成、E653复刻紅色整列10节；车辆本体仍为E657，而非E653。与预设通常白色E657涂装不同，作为特殊涂装参考。",
+      "source": "https://www.katomodels.com/product/n/e657_revival_color_k12",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-1876",
+      "maker": "KATO",
+      "sku": "10-1876",
+      "title": "E657系〈E653系リバイバルカラー(黄)〉10両セット",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "e657-hitachi",
+        "e657-tokiwa"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "K2编成、E653复刻黄色整列10节；车辆本体仍为E657，而非E653。与预设通常白色E657涂装不同，作为特殊涂装参考。",
+      "source": "https://www.katomodels.com/product/n/e657_revival_color_k2",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-1877",
+      "maker": "KATO",
+      "sku": "10-1877",
+      "title": "E657系〈E653系リバイバルカラー(青)〉10両セット",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "e657-hitachi",
+        "e657-tokiwa"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "K1编成、E653复刻青色整列10节；车辆本体仍为E657，而非E653。与预设通常白色E657涂装不同，作为特殊涂装参考。",
+      "source": "https://www.katomodels.com/product/n/e657_k1",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-1878",
+      "maker": "KATO",
+      "sku": "10-1878",
+      "title": "E657系〈E653系リバイバルカラー(緑)〉10両セット",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "e657-hitachi",
+        "e657-tokiwa"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "K17编成、E653复刻緑色整列10节；车辆本体仍为E657，而非E653。与预设通常白色E657涂装不同，作为特殊涂装参考。",
+      "source": "https://www.katomodels.com/product/n/e657_revival_color",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-2019",
+      "maker": "KATO",
+      "sku": "10-2019",
+      "title": "西武鉄道40000系 基本セット(4両)",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "sb40000-strain"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "40105编成现行天线增设、IR天线撤去版本；长短向可转换座席的S-TRAIN用车。10-2019四节基本＋10-2020四节增结A＋10-2021两节增结B为10节；不同于旧10-1400系列和全长椅40000系50番台。",
+      "source": "https://www.katomodels.com/product/n/seibu40000series",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-2020",
+      "maker": "KATO",
+      "sku": "10-2020",
+      "title": "西武鉄道40000系 増結セットA(4両)",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "sb40000-strain"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "40105编成现行天线增设、IR天线撤去版本；长短向可转换座席的S-TRAIN用车。10-2019四节基本＋10-2020四节增结A＋10-2021两节增结B为10节；不同于旧10-1400系列和全长椅40000系50番台。",
+      "source": "https://www.katomodels.com/product/n/seibu40000series",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-2021",
+      "maker": "KATO",
+      "sku": "10-2021",
+      "title": "西武鉄道40000系 増結セットB(2両)",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "sb40000-strain"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "40105编成现行天线增设、IR天线撤去版本；长短向可转换座席的S-TRAIN用车。10-2019四节基本＋10-2020四节增结A＋10-2021两节增结B为10节；不同于旧10-1400系列和全长椅40000系50番台。",
+      "source": "https://www.katomodels.com/product/n/seibu40000series",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-1403",
+      "maker": "KATO",
+      "sku": "10-1403",
+      "title": "西武鉄道40000系 10両セット",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "sb40000-strain"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "较早产品的完整10节套装、飞轮动力，非2025年40105天线更新版；有可转换座席，非全长椅50番台。",
+      "source": "https://www.katomodels.com/product/n/seibu_40000kei",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-1614",
+      "maker": "KATO",
+      "sku": "10-1614",
+      "title": "E257系2500番台「踊り子」5両セット",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "e257-odoriko",
+        "e257-shonan"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "NC-31五节附属编成，有动力；属于2500番台而非预设2000番台9节主编成。可与10-1613九节组成14节踊り子；2500番台按厂家说明无牵引胶圈，以便重联。",
+      "source": "https://www.katomodels.com/product/n/e257_2000",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-2205",
+      "maker": "KATO",
+      "sku": "10-2205",
+      "title": "東急電鉄5050系(アンテナ増設) 8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "ty5050"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "5174编成、天线增设和IR撤去现行版本，8节全部在盒内；区别于预设4000番台10节编成，车头印有8cars。",
+      "source": "https://www.katomodels.com/product/n/tokyu5050kei_slm",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-1246",
+      "maker": "KATO",
+      "sku": "10-1246",
+      "title": "東急電鉄5050系4000番台 10両セット",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "ty5050"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "常规银红粉色带4000番台整列10节旧产品；与现行四节基本＋四节增结A＋两节增结B为替代购买选择，无需重复购买。",
+      "source": "https://www.katomodels.com/product/n/tokyu5050",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-1424",
+      "maker": "KATO",
+      "sku": "10-1424",
+      "title": "東急電鉄5050系 8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "ty5050"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "较早8节编成完整套装；不是4000番台10节，也不是2026年天线增设版10-2205。",
+      "source": "https://www.katomodels.com/product/n/tokyu5050",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-958",
+      "maker": "KATO",
+      "sku": "10-958",
+      "title": "東急電鉄5050系4000番台 Qシート車2両セット",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ty5050"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "Hobby Center KATO的Q SEAT中间两节（サハ4400・デハ4500），附车号转印纸；不含车头或动力。官方列可与5050系4000番台各产品及5000系组合，组入时需核对目标编组，非任意加长两节的通用增结。沿用已有模型，室内等与实车有差异。",
+      "source": "https://www.katomodels.com/product/n/tokyu5050",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-1997",
+      "maker": "KATO",
+      "sku": "10-1997",
+      "title": "東急電鉄5050系4000番台〈Shibuya Hikarie号〉(アンテナ増設)10両セット",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "ty5050"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "Shibuya Hikarie金色特别涂装、先头天线增设及中间IR撤去版本，整列10节；非通常银红粉色带。",
+      "source": "https://www.katomodels.com/product/n/tokyu5050_hikarie",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-2043",
+      "maker": "KATO",
+      "sku": "10-2043",
+      "title": "東急電鉄5050系4000番台〈新幹線ラッピングトレイン〉10両セット",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "ty5050"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "enjoy WEST联动的新干线白蓝色特别涂装，车型仍为东急5050系4000番台，非真正N700新干线。整列10节。",
+      "source": "https://www.katomodels.com/product/n/tokyu5050_4000kei_shinkansen",
+      "sourceTitle": "KATO 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "POPONDETTA:6030",
+      "maker": "POPONDETTA",
+      "sku": "6030",
+      "title": "東武500系「リバティ」増備車6両セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "tb500-kegon",
+        "tb500-aizu"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "增备车两组三节共6节，区别于初期车；官方目录明确为六节完整套装。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "POPONDETTA:6031",
+      "maker": "POPONDETTA",
+      "sku": "6031",
+      "title": "東武500系「リバティ」初期車＋増備車6両セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "tb500-kegon",
+        "tb500-aizu"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "初期车与增备车三节各一组，共6节；区别于两组均为初期车或均为增备车。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "TOMIX:98759",
+      "maker": "TOMIX",
+      "sku": "98759",
+      "title": "東武100系スペーシア(雅カラー)セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "tb100-spacia"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "江户紫雅色完整6节、M-13动力；与预设橙白色登场时涂装不同。厂家说明可通过迷你曲线，但该产品页没有给出数值，目录不推定最小半径。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98759.html",
+      "sourceTitle": "TOMIX 官方产品品号与编成资料",
+      "checkedAt": "2026-10-27",
+      "radiusNote": "官方产品页及兼容名单明确支持TOMIX迷你曲线轨道；官方1112轨道页定义该等级为R140/R177。这是厂家轨道等级兼容说明，并非逐车标示的最小通过半径，不据此填写最小值；不能延伸为支持R103超级迷你曲线或任意其他车辆混编。 本款官方另注明不对应车体安装式TN车钩，不应将换装后状态套用原兼容声明。",
+      "radiusSource": "https://www.tomytec.co.jp/tomix/products/smc-mc-list.html",
+      "radiusSourceTitle": "TOMIX官方超级迷你／迷你曲线走行车辆名单；1112页定义R140/R177"
+    },
+    {
+      "id": "TOMIX:97219",
+      "maker": "TOMIX",
+      "sku": "97219",
+      "title": "JR 223-2500系近郊電車（転落防止幌付）基本セット",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "223-kanku"
+      ],
+      "match": "variant",
+      "note": "公告计划于2026年12月发售。纯2500番台RS54/RS57编成，主显示为嵯峨野线E普通京都；附阪和线显示和原运番遮光件可用于改装前形态。2022年转属京都的版本，不是现行关空快速混入0番台中间车的专用编成，作版本参考。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/97219.html",
+      "sourceTitle": "TOMIX 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:97220",
+      "maker": "TOMIX",
+      "sku": "97220",
+      "title": "JR 223-2500系近郊電車（転落防止幌付）増結セット",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "223-kanku"
+      ],
+      "match": "variant",
+      "note": "公告计划于2026年12月发售。完整4节无动力RS58/HE435编成，非缺少车头的中间车盒；与97219的床下机器有别。京都转属后E普通京都形态、附阪和线替换显示，作关空快速的历史/改装版本参考。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/97220.html",
+      "sourceTitle": "TOMIX 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1959",
+      "maker": "KATO",
+      "sku": "10-1959",
+      "title": "683系0番台「サンダーバード」（リニューアル車）6両基本セット",
+      "cars": 6,
+      "setKind": "basic",
+      "vehicleIds": [
+        "683-thunderbird"
+      ],
+      "match": "exact",
+      "note": "2024年更新的0番台W36/V35版本；6＋3组成9节。带无钩密连、前面安全带挂等细节，与4000番台产品不是同一编成。",
+      "source": "https://www.katomodels.com/product/n/683kei",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1960",
+      "maker": "KATO",
+      "sku": "10-1960",
+      "title": "683系0番台「サンダーバード」（リニューアル車）3両増結セット",
+      "cars": 3,
+      "setKind": "addon",
+      "vehicleIds": [
+        "683-thunderbird"
+      ],
+      "match": "exact",
+      "note": "2024年更新的0番台W36/V35版本；6＋3组成9节。带无钩密连、前面安全带挂等细节，与4000番台产品不是同一编成。",
+      "source": "https://www.katomodels.com/product/n/683kei",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-2142",
+      "maker": "KATO",
+      "sku": "10-2142",
+      "title": "683系4000番台「サンダーバード」（リニューアル車）基本セット（4両）",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "683-thunderbird"
+      ],
+      "match": "exact",
+      "note": "2026年B35编成版本，反映全车指定席和新版行先贴纸；4＋5组成9节。勿与旧10-1745/1746版本混成默认搭配。",
+      "source": "https://www.katomodels.com/product/n/683_4000_tb_pc",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-2143",
+      "maker": "KATO",
+      "sku": "10-2143",
+      "title": "683系4000番台「サンダーバード」（リニューアル車）増結セット（5両）",
+      "cars": 5,
+      "setKind": "addon",
+      "vehicleIds": [
+        "683-thunderbird"
+      ],
+      "match": "exact",
+      "note": "2026年B35编成版本，反映全车指定席和新版行先贴纸；4＋5组成9节。勿与旧10-1745/1746版本混成默认搭配。",
+      "source": "https://www.katomodels.com/product/n/683_4000_tb_pc",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1898",
+      "maker": "KATO",
+      "sku": "10-1898",
+      "title": "223系2000番台＜新快速＞4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "223-shinkaisoku"
+      ],
+      "match": "exact",
+      "note": "2020年网干V42编成，4节完整含动力附属组；可与8节W33编成10-1899连挂为12节。不是8节编成内部的中间车增结。",
+      "source": "https://www.katomodels.com/product/n/223_2000kei_rerun",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1439",
+      "maker": "KATO",
+      "sku": "10-1439",
+      "title": "225系100番台「新快速」8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "225-shinkaisoku"
+      ],
+      "match": "exact",
+      "note": "早期100番台I008编成，2020年标记位置；8节完整含动力组。与2024年3次车10-1901的原型、细节和电机版本有别。",
+      "source": "https://www.katomodels.com/product/n/225kei_100",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1440",
+      "maker": "KATO",
+      "sku": "10-1440",
+      "title": "225系100番台＜新快速＞4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "225-shinkaisoku"
+      ],
+      "match": "exact",
+      "note": "100番台U005编成，4节完整含动力组、无牵引胶圈；可与10-1439的8节连挂12节，与Aシート700番台产品有别。",
+      "source": "https://www.katomodels.com/product/n/225kei_100",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-871",
+      "maker": "KATO",
+      "sku": "10-871",
+      "title": "225系0番台「新快速」8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "225-shinkaisoku"
+      ],
+      "match": "exact",
+      "note": "0番台I4编成，8节完整含动力组，前面形状不同于100番台；厂家列新快速姬路显示，可与223系连挂。",
+      "source": "https://www.katomodels.com/product/n/225kei_0",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1601",
+      "maker": "KATO",
+      "sku": "10-1601",
+      "title": "323系大阪環状線 基本セット（4両）",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "323-loop",
+        "323-yumesaki"
+      ],
+      "match": "exact",
+      "note": "LS06编成的2020年4＋4版，弱冷房位置为2、7号车，含梦咲线替换显示。不能与后期LS19的10-1988/1989的3＋5套装混配。",
+      "source": "https://www.katomodels.com/product/n/323kei",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1602",
+      "maker": "KATO",
+      "sku": "10-1602",
+      "title": "323系大阪環状線 増結セット（4両）",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "323-loop",
+        "323-yumesaki"
+      ],
+      "match": "exact",
+      "note": "LS06编成的2020年4＋4版，弱冷房位置为2、7号车，含梦咲线替换显示。不能与后期LS19的10-1988/1989的3＋5套装混配。",
+      "source": "https://www.katomodels.com/product/n/323kei",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1365",
+      "maker": "KATO",
+      "sku": "10-1365",
+      "title": "阪急電鉄9300系 京都線 基本セット（4両）（旧製品）",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "hk9300"
+      ],
+      "match": "exact",
+      "note": "9306F的2020年版，4＋4成8节，LED前灯及全彩行先显示；区别新9307F的侧面上部车号、女性专用标记、电机版本。官方列为旧产品。",
+      "source": "https://www.katomodels.com/product/n/hankyu9300",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1366",
+      "maker": "KATO",
+      "sku": "10-1366",
+      "title": "阪急電鉄9300系 京都線 増結セット（4両）（旧製品）",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "hk9300"
+      ],
+      "match": "exact",
+      "note": "9306F的2020年版，4＋4成8节，LED前灯及全彩行先显示；区别新9307F的侧面上部车号、女性专用标记、电机版本。官方列为旧产品。",
+      "source": "https://www.katomodels.com/product/n/hankyu9300",
+      "sourceTitle": "KATO 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6069",
+      "maker": "POPONDETTA",
+      "sku": "6069",
+      "title": "京阪電鉄13000系30番台6両セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "kh13000-main"
+      ],
+      "match": "exact",
+      "note": "京阪本线30番台完整6节编成；与既有6070的20番台7节有别，切换本产品时可把模型编组改为6节。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6024a",
+      "maker": "POPONDETTA",
+      "sku": "6024a",
+      "title": "近鉄26000系さくらライナー更新車 白ライト（第一編成）4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "kt26000-sakura"
+      ],
+      "match": "exact",
+      "note": "官方新公告品号，第一编成、更新涂装、白色前灯4节。核对日厂商标为发售计划，不承诺现货。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6025",
+      "maker": "POPONDETTA",
+      "sku": "6025",
+      "title": "近鉄26000系さくらライナー未更新車4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "kt26000-sakura"
+      ],
+      "match": "variant",
+      "note": "更新前的绿白色外观4节，与当前更新车的粉色涂装和车内设备不同，作历史版本参考。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6025a",
+      "maker": "POPONDETTA",
+      "sku": "6025a",
+      "title": "近鉄26000系さくらライナー未更新車（第二編成）4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "kt26000-sakura"
+      ],
+      "match": "variant",
+      "note": "官方新公告品号，第二编成更新前绿白色4节，与现行更新车不同；核对日列为发售计划。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6026",
+      "maker": "POPONDETTA",
+      "sku": "6026",
+      "title": "近鉄26000系さくらライナー更新車＋未更新車8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "kt26000-sakura"
+      ],
+      "match": "variant",
+      "note": "更新车4节与未更新绿白色车4节的过渡期混编套装，共8节；并非两组现行更新车，作历史版本参考。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6130",
+      "maker": "POPONDETTA",
+      "sku": "6130",
+      "title": "近鉄26000系さくらライナー更新車白ライト8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "kt26000-sakura"
+      ],
+      "match": "exact",
+      "note": "官方新公告的两组更新白色前灯编成合计8节，非默认单4节；核对日列为发售计划。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6131",
+      "maker": "POPONDETTA",
+      "sku": "6131",
+      "title": "近鉄26000系さくらライナー未更新車8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "kt26000-sakura"
+      ],
+      "match": "variant",
+      "note": "官方新公告的两组更新前绿白色编成合计8节；与当前粉色更新车不同，作历史版本参考，核对日列为发售计划。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6001",
+      "maker": "POPONDETTA",
+      "sku": "6001",
+      "title": "南海30000系 特急「こうや」登場時",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "nk30000-koya"
+      ],
+      "match": "exact",
+      "note": "最初品号的登场形态4节，与改良版6075及更新版6076不同。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6002",
+      "maker": "POPONDETTA",
+      "sku": "6002",
+      "title": "南海30000系 特急「こうや」更新車",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "nk30000-koya"
+      ],
+      "match": "exact",
+      "note": "最初品号的更新车形态4节，与后续改良版6076不同。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6074",
+      "maker": "POPONDETTA",
+      "sku": "6074",
+      "title": "南海30000系未更新車 特急「こうや」愛称幕交換後4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "nk30000-koya"
+      ],
+      "match": "exact",
+      "note": "未更新车、爱称幕更换后的4节，侧面方向幕点亮；与登场时/更新车分别列出。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6075",
+      "maker": "POPONDETTA",
+      "sku": "6075",
+      "title": "南海30000系登場時 特急「こうや」改良版4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "nk30000-koya"
+      ],
+      "match": "exact",
+      "note": "登场形态改良版4节，侧面方向幕点亮，与6001旧品号及6076更新车不同。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6080a",
+      "maker": "POPONDETTA",
+      "sku": "6080a",
+      "title": "Osaka Metro30000系御堂筋線10両セット（室内灯しだれ桜）",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "metro30000-m"
+      ],
+      "match": "exact",
+      "note": "与6080同类御堂筋线10节完整编成，厂家已安装“しだれ桜”系列室内灯；不是谷町线30000系或中央线30000A系。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6080b",
+      "maker": "POPONDETTA",
+      "sku": "6080b",
+      "title": "Osaka Metro30000系御堂筋線10両セット（室内灯ソメイヨシノ）",
+      "cars": 10,
+      "setKind": "set",
+      "vehicleIds": [
+        "metro30000-m"
+      ],
+      "match": "exact",
+      "note": "与6080同类御堂筋线10节完整编成，厂家已安装“ソメイヨシノ”系列室内灯；不是谷町线30000系或中央线30000A系。",
+      "source": "https://maker.popondetta.com/maker/?page_id=45",
+      "sourceTitle": "POPONDETTA 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98477",
+      "maker": "TOMIX",
+      "sku": "98477",
+      "title": "近畿日本鉄道30000系ビスタEX（旧塗装）セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "kt30000-vista"
+      ],
+      "match": "variant",
+      "note": "更新成Vista EX之后、改新涂装之前的橙/深蓝色4节；与98463当前涂装有别，厂家说明不再现车体卡通图案，作历史版本参考。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98477.html",
+      "sourceTitle": "TOMIX 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98466",
+      "maker": "TOMIX",
+      "sku": "98466",
+      "title": "JR 221系近郊電車基本セットA",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "221-yamatoji"
+      ],
+      "match": "variant",
+      "note": "更新改造前的221系，车门按钮高位、加长裙板；4节可单独运行，配98468中间4节成8节。与预设现行大和路更新车不同，作历史版本参考。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98466.html",
+      "sourceTitle": "TOMIX 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98467",
+      "maker": "TOMIX",
+      "sku": "98467",
+      "title": "JR 221系近郊電車基本セットB",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "221-yamatoji",
+        "221-osakahigashi"
+      ],
+      "match": "variant",
+      "note": "更新改造前的完整6节221系，车门按钮为高位，装快速显示；大阪东线现行更新车需改造，不能视作该线现行专用品。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98467.html",
+      "sourceTitle": "TOMIX 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98468",
+      "maker": "TOMIX",
+      "sku": "98468",
+      "title": "JR 221系近郊電車増結セット",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "221-yamatoji"
+      ],
+      "match": "variant",
+      "note": "更新改造前221系的中间4节无动力增结，与98466基本4节配成8节；与预设现行更新车不同，作历史版本参考。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98468.html",
+      "sourceTitle": "TOMIX 官方车型产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "TOMYTEC:hankyu7000-kyotrain-garaku-6",
+      "maker": "TOMYTEC",
+      "sku": "",
+      "codeType": "unlisted",
+      "title": "鉄道コレクション 阪急7000系 京とれいん雅洛（6両セット）",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "hk7000-garaku"
+      ],
+      "match": "exact",
+      "format": "static",
+      "note": "阪急运营商限定的1/150铁道Collection静态6节模型。官方频道直接介绍本商品，未核实整套厂家品号，按商品名检索；动化需另配部件，不把各节K590–K595车底编号当作整套品号。",
+      "source": "https://www.youtube.com/watch?v=71cnLKyU5qY",
+      "sourceTitle": "阪急电铁官方频道：館長推薦・鉄道コレクション阪急7000系 京とれいん雅洛（6両セット）",
+      "verificationUrl": "https://www.hankyu.co.jp/company/sns/index.html",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "KATO:10-2000",
+      "maker": "KATO",
+      "sku": "10-2000",
+      "title": "特別企画品 273系「やくも」8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "273-yakumo"
+      ],
+      "match": "exact",
+      "note": "Y7＋Y8两组4节的特别企划完整8节，外侧先头车为非贯通门，内侧供连挂先头车为贯通结构；与10-1999两端都有贯通门的Y2四节版本不同。",
+      "source": "https://www.katomodels.com/product/n/273series_yakumo",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1528",
+      "maker": "KATO",
+      "sku": "10-1528",
+      "title": "特別企画品 叡山電鉄900系＜青もみじきらら＞（メープルグリーン）",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "eizan900"
+      ],
+      "match": "variant",
+      "note": "2019年3月至2024年12月上旬运行的枫绿历史涂装2节，区别红色/橙色现行外观；2025再生产仅调整部分行先贴纸。官方本产品页明确急曲线R150可通过。",
+      "source": "https://www.katomodels.com/product/n/eiden900_kirara_pc",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-27",
+      "format": "ready",
+      "minimumRadiusMm": 150,
+      "radiusNote": "KATO本商品页明确可通过R150急曲线；不对其他品牌或不同车辆推断，S弯、坡度及邻线净空仍需核对。"
+    },
+    {
+      "id": "POPONDETTA:nankai-limited-8300-nankai-2",
+      "maker": "POPONDETTA",
+      "sku": "",
+      "codeType": "unlisted",
+      "title": "南海8300系 南海線2両セット（南海電鉄限定販売商品）",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "nk8300-airport"
+      ],
+      "match": "exact",
+      "note": "南海电铁运营商限定销售的PP完成品2节。官方2025年铁路节商品表直接列明厂家、线路与盒内2节，但未列厂家品号；按商品名检索。单盒不是默认6/8节长编成；官方该表未说明动力有无，不以市场编号或店铺ID冒充品号。",
+      "source": "https://www.nankai.co.jp/lib/traffic/information/pdf/251007.pdf",
+      "sourceTitle": "南海电铁官方2025年第32回铁路节公告：第一页商品表",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:nankai-limited-8300-koya-2",
+      "maker": "POPONDETTA",
+      "sku": "",
+      "codeType": "unlisted",
+      "title": "南海8300系 高野線2両セット（南海電鉄限定販売商品）",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "nk8300-koya"
+      ],
+      "match": "exact",
+      "note": "南海电铁运营商限定销售的PP完成品2节。官方2025年铁路节商品表直接列明厂家、线路与盒内2节，但未列厂家品号；按商品名检索。单盒不是默认6/8节长编成；官方该表未说明动力有无，不以市场编号或店铺ID冒充品号。",
+      "source": "https://www.nankai.co.jp/lib/traffic/information/pdf/251007.pdf",
+      "sourceTitle": "南海电铁官方2025年第32回铁路节公告：第一页商品表",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31959",
+      "maker": "GREENMAX",
+      "sku": "31959",
+      "title": "JR九州817系1600番代（福北ゆたか線・車番選択式）基本2両編成セット（動力付き）",
+      "cars": 2,
+      "setKind": "basic",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "match": "exact",
+      "note": "1100番代长座椅改造后的1600番代，两辆含动力；车号选择式、行先点灯，配31960无动力两辆可作四辆。与旧0番代31515及白色2000番代不同。",
+      "source": "https://www.greenmax.co.jp/gm-product/31959.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州817系1600番代（福北ゆたか線・車番選択式）基本2両編成セット（動力付き）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31960",
+      "maker": "GREENMAX",
+      "sku": "31960",
+      "title": "JR九州817系1600番代（福北ゆたか線・車番選択式）増結2両編成セット（動力無し）",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "match": "exact",
+      "note": "1600番代无动力两辆，须配31959等动力编组；车端长座椅、前面行先点灯，不能单独走行。",
+      "source": "https://www.greenmax.co.jp/gm-product/31960.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州817系1600番代（福北ゆたか線・車番選択式）増結2両編成セット（動力無し）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31577",
+      "maker": "GREENMAX",
+      "sku": "31577",
+      "title": "JR九州817系1500番代（福北ゆたか線）2両編成セット（動力付き）",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "match": "exact",
+      "note": "1000番代长座椅改造后的1500番代，银色车体两辆含动力，属于福北丰线现行系谱；不同于1100改造的1600番代，行先贴纸选择。",
+      "source": "https://www.greenmax.co.jp/gm-product/31577.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州817系1500番代（福北ゆたか線）2両編成セット（動力付き）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31578",
+      "maker": "GREENMAX",
+      "sku": "31578",
+      "title": "JR九州817系1500番代（福北ゆたか線）2両編成セット（動力無し）",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "match": "exact",
+      "note": "1500番代两辆无动力附属盒；配31577等动力编组使用，不能单独走行。不同于白色2000番代及旧0番代。",
+      "source": "https://www.greenmax.co.jp/gm-product/31578.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州817系1500番代（福北ゆたか線）2両編成セット（動力無し）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:32288",
+      "maker": "GREENMAX",
+      "sku": "32288",
+      "title": "JR九州817系2000番代 基本2両編成セット（動力付き）",
+      "cars": 2,
+      "setKind": "basic",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "match": "exact",
+      "note": "白色车体、长座椅的2000番代，两辆含动力；含安全确认摄像头附件、车号选择及前面行先点灯。官方2026年10月8日公布、列“4月以后”生产计划，尚不作为已发售或现货保证。",
+      "source": "https://www.greenmax.co.jp/gm-product/32288.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州817系2000番代 基本2両編成セット（動力付き）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:32289",
+      "maker": "GREENMAX",
+      "sku": "32289",
+      "title": "JR九州817系2000番代 増結2両編成セット（動力無し）",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "match": "exact",
+      "note": "白色车体、长座椅的2000番代，两辆无动力，须另配动力编组；含安全确认摄像头附件、车号选择及前面行先点灯。官方2026年10月8日公布、列“4月以后”生产计划，尚不作为已发售或现货保证。",
+      "source": "https://www.greenmax.co.jp/gm-product/32289.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州817系2000番代 増結2両編成セット（動力無し）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31516",
+      "maker": "GREENMAX",
+      "sku": "31516",
+      "title": "JR九州817系0番代（福北ゆたか線・V014編成）増結2両編成セット（動力無し）",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "match": "variant",
+      "note": "银色0番代V014历史编组，无动力两辆，可配31515基本盒。福北丰线0番代题材对应2001–2007年前后，与现行长座椅1500/1600及白色2000不同；不能单独走行。",
+      "source": "https://www.greenmax.co.jp/gm-product/31516.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州817系0番代（福北ゆたか線・V014編成）増結2両編成セット（動力無し）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31697",
+      "maker": "GREENMAX",
+      "sku": "31697",
+      "title": "名鉄3500系（機器更新車・行先表示点灯）増結4両編成セット（動力無し）",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "mt3500"
+      ],
+      "match": "exact",
+      "note": "与31696同系列的设备更新车无动力四辆，前面行先点灯；可配基本动力编组作八辆，不能单独走行。",
+      "source": "https://www.greenmax.co.jp/gm-product/31697.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄3500系（機器更新車・行先表示点灯）増結4両編成セット（動力無し）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:32053",
+      "maker": "GREENMAX",
+      "sku": "32053",
+      "title": "名鉄3500系3次車（未更新車・車番選択式）基本4両編成セット（動力付き）",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "mt3500"
+      ],
+      "match": "variant",
+      "note": "第3批未更新车四辆，动力包含；新制未更新车用床下机器、车号可选、前面行先点灯。与设备更新版31696/31697的原型状态不同。",
+      "source": "https://www.greenmax.co.jp/gm-product/32053.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄3500系3次車（未更新車・車番選択式）基本4両編成セット（動力付き）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:32054",
+      "maker": "GREENMAX",
+      "sku": "32054",
+      "title": "名鉄3500系3次車（未更新車・車番選択式）増結4両編成セット（動力無し）",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "mt3500"
+      ],
+      "match": "variant",
+      "note": "第3批未更新车四辆，动力不含，需配32053等动力编组；新制未更新车用床下机器、车号可选、前面行先点灯。与设备更新版31696/31697的原型状态不同。",
+      "source": "https://www.greenmax.co.jp/gm-product/32054.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄3500系3次車（未更新車・車番選択式）増結4両編成セット（動力無し）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:32055",
+      "maker": "GREENMAX",
+      "sku": "32055",
+      "title": "名鉄3500系3次車（ワンマン対応車・車番選択式）4両編成セット（動力付き）",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "mt3500"
+      ],
+      "match": "variant",
+      "note": "第3批单人运行对应改造车，四辆含动力，车外扬声器印刷，车号可选。与一般未更新车和设备更新车的状态不同，选择时核对扬声器/床下机器。",
+      "source": "https://www.greenmax.co.jp/gm-product/32055.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄3500系3次車（ワンマン対応車・車番選択式）4両編成セット（動力付き）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31588",
+      "maker": "GREENMAX",
+      "sku": "31588",
+      "title": "名鉄9500系 増結4両編成セット（動力無し）",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "mt9500"
+      ],
+      "match": "exact",
+      "note": "9500最初式样的无动力四辆，可配31587基本四辆；不是2025年出现的中央贯通门第6批。需另配动力编组。",
+      "source": "https://www.greenmax.co.jp/gm-product/31588.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄9500系 増結4両編成セット（動力無し）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:32161",
+      "maker": "GREENMAX",
+      "sku": "32161",
+      "title": "名鉄9500系（6次車）基本4両編成セット（動力付き）",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "mt9500"
+      ],
+      "match": "exact",
+      "note": "2025年出现的第6批中央贯通门型，新制前面，四辆含动力；不同于31587/31588早期偏置贯通门。官方列2026年6月出货。",
+      "source": "https://www.greenmax.co.jp/gm-product/32161.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄9500系（6次車）基本4両編成セット（動力付き）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:32162",
+      "maker": "GREENMAX",
+      "sku": "32162",
+      "title": "名鉄9500系（6次車）増結4両編成セット（動力無し）",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "mt9500"
+      ],
+      "match": "exact",
+      "note": "2025年出现的第6批中央贯通门型，新制前面，四辆无动力，需配32161等动力编组；不同于31587/31588早期偏置贯通门。官方列2026年6月出货。",
+      "source": "https://www.greenmax.co.jp/gm-product/32162.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄9500系（6次車）増結4両編成セット（動力無し）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31969",
+      "maker": "GREENMAX",
+      "sku": "31969",
+      "title": "名鉄2200系2次車（前面窓透過タイプ・車番選択式）6両編成セットⅡ（動力付き）",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "meitetsu2200"
+      ],
+      "match": "exact",
+      "note": "第2批前面窗可透视式样，特别车两辆＋一般车四辆，六辆含动力；2025版在旧31622/31623基础上增加前面行先点灯。第2/3批侧窗及外观细节不同。",
+      "source": "https://www.greenmax.co.jp/gm-product/31969.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄2200系2次車（前面窓透過タイプ・車番選択式）6両編成セットⅡ（動力付き）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31970",
+      "maker": "GREENMAX",
+      "sku": "31970",
+      "title": "名鉄2200系3次車（前面窓透過タイプ・車番選択式）6両編成セットⅡ（動力付き）",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "meitetsu2200"
+      ],
+      "match": "exact",
+      "note": "第3批前面窗可透视式样，特别车两辆＋一般车四辆，六辆含动力；2025版在旧31622/31623基础上增加前面行先点灯。第2/3批侧窗及外观细节不同。",
+      "source": "https://www.greenmax.co.jp/gm-product/31970.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄2200系3次車（前面窓透過タイプ・車番選択式）6両編成セットⅡ（動力付き）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "GREENMAX:31757",
+      "maker": "GREENMAX",
+      "sku": "31757",
+      "title": "名鉄2200（2230）系（車番選択式）6両編成セット（動力付き）",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "meitetsu2200"
+      ],
+      "match": "variant",
+      "note": "2230系是替换旧1700特别车的第6批特别车两辆，与原一般车四辆组成六辆；含动力。虽然产品归2200系，不同于第1–3批完整新造编组，明确作为版本选择。",
+      "source": "https://www.greenmax.co.jp/gm-product/31757.html",
+      "sourceTitle": "GREENMAX 官方产品资料：名鉄2200（2230）系（車番選択式）6両編成セット（動力付き）",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6116",
+      "maker": "POPONDETTA",
+      "sku": "6116",
+      "title": "821系＋813系3100番代 鹿児島本線 9両セット",
+      "cars": 9,
+      "setKind": "set",
+      "vehicleIds": [
+        "ky821",
+        "ky813"
+      ],
+      "match": "variant",
+      "note": "821三辆编组两组＋813三辆一组，九辆含一辆动力；U3＋U5＋R3114、快速大牟田。不是九辆全数821或813；821内灯标准装备、813内灯另购。官网仍作开发/生产计划，不保证已出货。",
+      "source": "https://maker.popondetta.com/maker/?p=4410",
+      "sourceTitle": "POPONDETTA 官方产品资料：821系＋813系3100番代 鹿児島本線 9両セット",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6118",
+      "maker": "POPONDETTA",
+      "sku": "6118",
+      "title": "821系モニタリング装置付＋813系1100番代 鹿児島本線 6両セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "ky821",
+        "ky813"
+      ],
+      "match": "variant",
+      "note": "U1监测装置821三辆＋R1105的813三辆，六辆含一辆动力，普通门司港。821有屋顶监测装置，不是六辆同一车系；旧1100番号与现行3100番号需分清。开发/生产计划，不能保证现货。",
+      "source": "https://maker.popondetta.com/maker/?p=4410",
+      "sourceTitle": "POPONDETTA 官方产品资料：821系モニタリング装置付＋813系1100番代 鹿児島本線 6両セット",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6119",
+      "maker": "POPONDETTA",
+      "sku": "6119",
+      "title": "821系福北ゆたか線 2編成6両セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "ky821"
+      ],
+      "match": "variant",
+      "note": "U8/U10两个三辆单元，合计六辆、一辆动力；显示普通单人运行直方／博多，原型熊本车中心所属福北丰线式样。与预设鹿儿岛本线不同，需按题材改变线路/行先；开发/生产计划商品。",
+      "source": "https://maker.popondetta.com/maker/?p=4410",
+      "sourceTitle": "POPONDETTA 官方产品资料：821系福北ゆたか線 2編成6両セット",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6055",
+      "maker": "POPONDETTA",
+      "sku": "6055",
+      "title": "西日本鉄道9000形7両セット",
+      "cars": 7,
+      "setKind": "set",
+      "vehicleIds": [
+        "nt9000"
+      ],
+      "match": "exact",
+      "note": "9110F＋9008F＋9104F，2＋3＋2合为七辆，含动力。厂家2024年修正后行先为急行福冈天神，不是早期预告的特急；区别于6056六辆和6057五辆。",
+      "source": "https://maker.popondetta.com/maker/?p=2570",
+      "sourceTitle": "POPONDETTA 官方产品资料：西日本鉄道9000形7両セット",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6057",
+      "maker": "POPONDETTA",
+      "sku": "6057",
+      "title": "西日本鉄道9000形5両セット",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "nt9000"
+      ],
+      "match": "exact",
+      "note": "9001F＋9103F的2＋3合为五辆，普通筑紫，含中间车动力。盒装车数与网页默认编组可分别设定；不是一组五辆贯通原型。",
+      "source": "https://maker.popondetta.com/maker/?p=2570",
+      "sourceTitle": "POPONDETTA 官方产品资料：西日本鉄道9000形5両セット",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-246",
+      "maker": "KATO",
+      "sku": "10-246",
+      "title": "885系（1次車）〈アラウンド・ザ・九州〉6両セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "ky885-sonic",
+        "ky885-relay"
+      ],
+      "match": "exact",
+      "note": "第1批由黄色改为蓝带的AROUND THE KYUSHU六辆动力套装，附行先贴纸、摆式机构；前灯/窗形与第2批10-1952不同，不能混同。2022再生产改变车号位置及灯色；不是最新平板台车罩版。",
+      "source": "https://www.katomodels.com/product/n/885kei",
+      "sourceTitle": "KATO 官方产品资料：885系（1次車）〈アラウンド・ザ・九州〉6両セット",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1394",
+      "maker": "KATO",
+      "sku": "10-1394",
+      "title": "885系（2次車）〈アラウンド・ザ・九州〉6両セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "ky885-sonic",
+        "ky885-relay"
+      ],
+      "match": "exact",
+      "note": "第2批较旧版AROUND THE KYUSHU六辆含动力，摆式车体，球状台车罩/车号与新10-1952的SM8平板罩不同；西九州开业后的Relay行先可能需另行对应。不是初期SONIC专用标识版10-286。",
+      "source": "https://www.katomodels.com/product/n/885kei_sonic",
+      "sourceTitle": "KATO 官方产品资料：885系（2次車）〈アラウンド・ザ・九州〉6両セット",
+      "checkedAt": "2026-10-27",
+      "format": "ready"
+    },
+    {
+      "id": "MICROACE:A8673",
+      "maker": "MICROACE",
+      "sku": "A8673",
+      "title": "キハ261系1000番台 特急「スーパーとかち」5両セット",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "261-tokachi"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "1000番台早期蓝/黄正面、彩色方块旧涂装五辆套装，动力在キハ260-1301；含行先贴纸。与0番台スーパー宗谷不同，也不同于现行白/紫新涂装；旧称超级十胜时期版本，不可当现代式样。",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A8673R.pdf",
+      "sourceTitle": "MICROACE 官方产品资料：キハ261系1000番台 特急「スーパーとかち」5両セット",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "TOMYTEC:335207",
+      "maker": "TOMYTEC",
+      "sku": "335207",
+      "title": "鉄道コレクション 伊豆急行8000系（TA-6編成）3両セットE",
+      "cars": 3,
+      "setKind": "set",
+      "vehicleIds": [
+        "iq8000"
+      ],
+      "match": "exact",
+      "format": "static",
+      "note": "TA-6普通涂装、青色裙板版本，伊豆急下田侧含由中间车改造的クモハ8150，区别于TB-2编组。三辆静态铁コレ，TM-08R动力、TT-03R走行零件及PG16受电弓另购，不能直接走行。",
+      "source": "https://diocolle.tomytec.co.jp/product/detail.html?jan=4543736335207",
+      "sourceTitle": "TOMYTEC 官方产品资料：鉄道コレクション 伊豆急行8000系（TA-6編成）3両セットE",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "TOMYTEC:335191",
+      "maker": "TOMYTEC",
+      "sku": "335191",
+      "title": "鉄道コレクション 伊豆急行8000系（TA-7編成・無ラッピング車両）3両セットF",
+      "cars": 3,
+      "setKind": "set",
+      "vehicleIds": [
+        "iq8000"
+      ],
+      "match": "variant",
+      "format": "static",
+      "note": "TA-7无彩色腰带外观的活动/包车版本，含改造驾驶室クモハ8150，与通常蓝色腰带TB-2/TA-6不同。三辆静态铁コレ，动力/金属车轮走行件/受电弓另购；这是外观版本参考。",
+      "source": "https://diocolle.tomytec.co.jp/product/detail.html?jan=4543736335191",
+      "sourceTitle": "TOMYTEC 官方产品资料：鉄道コレクション 伊豆急行8000系（TA-7編成・無ラッピング車両）3両セットF",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "TOMYTEC:313533",
+      "maker": "TOMYTEC",
+      "sku": "313533",
+      "title": "鉄道コレクション 西日本鉄道3000形 貫通5両編成セット",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "nt3000"
+      ],
+      "match": "exact",
+      "format": "static",
+      "note": "通常涂装五辆贯通编组，与313526的两辆单元×3的六辆编组不同。五辆静态铁コレ，TM-12R动力、TT-04R走行件及WPS28C-2受电弓另购，不含走行动力。",
+      "source": "https://www.tomytec.co.jp/diocolle/items/pdf/newitem_20200514_02.pdf",
+      "sourceTitle": "TOMYTEC 官方产品资料：鉄道コレクション 西日本鉄道3000形 貫通5両編成セット",
+      "checkedAt": "2026-10-27"
     }
   ],
   "coverage": {
@@ -8122,11 +9600,11 @@
     },
     "e657-hitachi": {
       "status": "verified",
-      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 7 项厂家产品资料；并非历年全部品号。"
     },
     "e657-tokiwa": {
       "status": "verified",
-      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 7 项厂家产品资料；并非历年全部品号。"
     },
     "e259-nex": {
       "status": "verified",
@@ -8134,11 +9612,11 @@
     },
     "e257-odoriko": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "e257-shonan": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "e261-saphir": {
       "status": "verified",
@@ -8186,11 +9664,11 @@
     },
     "225-shinkaisoku": {
       "status": "verified",
-      "note": "已收录 5 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 8 项厂家产品资料；并非历年全部品号。"
     },
     "223-shinkaisoku": {
       "status": "verified",
-      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 4 项厂家产品资料；并非历年全部品号。"
     },
     "321-kyoto": {
       "status": "verified",
@@ -8206,19 +9684,19 @@
     },
     "323-loop": {
       "status": "verified",
-      "note": "已收录 4 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 6 项厂家产品资料；并非历年全部品号。"
     },
     "323-yumesaki": {
       "status": "verified",
-      "note": "已收录 4 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 6 项厂家产品资料；并非历年全部品号。"
     },
     "221-yamatoji": {
       "status": "verified",
-      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 5 项厂家产品资料；并非历年全部品号。"
     },
     "223-kanku": {
       "status": "variant",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
     },
     "225-kishuji": {
       "status": "verified",
@@ -8234,7 +9712,7 @@
     },
     "221-osakahigashi": {
       "status": "variant",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "227-hiroshima": {
       "status": "verified",
@@ -8242,7 +9720,7 @@
     },
     "683-thunderbird": {
       "status": "verified",
-      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 6 项厂家产品资料；并非历年全部品号。"
     },
     "281-haruka": {
       "status": "verified",
@@ -8262,7 +9740,7 @@
     },
     "273-yakumo": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "285-sunrise-izumo": {
       "status": "verified",
@@ -8306,7 +9784,7 @@
     },
     "kt30000-vista": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "kt22600-ace": {
       "status": "verified",
@@ -8330,7 +9808,7 @@
     },
     "kt26000-sakura": {
       "status": "verified",
-      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 9 项厂家产品资料；并非历年全部品号。"
     },
     "kt5800-nara": {
       "status": "verified",
@@ -8354,7 +9832,7 @@
     },
     "kh13000-main": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "kh13000-uji": {
       "status": "verified",
@@ -8362,7 +9840,7 @@
     },
     "hk9300": {
       "status": "verified",
-      "note": "已收录 4 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 6 项厂家产品资料；并非历年全部品号。"
     },
     "hk2300": {
       "status": "verified",
@@ -8381,8 +9859,8 @@
       "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "hk7000-garaku": {
-      "status": "unverified",
-      "note": "阪急官方频道2021-10-13明确介绍「鉄道コレクション阪急7000系 京とれいん雅洛（6両セット）」（https://www.youtube.com/watch?v=71cnLKyU5qY），产品存在及6节已获一手说明；但原官网发售页现跳转404，官方商店未取得该历史商品页，仍未核实整套厂家品号或JAN。零售K590–K595为各车编号，不冒充整套品号；不以6300系京とれいん替代。"
+      "status": "verified",
+      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
     },
     "hs1000-namba": {
       "status": "verified",
@@ -8406,15 +9884,15 @@
     },
     "nk30000-koya": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 5 项厂家产品资料；并非历年全部品号。"
     },
     "nk8300-airport": {
       "status": "verified",
-      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 4 项厂家产品资料；并非历年全部品号。"
     },
     "nk8300-koya": {
       "status": "verified",
-      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 4 项厂家产品资料；并非历年全部品号。"
     },
     "sy5000": {
       "status": "unverified",
@@ -8426,7 +9904,7 @@
     },
     "metro30000-m": {
       "status": "verified",
-      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 5 项厂家产品资料；并非历年全部品号。"
     },
     "metro400-c": {
       "status": "verified",
@@ -8434,7 +9912,7 @@
     },
     "eizan900": {
       "status": "verified",
-      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
     },
     "shintetsu6500": {
       "status": "unverified",
@@ -8466,7 +9944,7 @@
     },
     "261-tokachi": {
       "status": "verified",
-      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
     },
     "733-airport": {
       "status": "verified",
@@ -8538,7 +10016,7 @@
     },
     "meitetsu2200": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 4 项厂家产品资料；并非历年全部品号。"
     },
     "tb-n100": {
       "status": "verified",
@@ -8546,15 +10024,15 @@
     },
     "tb100-spacia": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "tb500-kegon": {
       "status": "verified",
-      "note": "已收录 5 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 7 项厂家产品资料；并非历年全部品号。"
     },
     "tb500-aizu": {
       "status": "verified",
-      "note": "已收录 5 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 7 项厂家产品资料；并非历年全部品号。"
     },
     "tb200-ryomo": {
       "status": "verified",
@@ -8582,7 +10060,7 @@
     },
     "sb40000-strain": {
       "status": "verified",
-      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 7 项厂家产品资料；并非历年全部品号。"
     },
     "sb30000": {
       "status": "verified",
@@ -8646,7 +10124,7 @@
     },
     "ty5050": {
       "status": "verified",
-      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 9 项厂家产品资料；并非历年全部品号。"
     },
     "dt2020": {
       "status": "verified",
@@ -8678,7 +10156,7 @@
     },
     "tm2000-m": {
       "status": "unverified",
-      "note": "本批未找到现代东京Metro丸之内线2000系可由官方确认的常规N比例成品品号；旧02系、旧营团2000及拼装积木不是该车型，未作替代。"
+      "note": "本轮仍未核实常规尺寸N比例现代丸之内2000系产品。Studioyu-wa官方有可改N轨距的积木玩具，但造型与尺寸体系不同，未充作标准N比例模型。"
     },
     "tm13000-h": {
       "status": "verified",
@@ -8730,11 +10208,11 @@
     },
     "mt9500": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 4 项厂家产品资料；并非历年全部品号。"
     },
     "mt3500": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 5 项厂家产品资料；并非历年全部品号。"
     },
     "mt4000-seto": {
       "status": "unverified",
@@ -8758,7 +10236,7 @@
     },
     "iq8000": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
     },
     "iq2100-kinme": {
       "status": "variant",
@@ -8774,7 +10252,7 @@
     },
     "an1000": {
       "status": "unverified",
-      "note": "已有 Permil 青波1000形 4辆 N1/150 纸制套件的商店 Ns031/JAN4582485420987 线索；已检查制造商官方 N 车辆目录当前25项，未取得包含该产品的厂家编号或包装一手证据，暂不列零售商编号为已核对型号。https://permil.cart.fc2.com/?ca=4"
+      "note": "有PERMILあおなみ線1000形四辆纸KIT及零售Ns031/JAN线索；2026-10-27重新读取厂家官方商城，主页已显示正常商品目录、Nゲージ車両分类25项，站内あおなみ检索仍无商品结果，未取得本车的厂家产品页与编号一手证据，暂保留待核实。不能因当前目录未显示而断言从未生产，也不把其他比例模型或店铺条目ID当厂家品号。"
     },
     "th2100": {
       "status": "verified",
@@ -8838,11 +10316,11 @@
     },
     "ky885-sonic": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
     },
     "ky885-relay": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
     },
     "ky787-relay": {
       "status": "verified",
@@ -8898,19 +10376,19 @@
     },
     "ky813": {
       "status": "verified",
-      "note": "已收录 5 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 7 项厂家产品资料；并非历年全部品号。"
     },
     "ky817": {
-      "status": "variant",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "status": "verified",
+      "note": "已收录 8 项厂家产品资料；并非历年全部品号。"
     },
     "ky821": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 4 项厂家产品资料；并非历年全部品号。"
     },
     "ky815": {
       "status": "unverified",
-      "note": "未确认815系N比例原厂成品的一手品号；817系近似改造底车不能当815系准确对应商品。"
+      "note": "查到林檎製作所（KitcheN）815系两辆未涂装塑料板KIT、零售线索709M；但厂家原站ringo.cafe.coocan.jp本轮403/访问失败，未取得一手产品页或厂家品号证据，暂不把零售资料提升为已核实型号。817改造底车不能当准确815商品。"
     },
     "ky-yc1": {
       "status": "verified",
@@ -8922,11 +10400,11 @@
     },
     "nt3000": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "nt9000": {
       "status": "verified",
-      "note": "已收录 1 项厂家产品资料；并非历年全部品号。"
+      "note": "已收录 3 项厂家产品资料；并非历年全部品号。"
     },
     "nt6050-tabito": {
       "status": "verified",
@@ -8952,5 +10430,1208 @@
       "status": "unverified",
       "note": "南阿苏MT-4000形：未取得可验证的N比例厂家产品号；MT-2000、MT-3000及类似NDC车型不能当同款。"
     }
-  }
+  },
+  "assemblies": [
+    {
+      "id": "tomix-e5-10",
+      "label": "E5 はやぶさ／やまびこ／なすの · 10节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e5-hayabusa",
+        "e5-yamabiko",
+        "e5-nasuno"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98497",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98498",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98499",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98497.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "官方U42编成图：四节基本＋三节增结A＋三节增结B；区别于KATO的3＋3＋4。"
+    },
+    {
+      "id": "tomix-e6-7",
+      "label": "E6 こまち · 7节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e6-komachi"
+      ],
+      "cars": 7,
+      "components": [
+        {
+          "productId": "TOMIX:98500",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98501",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98500.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "三节基本含11、12、17号车，四节增结补齐13～16号车。"
+    },
+    {
+      "id": "tomix-e7-12",
+      "label": "E7 北陸・上越新幹線 · 12节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e7-kagayaki",
+        "e7-hakutaka",
+        "e7-asama",
+        "e7-toki",
+        "e7-tanigawa"
+      ],
+      "cars": 12,
+      "components": [
+        {
+          "productId": "TOMIX:98530",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98531",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98532",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98530.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "基本98530四辆（1/2/3/12号）＋增结A98531四辆（8/9/10/11号）＋增结B98532四辆（4/5/6/7号）＝十二辆；基本3号及B盒7号各有动力。此为4＋4＋4，不是旧TOMIX W7的4＋2＋6。"
+    },
+    {
+      "id": "tomix-e8-7",
+      "label": "E8 つばさ · 7节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e8-tsubasa"
+      ],
+      "cars": 7,
+      "components": [
+        {
+          "productId": "TOMIX:97203",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:97204",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/97203.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "三节基本＋四节增结；基本页文字中曾误写92704，以其官方编成图和97204独立商品页为准。"
+    },
+    {
+      "id": "tomix-e235-yamanote-11",
+      "label": "E235 山手線 · 11节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e235-yamanote"
+      ],
+      "cars": 11,
+      "components": [
+        {
+          "productId": "TOMIX:98525",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98526",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98527",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98525.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "三节基本＋五节增结A＋三节增结B，后期窄屋顶筋版。"
+    },
+    {
+      "id": "tomix-e235-yokosuka-11",
+      "label": "E235 横須賀・総武快速線 · 主编成11节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e235-yokosuka",
+        "e235-sobu"
+      ],
+      "cars": 11,
+      "components": [
+        {
+          "productId": "TOMIX:97205",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:97207",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/97205.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "四节基本A＋七节增结；基本B为另一个有车头、有动力的四节附属编成，不是本11节缺少的中间车。"
+    },
+    {
+      "id": "tomix-e235-yokosuka-15",
+      "label": "E235 横須賀・総武快速線 · 11＋4节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e235-yokosuka",
+        "e235-sobu"
+      ],
+      "cars": 15,
+      "components": [
+        {
+          "productId": "TOMIX:97205",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:97207",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:97206",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/97205.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "11节主编成接四节附属编成；两组各有动力和车头。厂家图注明部分支线区间以4节或11节分开运行。"
+    },
+    {
+      "id": "tomix-e233-3000-10",
+      "label": "E233 上野東京・東海道線 · 主编成10节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e233-ueno-tokyo",
+        "e233-tokaido",
+        "e233-utsunomiya",
+        "e233-takasaki",
+        "e233-shonan"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98506",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98508",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98506.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "四节基本A＋六节增结，含两节Green车；98507是另一个五节附属编成。"
+    },
+    {
+      "id": "tomix-e233-3000-15",
+      "label": "E233 上野東京・東海道線 · 10＋5节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e233-ueno-tokyo",
+        "e233-tokaido",
+        "e233-utsunomiya",
+        "e233-takasaki",
+        "e233-shonan"
+      ],
+      "cars": 15,
+      "components": [
+        {
+          "productId": "TOMIX:98506",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98508",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98507",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98506.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "10节主编成加五节附属编成，基本A和基本B均有动力及两端车头。"
+    },
+    {
+      "id": "tomix-e233-keihin-10",
+      "label": "E233 京浜東北・根岸線 · 10节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e233-keihin"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98553",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98554",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98553.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "四节基本＋六节增结；官方图按2023年4月起样式。"
+    },
+    {
+      "id": "tomix-e233-saikyo-10",
+      "label": "E233 埼京・川越線 · 10节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e233-saikyo"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98373",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98374",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98373.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "四节基本＋六节增结，2019年11月相铁直通天线增设形态。"
+    },
+    {
+      "id": "tomix-e233-keiyo-10",
+      "label": "E233 京葉線 · 10节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e233-keiyo"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98409",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98410",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98409.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "四节基本＋六节增结，10节贯通编成；不当作6＋4分割编成。"
+    },
+    {
+      "id": "tomix-e233-yokohama-8",
+      "label": "E233 横浜線 · 8节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e233-yokohama"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "TOMIX:98411",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98412",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98411.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "四节基本＋四节增结，带YOKOHAMA LINE标识的版本。"
+    },
+    {
+      "id": "tomix-e259-6",
+      "label": "E259 成田エクスプレス新塗装 · 6节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e259-nex"
+      ],
+      "cars": 6,
+      "components": [
+        {
+          "productId": "TOMIX:98551",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98552",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98551.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "四节基本＋两节增结，与KATO三节基本＋三节增结的分盒方式不同。"
+    },
+    {
+      "id": "tomix-e259-12",
+      "label": "E259 成田エクスプレス新塗装 · 6＋6节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e259-nex"
+      ],
+      "cars": 12,
+      "components": [
+        {
+          "productId": "TOMIX:98551",
+          "quantity": 2
+        },
+        {
+          "productId": "TOMIX:98552",
+          "quantity": 2
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98551.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "厂家编成图注明基本98551和增结98552各需两盒，共四盒，组成两组六节。98551车号已印刷，同品号买两盒会重复车号；如需两组不同编号须自行改号，基本盒所列附件不含改号转印。"
+    },
+    {
+      "id": "tomix-e231-sobu-10",
+      "label": "E231 中央・総武緩行線 · 10节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e231-sobu"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98839",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98840",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98839.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "六节基本＋四节增结，E231-500黄色带版本；不是E231-0或1800番台。"
+    },
+    {
+      "id": "tomix-e233-joban-local-10",
+      "label": "E233 常磐各停・千代田線直通 · 10节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "e233-joban-local"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98841",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98842",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98841.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "六节基本＋四节增结，2000番台窄车体；不是常磐快速E231。"
+    },
+    {
+      "id": "tomix-odakyu4000-10",
+      "label": "小田急4000形 · 10节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "od4000"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98748",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98749",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98748.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "六节基本＋四节增结，现代4000形、千代田线直通版本。"
+    },
+    {
+      "id": "tomix-sotetsu12000-10",
+      "label": "相鉄12000系 · 10节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "so12000"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98357",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98358",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98357.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "四节基本＋六节增结，JR直通用12000系；不是东急直通20000/21000系。"
+    },
+    {
+      "id": "tomix-tobu-revaty-6",
+      "label": "東武500系リバティ · 3＋3节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "tb500-kegon",
+        "tb500-aizu"
+      ],
+      "cars": 6,
+      "components": [
+        {
+          "productId": "TOMIX:98427",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98428",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98427.html",
+      "sourceTitle": "厂家官方产品页／编成图",
+      "checkedAt": "2026-10-27",
+      "note": "有动力三节基本＋无动力三节增结，形成两组三节重联；增结盒自身没有动力。"
+    },
+    {
+      "id": "tomix-w7-w1-12",
+      "label": "W7 W1编成 · 登场形态12节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "w7-kagayaki",
+        "w7-tsurugi"
+      ],
+      "cars": 12,
+      "components": [
+        {
+          "productId": "TOMIX:92545",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:92546",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:92547",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/92545.html",
+      "sourceTitle": "TOMIX 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "基本4节为1/3/10/12号车，增结A2节为2/11号车，增结B6节为4–9号车。B盒也含动力，总12节两台动力；是未封行李区窗的早期W1形态。"
+    },
+    {
+      "id": "kato-w7-2024-12",
+      "label": "W7 · 行李区封窗后12节",
+      "maker": "KATO",
+      "vehicleIds": [
+        "w7-kagayaki",
+        "w7-tsurugi"
+      ],
+      "cars": 12,
+      "components": [
+        {
+          "productId": "KATO:10-1975",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1976",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/e7kei",
+      "sourceTitle": "KATO 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "W7基本6＋增结6，共12节，普通车行李区封窗后的形态。与E7盒装分组不同，勿拿E7品号代替；最小通过半径官方R315。",
+      "minimumRadiusMm": 315,
+      "radiusNote": "KATO官方W7章节列最小通过半径R315。仅对应10-1975/1976本产品，不推及TOMIX或别的W7版本；未对用户现场轨道试跑。"
+    },
+    {
+      "id": "tomix-225-aseat-12",
+      "label": "225新快速 · Aシート12节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "225-shinkaisoku"
+      ],
+      "cars": 12,
+      "components": [
+        {
+          "productId": "TOMIX:98545",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98546",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98544",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98544.html",
+      "sourceTitle": "TOMIX 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "官方明确3盒合成12节：普通8节来自基本4＋中间增结4，再连挂含Aシート的独立4节编成；98544不是从普通8节抽出的替换车。"
+    },
+    {
+      "id": "kato-225-aseat-12",
+      "label": "225新快速 · 3次车＋Aシート12节",
+      "maker": "KATO",
+      "vehicleIds": [
+        "225-shinkaisoku"
+      ],
+      "cars": 12,
+      "components": [
+        {
+          "productId": "KATO:10-1901",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1900",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/225kei_100",
+      "sourceTitle": "KATO 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "同页I10八节＋K1四节，包含700番台Aシート；两个盒均有动力，4节盒无牵引胶圈以考虑连挂。"
+    },
+    {
+      "id": "tomix-323-2024-8",
+      "label": "323大阪环状线 · 2024新版8节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "323-loop",
+        "323-yumesaki"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "TOMIX:98580",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98581",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98580.html",
+      "sourceTitle": "TOMIX 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "官网直接说明98580＋98581为8节；4＋4，增结盒含3–6号车。与KATO的3＋5分法不同。"
+    },
+    {
+      "id": "kato-323-ls06-8",
+      "label": "323 LS06 · 2020年版8节",
+      "maker": "KATO",
+      "vehicleIds": [
+        "323-loop",
+        "323-yumesaki"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "KATO:10-1601",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1602",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/323kei",
+      "sourceTitle": "KATO 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "基本4＋增结4，同一LS06编成；与10-1988/1989后期LS19的3＋5套装不要混配。"
+    },
+    {
+      "id": "kato-hankyu9307-8",
+      "label": "阪急9307F · 新版8节",
+      "maker": "KATO",
+      "vehicleIds": [
+        "hk9300"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "KATO:10-1822",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1823",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/hankyu9300",
+      "sourceTitle": "KATO 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "9307F基本4＋增结4，侧面上部车号/新女性专用标记、无槽电机新版；与9306F旧品号区别。"
+    },
+    {
+      "id": "kato-hankyu9306-8",
+      "label": "阪急9306F · 2020年版8节",
+      "maker": "KATO",
+      "vehicleIds": [
+        "hk9300"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "KATO:10-1365",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1366",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/hankyu9300",
+      "sourceTitle": "KATO 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "官网列为旧产品，9306F基本4＋增结4；保留旧标记及其对应品号，不把新版盒混进来。"
+    },
+    {
+      "id": "tomix-shimakaze-1-6",
+      "label": "しまかぜ · 第一编成6节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "kt50000-shimakaze"
+      ],
+      "cars": 6,
+      "components": [
+        {
+          "productId": "TOMIX:98461",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98462",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98461.html",
+      "sourceTitle": "TOMIX 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "第一编成基本盒含1/5/6号车，增结盒含2/3/4号车，各3节，配成6节。98462为同车号版本，勿以不同编成套装替代。"
+    },
+    {
+      "id": "kato-thunderbird-0-2024-9",
+      "label": "Thunderbird · 0番台W36＋V35九节",
+      "maker": "KATO",
+      "vehicleIds": [
+        "683-thunderbird"
+      ],
+      "cars": 9,
+      "components": [
+        {
+          "productId": "KATO:10-1959",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1960",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/683kei",
+      "sourceTitle": "KATO 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "2024年版0番台基本6＋独立3节附属编成；同页原型W36＋V35，不与4000番台旧品号混作本搭配。"
+    },
+    {
+      "id": "kato-thunderbird-b35-9",
+      "label": "Thunderbird · B35新版9节",
+      "maker": "KATO",
+      "vehicleIds": [
+        "683-thunderbird"
+      ],
+      "cars": 9,
+      "components": [
+        {
+          "productId": "KATO:10-2142",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-2143",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/683_4000_tb_pc",
+      "sourceTitle": "KATO 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "2026年全车指定席新版B35编成基本4＋增结5为9节；不同于0番台6＋3，也不同于旧10-1745/1746。"
+    },
+    {
+      "id": "tomix-221-before-renew-8",
+      "label": "221更新前 · 4＋4八节参考",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "221-yamatoji"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "TOMIX:98466",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98468",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98466.html",
+      "sourceTitle": "TOMIX 官方编成示例及产品组成",
+      "checkedAt": "2026-10-27",
+      "note": "厂商明确基本A四节配98468中间增结四节为8节；属于更新前高位车门按钮的历史版本，与预设更新车形态不同。"
+    },
+    {
+      "id": "tomix-789-hakucho-8",
+      "label": "超级白鸟 · HE基本6辆＋HE-300增结2辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "789-hakucho"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "TOMIX:98895",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98896",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98896.html",
+      "sourceTitle": "TOMIX 官方编成资料：超级白鸟 · HE基本6辆＋HE-300增结2辆",
+      "checkedAt": "2026-10-27",
+      "note": "2006年以后六辆基本＋增结专用HE-300两辆；动力位于六辆套装。连结前需装增结盒附带的幌框及裙板TN，官网限定八辆连结状态半径280mm以上。",
+      "minimumRadiusMm": 280,
+      "radiusNote": "官方仅对98895＋98896八辆连结状态注明半径280mm以上，不能推及其他产品；需按说明安装连结配件。"
+    },
+    {
+      "id": "tomix-733-airport-6",
+      "label": "733 Airport · 基本3辆＋增结3辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "733-airport"
+      ],
+      "cars": 6,
+      "components": [
+        {
+          "productId": "TOMIX:98430",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98431",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98430.html",
+      "sourceTitle": "TOMIX 官方编成资料：733 Airport · 基本3辆＋增结3辆",
+      "checkedAt": "2026-10-27",
+      "note": "三辆基本含动力；增结三辆包含u-seat，组合才是六辆实车编组。"
+    },
+    {
+      "id": "tomix-h5-10",
+      "label": "H5 · 基本4辆＋增结6辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "h5-hayabusa",
+        "h5-hayate"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "TOMIX:98570",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98571",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98570.html",
+      "sourceTitle": "TOMIX 官方编成资料：H5 · 基本4辆＋增结6辆",
+      "checkedAt": "2026-10-27",
+      "note": "北海道H5专用4＋6，不与E5替换；基本盒含动力，列车名行先按Hayabusa/Hayate选择。"
+    },
+    {
+      "id": "kato-h5-10",
+      "label": "H5 · 基本6辆＋增结4辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "h5-hayabusa",
+        "h5-hayate"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "KATO:10-1967",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1968",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/h5kei_hayabusa_slm",
+      "sourceTitle": "KATO 官方编成资料：H5 · 基本6辆＋增结4辆",
+      "checkedAt": "2026-10-27",
+      "note": "KATO彩香紫H5的6＋4组合，不与TOMIX基本/增结盒互配。"
+    },
+    {
+      "id": "tomix-hokutosei-mixed-12",
+      "label": "北斗星混成 · 客车基本6辆＋增结6辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "hokutosei"
+      ],
+      "cars": 12,
+      "components": [
+        {
+          "productId": "TOMIX:98870",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98871",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98870.html",
+      "sourceTitle": "TOMIX 官方编成资料：北斗星混成 · 客车基本6辆＋增结6辆",
+      "checkedAt": "2026-10-27",
+      "note": "合计十二辆为客车装量，不含机车及走行动力；牵引机车另购，不能直接走行。"
+    },
+    {
+      "id": "tomix-hokutosei-hokkaido-12",
+      "label": "北斗星北海道规格 · 客车基本6辆＋增结6辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "hokutosei"
+      ],
+      "cars": 12,
+      "components": [
+        {
+          "productId": "TOMIX:98835",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98836",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98835.html",
+      "sourceTitle": "TOMIX 官方编成资料：北斗星北海道规格 · 客车基本6辆＋增结6辆",
+      "checkedAt": "2026-10-27",
+      "note": "北海道所属车主体版本，不同于98870混成；客车全数无动力，须另购匹配年代的牵引机车。"
+    },
+    {
+      "id": "kato-hokutosei-deluxe-12",
+      "label": "北斗星Deluxe · 客车基本6辆＋增结6辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "hokutosei"
+      ],
+      "cars": 12,
+      "components": [
+        {
+          "productId": "KATO:10-831",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-832",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/24kei_hokutosei_dx",
+      "sourceTitle": "KATO 官方编成资料：北斗星Deluxe · 客车基本6辆＋增结6辆",
+      "checkedAt": "2026-10-27",
+      "note": "以2010年前后混成Deluxe为原型，基本六辆＋增结六辆合为十二辆客车，不含机车及牵引动力。官网列上野—青森EF510-500、青森—函馆ED79、函馆—札幌DD51双机等区间选择，机车另购；机车数不计入本处客车十二辆。"
+    },
+    {
+      "id": "kato-383-shinano-8",
+      "label": "383信浓 · 基本6辆＋增结2辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "383-shinano"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "KATO:10-1781",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1783",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/383kei_shinano_cp",
+      "sourceTitle": "KATO 官方编成资料：383信浓 · 基本6辆＋增结2辆",
+      "checkedAt": "2026-10-27",
+      "note": "量产六辆A9＋附属两辆A201；动力在基本盒，八辆繁忙编成。"
+    },
+    {
+      "id": "kato-383-shinano-10",
+      "label": "383信浓 · 基本6辆＋增结4辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "383-shinano"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "KATO:10-1781",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1782",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/383kei_shinano_cp",
+      "sourceTitle": "KATO 官方编成资料：383信浓 · 基本6辆＋增结4辆",
+      "checkedAt": "2026-10-27",
+      "note": "六辆A9＋四辆A101合为十辆；KATO四辆增结不带动力，与MICROACE同名四辆动力增结盒不同。"
+    },
+    {
+      "id": "microace-383-shinano-6",
+      "label": "383信浓改良品 · 动力4辆＋增结2辆",
+      "maker": "MICROACE",
+      "vehicleIds": [
+        "383-shinano"
+      ],
+      "cars": 6,
+      "components": [
+        {
+          "productId": "MICROACE:A2964",
+          "quantity": 1
+        },
+        {
+          "productId": "MICROACE:A2965",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A2963.pdf",
+      "sourceTitle": "MICROACE 官方编成资料：383信浓改良品 · 动力4辆＋增结2辆",
+      "checkedAt": "2026-10-27",
+      "note": "四辆量产附属编组含动力＋两辆无动力附属编组；不是A2963量产先行六辆基本原型。"
+    },
+    {
+      "id": "tomix-313-tokaido-6",
+      "label": "313-5000 · 基本3辆＋增结A3辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "313-tokaido"
+      ],
+      "cars": 6,
+      "components": [
+        {
+          "productId": "TOMIX:98482",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98483",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98482.html",
+      "sourceTitle": "TOMIX 官方编成资料：313-5000 · 基本3辆＋增结A3辆",
+      "checkedAt": "2026-10-27",
+      "note": "组合为5000番台贯通六辆；基本三辆仅是拆分盒装量，不能当完整实车三辆。"
+    },
+    {
+      "id": "tomix-313-tokaido-8",
+      "label": "313-5000＋5300 · 6辆＋附属2辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "313-tokaido"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "TOMIX:98482",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98483",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98484",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98482.html",
+      "sourceTitle": "TOMIX 官方编成资料：313-5000＋5300 · 6辆＋附属2辆",
+      "checkedAt": "2026-10-27",
+      "note": "5000番台六辆＋5300番台两辆附属编组。增结B98484是5300番台，不是全八辆均5000番台。"
+    },
+    {
+      "id": "kato-n700s-16",
+      "label": "N700S · 基本4辆＋增结A4辆＋增结B8辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "n700s-nozomi",
+        "n700s-hikari",
+        "n700s-kodama"
+      ],
+      "cars": 16,
+      "components": [
+        {
+          "productId": "KATO:10-1697S",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1698",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1699",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/n700s",
+      "sourceTitle": "KATO 官方编成资料：N700S · 基本4辆＋增结A4辆＋增结B8辆",
+      "checkedAt": "2026-10-27",
+      "note": "东海道山阳十六辆N700S，不是西九州N700S-8000六辆；列车名行先按班次选用。",
+      "minimumRadiusMm": 315,
+      "radiusNote": "KATO该N700S J3产品官方最小通过曲线半径R315；用户R282内圈小于厂家标示半径，不能据此方案承诺通过。此数字不推及其他厂家或西九州8000番台。"
+    },
+    {
+      "id": "tomix-n700a-16",
+      "label": "N700A-1000 · 基本4辆＋增结A4辆＋增结B8辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "n700a-nozomi",
+        "n700a-hikari",
+        "n700a-kodama"
+      ],
+      "cars": 16,
+      "components": [
+        {
+          "productId": "TOMIX:98573",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98574",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98575",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98573.html",
+      "sourceTitle": "TOMIX 官方编成资料：N700A-1000 · 基本4辆＋增结A4辆＋增结B8辆",
+      "checkedAt": "2026-10-27",
+      "note": "JR东海1000番台十六辆：98573基本1/5/14/16号、98574增结A为3/4/10/11号、98575增结B为其余八辆。基本及增结B各含一辆动力，共两动力；不能与N700S或九州直通8000番台八辆混配。"
+    },
+    {
+      "id": "greenmax-817-1600-4",
+      "label": "817-1600 · 动力2辆＋无动力2辆",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "cars": 4,
+      "components": [
+        {
+          "productId": "GREENMAX:31959",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:31960",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/31959.html",
+      "sourceTitle": "GREENMAX 官方编成资料：817-1600 · 动力2辆＋无动力2辆",
+      "checkedAt": "2026-10-27",
+      "note": "同款长座椅1600番代两编组併结，含一个动力单元；官网基本/增结关联组，车号可选。"
+    }
+  ]
 }

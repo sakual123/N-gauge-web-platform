@@ -1,6 +1,7 @@
 {
   "result": "PASS",
-  "checkedAt": "2026-10-27",
+  "release": "V11",
+  "checkedAt": "2026-10-28",
   "viewports": [
     [
       1024,
@@ -11,22 +12,20 @@
       1024
     ]
   ],
-  "settingsTabs": true,
-  "firstNextAndPlatformSwitch": true,
-  "singleSelectedRowEditor": true,
-  "fourDisplayRowsRetained": true,
-  "manualFormationAndTimeSurviveReload": true,
-  "manufacturerFilterAndCopy": true,
-  "partNumberClipboard": "98497",
-  "cataloguePagination": true,
-  "combinedTaxonomyFilter": true,
-  "sharedSearchUrl": true,
-  "queryFiltersProductCards": true,
-  "unlistedManufacturerCodesNotCopied": true,
-  "referenceTripOptions": 430,
-  "referenceMorningFilter": 67,
   "horizontalOverflow": false,
+  "quickVehicleSearch": true,
+  "crossRegionSelectionOnlyChangesSelectedRow": true,
+  "keyboardSearchSelection": true,
+  "subseriesSearchE2331000": true,
+  "exactSeriesRankedBeforeSubstring": true,
+  "fourDisplayRowsRetained": true,
+  "assemblyFormulaE7": "98530 (4) + 98531 (4) + 98532 (4) = 12",
+  "combinedPartNumberClipboard": "98530 + 98531 + 98532",
+  "sharedAssemblyFilterUrl": true,
+  "clearFilterClearsCopyStatus": true,
+  "radiusSearchR315SeparateFromJR315": true,
   "capturedBrowserErrors": [],
   "physicalIPadSafariTested": false,
-  "realAudioAudibilityTested": false
+  "realAudioAudibilityTested": false,
+  "notes": "Browser viewport checks; keyboard selection, clipboard and row isolation were checked during V11 integration. Product-code suppression and conditional radius rendering are also covered by automated checks."
 }

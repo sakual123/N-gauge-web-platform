@@ -3,6 +3,8 @@
   const D=window.RAIL_DATA,N=window.RAIL_NSCALE_MODEL,U=window.RAIL_NSCALE_UI,$=id=>document.getElementById(id),root=$('vehicles'),search=$('search'),pageSize=24;
   const keys=['region','category','route','maker','format','status'],controls=Object.fromEntries(keys.map(k=>[k,$('filter-'+k)]));
   const params=new URLSearchParams(location.search),filters=Object.fromEntries(['q','vehicle',...keys].map(k=>[k,params.get(k)||'']));
+  filters.assemblyOnly=params.get('assemblies')==='1';$('filter-assemblies').checked=filters.assemblyOnly;
+  filters.q=filters.q.slice(0,120);
   if(!D.vehicles.some(v=>v.id===filters.vehicle))filters.vehicle='';
   let page=Math.max(1,Number.parseInt(params.get('page'),10)||1),totalPages=1,results=[];
   const e=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el;};
@@ -18,9 +20,9 @@
   cascade();search.value=filters.q;
   const stats=N.summary();for(const [value,label]of [[stats.products,'项产品资料'],[stats.covered+'/'+stats.presets,'个预设已覆盖'],[stats.makers,'家模型厂商']]){const el=e('div','catalogue-stat');el.append(e('strong','',String(value)),e('span','',label));$('catalogue-stats').append(el);}
   $('intro').textContent='资料核对：'+window.RAIL_NSCALE_DATA.checkedAt+' · 按车辆番台、涂装与厂家资料建立对应。';
-  function address(){const query=new URLSearchParams();for(const k of ['q','vehicle',...keys])if(filters[k])query.set(k,filters[k]);if(page>1)query.set('page',String(page));history.replaceState(null,'',location.pathname+(query.toString()?'?'+query.toString():''));}
+  function address(){const query=new URLSearchParams();for(const k of ['q','vehicle',...keys])if(filters[k])query.set(k,filters[k]);if(filters.assemblyOnly)query.set('assemblies','1');if(page>1)query.set('page',String(page));history.replaceState(null,'',location.pathname+(query.toString()?'?'+query.toString():''));}
   function render(){
-    results=N.search(filters);totalPages=Math.max(1,Math.ceil(results.length/pageSize));page=Math.min(Math.max(1,page),totalPages);root.replaceChildren();address();$('clear-query').hidden=!search.value;
+    results=N.search(filters);totalPages=Math.max(1,Math.ceil(results.length/pageSize));page=Math.min(Math.max(1,page),totalPages);root.replaceChildren();address();$('clear-query').hidden=!search.value;$('copy-status').textContent='';
     const unique=new Set(results.flatMap(r=>r.products.map(p=>p.id)));$('count').textContent=results.length+' / '+D.vehicles.length+' 个预设 · '+unique.size+' 项产品';
     const scoped=D.vehicles.find(v=>v.id===filters.vehicle);$('vehicle-scope').hidden=!scoped;if(scoped)$('vehicle-scope-name').textContent='当前车型：'+scoped.label;
     if(!results.length){const empty=e('div','catalogue-empty');empty.append(e('h3','','没有符合条件的车型'),e('p','','可以减少筛选条件，或换用系列名、日文车名与品号检索。'));root.append(empty);}
@@ -31,17 +33,18 @@
       const el=e('details','vehicle'),s=e('summary','vehicle-summary'),badge=e('span','catalogue-route',line.code);badge.style.setProperty('--route-color',line.color);
       const label=e('span','vehicle-summary-label');label.append(e('strong','',v.label),e('small','',v.series+' · '+D.routes[v.route].label));
       const meta=e('span','vehicle-summary-meta'),names=found.groups.slice(0,2).map(g=>g.maker.id==='MICROACE'?'MA':g.maker.id==='POPONDETTA'?'PP':g.maker.label);
-      meta.append(e('span','vehicle-makers',names.join(' / ')+(found.groups.length>2?' +'+(found.groups.length-2):'')),e('span','vehicle-availability '+found.status,found.status==='unverified'?'待核实':found.status==='variant'?'仅版本参考':found.products.length+' 项产品'));
+      meta.append(e('span','vehicle-makers',names.join(' / ')+(found.groups.length>2?' +'+(found.groups.length-2):'')),e('span','vehicle-availability '+found.status,found.status==='unverified'?'待核实':found.status==='variant'?'仅版本参考':found.products.length+' 项产品'));const plans=N.assemblies(v.id,found.products);if(plans.length)meta.append(e('span','vehicle-assembly-count',plans.length+' 种编成搭配'));
       s.append(badge,label,meta,e('span','vehicle-chevron','⌄'));el.append(s);let ready=false;
       el.addEventListener('toggle',()=>{if(el.open&&!ready){const body=e('div','nscale-content');U.content(body,v,{showFilters:false,hideIdentity:true,showDirectoryLink:false,filters:{...filters}});el.append(body);ready=true;}});
       root.append(el);
     }
     $('pagination').hidden=!results.length;$('previous-page').disabled=page===1;$('next-page').disabled=page===totalPages;$('page-count').textContent=page+' / '+totalPages+' 页';
   }
-  function change(){for(const k of keys)filters[k]=controls[k].value;filters.q=search.value.slice(0,120);cascade();page=1;render();}
+  function change(){for(const k of keys)filters[k]=controls[k].value;filters.q=search.value.slice(0,120);filters.assemblyOnly=$('filter-assemblies').checked;cascade();page=1;render();}
+  $('filter-assemblies').addEventListener('change',change);
   for(const control of Object.values(controls))control.addEventListener('change',change);search.addEventListener('input',change);
   $('clear-query').addEventListener('click',()=>{search.value='';change();search.focus();});
-  $('clear-filters').addEventListener('click',()=>{search.value='';for(const k of keys){controls[k].value='';filters[k]='';}filters.q='';cascade();page=1;render();});
+  $('clear-filters').addEventListener('click',()=>{search.value='';for(const k of keys){controls[k].value='';filters[k]='';}filters.q='';filters.assemblyOnly=false;$('filter-assemblies').checked=false;cascade();page=1;render();});
   $('clear-vehicle').addEventListener('click',()=>{filters.vehicle='';page=1;render();});
   for(const [id,step]of [['previous-page',-1],['next-page',1]])$(id).addEventListener('click',()=>{page+=step;render();$('results-heading').scrollIntoView({block:'start'});});
   $('copy-search').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);$('copy-status').textContent='链接已复制';}catch(_){$('copy-status').textContent='可从地址栏复制当前链接';}});

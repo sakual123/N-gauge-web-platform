@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),ctx={window:{}};vm.createContext(ctx);for(const file of ['catalog','catalog-regions','catalog-expanded','vehicle-search'])vm.runInContext(fs.readFileSync(path.join(root,'dist',file+'.js'),'utf8'),ctx);
+const D=ctx.window.RAIL_DATA,S=ctx.window.RAIL_VEHICLE_SEARCH;
+const ids=q=>[...S.search(q)].map(v=>v.id),before=JSON.stringify(D.vehicles);
+assert.equal(S.search('   ').length,0);
+assert(ids('Ｅ２３３ 京浜').includes('e233-keihin'),'Full-width series and route must combine');
+assert(!ids('E233 京浜').includes('e233-chuo'),'A shared series must not ignore the route token');
+assert(ids('E233京浜').includes('e233-keihin'),'Mixed-script queries should work without spaces');
+assert(ids('E2333000').includes('e233-ueno-tokyo'),'Compact subseries notation should be searchable');assert(!ids('E2333000').includes('e233-keihin'));
+assert(ids('E233-1000').includes('e233-keihin'));assert(ids('E2331000').includes('e233-keihin'));
+assert(ids('ひのとり').includes('kintetsu-hinotori'));assert(ids('ヒノトリ').includes('kintetsu-hinotori'));
+assert(ids('NEX').includes('e259-nex'),'Apostrophe variations must not prevent NEX lookup');
+assert.equal(ids('E5')[0],'e5-hayabusa','Exact series should outrank E531 substring matches');
+assert.equal(ids('nonexistent-vehicle-987654').length,0);
+for(const v of D.vehicles)assert(ids(v.label).includes(v.id),'Every label must be searchable: '+v.id);
+assert.equal(JSON.stringify(D.vehicles),before,'Search must be non-mutating');
+console.log(JSON.stringify({result:'PASS',presets:D.vehicles.length,allLabels:true,fullWidth:true,kanaNormalization:true,combinedRoute:true,seriesRanking:true,nonMutating:true}));
