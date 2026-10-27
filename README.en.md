@@ -17,19 +17,19 @@ A Japanese railway departure-board simulator for N gauge layouts and iPad displa
 - **Scrolling train information:** stops and non-reserved/reserved/Green seating for the next departure. Choose a fixed row, model clock, speed, pause or custom text.
 - **LCD/LED appearance:** Japanese/English board information, optional dot texture, landscape/portrait layouts, browser-local persistence and JSON settings export.
 
-## Matching N-scale models · V9
+## Matching N-scale models · V10
 
-The directory contains **227 product records covering 218 of 237 presets** (7 have explicitly different reference versions only). The remaining 19 presets explain what could not be verified.
+The directory contains **458 product records covering 220 of 237 presets** (214 matching, 6 with different reference versions only). The remaining 17 presets explain what could not be verified.
 
-![N-scale model lookup](docs/images/v9-nscale-hinotori-landscape.png)
+![N-scale model lookup](docs/images/v10-catalogue-landscape.png)
 
 Open `···` → **对应N比例车型** under each train to see verified manufacturer product numbers, set lengths, basic/add-on status, version differences and official sources. Numbers can be copied. The directory includes KATO, TOMIX, MICRO ACE (MA), Popondetta (PP) and other manufacturers.
 
-Results follow the selected vehicle without changing your formation, departure time or destination. Historical products are included; this is not a stock listing. Missing entries do not imply that no model exists. See [N-scale model notes](NSCALE-MODELS.md) for scope, matching rules and data maintenance. A searchable directory is also available in the app.
+Results follow the selected vehicle without changing your formation, departure time or destination. Historical products are included; this is not a stock listing. Missing entries do not imply that no model exists. See [N-scale model notes](NSCALE-MODELS.md) for scope, matching rules and data maintenance. The directory covers 10 makers; 66 presets offer multiple makers. 456 records have official codes and 2 are verified kits without published manufacturer numbers. Filter by region, category, route, maker and model format, then share the search link. Settings now have train, display and audio tabs, with direct platform and first/next selection.
 
 ## Timetable scope
 
-This release is **V9: 237 presets and 17,030 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 233 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
+This release is **V10: 237 presets and 17,030 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 233 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
 
 Coverage completeness and operating-date verification are separate: 11,248 records were checked for the specified day, 5,528 use official weekend/holiday tables, 230 use daily references, and 20 still require operating-calendar confirmation. Weekday-only and discontinued services remain labelled. Current official Ginza/Marunouchi data replaces the older samples.
 

@@ -1,5 +1,38 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>N 比例车型品号 · 模型駅</title><link rel="stylesheet" href="nscale.css?v=9-final"><style>
-body{margin:0;background:#141a17;color:#e1e9db;font:15px/1.7 system-ui,-apple-system,"Noto Sans CJK SC",sans-serif}main{max-width:850px;margin:auto;padding:30px 20px 70px}a{color:#b8d9bd}h1{font-size:27px;font-weight:500;margin:20px 0 6px}h2{font-size:18px;font-weight:500}p{margin:10px 0}.service-help{font-size:12px;line-height:1.8;color:#b1c1a7}.reference-source{font-size:12px}label{display:block;margin-top:20px;font-size:13px}input{box-sizing:border-box;width:100%;font:inherit;color:#f0f4e9;background:#252f27;border:1px solid #526554;border-radius:5px;padding:12px;margin:8px 0}details.vehicle{margin:12px 0;padding:0 15px 15px;border:1px solid #3d4c43;border-radius:6px}details.vehicle:not([open]){padding-bottom:0}details.vehicle>summary{padding:14px 0;cursor:pointer;font-size:14px}.nscale-maker{margin:16px 0}.nscale-content{max-width:650px}.status{font-size:12px;color:#b8c9ad}footer{margin-top:25px;font-size:12px;color:#adbea4}
-</style></head><body><main><a href="index.html">← 返回站台</a><h1>对应N比例车型</h1><p>车辆、番台、涂装与厂家品号核对表</p><p class="service-help" id="intro"></p><label for="search">搜索车名、系列、厂家或品号</label><input id="search" type="search" placeholder="例如：ひのとり / E233 / KATO / 10-" autocomplete="off"><p id="count" class="status" role="status"></p><div id="vehicles"></div><footer>品号用于查找模型，不代表现货或当前再生产计划。收录范围与来源见各项厂家资料；未列出并不表示厂家未出品。</footer></main>
-<script src="catalog.js?v=9-final"></script><script src="catalog-regions.js?v=9-final"></script><script src="catalog-expanded.js?v=9-final"></script><script src="nscale-data.js?v=9-final"></script><script src="nscale-model.js?v=9-final"></script><script src="nscale-ui.js?v=9-final"></script><script src="nscale-audit.js?v=9-final"></script></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#131c1d"><meta name="color-scheme" content="dark">
+  <title>N 比例车型目录 · 模型駅</title><meta name="description" content="按地区、线路、厂家查找日本N比例铁路模型品号，区分完成品、静态模型、套件及基本增结编组。">
+  <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="nscale.css?v=10-final2"><link rel="stylesheet" href="catalogue.css?v=10-final2">
+</head>
+<body class="catalogue-page">
+  <div class="catalogue-shell">
+    <header class="catalogue-header"><a class="catalogue-wordmark" href="index.html"><span class="catalogue-mark">N</span><span>模型駅<small>MODEL STATION</small></span></a><a class="catalogue-back" href="index.html">← 返回站台</a></header>
+    <main>
+      <div class="catalogue-title"><div><p class="catalogue-eyebrow">N GAUGE / MODEL DIRECTORY</p><h1>对应N比例车型</h1><p>从站台上的列车，找到桌上的模型。</p></div><span class="catalogue-scale" aria-hidden="true">N<span>GAUGE</span></span></div>
+      <div class="catalogue-stats" id="catalogue-stats" aria-label="产品资料概览"></div>
+      <section class="catalogue-search" aria-label="筛选模型资料">
+        <label class="search-caption" for="search">车名、系列、厂家或品号</label>
+        <div class="catalogue-search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="例如 E233 TOMIX、ひのとり、10-1826" autocomplete="off"><button id="clear-query" type="button" aria-label="清空检索词" hidden>×</button></div>
+        <div class="catalogue-filter-grid">
+          <div><label for="filter-region">地区</label><select id="filter-region"></select></div>
+          <div><label for="filter-category">类型</label><select id="filter-category"></select></div>
+          <div><label for="filter-route">线路</label><select id="filter-route"></select></div>
+          <div><label for="filter-maker">厂家</label><select id="filter-maker"></select></div>
+          <div><label for="filter-format">模型形态</label><select id="filter-format"><option value="">全部形态</option><option value="ready">完成品</option><option value="static">静态模型</option><option value="kit">制作套件</option></select></div>
+          <div><label for="filter-status">对应情况</label><select id="filter-status"><option value="">全部情况</option><option value="verified">有车型对应</option><option value="variant">仅版本参考</option><option value="unverified">待核实品号</option></select></div>
+        </div>
+        <div class="catalogue-filter-actions"><button type="button" id="clear-filters">清空筛选</button><button type="button" id="copy-search">复制查询链接</button><span id="copy-status" role="status"></span></div>
+      </section>
+      <div id="vehicle-scope" class="catalogue-scope" hidden><span id="vehicle-scope-name"></span><button type="button" id="clear-vehicle">查看全部车型</button></div>
+      <div class="catalogue-results-heading" id="results-heading"><h2>车型与产品</h2><p id="count" role="status" aria-live="polite"></p></div>
+      <div id="vehicles"></div>
+      <div class="catalogue-pagination" id="pagination"><button type="button" id="previous-page">← 上一页</button><span id="page-count"></span><button type="button" id="next-page">下一页 →</button></div>
+      <p class="catalogue-date" id="intro"></p>
+      <footer class="catalogue-footer"><p>基本、增结与完整套装分别标明实物节数；静态模型和制作套件需留意动力、底盘等配件。</p><p>资料含历年及预告产品，不表示实时库存。未收录不等于没有出品；不同线路预设可能共用同一模型。</p><a href="index.html">返回站台</a><span>模型駅 · N GAUGE WEB PLATFORM</span></footer>
+    </main>
+  </div>
+  <script src="catalog.js?v=10-final2"></script><script src="catalog-regions.js?v=10-final2"></script><script src="catalog-expanded.js?v=10-final2"></script><script src="nscale-data.js?v=10-final2"></script><script src="nscale-model.js?v=10-final2"></script><script src="nscale-ui.js?v=10-final2"></script><script src="nscale-audit.js?v=10-final2"></script>
+</body>
+</html>

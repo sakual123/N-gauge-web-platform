@@ -59,3 +59,14 @@ Full coverage applies only within the stated station/direction/service scope, se
 ## N 比例产品查询 · V9
 
 `data/nscale-products.json` 是厂家、品号、套装内容、来源和逐车型覆盖状态的可编辑来源；`tools/build-nscale.cjs` 生成 `dist/nscale-data.js`。`nscale-model.js` 只按明确的 `vehicleIds` 建索引，不按地区或系列字符串模糊套用。`nscale-ui.js` 在每行设置中惰性展开资料，`nscale-models.html` 提供可搜索的全目录。查询不写入 v2 用户状态，也不改动班次或模型编组。
+
+
+## V10 catalogue and settings
+
+`catalogue.css` styles the standalone model directory; `experience.css` refines the station settings drawer. Train/display/audio tabs share existing control IDs and the existing v2 state. First/next selectors change only which row is being edited. Official reference selectors are lazy disclosures; the complete collected trips remain available.
+
+`nscale-model.js` supports combined taxonomy, maker, format, status and normalized keyword filters. Product-specific keywords must match one actual product; two different part numbers cannot jointly match a vehicle. `nscale-audit.js` paginates 24 presets per page and serializes non-sensitive search options into the URL. Results and directory visits do not mutate train settings.
+
+All product records explicitly declare `format`: ready (factory assembled; not a guarantee of a motor), static, or kit. `codeType: unlisted` permits a verified official kit without a published manufacturer code: leave `sku` empty, retain an internal stable ID, and show no copy button. Source hosts for small makers are registered individually, never as a general marketplace domain. Empty `cars` means the packaged quantity was not verified.
+
+V10: 458 records / 10 makers; 456 with official codes and 2 without published codes. 214 presets have matching versions, 6 only explicitly different reference versions, and 17 remain unverified. Multiple presets may share one physical model. 66 presets provide more than one maker. These are verified catalogue records, not exhaustive manufacturer inventories or stock data.

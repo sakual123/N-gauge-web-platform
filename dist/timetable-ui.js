@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const TT=window.RAIL_TIMETABLE_MODEL,filterMemory=new Map();
+  const TT=window.RAIL_TIMETABLE_MODEL,filterMemory=new Map(),openMemory=new Map();
   const e=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
   const option=(value,text)=>{const n=e('option','',text);n.value=value;return n;};
   function field(text,node){const wrapper=e('div','form-group'),label=e('label','form-label',text);label.htmlFor=node.id;wrapper.append(label,node);return wrapper;}
@@ -8,6 +8,7 @@
     const all=TT.trips(row.vehicleId),coverage=TT.coverage(row.vehicleId),key=row.id+':'+row.vehicleId;
     const filter={origin:'',direction:'',period:'',q:'',...filterMemory.get(key)};
     const panel=e('div','timetable-panel'),caption=e('div','timetable-caption','固定班次 · '+TT.data.date+' 周日 · 日本时间');
+    const details=e('details','reference-details'),toggle=e('summary','',`官方参考班次 · ${all.length} 班`),preview=e('p','reference-preview');details.open=openMemory.get(key)||false;details.addEventListener('toggle',()=>openMemory.set(key,details.open));
     const summary=e('div','timetable-coverage',`已收录 ${all.length} 班 · ${TT.coverageLabels[coverage.level]||'尚有缺口'}`);summary.dataset.level=coverage.level;
     const scope=e('div','reference-note','范围：'+coverage.scope);
     const grid=e('div','field-grid timetable-filters');
@@ -37,7 +38,7 @@
       count.textContent=`显示 ${found.length} / 共 ${all.length} 班`+(!includes&&row.referenceId?' · 当前班次在筛选范围外':'');
     }
     function update(){
-      help.replaceChildren();const t=TT.find(row)||all[0];if(!t)return;
+      preview.textContent=`${row.time} ${row.origin||''} → ${row.destination}${TT.modified(row)?' · 已调整':''}`;help.replaceChildren();const t=TT.find(row)||all[0];if(!t)return;
       const status=e('div','reference-status',TT.labels[t.status]||t.status);status.dataset.status=t.status;
       help.append(status,e('div','reference-current',`${row.origin||'出发站未设置'} ${row.time} → ${row.destination}${TT.modified(row)?' · 已手动调整':' · 与所选参考一致'}`),e('div','reference-note',t.note||''));
       if(t.trainNumber)help.append(e('div','reference-note','列车编号：'+t.trainNumber));
@@ -49,7 +50,7 @@
     select.addEventListener('change',apply);restore.addEventListener('click',apply);
     [origin,direction,period].forEach(n=>n.addEventListener('change',choices));query.addEventListener('input',choices);
     clear.addEventListener('click',()=>{origin.value=direction.value=period.value=query.value='';choices();});
-    panel.append(caption,summary,scope,grid,count,select,help,buttons);choices();update();panel.updateReference=update;return panel;
+    details.append(toggle,preview,caption,summary,scope,grid,count,select,help,buttons);panel.append(details);choices();update();panel.updateReference=update;return panel;
   }
   window.RAIL_TIMETABLE_UI={editor,sync(){document.querySelectorAll('.timetable-panel').forEach(p=>p.updateReference?.());}};
 })();

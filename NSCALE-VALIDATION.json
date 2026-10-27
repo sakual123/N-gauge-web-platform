@@ -1,7 +1,10 @@
 {
   "result": "PASS",
   "presets": 237,
-  "products": 227,
+  "products": 458,
+  "codedProducts": 456,
+  "unlistedCodeProducts": 2,
+  "multiMakerPresets": 66,
   "makers": [
     "KATO",
     "TOMIX",
@@ -10,14 +13,17 @@
     "GREENMAX",
     "MODEMO",
     "TOMYTEC",
-    "ONE_MILE"
+    "ONE_MILE",
+    "PERMIL",
+    "HEYANONAKA"
   ],
-  "verifiedPresets": 211,
-  "variantOnlyPresets": 7,
-  "unverifiedPresets": 19,
+  "verifiedPresets": 214,
+  "variantOnlyPresets": 6,
+  "unverifiedPresets": 17,
   "exactDataRoundtrip": true,
   "subseriesIsolation": true,
   "settingsUnchanged": true,
   "lazyDisclosure": true,
-  "officialSourceDomains": true
+  "officialSourceDomains": true,
+  "combinedSearch": true
 }

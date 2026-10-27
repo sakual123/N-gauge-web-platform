@@ -157,3 +157,8 @@ Select a whole-board theme in display options. Click a train name for manual spe
 ### N scale · V9
 
 Each train now has a “对应N比例车型” section showing copyable product numbers, packaged lengths and official sources. It follows vehicle selection and leaves your formation and service unchanged. After editing `data/nscale-products.json`, run `npm run build:nscale`, then deploy the complete `dist/` folder.
+
+
+## V10
+
+Settings use Train / Display / Audio tabs (列车／屏幕／声音). Choose a platform and first/next departure before editing. The N-scale shortcut opens that vehicle’s products; the footer opens the complete filterable directory. Copy the search link to share a selection. Replace the entire dist folder when updating, then refresh. Existing formations, times and destinations are retained.

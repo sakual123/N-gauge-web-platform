@@ -1,18 +1,32 @@
 {
-  "date": "2026-10-26",
-  "version": "V7",
   "result": "PASS",
-  "browser": "Codex In-app Browser, desktop engine",
+  "checkedAt": "2026-10-27",
+  "viewports": [
+    [
+      1024,
+      768
+    ],
+    [
+      768,
+      1024
+    ]
+  ],
+  "settingsTabs": true,
+  "firstNextAndPlatformSwitch": true,
+  "singleSelectedRowEditor": true,
+  "fourDisplayRowsRetained": true,
+  "manualFormationAndTimeSurviveReload": true,
+  "manufacturerFilterAndCopy": true,
+  "partNumberClipboard": "98497",
+  "cataloguePagination": true,
+  "combinedTaxonomyFilter": true,
+  "sharedSearchUrl": true,
+  "queryFiltersProductCards": true,
+  "unlistedManufacturerCodesNotCopied": true,
+  "referenceTripOptions": 430,
+  "referenceMorningFilter": 67,
+  "horizontalOverflow": false,
+  "capturedBrowserErrors": [],
   "physicalIPadSafariTested": false,
-  "landscape": {"width": 1024, "height": 768, "documentScrollWidth": 1024, "fourRowsVisible": true, "tickerBottom": 768},
-  "portrait": {"width": 768, "height": 1024, "documentScrollWidth": 768, "rowHeights": [175.5,175.5,175.5,175.5], "tickerBottom": 1024},
-  "editorHorizontalOverflow": false,
-  "editorScrollAndClientWidth": [444,444],
-  "nonMutatingFilter": "18-21 + 大宮 reduced 305 to 20 references and kept 08:02 unchanged, selected reference then applied 18:08",
-  "emptyFilter": "Zero matches disabled the reference selector and restore button while preserving 18:08",
-  "filtersRetainedAfterSelection": true,
-  "finalDaytimeRapidFilter": "12-15 + 快速 returned 72 / 430 Keihin references; current 18:08 was preserved and labelled outside filter",
-  "reload": "Selected fixed time preserved through reload and data update",
-  "audit": {"totalReferences":17030,"fullPresets":233,"partialPresets":0,"pageSize":50,"secondPage":"2 / 341","fullWidthSearchNormalized":true,"500SeriesRows":6,"kodama947Departure":"10:37"},
-  "consoleErrors": []
+  "realAudioAudibilityTested": false
 }
