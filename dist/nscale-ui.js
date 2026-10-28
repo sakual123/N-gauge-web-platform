@@ -12,7 +12,7 @@
     if(p.note)card.append(E('p','nscale-note',p.note));
     if(p.minimumRadiusMm){const radius=E('div','nscale-radius');radius.append(E('span','','厂家标示最小半径'),E('strong','','R'+p.minimumRadiusMm));card.append(radius);}else if(p.radiusNote)card.append(E('div','nscale-radius','官方曲线条件'));
     if(p.radiusNote)card.append(E('p','nscale-radius-note',p.radiusNote));
-    const footer=E('div','nscale-product-footer'),source=link(p.verificationUrl?'运营商官方资料 ↗':'厂家资料 ↗',p.source);source.title=p.sourceTitle;footer.append(source);if(p.radiusSource&&p.radiusSource!==p.source){const radiusLink=link('曲线条件资料 ↗',p.radiusSource);radiusLink.title=p.radiusSourceTitle||'厂家官方曲线条件';footer.append(radiusLink);}footer.append(status);card.append(footer);return card;
+    const footer=E('div','nscale-product-footer'),source=link(p.verificationUrl?'运营商官方资料 ↗':'厂家资料 ↗',p.source);source.title=p.sourceTitle;footer.append(source);if(p.codeSource){const codes=link('官方品号目录 ↗',p.codeSource);codes.title=p.codeSourceTitle||'官方品号核对资料';footer.append(codes);}if(p.radiusSource&&p.radiusSource!==p.source){const radiusLink=link('曲线条件资料 ↗',p.radiusSource);radiusLink.title=p.radiusSourceTitle||'厂家官方曲线条件';footer.append(radiusLink);}footer.append(status);card.append(footer);return card;
   }
   function assemblyCard(a,v){
     const card=E('section','nscale-assembly'),heading=E('div','assembly-heading'),diagram=E('div','assembly-diagram'),formula=E('p','assembly-formula');

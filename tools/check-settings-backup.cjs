@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),ctx={window:{}};vm.createContext(ctx);
+for(const f of ['catalog','catalog-regions','catalog-expanded','special-services','journey-data','timetable-data','timetable-model','themes','announcement-data','announcement-model','model','settings-backup'])vm.runInContext(fs.readFileSync(path.join(root,'dist',f+'.js'),'utf8'),ctx,{filename:f});
+const {RAIL_MODEL:M,RAIL_SETTINGS_BACKUP:B}=ctx.window;
+const state=M.defaults();M.applyVehicle(state.rows[0],'e6-komachi',state);state.rows[0].time='13:42';state.rows[0].destination='模型中央';state.formations['e6-komachi']=3;state.timetablePins['e6-komachi']={time:'13:42',destination:'模型中央',origin:'東京',type:'新幹線',number:'99号',referenceId:''};state.display.theme='kintetsu';state.announcements.auto=true;state.ticker.clock='model';state.ticker.modelTime='13:40';state.message='模型のホームです。';
+const payload=JSON.stringify(state),loaded=B.parse(payload);assert.equal(JSON.stringify(state),payload);assert.deepEqual(JSON.parse(JSON.stringify(loaded)),JSON.parse(JSON.stringify(M.normalize(state))));assert.equal(loaded.rows[0].time,'13:42');assert.equal(M.carsFor(loaded,'e6-komachi'),3);assert.equal(loaded.timetablePins['e6-komachi'].time,'13:42');assert.equal(loaded.ticker.clock,'model');assert.equal(loaded.display.theme,'kintetsu');assert(loaded.announcements.auto);assert.equal(B.summary(loaded)[0].cars,3);assert.equal(B.summary(loaded)[0].destination,'模型中央');assert.equal(B.summary(loaded).length,4);
+assert.equal(B.parse('\uFEFF'+payload).rows[0].time,'13:42');
+const legacy=JSON.parse(payload);legacy.version=1;assert.equal(B.parse(JSON.stringify(legacy)).version,2);
+const rejects=fn=>{const copy=JSON.parse(payload);fn(copy);assert.throws(()=>B.parse(JSON.stringify(copy)));};
+for(const text of ['','{','null','[]','{"version":2,"rows":[]}', ' '.repeat(B.MAX_BYTES+1)])assert.throws(()=>B.parse(text));
+rejects(s=>s.version=3);rejects(s=>s.rows.pop());rejects(s=>s.rows[1].id=s.rows[0].id);rejects(s=>s.rows[0].vehicleId='__unknown__');rejects(s=>s.rows[0].time='25:61');rejects(s=>s.rows[0]=null);
+const tampered=JSON.parse(payload);tampered.rows[0].platform=2;tampered.formations['e6-komachi']=999;tampered.rows[0].destination='<img src=x onerror=alert(1)>\u0000abc';tampered.__proto__={injected:true};const safe=B.parse(JSON.stringify(tampered));assert.equal(safe.rows[0].platform,1);assert.equal(M.carsFor(safe,'e6-komachi'),M.byId.get('e6-komachi').cars);assert(!safe.rows[0].destination.includes('\u0000'));assert.equal(safe.injected,undefined);assert.equal({}.injected,undefined);
+// Keep a failed import from yielding a default state that could silently replace valid settings.
+assert.equal(JSON.stringify(state),payload);
+console.log(JSON.stringify({result:'PASS',fullSettingsRoundTrip:true,legacyV1:true,formationAndPinnedTimes:true,invalidImportRejected:true,nonMutating:true,previewRows:4}));

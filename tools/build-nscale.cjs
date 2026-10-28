@@ -6,7 +6,7 @@ console.log(`N scale: ${data.products.length} products, ${Object.keys(data.cover
 const stats={verified:0,variant:0,unverified:0};for(const c of Object.values(data.coverage))stats[c.status]++;
 const makers=data.makers.filter(m=>data.products.some(p=>p.maker===m.id)).map(m=>m.label).join('、');
 const uncoded=data.products.filter(p=>p.codeType==='unlisted').length,assemblies=data.assemblies||[],radiusProducts=data.products.filter(p=>p.minimumRadiusMm).length;
-const doc=`# 对应N比例车型 · V11
+const doc=`# 对应N比例车型 · V12
 
 核对日期：${data.checkedAt}。收录 ${data.products.length} 项厂家产品资料；237 个车辆预设中，${stats.verified} 个有车型对应产品，${stats.variant} 个仅有注明差别的版本参考，${stats.unverified} 个尚未收录可核实品号。共用同型车辆的不同线路／服务预设会引用相同产品，预设覆盖数不等于独立车型数。
 
@@ -28,6 +28,8 @@ const doc=`# 对应N比例车型 · V11
 “快速找车”可按系列、日文/中文车名、线路跨地区选车；全角英数字和日文假名形式会统一检索。选择只应用到当前正在编辑的那一班。
 
 每家产品下的“编成搭配”按官方资料列出基本、增结或附属编成，可复制整组品号。小车图按包装数量分组，不能当作实际号车顺序；真实排列请打开官方编成图。不同厂商或不同版本不能只因节数相加相同就混配。最小半径信息只用于核对所列产品或有明确条件的组合，不自动承诺适配R282/R315、道岔、S弯或坡度。未标半径表示此目录未核实，不等于没有限制。
+
+V12增加套装类型与曲线资料筛选：R282／R315条件仅纳入本品有明确数值的规格；条件说明与未列数据另分。筛选可逐项移除，并复制链接或导出当前筛选全部页面的去重CSV品号清单。导出保留实际盒数、版本差别和来源，未核实的整套编号留空。
 
 V9曾修正旧目录的二代西铁“旅人”：由误写的6050形改为3000形，保留内部旧标识以兼容已保存设置。[TOMYTEC产品与车型说明](https://www.tomytec.co.jp/diocolle/lineup/tetsudou/5set_11.html)。
 

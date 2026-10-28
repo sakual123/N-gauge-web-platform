@@ -1,6 +1,6 @@
 {
   "result": "PASS",
-  "release": "V11",
+  "release": "V12",
   "checkedAt": "2026-10-28",
   "viewports": [
     [
@@ -10,22 +10,28 @@
     [
       768,
       1024
+    ],
+    [
+      390,
+      844
     ]
   ],
   "horizontalOverflow": false,
-  "quickVehicleSearch": true,
-  "crossRegionSelectionOnlyChangesSelectedRow": true,
-  "keyboardSearchSelection": true,
-  "subseriesSearchE2331000": true,
-  "exactSeriesRankedBeforeSubstring": true,
-  "fourDisplayRowsRetained": true,
-  "assemblyFormulaE7": "98530 (4) + 98531 (4) + 98532 (4) = 12",
-  "combinedPartNumberClipboard": "98530 + 98531 + 98532",
-  "sharedAssemblyFilterUrl": true,
-  "clearFilterClearsCopyStatus": true,
-  "radiusSearchR315SeparateFromJR315": true,
+  "setKindAndCurveFilters": true,
+  "individualFilterRemoval": true,
+  "sharedCurveFilterSurvivesReload": true,
+  "csvActualBrowserDownloadProducts": 590,
+  "csvColumns": 14,
+  "csvAllPagesDeduplicated": true,
+  "backupPreviewDoesNotApply": true,
+  "backupCancelDoesNotApply": true,
+  "backupApplyPersistsOnReload": true,
+  "backupInvalidJsonDoesNotApply": true,
+  "backupUnknownVehicleDoesNotApply": true,
+  "backupRestorePreImportState": true,
+  "originalPreviewStateRestored": true,
+  "newAssemblyMotorNote": "A6596 and A6597 each powered",
   "capturedBrowserErrors": [],
   "physicalIPadSafariTested": false,
-  "realAudioAudibilityTested": false,
-  "notes": "Browser viewport checks; keyboard selection, clipboard and row isolation were checked during V11 integration. Product-code suppression and conditional radius rendering are also covered by automated checks."
+  "realAudioAudibilityTested": false
 }

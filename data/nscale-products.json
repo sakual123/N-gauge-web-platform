@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-27",
+  "checkedAt": "2026-10-28",
   "makers": [
     {
       "id": "KATO",
@@ -191,10 +191,10 @@
         "e353-fuji"
       ],
       "match": "exact",
-      "note": "富士回游可参考S103付属3节；官方另列28-232N付属编成用动力装置，独立运行前须核对套装动力配置。",
+      "note": "S103付属3节套装本身不含动力车。独立再现富士回游运行须另购并安装适配动力装置（官方另列28-232N）；与基本编成连接时由基本编成动力牵引。",
       "source": "https://www.katomodels.com/product/n/e353",
       "sourceTitle": "KATO 官方产品资料",
-      "checkedAt": "2026-10-26",
+      "checkedAt": "2026-10-28",
       "id": "KATO:10-1836",
       "format": "ready"
     },
@@ -1168,10 +1168,10 @@
         "od30000-exe"
       ],
       "match": "exact",
-      "note": "EXEα新宿侧4节增结，与A6596配为10节；动力配置按厂家说明核对。",
+      "note": "EXEα新宿侧4节增结，内含动力车デハ30101，可独立运行；配A6596六节为10节，重联使用随附贯通车交换连结器及前面开门零件。",
       "source": "http://www.microace-arii.co.jp/release/pdf/A6596R.pdf",
       "sourceTitle": "MICROACE 官方产品发布 PDF：小田急30000形・EXEα・リニューアル 増結4両セット",
-      "checkedAt": "2026-10-27",
+      "checkedAt": "2026-10-28",
       "id": "MICROACE:A6597",
       "format": "ready"
     },
@@ -1684,9 +1684,9 @@
       ],
       "match": "exact",
       "note": "基本3节，搭配10-1838增结4节组成7节。",
-      "source": "https://www.katomodels.com/product?page=9",
-      "sourceTitle": "KATO 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "https://www.katomodels.com/product/n/321kei_vc",
+      "sourceTitle": "KATO 官方321系JR京都・神户・东西线产品详情",
+      "checkedAt": "2026-10-28",
       "id": "KATO:10-1837",
       "format": "ready"
     },
@@ -1701,9 +1701,9 @@
       ],
       "match": "exact",
       "note": "无动力增结4节，配10-1837基本3节。",
-      "source": "https://www.katomodels.com/product?page=9",
-      "sourceTitle": "KATO 官方 N 比例产品资料",
-      "checkedAt": "2026-10-26",
+      "source": "https://www.katomodels.com/product/n/321kei_vc",
+      "sourceTitle": "KATO 官方321系JR京都・神户・东西线产品详情",
+      "checkedAt": "2026-10-28",
       "id": "KATO:10-1838",
       "format": "ready"
     },
@@ -7562,9 +7562,11 @@
       "note": "2010 年前后 JR 北海道＋JR 东日本混成北斗星客车。10-831 基本 6 辆＋10-832 增结 6 辆＝客车 12 辆；不含机车和动力，牵引机需另购，用户的 6 节可作缩编。",
       "source": "https://www.katomodels.com/product/n/24kei_hokutosei_dx",
       "sourceTitle": "KATO 官方24系北斗星Deluxe编成与牵引说明",
-      "checkedAt": "2026-10-27",
+      "checkedAt": "2026-10-28",
       "format": "ready",
-      "id": "KATO:10-831"
+      "id": "KATO:10-831",
+      "codeSource": "https://www.katomodels.com/stock/result?word=%E5%8C%97%E6%96%97%E6%98%9F",
+      "codeSourceTitle": "KATO 官方北斗星品号目录；仅用于核对品号与盒数，不表示实时库存"
     },
     {
       "maker": "KATO",
@@ -7579,9 +7581,11 @@
       "note": "2010 年前后 JR 北海道＋JR 东日本混成北斗星客车。10-831 基本 6 辆＋10-832 增结 6 辆＝客车 12 辆；不含机车和动力，牵引机需另购，用户的 6 节可作缩编。",
       "source": "https://www.katomodels.com/product/n/24kei_hokutosei_dx",
       "sourceTitle": "KATO 官方24系北斗星Deluxe编成与牵引说明",
-      "checkedAt": "2026-10-27",
+      "checkedAt": "2026-10-28",
       "format": "ready",
-      "id": "KATO:10-832"
+      "id": "KATO:10-832",
+      "codeSource": "https://www.katomodels.com/stock/result?word=%E5%8C%97%E6%96%97%E6%98%9F",
+      "codeSourceTitle": "KATO 官方北斗星品号目录；仅用于核对品号与盒数，不表示实时库存"
     },
     {
       "maker": "KATO",
@@ -7593,10 +7597,10 @@
         "ky813"
       ],
       "match": "exact",
-      "note": "200 番台经长座椅改造后的 2200 番代，区别于原 200 番台座席/车门数字等细节。10-2047 基本 RM2225 含动力，10-2048 增结 RM2212 无动力；各 3 辆，两盒可组成 6 辆，增结不能单独走行。",
+      "note": "200番代长座椅改造后的2200番代；10-2047基本RM2225与10-2048增结RM2212各三辆、组合为六辆，车门数字及受电弓周边计器用变压器撤除。各盒动力配置以本品说明书为准。",
       "source": "https://www.katomodels.com/product/n/813_2200_series",
       "sourceTitle": "KATO 官方产品资料：813系2200番代 3両基本セット",
-      "checkedAt": "2026-10-27",
+      "checkedAt": "2026-10-28",
       "format": "ready",
       "id": "KATO:10-2047"
     },
@@ -7610,10 +7614,10 @@
         "ky813"
       ],
       "match": "exact",
-      "note": "200 番台经长座椅改造后的 2200 番代，区别于原 200 番台座席/车门数字等细节。10-2047 基本 RM2225 含动力，10-2048 增结 RM2212 无动力；各 3 辆，两盒可组成 6 辆，增结不能单独走行。",
+      "note": "2200番代RM2212三辆增结盒，与10-2047基本RM2225组合为六辆；各盒动力配置以本品说明书为准。长座椅、客门数字及受电弓周边设备撤除的式样，与原200番代不同。",
       "source": "https://www.katomodels.com/product/n/813_2200_series",
       "sourceTitle": "KATO 官方产品资料：813系2200番代 3両増結セット",
-      "checkedAt": "2026-10-27",
+      "checkedAt": "2026-10-28",
       "format": "ready",
       "id": "KATO:10-2048"
     },
@@ -7883,10 +7887,10 @@
         "ky813"
       ],
       "match": "exact",
-      "note": "813 系 200 番代原式样无动力三辆；与已收录 10-1686 基本三辆组合为六辆。与后期长座椅改造后的 2200 番代不同，车门编号/内部座席等需按年代选择。",
+      "note": "813系200番代原式样三辆增结盒，与10-1686基本三辆可组合为六辆；动力配置以本品说明书为准。原200番代与后期长座椅2200番代的车门编号及座席细节不同。",
       "source": "https://www.katomodels.com/product/n/813kei",
       "sourceTitle": "KATO 官方产品资料：813系200番代 増結セット(3両)",
-      "checkedAt": "2026-10-27",
+      "checkedAt": "2026-10-28",
       "format": "ready",
       "id": "KATO:10-1687"
     },
@@ -9479,6 +9483,847 @@
       "source": "https://www.tomytec.co.jp/diocolle/items/pdf/newitem_20200514_02.pdf",
       "sourceTitle": "TOMYTEC 官方产品资料：鉄道コレクション 西日本鉄道3000形 貫通5両編成セット",
       "checkedAt": "2026-10-27"
+    },
+    {
+      "id": "GREENMAX:30965",
+      "maker": "GREENMAX",
+      "sku": "30965",
+      "title": "東武70090型（THライナー）7両編成セット（動力付き）",
+      "cars": 7,
+      "setKind": "set",
+      "vehicleIds": [
+        "tb70090-th"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "71791编成的旧版整列7节，车号印刷、横向座椅模式；与31961车号选择版分开记录。",
+      "source": "https://www.greenmax.co.jp/gm-product/30965.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30966",
+      "maker": "GREENMAX",
+      "sku": "30966",
+      "title": "東武70090型（THライナー）基本3両編成セット（動力付き）",
+      "cars": 3,
+      "setKind": "basic",
+      "vehicleIds": [
+        "tb70090-th"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "71791编成三节基本，含中间动力车；配30967四节中间车才是完整7节。",
+      "source": "https://www.greenmax.co.jp/gm-product/30966.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30967",
+      "maker": "GREENMAX",
+      "sku": "30967",
+      "title": "東武70090型（THライナー）増結用中間車4両セット（動力無し）",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "tb70090-th"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "71791编成四节无动力中间车，不含先头车；与30966三节基本搭配为7节。",
+      "source": "https://www.greenmax.co.jp/gm-product/30967.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:31570",
+      "maker": "GREENMAX",
+      "sku": "31570",
+      "title": "東京メトロ13000系（第19編成・アンテナ増設後）7両編成セット（動力付き）",
+      "cars": 7,
+      "setKind": "set",
+      "vehicleIds": [
+        "tm13000-h"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "第19编成、数字无线天线增设后形态，车号印刷；与第5、第21编成及32168版本分列。",
+      "source": "https://www.greenmax.co.jp/gm-product/31570.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30742",
+      "maker": "GREENMAX",
+      "sku": "30742",
+      "title": "東京メトロ13000系（日比谷線・第5編成）7両編成セット（動力付き）",
+      "cars": 7,
+      "setKind": "set",
+      "vehicleIds": [
+        "tm13000-h"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "第5编成，7节有动力旧版套装；行先由贴纸选择，前面白色LED点灯。",
+      "source": "https://www.greenmax.co.jp/gm-product/30742.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30680",
+      "maker": "GREENMAX",
+      "sku": "30680",
+      "title": "東京メトロ13000系（日比谷線）7両編成セット（動力付き）",
+      "cars": 7,
+      "setKind": "set",
+      "vehicleIds": [
+        "tm13000-h"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "初版7节整列，前面16S H01中目黒印刷，车号印刷；不同于后来行先贴纸选择版。",
+      "source": "https://www.greenmax.co.jp/gm-product/30680.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30973",
+      "maker": "GREENMAX",
+      "sku": "30973",
+      "title": "東京メトロ13000系（日比谷線・第21編成）7両編成セット（動力付き）",
+      "cars": 7,
+      "setKind": "set",
+      "vehicleIds": [
+        "tm13000-h"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "第21编成整列7节；所附行先贴纸反映虎ノ門ヒルズ开业后的站号调整。",
+      "source": "https://www.greenmax.co.jp/gm-product/30973.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:10-877",
+      "maker": "KATO",
+      "sku": "10-877",
+      "title": "東京メトロ千代田線16000系 6両基本セット",
+      "cars": 6,
+      "setKind": "basic",
+      "vehicleIds": [
+        "tm16000-c"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "早期第2批次16000系，绿色双带、HID前照灯及有钩伸缩密连；须配同版10-878，不能把第5批次10-1605/1606当作同盒替代。",
+      "source": "https://www.katomodels.com/product/n/metro_16000kei_c",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "minimumRadiusMm": 249,
+      "radiusNote": "厂家页面将R249规格列在第2批次产品说明下；该数值不外推至第5批次10-1605/1606。"
+    },
+    {
+      "id": "KATO:10-878",
+      "maker": "KATO",
+      "sku": "10-878",
+      "title": "東京メトロ千代田線16000系 4両増結セット",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "tm16000-c"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "早期第2批次四节增结，配10-877六节基本；与第5批次带色、车灯、空调及连结器形态有差异。",
+      "source": "https://www.katomodels.com/product/n/metro_16000kei_c",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "minimumRadiusMm": 249,
+      "radiusNote": "R249仅对应官方第2批次说明；不表示任意S弯、道岔或布局均已实测兼容。"
+    },
+    {
+      "id": "POPONDETTA:6099a",
+      "maker": "POPONDETTA",
+      "sku": "6099a",
+      "title": "相模鉄道21000系8両セット（21103編成）",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "so21000"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "21103编成8节整列，行先各停西高島平；与6099的21102编成／急行海老名区别。",
+      "source": "https://maker.popondetta.com/maker/?p=4001",
+      "sourceTitle": "POPONDETTA 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "POPONDETTA:6092",
+      "maker": "POPONDETTA",
+      "sku": "6092",
+      "title": "東京メトロ銀座線1000系くまモンラッピング6両セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "tm1000-g"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2018年期间限定熊本熊彩绘版本，整列6节、中间车有动力；与通常柠檬黄涂装不同，作为彩绘参考。",
+      "source": "https://maker.popondetta.com/maker/?p=3861",
+      "sourceTitle": "POPONDETTA 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:31593",
+      "maker": "GREENMAX",
+      "sku": "31593",
+      "title": "京王5000系（京王ライナー・行先選択式）基本4両編成セット（動力付き）",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "ko5000-liner"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "5735编成、横向座椅再现下行京王ライナー；行先选择式，配31594六节增结为10节，不能与早期30728的6＋4盒装划分混用。",
+      "source": "https://www.greenmax.co.jp/gm-product/31593.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:31594",
+      "maker": "GREENMAX",
+      "sku": "31594",
+      "title": "京王5000系（京王ライナー・行先選択式）増結用中間車6両セット（動力無し）",
+      "cars": 6,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ko5000-liner"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "5735编成六节无动力中间车，配31593四节基本；横向座椅下行方向模式。",
+      "source": "https://www.greenmax.co.jp/gm-product/31594.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:32206",
+      "maker": "GREENMAX",
+      "sku": "32206",
+      "title": "京王5000系（ロングシート）基本4両編成セット（動力付き）",
+      "cars": 4,
+      "setKind": "basic",
+      "vehicleIds": [
+        "ko5000-liner"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2026年纵向座椅版，车号选择及新式无障碍标记，配32207为10节；座椅再现一般种别运用，区别于京王ライナー横向座椅预设。",
+      "source": "https://www.greenmax.co.jp/gm-product/32206.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:32207",
+      "maker": "GREENMAX",
+      "sku": "32207",
+      "title": "京王5000系（ロングシート）増結用中間車6両セット（動力無し）",
+      "cars": 6,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ko5000-liner"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2026年纵向座椅版六节无动力中间车，配32206四节基本；与京王ライナー的横向座椅版本不同。",
+      "source": "https://www.greenmax.co.jp/gm-product/32207.html",
+      "sourceTitle": "GREENMAX 官方产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "TOMIX:97214",
+      "maker": "TOMIX",
+      "sku": "97214",
+      "title": "JR 227系近郊電車（Red Wing・2両）基本セット",
+      "cars": 2,
+      "setKind": "basic",
+      "vehicleIds": [
+        "227-hiroshima"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "2026年3月版、后期型前面形状；完整2节基本编成，クモハ227为M-13动力车，车号转印选择式。可与同系列增结组连挂；不是缺少中间车的半套。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/97214.html",
+      "sourceTitle": "TOMIX 官方产品资料及车辆组成",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "TOMIX:97216",
+      "maker": "TOMIX",
+      "sku": "97216",
+      "title": "JR 227系近郊電車（Red Wing・2両）増結セット",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "227-hiroshima"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "2026年3月版后期型，クモハ227＋クモハ226组成完整2节无动力附属编成；本盒车号转印需基本组提供。单独不具备动力，不是2节基本组97214。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/97216.html",
+      "sourceTitle": "TOMIX 官方产品资料及车辆组成",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "TOMIX:98837",
+      "maker": "TOMIX",
+      "sku": "98837",
+      "title": "JR 207-1000系通勤電車（転落防止幌付）セット",
+      "cars": 7,
+      "setKind": "set",
+      "vehicleIds": [
+        "207-takarazuka",
+        "207-gakkentoshi"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "完整4＋3的7节套装，重现中间相对先头车加装防坠幌后的1000番台。モハ207-1000为M-13动力车；不是体质改善后新车头版本。中间先头车尾灯不亮，端部两先头车头尾灯可切换。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98837.html",
+      "sourceTitle": "TOMIX 官方产品资料及7节车辆明细",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:31508",
+      "maker": "GREENMAX",
+      "sku": "31508",
+      "title": "京阪3000系（快速特急洛楽・プレミアムカー）8両編成セット（動力付き）",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "kh3000"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "单辆Premium Car时代的8节洛楽版本，带液晶头标和云纹装饰灯、无铁芯动力。与现行双Premium Car预设有年代差别；不要当作50846双Premium编成。",
+      "source": "https://www.greenmax.co.jp/gm-product/31508.html",
+      "sourceTitle": "GREENMAX 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:50799",
+      "maker": "GREENMAX",
+      "sku": "50799",
+      "title": "京阪3000系（大阪・関西万博ラッピングトレイン）8両編成セット（動力付き）",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "kh3000"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2025年万博彩绘8节，含单辆Premium Car及无铁芯动力。厂家资料描述彩绘运行为2025年10月闭幕前计划；本项为特定时期彩绘参考，不冒充2025年10月26日后双Premium Car标准编成。",
+      "source": "https://www.greenmax.co.jp/gm-product/50799.html",
+      "sourceTitle": "GREENMAX 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30302",
+      "maker": "GREENMAX",
+      "sku": "30302",
+      "title": "京阪3000系（快速特急「洛楽」・種別／行先選択式）8両編成セット（動力付き）",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "kh3000"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2019年产品、Premium Car加入前的8节洛楽动力组。前面洛楽液晶头标与云纹装饰灯点亮，车号及头标印刷、行先贴纸选择；不是2021年单Premium或2025年双Premium版本。",
+      "source": "https://www.greenmax.co.jp/gm-product/30302.html",
+      "sourceTitle": "GREENMAX 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30303",
+      "maker": "GREENMAX",
+      "sku": "30303",
+      "title": "京阪3000系（京阪特急・種別／行先選択式）8両編成セット（動力付き）",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "kh3000"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2019年Premium Car加入前的完整8节动力组，液晶显示鸽形特急头标、车号印刷。与30304＋30737的分盒车号转印版本区别保留；不含Premium Car。",
+      "source": "https://www.greenmax.co.jp/gm-product/30303.html",
+      "sourceTitle": "GREENMAX 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:50853",
+      "maker": "GREENMAX",
+      "sku": "50853",
+      "title": "阪神1000系（阪神電車×桃園メトロ連携記念ラッピング列車）6両編成セット（動力付き）",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "hs1000-namba"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "桃园捷运合作纪念彩绘6节无铁芯动力组、1208号车TN连接器已装。2026年新版较50676更改连接器及贴纸；与普通橙色带标准涂装不同，作为彩绘版本参考。",
+      "source": "https://www.greenmax.co.jp/gm-product/50853.html",
+      "sourceTitle": "GREENMAX 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30911",
+      "maker": "GREENMAX",
+      "sku": "30911",
+      "title": "阪急1000系（1002編成・神戸線）8両編成セット（動力付き）",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "hk1000-kobe"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "神户线1002编成8节完整动力组，车号印刷，FOMA天线配管与1001编成有所区分；保留固定编成号版本便于找旧盒，不把宝冢线1001编成直接归为本项。",
+      "source": "https://www.greenmax.co.jp/gm-product/30911.html",
+      "sourceTitle": "GREENMAX 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30978",
+      "maker": "GREENMAX",
+      "sku": "30978",
+      "title": "阪急1000系（1000編成・神戸線）8両編成セット（動力付き）",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "hk1000-kobe"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "神户线首列1000编成的8节完整无铁芯动力组，车号印刷；新制模具重现首列特有的角形冷气风扇网格。与1002及车号选择式31935独立列项。",
+      "source": "https://www.greenmax.co.jp/gm-product/30978.html",
+      "sourceTitle": "GREENMAX 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:31533",
+      "maker": "GREENMAX",
+      "sku": "31533",
+      "title": "阪急1300系（1309編成）8両編成セット（動力付き）",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "hk1300"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "京都线1309编成完整8节无铁芯动力组；大阪梅田改名后、侧面车端上方尚无车号的形态，车号印刷。厂家目录列为生产品结束，不代表店头库存。",
+      "source": "https://www.greenmax.co.jp/gm-product/31533.html",
+      "sourceTitle": "GREENMAX 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:31586",
+      "maker": "GREENMAX",
+      "sku": "31586",
+      "title": "阪急1300系（1300編成）8両編成セット（動力付き）",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "hk1300"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "京都线首列1300编成完整8节无铁芯动力组，重现大阪梅田・京都河原町改名后形态及其FOMA天线配管屋顶。车号印刷；与1309及32028车号选择版分别列出。",
+      "source": "https://www.greenmax.co.jp/gm-product/31586.html",
+      "sourceTitle": "GREENMAX 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "TOMIX:98674",
+      "maker": "TOMIX",
+      "sku": "98674",
+      "title": "JR 281系特急電車（ハローキティ はるか・Butterfly）セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "HA604的Butterfly彩绘完整6节动力组，车号印刷，原行李室门填平后的车体。与普通白色Haruka不同；厂家明确可配97208的Ougi三节形成9节。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98674.html",
+      "sourceTitle": "TOMIX 官方产品资料及6节车辆明细",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "TOMIX:98690",
+      "maker": "TOMIX",
+      "sku": "98690",
+      "title": "JR 281系特急電車（ハローキティ はるか・Ori-Tsuru）セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "HA603折鹤主题彩绘完整6节M-13动力组。可按原产品页配98673普通白色3节，或按2025年订正版资料配97208 Ougi彩绘3节为9节；不同年代/彩绘搭配须区分。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98690.html",
+      "sourceTitle": "TOMIX 官方产品资料及6节车辆明细",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "TOMIX:98692",
+      "maker": "TOMIX",
+      "sku": "98692",
+      "title": "JR 281系特急電車（ハローキティ はるか・Kanzashi）セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "HA602发簪主题彩绘6节M-13动力组。2020年官网产品公告PDF明确6节及可配98673普通白色3节；2025年订正版另明确可配97208 Ougi。产品详情页核查遇维护，故链接可读的官方原始公告。",
+      "source": "https://www.tomytec.co.jp/tomix/products/img/20200312-4.pdf",
+      "sourceTitle": "TOMIX 官方2020年3月产品公告：Kanzashi六节",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "TOMIX:97208",
+      "maker": "TOMIX",
+      "sku": "97208",
+      "title": "JR 281系特急電車（ハローキティ はるか・Ougi）増結セット",
+      "cars": 3,
+      "setKind": "addon",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "HA632扇子主题彩绘3节无动力附属编成，单盒不能自行运行。官网2025年订正版明确可与98674／98690／98692三种Hello Kitty六节组中的任一种连挂为9节。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/97208.html",
+      "sourceTitle": "TOMIX 官方产品资料及无动力增结说明",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:10-1990",
+      "maker": "KATO",
+      "sku": "10-1990",
+      "title": "323系〈大阪・関西万博ラッピング列車〉8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "323-loop",
+        "323-yumesaki"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "LS20万博白底ミャクミャク彩绘完整8节组，采用无槽电机。附大阪环状线及环球城・樱岛前面显示；特定时期彩绘版本，不能当普通橙色带涂装。",
+      "source": "https://www.katomodels.com/product/n/323_expo2025",
+      "sourceTitle": "KATO 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:10-1847",
+      "maker": "KATO",
+      "sku": "10-1847",
+      "title": "287系 パンダくろしお「Smileアドベンチャートレイン」6両セット（特別企画品）",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "287-kuroshio"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2020年登场的第二列熊猫彩绘，2024年模型新版；无槽电机、先头无钩密连＋电连件、新设计Adventure World标志。与普通绿带くろしお不同；也不能与2018年10-1506旧版混为一个盒号。",
+      "source": "https://www.katomodels.com/product/n/287kei_kuroshio",
+      "sourceTitle": "KATO 官方 N 比例产品资料",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:10-1506",
+      "maker": "KATO",
+      "sku": "10-1506",
+      "title": "287系 パンダくろしお「Smileアドベンチャートレイン」6両セット",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "287-kuroshio"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2018年出荷的熊猫彩绘旧版6节套装，保留原盒品号供查找。2024年第二列、新标志及无槽电机版本应查10-1847；本项不套用新版硬件特征。",
+      "source": "https://www.katomodels.com/product/n/287kei_kuroshio",
+      "sourceTitle": "KATO 官方产品页旧版品号与出荷表",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:31662",
+      "maker": "GREENMAX",
+      "sku": "31662",
+      "title": "JR九州キハ200形（赤色・551＋1551）2両編成セット（動力付き）",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "红色551＋1551两辆含动力、长座椅550/1550番代，丰肥/久大本线式样；与552＋1552同番代不同车号，标记已印刷。",
+      "source": "https://www.greenmax.co.jp/gm-product/31662.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州キハ200形（赤色・551＋1551）2両編成セット（動力付き）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30524",
+      "maker": "GREENMAX",
+      "sku": "30524",
+      "title": "JR九州キハ200形（100／1100番台・大分車）基本2両編成セット（動力付き）",
+      "cars": 2,
+      "setKind": "basic",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "红色大分100/1100番台两辆动力盒，转向横座椅、厕所小窗省略；与红色550/1550番台长座椅改造车有别，作为不同番台参考。旧批次商品不保证现货。",
+      "source": "https://www.greenmax.co.jp/gm-product/30524.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州キハ200形（100／1100番台・大分車）基本2両編成セット（動力付き）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:30525",
+      "maker": "GREENMAX",
+      "sku": "30525",
+      "title": "JR九州キハ200形（100／1100番台・大分車）増結2両編成セット（動力無し）",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "红色大分100/1100番台两辆无动力，配30524等动力盒；横座椅原型与长座椅550/1550番代不同，不能单独走行。",
+      "source": "https://www.greenmax.co.jp/gm-product/30525.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州キハ200形（100／1100番台・大分車）増結2両編成セット（動力無し）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:31660",
+      "maker": "GREENMAX",
+      "sku": "31660",
+      "title": "JR九州キハ200形（なのはな・565＋1565）基本2両編成セット（動力付き）",
+      "cars": 2,
+      "setKind": "basic",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "鹿儿岛指宿枕崎线黄色なのはな565＋1565，长座椅550/1550番代两辆含动力；区别于大分红色预设。",
+      "source": "https://www.greenmax.co.jp/gm-product/31660.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州キハ200形（なのはな・565＋1565）基本2両編成セット（動力付き）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:31661",
+      "maker": "GREENMAX",
+      "sku": "31661",
+      "title": "JR九州キハ200形（なのはな・556＋1556）増結2両編成セット（動力無し）",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "黄色なのはな556＋1556两辆无动力，配31660基本盒；长座椅550/1550番代，与大分红色预设涂装不同，不能单独走行。",
+      "source": "https://www.greenmax.co.jp/gm-product/31661.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州キハ200形（なのはな・556＋1556）増結2両編成セット（動力無し）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:32040",
+      "maker": "GREENMAX",
+      "sku": "32040",
+      "title": "JR九州キハ200形（ハウステンボス色）2両編成セット（動力付き）",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "KiHa200-14＋1014白橙黑脸HTB色，2018年11月至2021年3月长崎时期，含动力两辆。是通勤柴油车特别涂装，不是783系特急HTB，也不是大分红色长座椅车。",
+      "source": "https://www.greenmax.co.jp/gm-product/32040.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州キハ200形（ハウステンボス色）2両編成セット（動力付き）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:32041",
+      "maker": "GREENMAX",
+      "sku": "32041",
+      "title": "JR九州キハ200形（シーサイドライナー・車番選択式）基本2両編成セット（動力付き）",
+      "cars": 2,
+      "setKind": "basic",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "长崎蓝车体红客门Seaside Liner，0/1000番台两辆含动力，2025版车号可选；该涂装2021年3月退出长崎常规运用，区别于大分红色550/1550番代。",
+      "source": "https://www.greenmax.co.jp/gm-product/32041.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州キハ200形（シーサイドライナー・車番選択式）基本2両編成セット（動力付き）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "GREENMAX:32042",
+      "maker": "GREENMAX",
+      "sku": "32042",
+      "title": "JR九州キハ200形（シーサイドライナー・車番選択式）増結2両編成セット（動力無し）",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "长崎蓝色Seaside Liner 0/1000番台两辆无动力，配32041等动力盒；2025版车号可选，与大分红色长座椅车辆不同，不能单独走行。",
+      "source": "https://www.greenmax.co.jp/gm-product/32042.html",
+      "sourceTitle": "GREENMAX 官方产品资料：JR九州キハ200形（シーサイドライナー・車番選択式）増結2両編成セット（動力無し）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:4245-3",
+      "maker": "KATO",
+      "sku": "4245-3",
+      "title": "サハ787-100〈アラウンド・ザ・九州〉",
+      "cars": 1,
+      "setKind": "addon",
+      "vehicleIds": [
+        "ky787-relay",
+        "ky787-nichirin"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "单辆无动力中间客车，厂家明确供10-1540七辆盒增结为八辆；不能独立走行，也不用于Bo104四辆任意加长。",
+      "source": "https://www.katomodels.com/product/n/787kei_ara9",
+      "sourceTitle": "KATO 官方产品资料：サハ787-100〈アラウンド・ザ・九州〉",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:10-1921",
+      "maker": "KATO",
+      "sku": "10-1921",
+      "title": "313系5300番台〈新快速〉2両増結セット",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "313-tokaido"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "Z2编组5300番台两辆无动力附属盒、所属标记省略式样；配5000番台六辆为八辆，不是5000番台中间两辆。",
+      "source": "https://www.katomodels.com/product/n/313_5000kei_slm",
+      "sourceTitle": "KATO 官方产品资料：313系5300番台〈新快速〉2両増結セット",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:10-1688",
+      "maker": "KATO",
+      "sku": "10-1688",
+      "title": "813系200番代 福北ゆたか線 3両セット",
+      "cars": 3,
+      "setKind": "set",
+      "vehicleIds": [
+        "ky813"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "银车体黑脸福北丰线直方所属200番台三辆含动力，行先博多；区别于鹿儿岛本线红脸及座席改造后的2200番代。",
+      "source": "https://www.katomodels.com/product/n/813kei",
+      "sourceTitle": "KATO 官方产品资料：813系200番代 福北ゆたか線 3両セット",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "MICROACE:A7667",
+      "maker": "MICROACE",
+      "sku": "A7667",
+      "title": "伊豆急3000系 Y1編成「アロハ電車」4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "iq3000"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "Y1编组3001・3101・3201(M)・3051四辆完整动力套装，山侧蓝/海侧红。Y1、Y2贴膜不同；本盒只含Y1，不把两盒同号Y1当正确Y1＋Y2八辆。",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A7667.pdf",
+      "sourceTitle": "MICROACE 官方产品资料：伊豆急3000系 Y1編成「アロハ電車」4両セット",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "TOMIX:9405",
+      "maker": "TOMIX",
+      "sku": "9405",
+      "title": "JRディーゼルカー キハ260-1300形（新塗装）（T）",
+      "cars": 1,
+      "setKind": "addon",
+      "vehicleIds": [
+        "261-hokuto",
+        "261-tokachi"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "新白紫KiHa260-1324单辆无动力中间车，1310以后无旧小窗痕车体、黑台车；用于相应261-1000加长，需另配动力及完整首尾单元，不是5000番代。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/9405.html",
+      "sourceTitle": "TOMIX 官方产品资料：JRディーゼルカー キハ260-1300形（新塗装）（T）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:10-2155",
+      "maker": "KATO",
+      "sku": "10-2155",
+      "title": "愛知環状鉄道2000系 緑 2両セット",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "ak2000"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2025年前后G10绿色通常涂装、双PS27受电弓，两辆含GM-5动力；区别于蓝带G7单受电弓。与旧版併结需更换无钩密连车钩。",
+      "source": "https://www.katomodels.com/product/n/aikan_2000_green",
+      "sourceTitle": "KATO 官方产品资料：愛知環状鉄道2000系 緑 2両セット",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:10-2156",
+      "maker": "KATO",
+      "sku": "10-2156",
+      "title": "愛知環状鉄道2000系〈愛知万博復刻デザイン車両〉2両セット",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "ak2000"
+      ],
+      "match": "variant",
+      "format": "ready",
+      "note": "2025年前后G9世博复刻角色贴膜、双受电弓，两辆含GM-5动力；不是通常蓝带/绿色。与旧版併结需更换车钩。",
+      "source": "https://www.katomodels.com/product/n/aikan_2000_expo",
+      "sourceTitle": "KATO 官方产品资料：愛知環状鉄道2000系〈愛知万博復刻デザイン車両〉2両セット",
+      "checkedAt": "2026-10-28"
     }
   ],
   "coverage": {
@@ -11632,6 +12477,998 @@
       "sourceTitle": "GREENMAX 官方编成资料：817-1600 · 动力2辆＋无动力2辆",
       "checkedAt": "2026-10-27",
       "note": "同款长座椅1600番代两编组併结，含一个动力单元；官网基本/增结关联组，车号可选。"
+    },
+    {
+      "id": "greenmax-tobu50090-10",
+      "label": "東武50090 TJライナー · 10节",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "tb50090-tj"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "GREENMAX:31729",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:31730",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/31729.html",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "官方明确指定4节基本＋6节无动力中间车；模型室内为横向座椅。"
+    },
+    {
+      "id": "greenmax-tokyu2020-10",
+      "label": "東急2020 田園都市線 · 10节",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "dt2020"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "GREENMAX:32124",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:32125",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/32124.html",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "官方产品页及编成图：4节基本＋6节增结；2138编成以后出厂即未设IR天线的形态，勿套用老版具体车号。"
+    },
+    {
+      "id": "greenmax-metro15000-10",
+      "label": "東京メトロ15000 東西線 · 10节",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "tm15000-t"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "GREENMAX:32047",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:32048",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/32047.html",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "4节基本＋6节无动力中间车；官方说明明确两品号配为10节，数字无线天线增设后、车号选择式。"
+    },
+    {
+      "id": "greenmax-tobu70090-7",
+      "label": "東武70090 THライナー · 7节",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "tb70090-th"
+      ],
+      "cars": 7,
+      "components": [
+        {
+          "productId": "GREENMAX:30966",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:30967",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/30966.html",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "71791编成：3节有动力基本＋4节无动力中间车；增结盒没有先头车，不是两列重联。"
+    },
+    {
+      "id": "greenmax-keio5000-31593-10",
+      "label": "京王5000 京王ライナー・行先選択式 · 10节",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "ko5000-liner"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "GREENMAX:31593",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:31594",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/31593.html",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "5735编成：4节有动力基本＋6节无动力中间车；横向座椅为下行方向。不要与30728/30729的6＋4划分交叉配盒。"
+    },
+    {
+      "id": "greenmax-keio5000-long-10",
+      "label": "京王5000 ロングシート · 10节",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "ko5000-liner"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "GREENMAX:32206",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:32207",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.greenmax.co.jp/gm-product/32206.html",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "2026年纵向座椅版本：4节有动力基本＋6节无动力增结。车内对应一般运用，与京王ライナー横向座椅状态不同。"
+    },
+    {
+      "id": "greenmax-tobu50050-10",
+      "label": "東武50050 半蔵門線直通 · 10节",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "tb50050"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "GREENMAX:30820",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:30821",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/30820.html",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "51067编成旧版6节基本＋4节无动力中间车；不是MA的51053 ATO改造版。官方30820页面列明配为10节。"
+    },
+    {
+      "id": "greenmax-keio5000-30728-10",
+      "label": "京王5000 京王ライナー 初版 · 10节",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "ko5000-liner"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "GREENMAX:30728",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:30729",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.gm-store.co.jp/blog/gmstore-staff/archives/53124",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "5731编成：6节基本＋4节无动力中间车；原厂GM通信明确两盒组成10节。与31593/31594的4＋6不同。"
+    },
+    {
+      "id": "microace-odakyu-exea-10",
+      "label": "小田急EXEα · 6＋4节",
+      "maker": "MICROACE",
+      "vehicleIds": [
+        "od30000-exe"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "MICROACE:A6596",
+          "quantity": 1
+        },
+        {
+          "productId": "MICROACE:A6597",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A6596R.pdf",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "官方图：小田原侧6节＋新宿侧4节。两盒各自有动力，均可单独运行；重联使用随附的贯通先头车交换连结器及前面开门零件。"
+    },
+    {
+      "id": "microace-keio9000-10",
+      "label": "京王9000 9732F · 10节",
+      "maker": "MICROACE",
+      "vehicleIds": [
+        "ko9000"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "MICROACE:A7475",
+          "quantity": 1
+        },
+        {
+          "productId": "MICROACE:A7476",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A7475.pdf",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "9732F的6节基本＋4节无动力增结，官方图动力位于9132；对应都营新宿线直通的30番台10节，区别于9707F八节。"
+    },
+    {
+      "id": "microace-tobu50090-10",
+      "label": "東武50090 TJライナー · 10节",
+      "maker": "MICROACE",
+      "vehicleIds": [
+        "tb50090-tj"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "MICROACE:A8874",
+          "quantity": 1
+        },
+        {
+          "productId": "MICROACE:A8875",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A8874l.pdf",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "51091编成的6节基本＋4节增结；官方图动力车为モハ55091。MA的盒装划分与GM31729/31730的4＋6不同。"
+    },
+    {
+      "id": "microace-tobu50050-10",
+      "label": "東武50050 ATO対応改造車 · 10节",
+      "maker": "MICROACE",
+      "vehicleIds": [
+        "tb50050"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "MICROACE:A8878",
+          "quantity": 1
+        },
+        {
+          "productId": "MICROACE:A8879",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "http://www.microace-arii.co.jp/release/pdf/A8878_A8879.pdf",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "51053编成：6节基本＋4节无动力增结；官方图动力为55053，ATO对应改造及全彩行先版，增结中的57053已撤去IR天线。"
+    },
+    {
+      "id": "popondetta-odakyu5000-10",
+      "label": "小田急5000 · 10节",
+      "maker": "POPONDETTA",
+      "vehicleIds": [
+        "od5000"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "POPONDETTA:6081",
+          "quantity": 1
+        },
+        {
+          "productId": "POPONDETTA:6082",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://maker.popondetta.com/maker/?p=3573",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "4节基本＋6节无动力增结；厂家说明动力装在6081的中间车，6082本身没有动力。不是6083p的5052F限定整盒。"
+    },
+    {
+      "id": "popondetta-sotetsu20000-10",
+      "label": "相鉄20000 増備車改良版 · 10节",
+      "maker": "POPONDETTA",
+      "vehicleIds": [
+        "so20000"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "POPONDETTA:6100",
+          "quantity": 1
+        },
+        {
+          "productId": "POPONDETTA:6101",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://maker.popondetta.com/maker/?p=4001",
+      "sourceTitle": "厂家官方产品说明／编成资料",
+      "checkedAt": "2026-10-28",
+      "note": "2026改良版6节基本＋4节增结，两盒行先均为各停和光市。厂家明确与旧6006/6007、6028/6029无兼容性，不能交叉替换。"
+    },
+    {
+      "id": "tomix-haruka-white-9",
+      "label": "はるか · 普通白色6＋3九节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "cars": 9,
+      "components": [
+        {
+          "productId": "TOMIX:98672",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98673",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98672.html",
+      "sourceTitle": "TOMIX 官方明确的六节＋三节编成说明",
+      "checkedAt": "2026-10-28",
+      "note": "基本6节含动力，98673是3节无动力附属编成；官网明确两盒可组成9节。此搭配为普通白色，非Hello Kitty彩绘。"
+    },
+    {
+      "id": "greenmax-keihan3000-prepremium-8",
+      "label": "京阪3000 · Premium Car加入前4＋4八节",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "kh3000"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "GREENMAX:30304",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:30737",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.greenmax.co.jp/gm-product/30303.html",
+      "sourceTitle": "GREENMAX 官方基本与增结搭配说明",
+      "checkedAt": "2026-10-28",
+      "note": "官网明确30304动力基本4节搭配30737无动力中间4节成8节，车号转印附在基本盒。属于Premium Car加入前，不是现行双Premium编成。"
+    },
+    {
+      "id": "tomix-haruka-butterfly-ougi-9",
+      "label": "Hello Kitty はるか · Butterfly＋Ougi九节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "cars": 9,
+      "components": [
+        {
+          "productId": "TOMIX:98674",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:97208",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.tomytec.co.jp/tomix/products/img/20250213-3.pdf",
+      "sourceTitle": "TOMIX 官方2025年Ougi订正版编成公告",
+      "checkedAt": "2026-10-28",
+      "note": "厂家明确98674六节动力组可连97208三节无动力组为9节，彩绘依次是Butterfly及Ougi；不得把97208当独立可运行套装。"
+    },
+    {
+      "id": "tomix-haruka-oritsuru-ougi-9",
+      "label": "Hello Kitty はるか · Ori-Tsuru＋Ougi九节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "cars": 9,
+      "components": [
+        {
+          "productId": "TOMIX:98690",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:97208",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.tomytec.co.jp/tomix/products/img/20250213-3.pdf",
+      "sourceTitle": "TOMIX 官方2025年Ougi订正版编成公告",
+      "checkedAt": "2026-10-28",
+      "note": "厂家明确98690折鹤六节动力组可连97208扇子三节无动力组为9节，为彩绘组合参考。"
+    },
+    {
+      "id": "tomix-haruka-kanzashi-ougi-9",
+      "label": "Hello Kitty はるか · Kanzashi＋Ougi九节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "cars": 9,
+      "components": [
+        {
+          "productId": "TOMIX:98692",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:97208",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.tomytec.co.jp/tomix/products/img/20250213-3.pdf",
+      "sourceTitle": "TOMIX 官方2025年Ougi订正版编成公告",
+      "checkedAt": "2026-10-28",
+      "note": "厂家明确98692发簪六节动力组可连97208扇子三节无动力组为9节，为彩绘组合参考。"
+    },
+    {
+      "id": "tomix-haruka-oritsuru-white-9",
+      "label": "はるか · Ori-Tsuru六节＋普通白色三节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "cars": 9,
+      "components": [
+        {
+          "productId": "TOMIX:98690",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98673",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98690.html",
+      "sourceTitle": "TOMIX 官方原产品页指定增结品号",
+      "checkedAt": "2026-10-28",
+      "note": "官网原产品页明确98690配98673成9节；六节为折鹤彩绘、三节为普通白色，为当时说明的组合，区别于2025年Ougi彩绘增结。"
+    },
+    {
+      "id": "tomix-haruka-kanzashi-white-9",
+      "label": "はるか · Kanzashi六节＋普通白色三节",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "281-haruka"
+      ],
+      "cars": 9,
+      "components": [
+        {
+          "productId": "TOMIX:98692",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98673",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.tomytec.co.jp/tomix/products/img/20200312-4.pdf",
+      "sourceTitle": "TOMIX 官方2020年Kanzashi指定增结公告",
+      "checkedAt": "2026-10-28",
+      "note": "官网2020年公告明确98692配98673成9节；六节为发簪彩绘、三节为普通白色，区别于后来的Ougi彩绘增结。"
+    },
+    {
+      "id": "tomix-hc85-hida-6",
+      "label": "HC85飞驒 · 动力4辆＋附属2辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "hc85-hida"
+      ],
+      "components": [
+        {
+          "productId": "TOMIX:98555",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98558",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/information/img/pdf/poster231214-2.pdf",
+      "sourceTitle": "TOMIX 官方编成资料：HC85飞驒 · 动力4辆＋附属2辆",
+      "checkedAt": "2026-10-28",
+      "note": "官方六辆例；含绿色车四辆主编组＋无动力两辆附属，按说明装贯通门及幌。",
+      "cars": 6
+    },
+    {
+      "id": "tomix-hc85-hida-8-a",
+      "label": "HC85飞驒 · 4辆＋4辆附属",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "hc85-hida"
+      ],
+      "components": [
+        {
+          "productId": "TOMIX:98555",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98557",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/information/img/pdf/poster231214-2.pdf",
+      "sourceTitle": "TOMIX 官方编成资料：HC85飞驒 · 4辆＋4辆附属",
+      "checkedAt": "2026-10-28",
+      "note": "官方八辆例；98557是无绿色车四辆附属，不是第二个含绿色车主编组。",
+      "cars": 8
+    },
+    {
+      "id": "tomix-hc85-hida-8-b",
+      "label": "HC85飞驒 · 4辆＋附属2辆×2",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "hc85-hida"
+      ],
+      "components": [
+        {
+          "productId": "TOMIX:98555",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98558",
+          "quantity": 2
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/information/img/pdf/poster231214-2.pdf",
+      "sourceTitle": "TOMIX 官方编成资料：HC85飞驒 · 4辆＋附属2辆×2",
+      "checkedAt": "2026-10-28",
+      "note": "官方右上八辆例：98555四辆＋98558两盒。增结车号转印选择，避免重复；与98557版本车种排列不同。",
+      "cars": 8
+    },
+    {
+      "id": "tomix-hc85-nanki-4",
+      "label": "HC85南纪 · 动力2辆＋附属2辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "hc85-nanki"
+      ],
+      "components": [
+        {
+          "productId": "TOMIX:98556",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98558",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/information/img/pdf/poster231214-2.pdf",
+      "sourceTitle": "TOMIX 官方编成资料：HC85南纪 · 动力2辆＋附属2辆",
+      "checkedAt": "2026-10-28",
+      "note": "官方南纪四辆例，两辆动力套装＋两辆无动力附属，不含绿色车。",
+      "cars": 4
+    },
+    {
+      "id": "tomix-n700-8000-8",
+      "label": "N700-8000 · 基本4辆＋增结4辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "n700-sakura",
+        "n700-mizuho",
+        "ky-n700-sakura",
+        "ky-n700-mizuho"
+      ],
+      "components": [
+        {
+          "productId": "TOMIX:98518",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98519",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98518.html",
+      "sourceTitle": "TOMIX 官方编成资料：N700-8000 · 基本4辆＋增结4辆",
+      "checkedAt": "2026-10-28",
+      "note": "厂家明确八辆R编组；基本1、2(M)、3、8号，增结补4–7号。不是十六辆N700A/S。",
+      "cars": 8
+    },
+    {
+      "id": "kato-883-ao2-7",
+      "label": "883 Sonic AO-2 · 基本4辆＋增结3辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "ky883-sonic"
+      ],
+      "components": [
+        {
+          "productId": "KATO:10-2160",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-2161",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/883keui_sonic_renewal_1ed",
+      "sourceTitle": "KATO 官方编成资料：883 Sonic AO-2 · 基本4辆＋增结3辆",
+      "checkedAt": "2026-10-28",
+      "note": "一次车AO-2更新涂装四加三成七辆，不同于AO-3成品七辆盒，配备摆式倾斜机构。",
+      "cars": 7
+    },
+    {
+      "id": "kato-813-200-6",
+      "label": "813-200 · 基本3辆＋增结3辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "ky813"
+      ],
+      "components": [
+        {
+          "productId": "KATO:10-1686",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1687",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/813kei",
+      "sourceTitle": "KATO 官方编成资料：813-200 · 基本3辆＋增结3辆",
+      "checkedAt": "2026-10-28",
+      "note": "原200番代红脸三加三；各盒动力配置按说明书，不与福北丰黑脸或2200改造状态混同。",
+      "cars": 6
+    },
+    {
+      "id": "kato-813-200-9",
+      "label": "813-200 · 基本3辆＋增结3辆×2",
+      "maker": "KATO",
+      "vehicleIds": [
+        "ky813"
+      ],
+      "components": [
+        {
+          "productId": "KATO:10-1686",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1687",
+          "quantity": 2
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/813kei",
+      "sourceTitle": "KATO 官方编成资料：813-200 · 基本3辆＋增结3辆×2",
+      "checkedAt": "2026-10-28",
+      "note": "官方支持三/六/九辆；此处原200红脸九辆，两盒增结重复印刷车号，严格原型需改号；动力按说明书。",
+      "cars": 9
+    },
+    {
+      "id": "kato-813-2200-6",
+      "label": "813-2200 · RM2225＋RM2212",
+      "maker": "KATO",
+      "vehicleIds": [
+        "ky813"
+      ],
+      "components": [
+        {
+          "productId": "KATO:10-2047",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-2048",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/813_2200_series",
+      "sourceTitle": "KATO 官方编成资料：813-2200 · RM2225＋RM2212",
+      "checkedAt": "2026-10-28",
+      "note": "长座椅2200番代三加三，不是旧200番代；各盒动力配置按说明书。",
+      "cars": 6
+    },
+    {
+      "id": "kato-313-5000-6",
+      "label": "313-5000 · 基本3辆＋增结3辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "313-tokaido"
+      ],
+      "components": [
+        {
+          "productId": "KATO:10-1919",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1920",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/313_5000kei_slm",
+      "sourceTitle": "KATO 官方编成资料：313-5000 · 基本3辆＋增结3辆",
+      "checkedAt": "2026-10-28",
+      "note": "Y114完整六辆固定编组；基本三辆是拆分盒装，不代表5000番台实车三辆贯通。",
+      "cars": 6
+    },
+    {
+      "id": "kato-313-5000-5300-8",
+      "label": "313-5000＋5300 · 6辆＋附属2辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "313-tokaido"
+      ],
+      "components": [
+        {
+          "productId": "KATO:10-1919",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1920",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1921",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.katomodels.com/product/n/313_5000kei_slm",
+      "sourceTitle": "KATO 官方编成资料：313-5000＋5300 · 6辆＋附属2辆",
+      "checkedAt": "2026-10-28",
+      "note": "5000番台Y114六辆＋5300番台Z2两辆；5300无车体间减振器，不能全八辆标5000番台。",
+      "cars": 8
+    },
+    {
+      "id": "kato-787-around-8",
+      "label": "787 Around Kyushu · 7辆＋Saha1辆",
+      "maker": "KATO",
+      "vehicleIds": [
+        "ky787-relay",
+        "ky787-nichirin"
+      ],
+      "components": [
+        {
+          "productId": "KATO:10-1540",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:4245-3",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/787kei_ara9",
+      "sourceTitle": "KATO 官方编成资料：787 Around Kyushu · 7辆＋Saha1辆",
+      "checkedAt": "2026-10-28",
+      "note": "厂家推荐BM13七辆加Saha作八辆リレーかもめ/かささぎ；单辆Saha无动力，不用于Bo104四辆任意拼加。",
+      "cars": 8
+    },
+    {
+      "id": "greenmax-kiha200-nanohana-4",
+      "label": "KiHa200黄色 · 565编组＋556编组",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "components": [
+        {
+          "productId": "GREENMAX:31660",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:31661",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.greenmax.co.jp/gm-product/31660.html",
+      "sourceTitle": "GREENMAX 官方编成资料：KiHa200黄色 · 565编组＋556编组",
+      "checkedAt": "2026-10-28",
+      "note": "厂方基本/增结组，黄色长座椅なのはな四辆，含一动力；不同于大分红色。",
+      "cars": 4
+    },
+    {
+      "id": "greenmax-kiha200-seaside-4",
+      "label": "KiHa200蓝色 · 基本2辆＋增结2辆",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "ky200"
+      ],
+      "components": [
+        {
+          "productId": "GREENMAX:32041",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:32042",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.greenmax.co.jp/gm-product/32041.html",
+      "sourceTitle": "GREENMAX 官方编成资料：KiHa200蓝色 · 基本2辆＋增结2辆",
+      "checkedAt": "2026-10-28",
+      "note": "同款2025版长崎蓝色两辆动力基本＋两辆无动力增结，2021以前长崎运用，车号可选。",
+      "cars": 4
+    },
+    {
+      "id": "greenmax-817-1500-4",
+      "label": "817-1500 · 动力2辆＋无动力2辆",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "components": [
+        {
+          "productId": "GREENMAX:31577",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:31578",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/31578.html",
+      "sourceTitle": "GREENMAX 官方编成资料：817-1500 · 动力2辆＋无动力2辆",
+      "checkedAt": "2026-10-28",
+      "note": "同款福北丰线1500番代长座椅两编组併结，不是1100改造的1600；印刷车号按盒核对。",
+      "cars": 4
+    },
+    {
+      "id": "greenmax-817-2000-4",
+      "label": "817-2000 · 动力2辆＋无动力2辆",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "ky817"
+      ],
+      "components": [
+        {
+          "productId": "GREENMAX:32288",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:32289",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/32288.html",
+      "sourceTitle": "GREENMAX 官方编成资料：817-2000 · 动力2辆＋无动力2辆",
+      "checkedAt": "2026-10-28",
+      "note": "同款白色2000两编组併结，一动力，安全摄像头用户装；生产计划商品，不当已发售/现货。",
+      "cars": 4
+    },
+    {
+      "id": "greenmax-musky-modified-8",
+      "label": "μSKY改造编成 · 动力4辆＋无动力4辆",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "meitetsu2000"
+      ],
+      "components": [
+        {
+          "productId": "GREENMAX:32234",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:32235",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/32234.html",
+      "sourceTitle": "GREENMAX 官方编成资料：μSKY改造编成 · 动力4辆＋无动力4辆",
+      "checkedAt": "2026-10-28",
+      "note": "三辆原编组扩为四辆的改造车两组併结八辆，与新造四辆窗位不同；一个动力，生产计划商品。",
+      "cars": 8
+    },
+    {
+      "id": "greenmax-musky-new-8",
+      "label": "μSKY新造编成 · 动力4辆＋无动力4辆",
+      "maker": "GREENMAX",
+      "vehicleIds": [
+        "meitetsu2000"
+      ],
+      "components": [
+        {
+          "productId": "GREENMAX:32236",
+          "quantity": 1
+        },
+        {
+          "productId": "GREENMAX:32237",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.greenmax.co.jp/gm-product/32236.html",
+      "sourceTitle": "GREENMAX 官方编成资料：μSKY新造编成 · 动力4辆＋无动力4辆",
+      "checkedAt": "2026-10-28",
+      "note": "直接新造四辆两组併结八辆，一个动力；不同于改造编成窗位，生产计划商品。",
+      "cars": 8
+    },
+    {
+      "id": "kato-aikan-blue-green-4",
+      "label": "爱环2000 · 蓝带G7＋绿色G10",
+      "maker": "KATO",
+      "vehicleIds": [
+        "ak2000"
+      ],
+      "components": [
+        {
+          "productId": "KATO:10-2154",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-2155",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.katomodels.com/product/n/aikan_2000_green",
+      "sourceTitle": "KATO 官方编成资料：爱环2000 · 蓝带G7＋绿色G10",
+      "checkedAt": "2026-10-28",
+      "note": "厂家支持新款各色两列併结四辆；蓝单受电弓＋绿双受电弓，两盒均动力；旧版须换车钩。",
+      "cars": 4
+    },
+    {
+      "id": "tomix-261-hokuto-6",
+      "label": "261-1000北斗六次车 · 基本3辆＋增结3辆",
+      "maker": "TOMIX",
+      "vehicleIds": [
+        "261-hokuto"
+      ],
+      "components": [
+        {
+          "productId": "TOMIX:98472",
+          "quantity": 1
+        },
+        {
+          "productId": "TOMIX:98473",
+          "quantity": 1
+        }
+      ],
+      "match": "variant",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98473.html",
+      "sourceTitle": "TOMIX 官方编成资料：261-1000北斗六次车 · 基本3辆＋增结3辆",
+      "checkedAt": "2026-10-28",
+      "note": "基本盒缺少与后位首车组固定单元的KiHa260-1200，由增结补齐成完整六辆；六次车双雨刷新白紫色，超级北斗时代头标，不是七次车现行式样。",
+      "cars": 6
     }
   ]
 }

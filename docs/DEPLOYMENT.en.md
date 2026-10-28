@@ -168,3 +168,13 @@ Settings use Train / Display / Audio tabs (列车／屏幕／声音). Choose a p
 ## V11
 
 Quick vehicle search finds presets across regions by series, name and route. Each manufacturer may offer verified basic/add-on recipes with copyable code lists. Diagrams group cars by package, not real train order. Filter the directory to show only vehicles with recipes. Products without confirmed complete-set codes retain a product-name/official-source lookup. Minimum radius and conditional curve compatibility are distinct and do not guarantee operation on an entire layout.
+
+
+
+## V12
+
+Expand “套装与曲线条件” in the model directory to filter by package type or documented curve specifications. R282/R315 compare only explicit manufacturer minimum-radius numbers for that product, excluding conditional prose and missing values. Remove individual chips or share the filtered URL.
+
+“导出品号清单” exports every filtered page as CSV, merging repeated manufacturer/product codes and retaining matching presets, actual packaged counts, version notes and sources. Unconfirmed codes remain blank. Import the code column as text in spreadsheet software.
+
+For desktop-to-iPad transfer, open Display (屏幕) → Settings backup (设置备份与迁移), export JSON, transfer the file and import it on the other device. Review all four trains before Apply (应用这份备份). Formations, pinned times, theme, ticker and audio preferences transfer; enable sound again manually. Restore pre-import settings (恢复导入前设置) is available within the same page, including reversal of edits made after import. The undo snapshot is lost on reload, so retain the original JSON separately. Unsupported or incomplete files are rejected. Files are read locally in the browser.

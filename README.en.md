@@ -17,21 +17,23 @@ A Japanese railway departure-board simulator for N gauge layouts and iPad displa
 - **Scrolling train information:** stops and non-reserved/reserved/Green seating for the next departure. Choose a fixed row, model clock, speed, pause or custom text.
 - **LCD/LED appearance:** Japanese/English board information, optional dot texture, landscape/portrait layouts, browser-local persistence and JSON settings export.
 
-## Matching N-scale models · V11
+## Matching N-scale models · V12
 
-**541 product records covering 221 of 237 presets** (216 matching, 5 with explicitly different reference versions only). The remaining 16 explain unresolved evidence. Ten makers are covered, and 71 presets offer multiple makers.
+**590 product records covering 221 of 237 presets** (216 matching, 5 with explicitly different reference versions only). The remaining 16 explain unresolved evidence. Ten makers are covered, and 72 presets offer multiple makers.
 
-![Formation recipes](docs/images/v11-assembly-landscape.png)
+![Formation recipes](docs/images/v12-assembly-landscape.png)
 
 Open `···` → Train (列车) → platform and first/next departure → **对应N比例车型**. Quick vehicle search accepts series, train names and routes, including full-width letters/numbers and kana variants. Selection changes only the row being edited.
 
-There are 47 verified basic/add-on recipes with copyable part-number lists. Diagrams group cars by retail package, not actual train order, and leave your model car count unchanged. The directory can show only vehicles with recipes and share a filtered search link.
+There are 88 verified basic/add-on recipes with copyable part-number lists. Diagrams group cars by retail package, not actual train order, and leave your model car count unchanged. The directory can show only vehicles with recipes and share a filtered search link.
 
-536 records have official codes; 5 verified products without a confirmed complete-set code use their product name and official source instead of an invented number. Assembled, static and kit products are labelled separately. Explicit minimum-radius specifications and conditional curve compatibility are kept distinct. Historical/announced products are included; this is not a stock listing. Missing entries do not imply no model exists. See [matching and maintenance notes](NSCALE-MODELS.md).
+585 records have official codes; 5 verified products without a confirmed complete-set code use their product name and official source instead of an invented number. Assembled, static and kit products are labelled separately. Explicit minimum-radius specifications and conditional curve compatibility are kept distinct. Historical/announced products are included; this is not a stock listing. Missing entries do not imply no model exists. See [matching and maintenance notes](NSCALE-MODELS.md).
+
+V12 adds package-type and explicitly documented R282/R315 filters, removable filter chips and a deduplicated CSV export of all filtered pages. Under Display (屏幕) → Settings backup (设置备份与迁移), preview and import a settings JSON file, then restore the pre-import snapshot within the same page if needed. This supports desktop-to-iPad transfers.
 
 ## Timetable scope
 
-This release is **V11: 237 presets and 17,030 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 233 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
+This release is **V12: 237 presets and 17,030 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 233 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
 
 Coverage completeness and operating-date verification are separate: 11,248 records were checked for the specified day, 5,528 use official weekend/holiday tables, 230 use daily references, and 20 still require operating-calendar confirmation. Weekday-only and discontinued services remain labelled. Current official Ginza/Marunouchi data replaces the older samples.
 
