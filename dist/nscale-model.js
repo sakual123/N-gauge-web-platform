@@ -23,7 +23,7 @@
   }
   const baseSearch=new Map(),productSearch=new Map();
   for(const v of D.vehicles){const region=D.regions.find(r=>r.id===v.region),category=D.categories.find(c=>c.id===v.category);baseSearch.set(v.id,normalize([v.label,v.series,v.series.replace(/系|番台/g,''),v.name,v.en,D.lines[v.line]?.name,D.routes[v.route]?.label,region?.label,category?.label].join(' ')));}
-  for(const p of data.products)productSearch.set(p.id,normalize([p.sku,p.title,p.maker,makers.get(p.maker)?.label,kinds[p.setKind],formats[format(p)],p.minimumRadiusMm?'R'+p.minimumRadiusMm:'',p.codeType==='JAN'?'JAN':''].join(' ')));
+  for(const p of data.products)productSearch.set(p.id,normalize([p.sku,p.title,p.maker,makers.get(p.maker)?.label,kinds[p.setKind],formats[format(p)],p.minimumRadiusMm?'R'+p.minimumRadiusMm:'',p.codeType==='JAN'?'JAN':'',p.releaseStatus==='announced'?'预告 预定 announced planned':''].join(' ')));
   const ordered=D.regions.flatMap(region=>D.availableCategories(region.id).flatMap(category=>D.availableRoutes(region.id,category.id).flatMap(route=>D.matchingVehicles(region.id,category.id,route.id))));
   function search(filters={}){
     const tokens=normalize(filters.q).replace(/([a-z0-9])([\u3040-\u30ff\u3400-\u9fff])/g,'$1 $2').replace(/([\u3040-\u30ff\u3400-\u9fff])([a-z0-9])/g,'$1 $2').trim().split(/\s+/).filter(Boolean),radiusTokens=tokens.filter(t=>/^r\d{2,4}$/.test(t)).map(t=>Number(t.slice(1))),results=[];

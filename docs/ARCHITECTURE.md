@@ -8,7 +8,7 @@
 
 | 文件 | 职责 |
 |---|---|
-| `dist/catalog*.js` | 237 预设、地区、类型、线路、行先 |
+| `dist/catalog*.js` | 247 预设、地区、类型、线路、行先 |
 | `dist/special-services.js`、`service-ui.js` | 品牌、设备、座席图标与配置 |
 | `dist/journey-data.js` | 线路、停站、席别参考 |
 | `data/timetables.json` | 可编辑的固定日班次、完整度、官方来源、证据 |
@@ -53,7 +53,7 @@ Full coverage applies only within the stated station/direction/service scope, se
 
 `data/announcements.json` is the editable station/template source; `npm run build:announcements` regenerates `announcement-data.js`. `announcement-model.js` builds adapted Japanese messages and computes Japan-time batches. `announcements.js` requires user activation, maintains a serial speech queue, handles stop/cancel races, and stores daily row/time deduplication under `n-gauge-arrival-seen-v1`. Voice availability comes from the device. Audio settings and whole-board theme remain in the existing v2 browser state.
 
-`check-arrivals.cjs` covers 12 theme permutations, 151 route mappings, settings migration, serial speech callbacks, simultaneous outer/inner priority, minute/day deduplication, cancellation and blocked playback. Mocked events do not prove real-device audibility; browser event checks and physical-device listening are separate.
+`check-arrivals.cjs` covers 12 theme permutations, 159 route mappings, settings migration, serial speech callbacks, simultaneous outer/inner priority, minute/day deduplication, cancellation and blocked playback. Mocked events do not prove real-device audibility; browser event checks and physical-device listening are separate.
 
 
 ## N 比例产品查询 · V9

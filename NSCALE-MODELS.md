@@ -1,12 +1,12 @@
-# 对应N比例车型 · V12
+# 对应N比例车型 · V13
 
-核对日期：2026-10-28。收录 590 项厂家产品资料；237 个车辆预设中，216 个有车型对应产品，5 个仅有注明差别的版本参考，16 个尚未收录可核实品号。共用同型车辆的不同线路／服务预设会引用相同产品，预设覆盖数不等于独立车型数。
+核对日期：2026-10-28。收录 608 项厂家产品资料；247 个车辆预设中，224 个有车型对应产品，5 个仅有注明差别的版本参考，18 个尚未收录可核实品号。共用同型车辆的不同线路／服务预设会引用相同产品，预设覆盖数不等于独立车型数。
 
 ## 简体中文
 
 右上角“···”→ 列车 → 选择站台和先发／次发 → 每班车设置下的“对应N比例车型”。默认收起；切换车辆后更新厂家、品号、套装节数和来源。可复制品号，并打开厂家资料。目录支持地区、类型、线路、厂家、模型形态及对应情况筛选，可复制当前查询链接。已确认商品但未核实整套官方编号的 5 项单列，不把商店商品ID或单辆车底编号冒充整套编号。全文搜索目录位于 [dist/nscale-models.html](dist/nscale-models.html)，需通过本地服务器或已部署网站打开。
 
-已核对 88 组编成搭配，覆盖 78 个预设；17 项产品有厂商明确的最小半径资料。
+已核对 89 组编成搭配，覆盖 80 个预设；17 项产品有厂商明确的最小半径资料。
 
 收录厂家：KATO、TOMIX、MICRO ACE · MA、ポポンデッタ · PP、GREENMAX、MODEMO、TOMYTEC · 鉄道コレクション、ONE MILE · ワンマイル、模型工房パーミル、部屋の中こうぼう。MA 表示 MICRO ACE；PP 表示 Popondetta（ポポンデッタ）。这是一份经核对的产品参考索引，不是厂家历年全部品号，也不表示当前库存或已发售状态。已知预告产品在备注中标注。
 
@@ -46,7 +46,7 @@ npm run build:nscale
 npm test
 ~~~
 
-有官方编号的 product 的 id 为 maker:sku；官方产品存在但未核实整套编号时使用 codeType: unlisted、sku 留空、稳定内部 id，页面显示“资料未列品号”且不提供虚构编号复制。format 可为 ready／static／kit；vehicleIds 必须明确列出匹配的预设。cars 是盒内车辆数，setKind 为 set／basic／addon／single；match 为 exact 或 variant。source、sourceTitle、checkedAt 和中文 note 保留可核查来源及差异。官方仅列13位JAN时完整保留，并使用 codeType: JAN 标明检索码，不自行截成未核实的六位品番。coverage 按预设区分 verified、variant、unverified，不能用线路或系列名称模糊继承其他车型品号。
+有官方编号的 product 的 id 为 maker:sku；官方产品存在但未核实整套编号时使用 codeType: unlisted、sku 留空、稳定内部 id，页面显示“资料未列品号”且不提供虚构编号复制。releaseStatus: announced 表示核对日仍为预告；announcedAt仅在公告日期确证时填写，不是发售日期。format 可为 ready／static／kit；vehicleIds 必须明确列出匹配的预设。cars 是盒内车辆数，setKind 为 set／basic／addon／single；match 为 exact 或 variant。source、sourceTitle、checkedAt 和中文 note 保留可核查来源及差异。官方仅列13位JAN时完整保留，并使用 codeType: JAN 标明检索码，不自行截成未核实的六位品番。coverage 按预设区分 verified、variant、unverified，不能用线路或系列名称模糊继承其他车型品号。
 
 assemblies 的组件用 productId 与 quantity 明确引用，cars 必须等于实际盒内数乘数量的和；同一条组合不跨厂家，车型、版本、来源需逐组核实。minimumRadiusMm 仅在官方明确规格时填写，radiusNote 保留部件更换、限定编组等条件。
 

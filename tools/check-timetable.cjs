@@ -2,7 +2,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),asse
 const root=path.resolve(__dirname,'..'),ctx={window:{}};vm.createContext(ctx);
 for(const file of ['catalog','catalog-regions','catalog-expanded','special-services','journey-data','timetable-data','timetable-model','model','journey-model'])vm.runInContext(fs.readFileSync(path.join(root,'dist',file+'.js'),'utf8'),ctx,{filename:file});
 const {RAIL_DATA:D,RAIL_MODEL:M,RAIL_TIMETABLE_MODEL:TT}=ctx.window,J=D.journeyModel,data=TT.data;
-assert.equal(data.date,'2026-10-25');assert.equal(new Date(data.date+'T12:00:00+09:00').getUTCDay(),0);assert.equal(data.timezone,'Asia/Tokyo');assert.equal(data.presetCount,237);assert.equal(Object.keys(data.presets).length,237);
+assert.equal(data.date,'2026-10-25');assert.equal(new Date(data.date+'T12:00:00+09:00').getUTCDay(),0);assert.equal(data.timezone,'Asia/Tokyo');assert.equal(data.presetCount,247);assert.equal(Object.keys(data.presets).length,247);
 let count=0,fullCalls=0;const ids=new Set(),statuses={};
 for(const v of D.vehicles){
  assert(TT.trips(v.id).length,v.id+' missing reference');
@@ -16,7 +16,7 @@ for(const v of D.vehicles){
  }
 }
 assert.equal(count,data.departureCount);assert.deepEqual(JSON.parse(JSON.stringify(statuses)),JSON.parse(JSON.stringify(data.statusCounts)));
-assert.deepEqual(JSON.parse(JSON.stringify(data)),JSON.parse(fs.readFileSync(path.join(root,'data/timetables.json'),'utf8')),'Packed browser data must preserve every source fact');
+assert.equal(JSON.stringify(data),JSON.stringify(JSON.parse(fs.readFileSync(path.join(root,'data/timetables.json'),'utf8'))),'Packed browser data must preserve every source fact');
 const coverageCounts={};for(const [id,entry] of Object.entries(data.presets)){const level=TT.coverage(id).level;assert(TT.coverageLabels[level]);coverageCounts[level]=(coverageCounts[level]||0)+1;assert.equal(entry.coverage.count,entry.departures.length);}
 assert.deepEqual(coverageCounts,JSON.parse(JSON.stringify(data.coverageCounts)));
 const filterId='e233-keihin',before=JSON.stringify(TT.trips(filterId)),filtered=TT.filterTrips(filterId,{origin:'東京',period:'18-21',q:'大宮'});
@@ -44,4 +44,8 @@ assert.equal(TT.trips('e257-shonan')[0].status,'weekday');assert.equal(TT.trips(
 const clock=M.defaults();clock.ticker.clock='wall';clock.rows.forEach((r,i)=>r.time=['08:30','09:01','08:59','07:00'][i]);assert.equal(J.nearest(clock,new Date('2026-10-25T00:00:00Z')).id,'outer-next');
 clock.rows.forEach((r,i)=>r.time=['00:02','23:59','00:01','23:57'][i]);assert.equal(J.nearest(clock,new Date('2026-10-25T14:58:00Z')).id,'outer-next');
 for(const file of fs.readdirSync(path.join(root,'dist')).filter(f=>f.endsWith('.js')))new vm.Script(fs.readFileSync(path.join(root,'dist',file),'utf8'),{filename:file});
-const result={result:'PASS',date:data.date,presets:237,departures:count,statusCounts:statuses,coverageCounts,referencesWithStops:fullCalls,manualPinsAndReload:true,legacyRowsPreserved:true,sourceAndTimeValidation:true,specialSeatAndVariantRules:true,japanClockAndMidnight:true,allScenesUseReferenceTrips:true,packedSourceRoundTrip:true,nonMutatingOriginDirectionTimeSearchFilters:true,rapidServiceCoverageRegression:true,operatorBoundaryAnd500SeriesRegression:true};fs.writeFileSync(path.join(root,'TIMETABLE-VALIDATION.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+const result={result:'PASS',date:data.date,presets:D.vehicles.length,departures:count,statusCounts:statuses,coverageCounts,referencesWithStops:fullCalls,manualPinsAndReload:true,legacyRowsPreserved:true,sourceAndTimeValidation:true,specialSeatAndVariantRules:true,japanClockAndMidnight:true,allScenesUseReferenceTrips:true,packedSourceRoundTrip:true,nonMutatingOriginDirectionTimeSearchFilters:true,rapidServiceCoverageRegression:true,operatorBoundaryAnd500SeriesRegression:true};fs.writeFileSync(path.join(root,'TIMETABLE-VALIDATION.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+
+const sq=Object.entries(data.presets).filter(([id])=>id.startsWith('sq'));assert.equal(sq.length,10);assert.equal(sq.reduce((n,[,e])=>n+e.departures.length,0),154);for(const [id,e] of sq){assert.equal(e.coverage.level,'full');assert.equal(e.coverage.expectedCount,e.departures.length);for(const t of e.departures){assert.equal(t.status,'dated');assert(t.source.includes('date=20261025'));assert(t.calendarEvidence.includes('drivingday-01'));assert(/车底/.test(t.note));}}assert.equal(TT.trips('sq5000-marineliner').length,34);assert(!TT.trips('sq5000-marineliner').some(t=>t.number==='2号'));
+
+const sqScene=M.scene('shikoku');assert(sqScene&&sqScene.rows.every(r=>r.vehicleId.startsWith('sq')&&TT.find(r)));

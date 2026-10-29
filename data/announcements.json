@@ -1,8 +1,8 @@
 {
   "version": 1,
   "language": "ja-JP",
-  "routeCount": 151,
-  "presetCount": 237,
+  "routeCount": 159,
+  "presetCount": 247,
   "purpose": "模型線の合成到着案内に使う代表駅。実駅の録音・発車番線・現在の運行情報ではない。",
   "timePolicy": "代表駅の設定は発車時刻の移し替えではない。固定参照時刻は参照元出発駅の時刻として保持。",
   "readingPolicy": "読みはTTS向け平仮名。難読駅を公式駅情報で照合。その他の一般的な読みに個別公式照合済みとの表示はしない。",
@@ -2752,6 +2752,94 @@
       },
       "readingStatus": "editorial-common-reading",
       "note": "既存公式時刻表の主要発着駅から選定。"
+    },
+    "sq-shiokaze": {
+      "route": "sq-shiokaze",
+      "station": "岡山",
+      "reading": "おかやま",
+      "operator": "jrshikoku",
+      "operatorFamily": "jrshikoku",
+      "source": "https://www.jr-shikoku.co.jp/01_trainbus/vehicle-info/shiokaze.html",
+      "sourceTitle": "JR四国 公式列車案内",
+      "readingStatus": "editorial-common-reading",
+      "note": "模型用代表駅。現地録音や現在の実駅放送ではありません。"
+    },
+    "sq-ishizuchi": {
+      "route": "sq-ishizuchi",
+      "station": "高松",
+      "reading": "たかまつ",
+      "operator": "jrshikoku",
+      "operatorFamily": "jrshikoku",
+      "source": "https://www.jr-shikoku.co.jp/01_trainbus/vehicle-info/ishizuchi.html",
+      "sourceTitle": "JR四国 公式列車案内",
+      "readingStatus": "editorial-common-reading",
+      "note": "模型用代表駅。現地録音や現在の実駅放送ではありません。"
+    },
+    "sq-nanpu": {
+      "route": "sq-nanpu",
+      "station": "岡山",
+      "reading": "おかやま",
+      "operator": "jrshikoku",
+      "operatorFamily": "jrshikoku",
+      "source": "https://www.jr-shikoku.co.jp/01_trainbus/vehicle-info/nanpu.html",
+      "sourceTitle": "JR四国 公式列車案内",
+      "readingStatus": "editorial-common-reading",
+      "note": "模型用代表駅。現地録音や現在の実駅放送ではありません。"
+    },
+    "sq-shimanto": {
+      "route": "sq-shimanto",
+      "station": "高松",
+      "reading": "たかまつ",
+      "operator": "jrshikoku",
+      "operatorFamily": "jrshikoku",
+      "source": "https://www.jr-shikoku.co.jp/01_trainbus/vehicle-info/shimanto.html",
+      "sourceTitle": "JR四国 公式列車案内",
+      "readingStatus": "editorial-common-reading",
+      "note": "模型用代表駅。現地録音や現在の実駅放送ではありません。"
+    },
+    "sq-uwakai": {
+      "route": "sq-uwakai",
+      "station": "松山",
+      "reading": "まつやま",
+      "operator": "jrshikoku",
+      "operatorFamily": "jrshikoku",
+      "source": "https://www.jr-shikoku.co.jp/01_trainbus/vehicle-info/uwakai.html",
+      "sourceTitle": "JR四国 公式列車案内",
+      "readingStatus": "editorial-common-reading",
+      "note": "模型用代表駅。現地録音や現在の実駅放送ではありません。"
+    },
+    "sq-ashizuri": {
+      "route": "sq-ashizuri",
+      "station": "高知",
+      "reading": "こうち",
+      "operator": "jrshikoku",
+      "operatorFamily": "jrshikoku",
+      "source": "https://www.jr-shikoku.co.jp/01_trainbus/vehicle-info/ashizuri.html",
+      "sourceTitle": "JR四国 公式列車案内",
+      "readingStatus": "editorial-common-reading",
+      "note": "模型用代表駅。現地録音や現在の実駅放送ではありません。"
+    },
+    "sq-uzushio": {
+      "route": "sq-uzushio",
+      "station": "高松",
+      "reading": "たかまつ",
+      "operator": "jrshikoku",
+      "operatorFamily": "jrshikoku",
+      "source": "https://www.jr-shikoku.co.jp/01_trainbus/vehicle-info/uzushio.html",
+      "sourceTitle": "JR四国 公式列車案内",
+      "readingStatus": "editorial-common-reading",
+      "note": "模型用代表駅。現地録音や現在の実駅放送ではありません。"
+    },
+    "sq-marineliner": {
+      "route": "sq-marineliner",
+      "station": "岡山",
+      "reading": "おかやま",
+      "operator": "jrshikoku",
+      "operatorFamily": "jrshikoku",
+      "source": "https://www.jr-shikoku.co.jp/01_trainbus/vehicle-info/marine.html",
+      "sourceTitle": "JR四国 公式列車案内",
+      "readingStatus": "editorial-common-reading",
+      "note": "模型用代表駅。現地録音や現在の実駅放送ではありません。"
     }
   },
   "vehicleOverrides": {

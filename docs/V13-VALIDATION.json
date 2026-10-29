@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "check": "timetable",
+      "exit": 0
+    },
+    {
+      "check": "special",
+      "exit": 0
+    },
+    {
+      "check": "ticker",
+      "exit": 0
+    },
+    {
+      "check": "arrivals",
+      "exit": 0
+    },
+    {
+      "check": "nscale",
+      "exit": 0
+    },
+    {
+      "check": "vehicle-search",
+      "exit": 0
+    },
+    {
+      "check": "settings-backup",
+      "exit": 0
+    },
+    {
+      "check": "reading",
+      "exit": 0
+    }
+  ],
+  "browser": {
+    "landscape": [
+      1024,
+      768
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "largeReadingPersistedAcrossPages": true,
+    "autoShikokuTheme": true,
+    "fourTrainScene": true,
+    "announcedCsv": {
+      "rows": 5,
+      "columns": 15
+    },
+    "physicalIPadSafari": false
+  },
+  "existing237TimetableRecordsUnchanged": true
+}

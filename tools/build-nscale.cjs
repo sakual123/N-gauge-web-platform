@@ -6,9 +6,9 @@ console.log(`N scale: ${data.products.length} products, ${Object.keys(data.cover
 const stats={verified:0,variant:0,unverified:0};for(const c of Object.values(data.coverage))stats[c.status]++;
 const makers=data.makers.filter(m=>data.products.some(p=>p.maker===m.id)).map(m=>m.label).join('、');
 const uncoded=data.products.filter(p=>p.codeType==='unlisted').length,assemblies=data.assemblies||[],radiusProducts=data.products.filter(p=>p.minimumRadiusMm).length;
-const doc=`# 对应N比例车型 · V12
+const doc=`# 对应N比例车型 · V13
 
-核对日期：${data.checkedAt}。收录 ${data.products.length} 项厂家产品资料；237 个车辆预设中，${stats.verified} 个有车型对应产品，${stats.variant} 个仅有注明差别的版本参考，${stats.unverified} 个尚未收录可核实品号。共用同型车辆的不同线路／服务预设会引用相同产品，预设覆盖数不等于独立车型数。
+核对日期：${data.checkedAt}。收录 ${data.products.length} 项厂家产品资料；${Object.keys(data.coverage).length} 个车辆预设中，${stats.verified} 个有车型对应产品，${stats.variant} 个仅有注明差别的版本参考，${stats.unverified} 个尚未收录可核实品号。共用同型车辆的不同线路／服务预设会引用相同产品，预设覆盖数不等于独立车型数。
 
 ## 简体中文
 
@@ -54,7 +54,7 @@ npm run build:nscale
 npm test
 ~~~
 
-有官方编号的 product 的 id 为 maker:sku；官方产品存在但未核实整套编号时使用 codeType: unlisted、sku 留空、稳定内部 id，页面显示“资料未列品号”且不提供虚构编号复制。format 可为 ready／static／kit；vehicleIds 必须明确列出匹配的预设。cars 是盒内车辆数，setKind 为 set／basic／addon／single；match 为 exact 或 variant。source、sourceTitle、checkedAt 和中文 note 保留可核查来源及差异。官方仅列13位JAN时完整保留，并使用 codeType: JAN 标明检索码，不自行截成未核实的六位品番。coverage 按预设区分 verified、variant、unverified，不能用线路或系列名称模糊继承其他车型品号。
+有官方编号的 product 的 id 为 maker:sku；官方产品存在但未核实整套编号时使用 codeType: unlisted、sku 留空、稳定内部 id，页面显示“资料未列品号”且不提供虚构编号复制。releaseStatus: announced 表示核对日仍为预告；announcedAt仅在公告日期确证时填写，不是发售日期。format 可为 ready／static／kit；vehicleIds 必须明确列出匹配的预设。cars 是盒内车辆数，setKind 为 set／basic／addon／single；match 为 exact 或 variant。source、sourceTitle、checkedAt 和中文 note 保留可核查来源及差异。官方仅列13位JAN时完整保留，并使用 codeType: JAN 标明检索码，不自行截成未核实的六位品番。coverage 按预设区分 verified、variant、unverified，不能用线路或系列名称模糊继承其他车型品号。
 
 assemblies 的组件用 productId 与 quantity 明确引用，cars 必须等于实际盒内数乘数量的和；同一条组合不跨厂家，车型、版本、来源需逐组核实。minimumRadiusMm 仅在官方明确规格时填写，radiusNote 保留部件更换、限定编组等条件。
 

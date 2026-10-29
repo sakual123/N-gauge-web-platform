@@ -1,7 +1,7 @@
 {
   "result": "PASS",
-  "presets": 237,
-  "newPresets": 103,
+  "presets": 247,
+  "newPresets": 113,
   "allDefaultAndPresetDestinations": true,
   "nearestAndMidnight": true,
   "customStopsAndReverse": true,

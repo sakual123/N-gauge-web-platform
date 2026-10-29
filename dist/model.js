@@ -21,6 +21,7 @@
     kantoPrivate:[['tb-n100','20:08'],['sb001-laview','20:17'],['od70000-gse','20:11'],['ks-ae','20:24']],
     tokaiPrivate:[['mt1200','20:08'],['sz-a3000','20:17'],['iq2100-kinme','20:11'],['iz7000','20:24']],
     hokkaidoLocal:[['is-kiha40','20:08'],['sp5000','20:17'],['sp-a1200','20:11'],['hd9600','20:24']],
+    shikoku:[['sq8000-shiokaze'],['sq2700-nanpu'],['sq5000-marineliner'],['sq2000-uwakai']],
     kyushu:[['ky-n700s-kamome','20:08'],['ky883-sonic','20:17'],['ky72-yufuin','20:11'],['nt3000','20:24']],
     specialJR:[['e261-saphir','20:08'],['e5-hayabusa','20:17'],['e259-nex','20:11'],['285-sunrise-izumo','20:24']],
     specialPrivate:[['kt50000-shimakaze','20:08'],['kt19200-aoniyoshi','20:17'],['kh8000','20:11'],['hk2300','20:24']],

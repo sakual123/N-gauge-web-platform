@@ -1,21 +1,21 @@
 {
   "result": "PASS",
   "date": "2026-10-25",
-  "presets": 237,
-  "departures": 17030,
+  "presets": 247,
+  "departures": 17184,
   "statusCounts": {
     "legacy": 2,
-    "dated": 11248,
+    "dated": 11402,
     "holiday": 5528,
     "weekday": 2,
     "calendar": 20,
     "daily": 230
   },
   "coverageCounts": {
-    "full": 233,
+    "full": 243,
     "inactive": 4
   },
-  "referencesWithStops": 4384,
+  "referencesWithStops": 4538,
   "manualPinsAndReload": true,
   "legacyRowsPreserved": true,
   "sourceAndTimeValidation": true,

@@ -8,7 +8,7 @@
     card.dataset.match=p.match;card.dataset.format=N.format(p);copy.type='button';copy.setAttribute('aria-label','复制 '+N.makers.get(p.maker).label+' '+codeName+' '+p.sku);const status=E('span','nscale-copy-status');status.setAttribute('role','status');
     copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(p.sku);status.textContent='已复制';}catch(_){status.textContent='请长按品号复制';}});
     head.append(sku);if(!unlisted)head.append(copy);card.append(head,E('p','nscale-title',p.title));
-    const tags=E('div','nscale-tags');if(p.codeType==='JAN')tags.append(E('span','','JAN 检索码'));tags.append(E('span','',N.description(p)),E('span','nscale-format',N.formats[N.format(p)]),E('span',p.match==='variant'?'nscale-variant':'nscale-exact',p.match==='variant'?'版本参考':'车型对应'));card.append(tags);
+    const tags=E('div','nscale-tags');if(p.codeType==='JAN')tags.append(E('span','','JAN 检索码'));tags.append(E('span','',N.description(p)),E('span','nscale-format',N.formats[N.format(p)]),E('span',p.match==='variant'?'nscale-variant':'nscale-exact',p.match==='variant'?'版本参考':'车型对应'));if(p.releaseStatus==='announced')tags.append(E('span','nscale-announced','预告产品'));card.append(tags);
     if(p.note)card.append(E('p','nscale-note',p.note));
     if(p.minimumRadiusMm){const radius=E('div','nscale-radius');radius.append(E('span','','厂家标示最小半径'),E('strong','','R'+p.minimumRadiusMm));card.append(radius);}else if(p.radiusNote)card.append(E('div','nscale-radius','官方曲线条件'));
     if(p.radiusNote)card.append(E('p','nscale-radius-note',p.radiusNote));

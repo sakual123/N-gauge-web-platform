@@ -60,7 +60,7 @@
     else if(/指定席・自由席/.test(seat))text='普通車に自由席と指定席があります。';
     else if(v.kind==='commuter'||v.category==='private')text='全車一般車・座席指定はありません。';
     else text='座席区分は列車・運転日により異なります。';
-    if(green&&!/全車グリーン/.test(v.seat))text+=v.kind==='commuter'?'普通列車グリーン車は自由席です。':'グリーン車は指定席です。';
+    if(green&&!/全車グリーン/.test(v.seat))text+=v.kind==='commuter'&&v.id!=='sq5000-marineliner'?'普通列車グリーン車は自由席です。':'グリーン車は指定席です。';
     if(gc)text+='グランクラスがあります。';
     if(features.includes('useat')&&v.kind!=='commuter')text+='u-seatを連結しています。';
     return{items:[],text,detailed:false};

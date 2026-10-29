@@ -10324,6 +10324,326 @@
       "source": "https://www.katomodels.com/product/n/aikan_2000_expo",
       "sourceTitle": "KATO 官方产品资料：愛知環状鉄道2000系〈愛知万博復刻デザイン車両〉2両セット",
       "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "KATO:10-1938",
+      "maker": "KATO",
+      "sku": "10-1938",
+      "title": "JR四国8000系 特急「しおかぜ・いしづち」 5両セット",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq8000-shiokaze",
+        "sq8000-ishizuchi"
+      ],
+      "match": "exact",
+      "note": "L4编成，含动力；2004年起第一次更新后的涂装和内装，非2023年起第二次更新的黑橙色外观。可与10-1939三节组联成5+3节；组合中本盒是しおかぜ侧5节。",
+      "source": "https://www.katomodels.com/product/n/jrshikoku8000_2nd",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1939",
+      "maker": "KATO",
+      "sku": "10-1939",
+      "title": "JR四国8000系 特急「しおかぜ・いしづち」 3両セット",
+      "cars": 3,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq8000-shiokaze",
+        "sq8000-ishizuchi"
+      ],
+      "match": "exact",
+      "note": "S5编成，含动力、无牵引轮胶圈，考虑与五节组併结；2004年第一次更新后、8500形已撤除受电弓的版本。非2023年第二次更新涂装；组合中本盒是いしづち侧3节，对しおかぜ检索仅作併结附属部分，不是独立3节潮风。",
+      "source": "https://www.katomodels.com/product/n/jrshikoku8000_2nd",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1940",
+      "maker": "KATO",
+      "sku": "10-1940",
+      "title": "JR四国8000系 特急「しおかぜ・いしづち」(旧塗装) 8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq8000-shiokaze",
+        "sq8000-ishizuchi"
+      ],
+      "match": "variant",
+      "note": "初始旧涂装八节组；与第一次更新的10-1938/1939及2023年第二次更新涂装不同，作为年代差异款展示。原厂在库目录确认品号和8节盒数；不承诺现货。",
+      "source": "https://www.katomodels.com/stock/result?page=41",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98491",
+      "maker": "TOMIX",
+      "sku": "98491",
+      "title": "JR 2700系特急ディーゼルカー基本セット",
+      "cars": 3,
+      "setKind": "basic",
+      "vehicleIds": [
+        "sq2700-nanpu"
+      ],
+      "match": "exact",
+      "note": "2800+2750+2700(M)三节；2800为含Green的先头车。普通标准色，非面包超人涂装；本三节组不应直接当作无Green的两节「しまんと」。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98491.html",
+      "sourceTitle": "TOMIX 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98492",
+      "maker": "TOMIX",
+      "sku": "98492",
+      "title": "JR 2700系特急ディーゼルカー増結セット",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "sq2700-nanpu",
+        "sq2700-shimanto"
+      ],
+      "match": "exact",
+      "note": "2750+2700(T)两节增结盒，不含动力；车号转印和头牌使用基本98491所附资料。可用于无Green的2700系两节部分，但单买本盒不能自行走行，购买前须核配置。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98492.html",
+      "sourceTitle": "TOMIX 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:97950",
+      "maker": "TOMIX",
+      "sku": "97950",
+      "title": "特別企画品 JR 2700系特急ディーゼルカー(南風・しまんと)セット",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq2700-nanpu",
+        "sq2700-shimanto"
+      ],
+      "match": "exact",
+      "note": "原厂2023年企划的南风・四万十併结五节套装，含动力。头牌分别预贴南风和四万十；整盒5节包含两个服务的车组，不代表四万十单独有5节或Green。",
+      "source": "https://www.tomytec.co.jp/tomix/products/img/20230112-1.pdf",
+      "sourceTitle": "TOMIX 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1504",
+      "maker": "KATO",
+      "sku": "10-1504",
+      "title": "JR四国2000系 3両セット",
+      "cars": 3,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq2000-uwakai",
+        "sq2000-ashizuri"
+      ],
+      "match": "exact",
+      "note": "普通2000系三节，含动力，不含非贯通Green合造2000形；原厂头牌含しまんと、南風、あしずり、宇和海。为2000年代小门窗及室内更新后旧形态，非2024年转向架/显示器更新版。",
+      "source": "https://www.katomodels.com/product/n/jrs_2000",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-2103",
+      "maker": "KATO",
+      "sku": "10-2103",
+      "title": "JR四国2000系 特急「あしずり」 2両セット",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq2000-ashizuri"
+      ],
+      "match": "exact",
+      "note": "截至2026-10-28为预定新品，官方计划2026-10-29出货，非已售确认。2024年高知所台车、全彩显示器更新后但前灯未更新的2000系两节组；含动力，原厂已更正为非DCC Friendly。",
+      "source": "https://www.katomodels.com/product/n/jrs_2000_ashizuri",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready",
+      "releaseStatus": "announced"
+    },
+    {
+      "id": "KATO:10-2104",
+      "maker": "KATO",
+      "sku": "10-2104",
+      "title": "JR四国N2000系 特急「宇和海」 3両セット",
+      "cars": 3,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq2000-uwakai"
+      ],
+      "match": "variant",
+      "note": "截至2026-10-28为预定新品，官方计划2026-10-29出货。N2000是2000系改良形，车头外观不同，故对严格2000系预设标为差异款。2024年松山所LED头灯更新版；含动力，非DCC Friendly。",
+      "source": "https://www.katomodels.com/product/n/jrs_n2000_uwakai",
+      "sourceTitle": "KATO 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready",
+      "releaseStatus": "announced"
+    },
+    {
+      "id": "TOMIX:98259",
+      "maker": "TOMIX",
+      "sku": "98259",
+      "title": "JR 223-5000系・5000系近郊電車(マリンライナー)セットA",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq5000-marineliner"
+      ],
+      "match": "exact",
+      "note": "M2，蓝带、桃太郎与猴；早期2018年产品。 盒内均含5000系三节（5100+5200+5000(M)）及JR西日本223-5000系两节；F另多一节サハ。不是仅含JR四国三节，也不是223系2000番台普通新快速盒。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98259.html",
+      "sourceTitle": "TOMIX 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98260",
+      "maker": "TOMIX",
+      "sku": "98260",
+      "title": "JR 223-5000系・5000系近郊電車(マリンライナー)セットB",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq5000-marineliner"
+      ],
+      "match": "exact",
+      "note": "M4，红带、桃太郎与犬；官方已更正早期把红带误写成蓝带的说明。 盒内均含5000系三节（5100+5200+5000(M)）及JR西日本223-5000系两节；F另多一节サハ。不是仅含JR四国三节，也不是223系2000番台普通新快速盒。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98260.html",
+      "sourceTitle": "TOMIX 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98339",
+      "maker": "TOMIX",
+      "sku": "98339",
+      "title": "JR 223-5000系・5000系近郊電車(マリンライナー)セットC",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq5000-marineliner"
+      ],
+      "match": "exact",
+      "note": "M1，蓝带、桃太郎与犬；223先头裙板下部延长的版本。 盒内均含5000系三节（5100+5200+5000(M)）及JR西日本223-5000系两节；F另多一节サハ。不是仅含JR四国三节，也不是223系2000番台普通新快速盒。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98339.html",
+      "sourceTitle": "TOMIX 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98340",
+      "maker": "TOMIX",
+      "sku": "98340",
+      "title": "JR 223-5000系・5000系近郊電車(マリンライナー)セットD",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq5000-marineliner"
+      ],
+      "match": "exact",
+      "note": "M6，红带、桃太郎与雉；223先头裙板下部延长的版本。 盒内均含5000系三节（5100+5200+5000(M)）及JR西日本223-5000系两节；F另多一节サハ。不是仅含JR四国三节，也不是223系2000番台普通新快速盒。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98340.html",
+      "sourceTitle": "TOMIX 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98389",
+      "maker": "TOMIX",
+      "sku": "98389",
+      "title": "JR 223-5000系・5000系近郊電車(マリンライナー)セットE",
+      "cars": 5,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq5000-marineliner"
+      ],
+      "match": "exact",
+      "note": "M3，蓝带、桃太郎与雉；M-13动力。 盒内均含5000系三节（5100+5200+5000(M)）及JR西日本223-5000系两节；F另多一节サハ。不是仅含JR四国三节，也不是223系2000番台普通新快速盒。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98389.html",
+      "sourceTitle": "TOMIX 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98390",
+      "maker": "TOMIX",
+      "sku": "98390",
+      "title": "JR 223-5000系・5000系近郊電車(マリンライナー)セットF",
+      "cars": 6,
+      "setKind": "set",
+      "vehicleIds": [
+        "sq5000-marineliner"
+      ],
+      "match": "variant",
+      "note": "M5，红带、桃太郎与猴；包含サハ223-2000，重现2007—2010年的历史6节编成，非通常5节。 盒内均含5000系三节（5100+5200+5000(M)）及JR西日本223-5000系两节；F另多一节サハ。不是仅含JR四国三节，也不是223系2000番台普通新快速盒。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98390.html",
+      "sourceTitle": "TOMIX 官方产品资料",
+      "checkedAt": "2026-10-28",
+      "format": "ready"
+    },
+    {
+      "id": "POPONDETTA:6135",
+      "maker": "POPONDETTA",
+      "sku": "6135",
+      "title": "南海12000系＋8000系（6次車）特急サザン 8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "nk12000-southern"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "releaseStatus": "announced",
+      "announcedAt": "2026-10-27",
+      "note": "官方预告、开发中，核对日尚未公布发售日期；计划为含动力完成品，尚未上市。蓝橙南海12000系12002F四辆指定席车＋8000系6次车8013F四辆一般车，合计八辆，12000/8000均为前照灯更换后式样；行先为特急サザン・和歌山港。中间车一辆计划搭载动力、侧面行先点灯；不是金色泉北12000系，也不是只含四辆12000系的套装。JAN 4571621227382。开发规格可能变更。",
+      "source": "https://maker.popondetta.com/maker/?p=4678",
+      "sourceTitle": "POPONDETTA 官方开发预告：発売予定 南海12000系サザン・プレミアム（2026-10-27公告，10-28更新）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "POPONDETTA:6136",
+      "maker": "POPONDETTA",
+      "sku": "6136",
+      "title": "南海12000系＋8300系（初期車）特急サザン 8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "nk12000-southern"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "releaseStatus": "announced",
+      "announcedAt": "2026-10-27",
+      "note": "官方预告、开发中，核对日尚未公布发售日期；计划为含动力完成品，尚未上市。蓝橙南海12000系12002F四辆指定席车＋8300系初期车8303F四辆一般车，合计八辆；12000为前照灯更换后式样，8300无车侧摄像头；行先为特急サザン・なんば。中间车一辆计划搭载动力、侧面行先点灯；不是金色泉北12000，也不能把本盒八辆误认为全是8300系。JAN 4571621227399。开发规格可能变更。",
+      "source": "https://maker.popondetta.com/maker/?p=4678",
+      "sourceTitle": "POPONDETTA 官方开发预告：発売予定 南海12000系サザン・プレミアム（2026-10-27公告，10-28更新）",
+      "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "POPONDETTA:6137",
+      "maker": "POPONDETTA",
+      "sku": "6137",
+      "title": "南海12000系＋8000系（5次車）ライト交換前 特急サザン 8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "nk12000-southern"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "releaseStatus": "announced",
+      "announcedAt": "2026-10-27",
+      "note": "官方预告、开发中，核对日尚未公布发售日期；计划为含动力完成品，尚未上市。蓝橙南海12000系12001F四辆指定席车＋8000系5次车8009F四辆一般车，合计八辆；两系列均为前照灯更换前的历史式样，区别于6135；行先为特急サザン・和歌山市。中间车一辆计划搭载动力、侧面行先点灯；不是金色泉北12000，也非四辆单独12000系套装。JAN 4571621227405。开发规格可能变更。",
+      "source": "https://maker.popondetta.com/maker/?p=4678",
+      "sourceTitle": "POPONDETTA 官方开发预告：発売予定 南海12000系サザン・プレミアム（2026-10-27公告，10-28更新）",
+      "checkedAt": "2026-10-28"
     }
   ],
   "coverage": {
@@ -10724,8 +11044,8 @@
       "note": "已收录 2 项厂家产品资料；并非历年全部品号。"
     },
     "nk12000-southern": {
-      "status": "unverified",
-      "note": "事業者限定鉄道コレクション「南海電気鉄道12000系」4节模型可追溯2019年发布；本轮沿原报道的一手链接核对，南海官方旧商品页https://www.nankai.co.jp/traffic/goods/nankai_senboku_12000kei.html现404，泉北原公告https://www.semboku.jp/cat_news/8896/无法取得，未核实官方整套品号/JAN。南海2025年官方PDF列的是金色泉北12000模型，不能替代本车蓝橙Southern；网页8节还需一般车4节。"
+      "status": "verified",
+      "note": "Popondetta 6135/6136/6137官方预告、开发中；包含12000四节＋一般车四节的八节套装，发售日期未公布。"
     },
     "nk30000-koya": {
       "status": "verified",
@@ -11274,6 +11594,46 @@
     "ma4000": {
       "status": "unverified",
       "note": "南阿苏MT-4000形：未取得可验证的N比例厂家产品号；MT-2000、MT-3000及类似NDC车型不能当同款。"
+    },
+    "sq8000-shiokaze": {
+      "status": "verified",
+      "note": "已有原厂确证N产品；以各商品盒数、动力及年代备注为准。"
+    },
+    "sq8000-ishizuchi": {
+      "status": "verified",
+      "note": "已有原厂确证N产品；以各商品盒数、动力及年代备注为准。"
+    },
+    "sq8600-shiokaze": {
+      "status": "unverified",
+      "note": "仅查到KATO官方X的2027年度目标企划公告，品号、盒数、价格未定，不计作已确认购买产品。"
+    },
+    "sq8600-ishizuchi": {
+      "status": "unverified",
+      "note": "仅查到KATO官方X的2027年度目标企划公告，品号、盒数、价格未定，不计作已确认购买产品。"
+    },
+    "sq2700-nanpu": {
+      "status": "verified",
+      "note": "已有原厂确证N产品；以各商品盒数、动力及年代备注为准。"
+    },
+    "sq2700-shimanto": {
+      "status": "verified",
+      "note": "已有原厂确证N产品；以各商品盒数、动力及年代备注为准。"
+    },
+    "sq2000-uwakai": {
+      "status": "verified",
+      "note": "已有原厂确证N产品；以各商品盒数、动力及年代备注为准。"
+    },
+    "sq2000-ashizuri": {
+      "status": "verified",
+      "note": "已有原厂确证N产品；以各商品盒数、动力及年代备注为准。"
+    },
+    "sq2600-uzushio": {
+      "status": "unverified",
+      "note": "发现PERMIL 2018年N比例2600两节纸KIT的出版商历史介绍，但当前原厂页面403，未获可复核原厂品号和配置，不收录产品、不以近似2700替代。"
+    },
+    "sq5000-marineliner": {
+      "status": "verified",
+      "note": "已有原厂确证N产品；以各商品盒数、动力及年代备注为准。"
     }
   },
   "assemblies": [
@@ -13469,6 +13829,31 @@
       "checkedAt": "2026-10-28",
       "note": "基本盒缺少与后位首车组固定单元的KiHa260-1200，由增结补齐成完整六辆；六次车双雨刷新白紫色，超级北斗时代头标，不是七次车现行式样。",
       "cars": 6
+    },
+    {
+      "id": "kato-shikoku8000-8",
+      "label": "8000系 しおかぜ＋いしづち · 5＋3両",
+      "maker": "KATO",
+      "vehicleIds": [
+        "sq8000-shiokaze",
+        "sq8000-ishizuchi"
+      ],
+      "cars": 8,
+      "components": [
+        {
+          "productId": "KATO:10-1938",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1939",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/jrshikoku8000_2nd",
+      "sourceTitle": "厂家官方套装内容与编成说明",
+      "checkedAt": "2026-10-28",
+      "note": "原厂明确可5节与3节联结；配件含贯通先头车连结用连结器与裙板。整列8节为两服务併结，模型含两组动力。"
     }
   ]
 }

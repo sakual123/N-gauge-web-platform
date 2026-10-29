@@ -1,9 +1,9 @@
 {
   "result": "PASS",
-  "presets": 237,
+  "presets": 247,
   "features": 18,
   "brands": 27,
-  "markedPresets": 111,
+  "markedPresets": 115,
   "allPresetsHaveSources": true,
   "metadataRules": "PASS",
   "migration": "PASS",

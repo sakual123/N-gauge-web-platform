@@ -82,7 +82,7 @@ Settings live in the current browser's local storage. Clearing site data, ending
 
 For Git installations, run `git pull --ff-only` from the repository root. Save and reconcile local changes first if Git reports them. ZIP users can download again and extract to a new folder. Reload the page after updating, then check the times and formations before applying reference departures.
 
-V7 contains 17,030 reference records frozen to Sunday, 25 October 2026 JST. 233 presets cover the full day within their stated scope, while 0 remain partial. Vehicle presets can share actual departures; this is not a count of unique trains. Operating-date verification is labelled separately. Open `http://SERVER_IP:8769/timetable.html` for filters and paginated sources. Existing browser settings are preserved; use the apply-default-references button to load the new defaults.
+V7 contains 17,184 reference records frozen to Sunday, 25 October 2026 JST. 243 presets cover the full day within their stated scope, while 0 remain partial. Vehicle presets can share actual departures; this is not a count of unique trains. Operating-date verification is labelled separately. Open `http://SERVER_IP:8769/timetable.html` for filters and paginated sources. Existing browser settings are preserved; use the apply-default-references button to load the new defaults.
 
 ## 6. Linux startup service (optional)
 
@@ -178,3 +178,8 @@ Expand “套装与曲线条件” in the model directory to filter by package t
 “导出品号清单” exports every filtered page as CSV, merging repeated manufacturer/product codes and retaining matching presets, actual packaged counts, version notes and sources. Unconfirmed codes remain blank. Import the code column as text in spreadsheet software.
 
 For desktop-to-iPad transfer, open Display (屏幕) → Settings backup (设置备份与迁移), export JSON, transfer the file and import it on the other device. Review all four trains before Apply (应用这份备份). Formations, pinned times, theme, ticker and audio preferences transfer; enable sound again manually. Restore pre-import settings (恢复导入前设置) is available within the same page, including reversal of edits made after import. The undo snapshot is lost on reload, so retain the original JSON separately. Unsupported or incomplete files are rejected. Files are read locally in the browser.
+
+
+## V13
+
+Use the large-text checkbox in Screen settings or the directory header button. This device-local preference is not included in train settings JSON.
