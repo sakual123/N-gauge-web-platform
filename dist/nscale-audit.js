@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const D=window.RAIL_DATA,N=window.RAIL_NSCALE_MODEL,U=window.RAIL_NSCALE_UI,$=id=>document.getElementById(id),root=$('vehicles'),search=$('search'),pageSize=24;
-  const keys=['region','category','route','maker','format','status','setKind','curve'],controls=Object.fromEntries(keys.map(k=>[k,$('filter-'+k)]));
+  const keys=['region','category','route','maker','format','status','theme','setKind','curve'],controls=Object.fromEntries(keys.map(k=>[k,$('filter-'+k)]));
   const params=new URLSearchParams(location.search),filters=Object.fromEntries(['q','vehicle',...keys].map(k=>[k,params.get(k)||'']));
   filters.assemblyOnly=params.get('assemblies')==='1';$('filter-assemblies').checked=filters.assemblyOnly;
   filters.q=filters.q.slice(0,120);
@@ -16,7 +16,7 @@
     const routes=D.regions.filter(r=>!filters.region||r.id===filters.region).flatMap(r=>D.availableCategories(r.id).filter(c=>!filters.category||c.id===filters.category).flatMap(c=>D.availableRoutes(r.id,c.id)));
     options(controls.route,[...new Map(routes.map(r=>[r.id,r])).values()],'全部线路');controls.route.value=filters.route;if(controls.route.selectedIndex<0)controls.route.value='';filters.route=controls.route.value;
   }
-  for(const k of ['region','maker','format','status','setKind','curve']){controls[k].value=filters[k];if(controls[k].selectedIndex<0)controls[k].value='';filters[k]=controls[k].value;}
+  for(const k of ['region','maker','format','status','theme','setKind','curve']){controls[k].value=filters[k];if(controls[k].selectedIndex<0)controls[k].value='';filters[k]=controls[k].value;}
   cascade();search.value=filters.q;
   if(filters.setKind||filters.curve)$('more-filters').open=true;
   const stats=N.summary();for(const [value,label]of [[stats.products,'项产品资料'],[stats.covered+'/'+stats.presets,'个预设已覆盖'],[stats.makers,'家模型厂商']]){const el=e('div','catalogue-stat');el.append(e('strong','',String(value)),e('span','',label));$('catalogue-stats').append(el);}

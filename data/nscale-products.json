@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-28",
+  "checkedAt": "2026-10-30",
   "makers": [
     {
       "id": "KATO",
@@ -10644,6 +10644,584 @@
       "source": "https://maker.popondetta.com/maker/?p=4678",
       "sourceTitle": "POPONDETTA 官方开发预告：発売予定 南海12000系サザン・プレミアム（2026-10-27公告，10-28更新）",
       "checkedAt": "2026-10-28"
+    },
+    {
+      "id": "TOMIX:7422",
+      "maker": "TOMIX",
+      "sku": "7422",
+      "title": "国鉄ディーゼルカー キハ20形（M）",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha20"
+      ],
+      "match": "exact",
+      "note": "一般色、两段上升窗的国铁版本；单车含飞轮动力，HG完成品。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/7422.html",
+      "sourceTitle": "TOMIX 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:7423",
+      "maker": "TOMIX",
+      "sku": "7423",
+      "title": "国鉄ディーゼルカー キハ20形（T）",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha20"
+      ],
+      "match": "exact",
+      "note": "一般色200番台、两段上升窗；单车无动力，需与动力车配合。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/7423.html",
+      "sourceTitle": "TOMIX 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:6041-4",
+      "maker": "KATO",
+      "sku": "6041-4",
+      "title": "キハ52 首都圏色(M)",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha52"
+      ],
+      "match": "exact",
+      "note": "1985年前后敦贺机关区国铁形态、朱色首都圈色；单车含动力，2026批次调整车号并采用电球色LED。",
+      "source": "https://www.katomodels.com/product/n/kiha52kei_shutoken",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:6042-4",
+      "maker": "KATO",
+      "sku": "6042-4",
+      "title": "キハ52 首都圏色",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha52"
+      ],
+      "match": "exact",
+      "note": "与6041-4同类国铁朱色；单车无动力，不能单独自走。",
+      "source": "https://www.katomodels.com/product/n/kiha52kei_shutoken",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:98111",
+      "maker": "TOMIX",
+      "sku": "98111",
+      "title": "国鉄 キハ55形ディーゼルカー(急行色・一段窓)セット",
+      "cars": 2,
+      "setKind": "set",
+      "vehicleIds": [
+        "classic-kiha55"
+      ],
+      "match": "exact",
+      "note": "一段窗急行色两节，含M车和T车各一；M-13飞轮动力。属于国铁早期优等气动车形态。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98111.html",
+      "sourceTitle": "TOMIX 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "TOMIX:9462",
+      "maker": "TOMIX",
+      "sku": "9462",
+      "title": "国鉄ディーゼルカー キハ55形(急行色・一段窓)(T)",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha55"
+      ],
+      "match": "exact",
+      "note": "一段窗急行色单车，无动力；可作增编用，不把单品当成含动力两节套装。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/9462.html",
+      "sourceTitle": "TOMIX 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1464",
+      "maker": "KATO",
+      "sku": "10-1464",
+      "title": "キハ58系 4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "classic-kiha58"
+      ],
+      "match": "exact",
+      "note": "国铁急行色、平窗冷房改造车，四节套装含动力；具体车种及排列见厂家编成图，非单车盒。",
+      "source": "https://www.katomodels.com/product/n/kiha58",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:6113",
+      "maker": "KATO",
+      "sku": "6113",
+      "title": "キハ58(M)",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha58"
+      ],
+      "match": "exact",
+      "note": "平窗、冷房改造急行色キハ58单车，含飞轮动力；适合自行组成国铁气动急行编成，非完整四节盒。",
+      "source": "https://www.katomodels.com/product/n/kiha58",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:6018",
+      "maker": "KATO",
+      "sku": "6018",
+      "title": "キハ40 2000(M)",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha40"
+      ],
+      "match": "exact",
+      "note": "首都圈色朱色2000番台单车含动力；厂家所列车号2130、名ミオ表记。具体年代及设备细节以该品为准。",
+      "source": "https://www.katomodels.com/product/n/kiha40",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:6019",
+      "maker": "KATO",
+      "sku": "6019",
+      "title": "キハ40 2000",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha40"
+      ],
+      "match": "exact",
+      "note": "首都圈色朱色2000番台、名ミオ2131；无动力单车，需与动力车配合。",
+      "source": "https://www.katomodels.com/product/n/kiha40",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:6090",
+      "maker": "KATO",
+      "sku": "6090",
+      "title": "キハ47 0 (M)",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha47"
+      ],
+      "match": "exact",
+      "note": "首都圈色、带厕所0番台单车含动力，厂家所列福フチ35；片驾驶室，模型编成需另一端先头车。",
+      "source": "https://www.katomodels.com/product/n/kiha40",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:6091",
+      "maker": "KATO",
+      "sku": "6091",
+      "title": "キハ47 0",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha47"
+      ],
+      "match": "exact",
+      "note": "首都圈色、0番台福フチ37单车无动力；片驾驶室，与动力车组合时另核首尾方向。",
+      "source": "https://www.katomodels.com/product/n/kiha40",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:6021",
+      "maker": "KATO",
+      "sku": "6021",
+      "title": "キハ47 1000",
+      "cars": 1,
+      "setKind": "single",
+      "vehicleIds": [
+        "classic-kiha47"
+      ],
+      "match": "exact",
+      "note": "首都圈色1000番台无动力单车，厂家所列福フチ1022；与0番台车体设备不同，均属该预设的47形家族。",
+      "source": "https://www.katomodels.com/product/n/kiha40",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1497",
+      "maker": "KATO",
+      "sku": "10-1497",
+      "title": "キハ81系「いなほ・つばさ」7両基本セット",
+      "cars": 7,
+      "setKind": "basic",
+      "vehicleIds": [
+        "classic-kiha81-inaho"
+      ],
+      "match": "exact",
+      "note": "1969年5月以后Green标志时期，含キシ80 900食堂车和动力车；取付済いなほ头牌，另附つばさ／ひたち，非初登场はつかり九节版本。",
+      "source": "https://www.katomodels.com/product/n/kiha81",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1253",
+      "maker": "KATO",
+      "sku": "10-1253",
+      "title": "キハ181系「つばさ」7両基本セット",
+      "cars": 7,
+      "setKind": "basic",
+      "vehicleIds": [
+        "classic-kiha181-tsubasa"
+      ],
+      "match": "exact",
+      "note": "1973年前后つばさ形态，七节基本盒含动力；完整十二节另配10-1254五节增结。厂商明确12节原型，不把模型缩编七节称为全编成。",
+      "source": "https://www.katomodels.com/product/n/kiha181",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1254",
+      "maker": "KATO",
+      "sku": "10-1254",
+      "title": "キハ181系「つばさ」5両増結セット",
+      "cars": 5,
+      "setKind": "addon",
+      "vehicleIds": [
+        "classic-kiha181-tsubasa"
+      ],
+      "match": "exact",
+      "note": "配合10-1253组成十二节的五节增结盒；中间连结用先头キハ181不装头尾灯，非独立七节基本盒。动力配置与首尾方向按说明书确认。",
+      "source": "https://www.katomodels.com/product/n/kiha181",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30",
+      "format": "ready"
+    },
+    {
+      "id": "KATO:10-1743B",
+      "maker": "KATO",
+      "sku": "10-1743B",
+      "title": "103系〈オレンジ〉4両セット",
+      "cars": 4,
+      "setKind": "set",
+      "vehicleIds": [
+        "cl103-chuo"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "低运转台橙色四节基础短编成，含动力；所属标记为模型用「関スイ」，不是特定实车编成的完整复刻。配两盒10-1744B可组成10节。",
+      "source": "https://www.katomodels.com/product/n/103kei",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1744B",
+      "maker": "KATO",
+      "sku": "10-1744B",
+      "title": "103系〈オレンジ〉中間車3両セット",
+      "cars": 3,
+      "setKind": "addon",
+      "vehicleIds": [
+        "cl103-chuo"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "橙色中间车三节增结，非独立列车；与四节组及另一盒三节增结组成10节。不将6节增结当成一盒。",
+      "source": "https://www.katomodels.com/product/n/103kei",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1586",
+      "maker": "KATO",
+      "sku": "10-1586",
+      "title": "113系 湘南色 7両基本セット",
+      "cars": 7,
+      "setKind": "basic",
+      "vehicleIds": [
+        "cl113-tokaido"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "国府津1982—1985年前后国铁形态，七节基本含动力；另配10-1587四节增结组成11节。",
+      "source": "https://www.katomodels.com/product/n/113kei_syonan",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1587",
+      "maker": "KATO",
+      "sku": "10-1587",
+      "title": "113系 湘南色 4両増結セット",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "cl113-tokaido"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "无动力四节增结；与10-1586组成11节，盒内数不等同完整列车节数。",
+      "source": "https://www.katomodels.com/product/n/113kei_syonan",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1408",
+      "maker": "KATO",
+      "sku": "10-1408",
+      "title": "115系300番台 湘南色 7両基本セット",
+      "cars": 7,
+      "setKind": "basic",
+      "vehicleIds": [
+        "cl115-takasaki"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "1981年前后小山电车区国铁形态七节基本，灰色H胶条、无无线电天线；非后期更新车。",
+      "source": "https://www.katomodels.com/product/n/115kei_300_syonan",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1389",
+      "maker": "KATO",
+      "sku": "10-1389",
+      "title": "165系急行「アルプス」8両セット",
+      "cars": 8,
+      "setKind": "set",
+      "vehicleIds": [
+        "cl165-alps"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "约1975年国铁形态，含飞轮动力、サロ165 Green与サハシ165自助餐车；是急行座席车，夜行运用不等于寝台车。",
+      "source": "https://www.katomodels.com/product/n/165kei",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1120",
+      "maker": "KATO",
+      "sku": "10-1120",
+      "title": "485系初期形「ひばり」7両基本セット",
+      "cars": 7,
+      "setKind": "basic",
+      "vehicleIds": [
+        "cl485-hibari"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "凸鼻初期形七节基本，含Green先头车クロ481及动力；长编成须另配指定增结，不能等同七节实车全编成。",
+      "source": "https://www.katomodels.com/product/n/485kei_hibari",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1237",
+      "maker": "KATO",
+      "sku": "10-1237",
+      "title": "583系 6両基本セット",
+      "cars": 6,
+      "setKind": "basic",
+      "vehicleIds": [
+        "cl583-yuzuru"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "国铁1978年前后形态，含动力的六节基本；与两盒10-1238可组成无サロ的10节模型。名称／车号配置依所选年代调整。 再现「ゆうづる」需另购11-326或11-327车头列车标志。",
+      "source": "https://www.katomodels.com/product/n/583kei",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1238",
+      "maker": "KATO",
+      "sku": "10-1238",
+      "title": "583系 モハネ2両増結セット",
+      "cars": 2,
+      "setKind": "addon",
+      "vehicleIds": [
+        "cl583-yuzuru"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "モハネ两节增结，不含Green；10节搭配需两盒，不能以此代替含サロ的三节增结。",
+      "source": "https://www.katomodels.com/product/n/583kei",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1725",
+      "maker": "KATO",
+      "sku": "10-1725",
+      "title": "20系寝台特急「あさかぜ」(初期編成)8両基本セット",
+      "cars": 8,
+      "setKind": "basic",
+      "vehicleIds": [
+        "cl20-asakaze"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "1963年前后品川客车区形态，八节基本；与10-1726七节增结共15节。仅客车无牵引动力，须另购合适年代机车。",
+      "source": "https://www.katomodels.com/product/n/20kei_asakaze_syoki",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-1726",
+      "maker": "KATO",
+      "sku": "10-1726",
+      "title": "20系寝台特急「あさかぜ」(初期編成)7両増結セット",
+      "cars": 7,
+      "setKind": "addon",
+      "vehicleIds": [
+        "cl20-asakaze"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "初期朝风七节增结，与10-1725组成15节客车组；不含机车和动力，不等同七节独立车组。",
+      "source": "https://www.katomodels.com/product/n/20kei_asakaze_syoki",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-822",
+      "maker": "KATO",
+      "sku": "10-822",
+      "title": "24系寝台特急「あけぼの」6両基本セット",
+      "cars": 6,
+      "setKind": "basic",
+      "vehicleIds": [
+        "cl24-akebono"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "含Solo、Single DX和ゴロンとシート等特征车的六节基本；与10-823三节增结共9节客车，牵引机车另购。",
+      "source": "https://www.katomodels.com/product/n/24kei_akebono",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-823",
+      "maker": "KATO",
+      "sku": "10-823",
+      "title": "24系寝台特急「あけぼの」3両増結セット",
+      "cars": 3,
+      "setKind": "addon",
+      "vehicleIds": [
+        "cl24-akebono"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "三节增结，与10-822组成9节客车；无机车动力，须另购EF64／EF81等对应区间牵引车。",
+      "source": "https://www.katomodels.com/product/n/24kei_akebono",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-881",
+      "maker": "KATO",
+      "sku": "10-881",
+      "title": "24系寝台特急「日本海」6両基本セット",
+      "cars": 6,
+      "setKind": "basic",
+      "vehicleIds": [
+        "cl24-nihonkai"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "约2011年青森车底六节基本，配10-882五节增结共11节；仅客车，EF81机车另购。",
+      "source": "https://www.katomodels.com/product/n/24kei_nihonkai",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-882",
+      "maker": "KATO",
+      "sku": "10-882",
+      "title": "24系寝台特急「日本海」5両増結セット",
+      "cars": 5,
+      "setKind": "addon",
+      "vehicleIds": [
+        "cl24-nihonkai"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "约2011年日本海五节增结，非20系版本；基本加增结11节客车，不含机车动力。",
+      "source": "https://www.katomodels.com/product/n/24kei_nihonkai",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-869",
+      "maker": "KATO",
+      "sku": "10-869",
+      "title": "24系寝台特急「トワイライトエクスプレス」6両基本セット",
+      "cars": 6,
+      "setKind": "basic",
+      "vehicleIds": [
+        "cl24-twilight"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "最末期第3编成六节基本，配10-870四节增结成为10节客车；食堂／休息室细节按原厂配置。EF81等牵引机车另购。",
+      "source": "https://www.katomodels.com/product/n/24kei_twilight",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "KATO:10-870",
+      "maker": "KATO",
+      "sku": "10-870",
+      "title": "24系寝台特急「トワイライトエクスプレス」4両増結セット",
+      "cars": 4,
+      "setKind": "addon",
+      "vehicleIds": [
+        "cl24-twilight"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "四节客车增结，与10-869配10节；本品无机车动力。注意24系旧列车与87系瑞风不是同型。",
+      "source": "https://www.katomodels.com/product/n/24kei_twilight",
+      "sourceTitle": "KATO 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
+    },
+    {
+      "id": "TOMIX:98616",
+      "maker": "TOMIX",
+      "sku": "98616",
+      "title": "JR E26系客車（カシオペア）基本セットB",
+      "cars": 6,
+      "setKind": "basic",
+      "vehicleIds": [
+        "cl26-cassiopeia"
+      ],
+      "match": "exact",
+      "format": "ready",
+      "note": "六节基本B，2016年6月以后加天线巡游形态；与92410增结B可成12节。仅客车无机车动力；不同于2016年3月以前的定期列车早期形态。",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98616.html",
+      "sourceTitle": "TOMIX 官方N比例产品资料",
+      "checkedAt": "2026-10-30"
     }
   ],
   "coverage": {
@@ -11634,6 +12212,82 @@
     "sq5000-marineliner": {
       "status": "verified",
       "note": "已有原厂确证N产品；以各商品盒数、动力及年代备注为准。"
+    },
+    "classic-kiha20": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "classic-kiha52": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "classic-kiha55": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "classic-kiha58": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "classic-kiha40": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "classic-kiha47": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "classic-kiha81-inaho": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "classic-kiha181-tsubasa": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl103-chuo": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl113-tokaido": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl115-takasaki": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl165-alps": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl485-hibari": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl583-yuzuru": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl20-asakaze": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl24-akebono": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl24-nihonkai": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl24-twilight": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
+    },
+    "cl26-cassiopeia": {
+      "status": "verified",
+      "note": "经典车型产品参考；年代、涂装、动力与套装节数以每项厂家资料和备注为准。"
     }
   },
   "assemblies": [
@@ -13854,6 +14508,174 @@
       "sourceTitle": "厂家官方套装内容与编成说明",
       "checkedAt": "2026-10-28",
       "note": "原厂明确可5节与3节联结；配件含贯通先头车连结用连结器与裙板。整列8节为两服务併结，模型含两组动力。"
+    },
+    {
+      "id": "v14-cl103-chuo",
+      "label": "103系 10両",
+      "maker": "KATO",
+      "vehicleIds": [
+        "cl103-chuo"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "KATO:10-1743B",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1744B",
+          "quantity": 2
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/103kei",
+      "sourceTitle": "KATO官方包装与编成说明",
+      "checkedAt": "2026-10-30",
+      "note": "按实物包装数组合；图示不是实车号车顺序。基本套装含动力；增结包装数量按明细。"
+    },
+    {
+      "id": "v14-cl113-tokaido",
+      "label": "113系 11両",
+      "maker": "KATO",
+      "vehicleIds": [
+        "cl113-tokaido"
+      ],
+      "cars": 11,
+      "components": [
+        {
+          "productId": "KATO:10-1586",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1587",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/113kei_syonan",
+      "sourceTitle": "KATO官方包装与编成说明",
+      "checkedAt": "2026-10-30",
+      "note": "按实物包装数组合；图示不是实车号车顺序。基本套装含动力；增结包装数量按明细。"
+    },
+    {
+      "id": "v14-cl583-yuzuru",
+      "label": "583系 10両",
+      "maker": "KATO",
+      "vehicleIds": [
+        "cl583-yuzuru"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "KATO:10-1237",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1238",
+          "quantity": 2
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/583kei",
+      "sourceTitle": "KATO官方包装与编成说明",
+      "checkedAt": "2026-10-30",
+      "note": "按实物包装数组合；图示不是实车号车顺序。基本套装含动力；增结包装数量按明细。"
+    },
+    {
+      "id": "v14-cl20-asakaze",
+      "label": "20系 15両",
+      "maker": "KATO",
+      "vehicleIds": [
+        "cl20-asakaze"
+      ],
+      "cars": 15,
+      "components": [
+        {
+          "productId": "KATO:10-1725",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-1726",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/20kei_asakaze_syoki",
+      "sourceTitle": "KATO官方包装与编成说明",
+      "checkedAt": "2026-10-30",
+      "note": "按实物包装数组合；图示不是实车号车顺序。仅客车、机车另购，不含动力牵引。"
+    },
+    {
+      "id": "v14-cl24-akebono",
+      "label": "24系 9両",
+      "maker": "KATO",
+      "vehicleIds": [
+        "cl24-akebono"
+      ],
+      "cars": 9,
+      "components": [
+        {
+          "productId": "KATO:10-822",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-823",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/24kei_akebono",
+      "sourceTitle": "KATO官方包装与编成说明",
+      "checkedAt": "2026-10-30",
+      "note": "按实物包装数组合；图示不是实车号车顺序。仅客车、机车另购，不含动力牵引。"
+    },
+    {
+      "id": "v14-cl24-nihonkai",
+      "label": "24系 11両",
+      "maker": "KATO",
+      "vehicleIds": [
+        "cl24-nihonkai"
+      ],
+      "cars": 11,
+      "components": [
+        {
+          "productId": "KATO:10-881",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-882",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/24kei_nihonkai",
+      "sourceTitle": "KATO官方包装与编成说明",
+      "checkedAt": "2026-10-30",
+      "note": "按实物包装数组合；图示不是实车号车顺序。仅客车、机车另购，不含动力牵引。"
+    },
+    {
+      "id": "v14-cl24-twilight",
+      "label": "24系25形 10両",
+      "maker": "KATO",
+      "vehicleIds": [
+        "cl24-twilight"
+      ],
+      "cars": 10,
+      "components": [
+        {
+          "productId": "KATO:10-869",
+          "quantity": 1
+        },
+        {
+          "productId": "KATO:10-870",
+          "quantity": 1
+        }
+      ],
+      "match": "exact",
+      "source": "https://www.katomodels.com/product/n/24kei_twilight",
+      "sourceTitle": "KATO官方包装与编成说明",
+      "checkedAt": "2026-10-30",
+      "note": "按实物包装数组合；图示不是实车号车顺序。仅客车、机车另购，不含动力牵引。"
     }
   ]
 }

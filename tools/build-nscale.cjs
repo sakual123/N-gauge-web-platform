@@ -6,7 +6,7 @@ console.log(`N scale: ${data.products.length} products, ${Object.keys(data.cover
 const stats={verified:0,variant:0,unverified:0};for(const c of Object.values(data.coverage))stats[c.status]++;
 const makers=data.makers.filter(m=>data.products.some(p=>p.maker===m.id)).map(m=>m.label).join('、');
 const uncoded=data.products.filter(p=>p.codeType==='unlisted').length,assemblies=data.assemblies||[],radiusProducts=data.products.filter(p=>p.minimumRadiusMm).length;
-const doc=`# 对应N比例车型 · V13
+const doc=`# 对应N比例车型 · V14
 
 核对日期：${data.checkedAt}。收录 ${data.products.length} 项厂家产品资料；${Object.keys(data.coverage).length} 个车辆预设中，${stats.verified} 个有车型对应产品，${stats.variant} 个仅有注明差别的版本参考，${stats.unverified} 个尚未收录可核实品号。共用同型车辆的不同线路／服务预设会引用相同产品，预设覆盖数不等于独立车型数。
 

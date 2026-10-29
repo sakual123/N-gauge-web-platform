@@ -22,13 +22,14 @@
     return true;
   }
   const baseSearch=new Map(),productSearch=new Map();
-  for(const v of D.vehicles){const region=D.regions.find(r=>r.id===v.region),category=D.categories.find(c=>c.id===v.category);baseSearch.set(v.id,normalize([v.label,v.series,v.series.replace(/系|番台/g,''),v.name,v.en,D.lines[v.line]?.name,D.routes[v.route]?.label,region?.label,category?.label].join(' ')));}
+  for(const v of D.vehicles){const region=D.regions.find(r=>r.id===v.region),category=D.categories.find(c=>c.id===v.category);baseSearch.set(v.id,normalize([v.label,v.series,v.series.replace(/系|番台/g,''),v.name,v.en,D.lines[v.line]?.name,D.routes[v.route]?.label,region?.label,category?.label,...(v.searchAliases||[])].join(' ')));}
   for(const p of data.products)productSearch.set(p.id,normalize([p.sku,p.title,p.maker,makers.get(p.maker)?.label,kinds[p.setKind],formats[format(p)],p.minimumRadiusMm?'R'+p.minimumRadiusMm:'',p.codeType==='JAN'?'JAN':'',p.releaseStatus==='announced'?'预告 预定 announced planned':''].join(' ')));
   const ordered=D.regions.flatMap(region=>D.availableCategories(region.id).flatMap(category=>D.availableRoutes(region.id,category.id).flatMap(route=>D.matchingVehicles(region.id,category.id,route.id))));
   function search(filters={}){
     const tokens=normalize(filters.q).replace(/([a-z0-9])([\u3040-\u30ff\u3400-\u9fff])/g,'$1 $2').replace(/([\u3040-\u30ff\u3400-\u9fff])([a-z0-9])/g,'$1 $2').trim().split(/\s+/).filter(Boolean),radiusTokens=tokens.filter(t=>/^r\d{2,4}$/.test(t)).map(t=>Number(t.slice(1))),results=[];
     for(const v of ordered){
       if(filters.vehicle&&v.id!==filters.vehicle||filters.region&&v.region!==filters.region||filters.category&&v.category!==filters.category||filters.route&&v.route!==filters.route)continue;
+      if(filters.theme==='classic'&&v.era!=='classic'||filters.theme==='diesel'&&v.traction!=='diesel'&&!/キハ|KiHa/i.test(v.series)||filters.theme==='sleeper'&&!((v.special?.features||v.serviceFeatures||[]).includes('sleeper')||/寝台/.test(v.type)))continue;
       let found=lookup(v.id,filters);
       if((filters.maker||filters.format||filters.match||filters.setKind||filters.curve)&&!found.products.length)continue;
       const matches=(s,t)=>s.includes(t)||compact(s).includes(compact(t)),productTokens=tokens.filter(t=>!/^r\d{2,4}$/.test(t)&&!matches(baseSearch.get(v.id),t));

@@ -11,32 +11,35 @@ A Japanese railway departure-board simulator for N gauge layouts and iPad displa
 
 V13 adds Shikoku: ten presets and 154 dated references across Shiokaze, Ishizuchi, Nanpu, Shimanto, Uwakai, Ashizuri, Uzushio and Marine Liner. Shared service references do not guarantee the assigned fleet. Marine Liner No. 2 is excluded from the 5000-series preset. Eighteen product records were added; five are explicitly marked announced. Large-text reading is available in settings and the model directory; this device-local preference is separate from train backup files. See [V13 research](docs/NSCALE-V13-RESEARCH.md).
 
+
+V14 adds 19 classic/historic presets, 34 products and seven recipes. Theme filters cover JNR classics, KiHa/diesel and sleepers. The 19 new times are explicitly model demonstrations, not historical or current timetables. The previous 247 timetable presets are unchanged. Product notes distinguish JR-era versions, separately purchased locomotives and headmarks.
+
 ## Features
 
 - **Two model platforms and four departures:** platform 1 is the outer R315 loop; platform 2 is the inner R282 loop. Each has a first and next departure.
-- **247 vehicle/service presets:** choose region → category → route → vehicle. Regions cover eastern Japan, western Japan, Hokkaido, Tokai, Kyushu and Shikoku; categories include Shinkansen, limited express, commuter and private/local transport.
+- **266 vehicle/service presets:** choose region → category → route → vehicle. Regions cover eastern Japan, western Japan, Hokkaido, Tokai, Kyushu and Shikoku; categories include Shinkansen, limited express, commuter and private/local transport.
 - **Manual editing:** train name, service number, origin, destination, departure time and model formations from 1–30 cars. Open settings through the discreet `···` control at the top right.
 - **18 equipment indicators and 27 brands:** Green Car, GranClass, u-seat, PREMIUM CAR, PRiVACE, Hinotori, Shimakaze, Saphir Odoriko and others. Some use official artwork; others use text or schematic indicators.
 - **Scrolling train information:** stops and non-reserved/reserved/Green seating for the next departure. Choose a fixed row, model clock, speed, pause or custom text.
 - **LCD/LED appearance:** Japanese/English board information, optional dot texture, landscape/portrait layouts, browser-local persistence and JSON settings export.
 
-## Matching N-scale models · V13
+## Matching N-scale models · V14
 
-**608 product records covering 229 of 247 presets** (224 matching, 5 with explicitly different reference versions only). The remaining 18 explain unresolved evidence. Ten makers are covered, and 72 presets offer multiple makers.
+**642 product records covering 248 of 266 presets** (243 matching, 5 with explicitly different reference versions only). The remaining 18 explain unresolved evidence. Ten makers are covered, and 72 presets offer multiple makers.
 
 ![Formation recipes](docs/images/v12-assembly-landscape.png)
 
 Open `···` → Train (列车) → platform and first/next departure → **对应N比例车型**. Quick vehicle search accepts series, train names and routes, including full-width letters/numbers and kana variants. Selection changes only the row being edited.
 
-There are 89 verified basic/add-on recipes with copyable part-number lists. Diagrams group cars by retail package, not actual train order, and leave your model car count unchanged. The directory can show only vehicles with recipes and share a filtered search link.
+There are 96 verified basic/add-on recipes with copyable part-number lists. Diagrams group cars by retail package, not actual train order, and leave your model car count unchanged. The directory can show only vehicles with recipes and share a filtered search link.
 
-603 records have official codes; 5 verified products without a confirmed complete-set code use their product name and official source instead of an invented number. Assembled, static and kit products are labelled separately. Explicit minimum-radius specifications and conditional curve compatibility are kept distinct. Historical/announced products are included; this is not a stock listing. Missing entries do not imply no model exists. See [matching and maintenance notes](NSCALE-MODELS.md).
+637 records have official codes; 5 verified products without a confirmed complete-set code use their product name and official source instead of an invented number. Assembled, static and kit products are labelled separately. Explicit minimum-radius specifications and conditional curve compatibility are kept distinct. Historical/announced products are included; this is not a stock listing. Missing entries do not imply no model exists. See [matching and maintenance notes](NSCALE-MODELS.md).
 
 V12 adds package-type and explicitly documented R282/R315 filters, removable filter chips and a deduplicated CSV export of all filtered pages. Under Display (屏幕) → Settings backup (设置备份与迁移), preview and import a settings JSON file, then restore the pre-import snapshot within the same page if needed. This supports desktop-to-iPad transfers.
 
 ## Timetable scope
 
-This release is **V13: 247 presets and 17,184 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 243 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
+This release is **V14: 266 presets and 17,184 reference records**, frozen to **Sunday, 25 October 2026, Japan Standard Time (UTC+9)**. It contains the complete published day within the stated origin, direction and service scope for 243 presets; 0 remain partial, and 4 cover Sunday-inactive or historical services. Different vehicle presets can share the same real departure: the record total is not a count of unique trains. Data is neither live nor updated automatically the following day.
 
 Coverage completeness and operating-date verification are separate: 11,402 records were checked for the specified day, 5,528 use official weekend/holiday tables, 230 use daily references, and 20 still require operating-calendar confirmation. Weekday-only and discontinued services remain labelled. Current official Ginza/Marunouchi data replaces the older samples.
 
@@ -50,7 +53,7 @@ See [TIMETABLES.md](TIMETABLES.md), [special-display research](SPECIAL-DISPLAYS.
 
 Open `···` → display options → whole-board style to choose 12 representative themes: the six JR companies, Kintetsu, Hankyu, Keihan, Nankai, Hanshin and Tokyo Metro. Column order, headings, direction panels, platform blocks and colors change together, while services, brands and model formations remain intact. These are adaptations of specific display examples, not universal official templates.
 
-Click a train name or its arrival-announcement button to play device-provided Japanese speech synthesis. Representative-station mappings cover 159 routes and 247 presets, with 17 vehicle exceptions. Audio is an adapted script, not an original station recording or cloned announcer. Representative stations do not change reference times or replace model platform numbers with real ones.
+Click a train name or its arrival-announcement button to play device-provided Japanese speech synthesis. Representative-station mappings cover 159 routes and 266 presets, with 17 vehicle exceptions. Audio is an adapted script, not an original station recording or cloned announcer. Representative stations do not change reference times or replace model platform numbers with real ones.
 
 Enable sound and the automatic option to compare Japan's current time with the four displayed fixed times. A simultaneous batch plays outer first → outer next → inner first → inner next, waiting for each announcement to finish. Each row/time is automatically queued once per Japan calendar day. The departure time is a model-arrival trigger, not live train-position information. Stop clears the queue; manual playback can repeat.
 

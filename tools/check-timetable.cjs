@@ -2,7 +2,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),asse
 const root=path.resolve(__dirname,'..'),ctx={window:{}};vm.createContext(ctx);
 for(const file of ['catalog','catalog-regions','catalog-expanded','special-services','journey-data','timetable-data','timetable-model','model','journey-model'])vm.runInContext(fs.readFileSync(path.join(root,'dist',file+'.js'),'utf8'),ctx,{filename:file});
 const {RAIL_DATA:D,RAIL_MODEL:M,RAIL_TIMETABLE_MODEL:TT}=ctx.window,J=D.journeyModel,data=TT.data;
-assert.equal(data.date,'2026-10-25');assert.equal(new Date(data.date+'T12:00:00+09:00').getUTCDay(),0);assert.equal(data.timezone,'Asia/Tokyo');assert.equal(data.presetCount,247);assert.equal(Object.keys(data.presets).length,247);
+assert.equal(data.date,'2026-10-25');assert.equal(new Date(data.date+'T12:00:00+09:00').getUTCDay(),0);assert.equal(data.timezone,'Asia/Tokyo');assert.equal(data.presetCount,266);assert.equal(Object.keys(data.presets).length,266);
 let count=0,fullCalls=0;const ids=new Set(),statuses={};
 for(const v of D.vehicles){
  assert(TT.trips(v.id).length,v.id+' missing reference');
@@ -49,3 +49,5 @@ const result={result:'PASS',date:data.date,presets:D.vehicles.length,departures:
 const sq=Object.entries(data.presets).filter(([id])=>id.startsWith('sq'));assert.equal(sq.length,10);assert.equal(sq.reduce((n,[,e])=>n+e.departures.length,0),154);for(const [id,e] of sq){assert.equal(e.coverage.level,'full');assert.equal(e.coverage.expectedCount,e.departures.length);for(const t of e.departures){assert.equal(t.status,'dated');assert(t.source.includes('date=20261025'));assert(t.calendarEvidence.includes('drivingday-01'));assert(/车底/.test(t.note));}}assert.equal(TT.trips('sq5000-marineliner').length,34);assert(!TT.trips('sq5000-marineliner').some(t=>t.number==='2号'));
 
 const sqScene=M.scene('shikoku');assert(sqScene&&sqScene.rows.every(r=>r.vehicleId.startsWith('sq')&&TT.find(r)));
+
+const classicEntries=Object.entries(data.presets).filter(([id])=>id.startsWith('classic-')||id.startsWith('cl'));assert.equal(classicEntries.length,19);for(const [id,e]of classicEntries){assert.equal(e.coverage.level,'model');assert(e.departures.every(t=>t.status==='model'));}assert.equal(data.coverageCounts.full,243);assert.equal(data.coverageCounts.inactive,4);

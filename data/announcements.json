@@ -1,8 +1,8 @@
 {
   "version": 1,
   "language": "ja-JP",
-  "routeCount": 159,
-  "presetCount": 247,
+  "routeCount": 178,
+  "presetCount": 266,
   "purpose": "模型線の合成到着案内に使う代表駅。実駅の録音・発車番線・現在の運行情報ではない。",
   "timePolicy": "代表駅の設定は発車時刻の移し替えではない。固定参照時刻は参照元出発駅の時刻として保持。",
   "readingPolicy": "読みはTTS向け平仮名。難読駅を公式駅情報で照合。その他の一般的な読みに個別公式照合済みとの表示はしない。",
@@ -2840,6 +2840,177 @@
       "sourceTitle": "JR四国 公式列車案内",
       "readingStatus": "editorial-common-reading",
       "note": "模型用代表駅。現地録音や現在の実駅放送ではありません。"
+    },
+    "classic-kiha20": {
+      "route": "classic-kiha20",
+      "station": "模型駅",
+      "reading": "もけいえき",
+      "operator": "generic",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/7422.html",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "classic-kiha52": {
+      "route": "classic-kiha52",
+      "station": "模型駅",
+      "reading": "もけいえき",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/kiha52kei_shutoken",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "classic-kiha55": {
+      "route": "classic-kiha55",
+      "station": "模型駅",
+      "reading": "もけいえき",
+      "operator": "generic",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98111.html",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "classic-kiha58": {
+      "route": "classic-kiha58",
+      "station": "模型駅",
+      "reading": "もけいえき",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/kiha58",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "classic-kiha40": {
+      "route": "classic-kiha40",
+      "station": "模型駅",
+      "reading": "もけいえき",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/kiha40",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "classic-kiha47": {
+      "route": "classic-kiha47",
+      "station": "模型駅",
+      "reading": "もけいえき",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/kiha40",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "classic-kiha81-inaho": {
+      "route": "classic-kiha81-inaho",
+      "station": "上野",
+      "reading": "うえの",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/kiha81",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "classic-kiha181-tsubasa": {
+      "route": "classic-kiha181-tsubasa",
+      "station": "上野",
+      "reading": "うえの",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/kiha181",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl103-chuo": {
+      "route": "cl103-chuo",
+      "station": "東京",
+      "reading": "とうきょう",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/103kei",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl113-tokaido": {
+      "route": "cl113-tokaido",
+      "station": "東京",
+      "reading": "とうきょう",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/113kei_syonan",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl115-takasaki": {
+      "route": "cl115-takasaki",
+      "station": "上野",
+      "reading": "うえの",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/115kei_300_syonan",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl165-alps": {
+      "route": "cl165-alps",
+      "station": "新宿",
+      "reading": "しんじゅく",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/165kei",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl485-hibari": {
+      "route": "cl485-hibari",
+      "station": "上野",
+      "reading": "うえの",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/485kei_hibari",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl583-yuzuru": {
+      "route": "cl583-yuzuru",
+      "station": "上野",
+      "reading": "うえの",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/583kei",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl20-asakaze": {
+      "route": "cl20-asakaze",
+      "station": "東京",
+      "reading": "とうきょう",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/20kei_asakaze_syoki",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl24-akebono": {
+      "route": "cl24-akebono",
+      "station": "上野",
+      "reading": "うえの",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/24kei_akebono",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl24-nihonkai": {
+      "route": "cl24-nihonkai",
+      "station": "大阪",
+      "reading": "おおさか",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/24kei_nihonkai",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl24-twilight": {
+      "route": "cl24-twilight",
+      "station": "大阪",
+      "reading": "おおさか",
+      "operator": "generic",
+      "source": "https://www.katomodels.com/product/n/24kei_twilight",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
+    },
+    "cl26-cassiopeia": {
+      "route": "cl26-cassiopeia",
+      "station": "上野",
+      "reading": "うえの",
+      "operator": "generic",
+      "source": "https://www.tomytec.co.jp/tomix/products/n/98616.html",
+      "sourceTitle": "车型厂家资料；通用模型合成广播",
+      "note": "历史车型模型演示，非对应年代车站原音。"
     }
   },
   "vehicleOverrides": {

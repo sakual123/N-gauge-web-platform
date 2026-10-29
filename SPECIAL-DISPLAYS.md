@@ -1,6 +1,6 @@
 # 特殊标识与全车型核对表 · V5
 
-247 个预设逐项配置，不按“特急”一律添加 Green Car。设备配置与模型编组节数独立。
+266 个预设逐项配置，不按“特急”一律添加 Green Car。设备配置与模型编组节数独立。
 
 右上角 `···` → 对应班次 → **特殊标识与座席图标**，支持自动、自定义、隐藏，以及品牌开关、洛楽 / ラピート αβ 和手动空席符号。更新后原有保存的车型会直接获得自动标识；自定义编组、车次与行先继续保留。
 
@@ -45,6 +45,16 @@
 | 特急 / 東海道線 | E261系 / サフィール踊り子 | Green Car、Premium Green、個室、カフェ / ラウンジ | 全車グリーン席。Premium Green・グリーン個室・カフェテリア | [资料1](https://www.jreast.co.jp/saphir/cars/) [资料2](https://ats-s.sakura.ne.jp/blog/?p=79494) |
 | 特急 / 宇都宮・高崎線 | E257系5500番台 / あかぎ | 标准种别与列车名 | このプリセットに Green Car / GranClass を自動付与しない | [资料1](https://www.jreast.co.jp/hachioji/aas/2019021_01.pdf) [资料2](https://www.jreast.co.jp/train/express/akagi.html) [资料3](https://saiyo.jr-central.co.jp/company/business/conventional.html) [资料4](https://smart-ex.jp/en/beginner/equipment/kodama08/) [资料5](https://smart-ex.jp/en/beginner/equipment/railstar/) |
 | 特急 / 宇都宮・高崎線 | E257系5500番台 / 草津・四万 | 标准种别与列车名 | このプリセットに Green Car / GranClass を自動付与しない | [资料1](https://www.jreast.co.jp/hachioji/aas/2019021_01.pdf) [资料2](https://www.jreast.co.jp/train/express/akagi.html) [资料3](https://saiyo.jr-central.co.jp/company/business/conventional.html) [资料4](https://smart-ex.jp/en/beginner/equipment/kodama08/) [资料5](https://smart-ex.jp/en/beginner/equipment/railstar/) |
+| 特急 / 经典｜急行色 | キハ55形 / 急行色 | 标准种别与列车名 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.tomytec.co.jp/tomix/products/n/98111.html) |
+| 特急 / 经典｜急行形気動車 | キハ58系 / 急行形気動車 | 标准种别与列车名 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/kiha58) |
+| 特急 / 经典｜いなほ | キハ81系 / いなほ | Green Car、カフェ / ラウンジ | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/kiha81) |
+| 特急 / 经典｜つばさ | キハ181系 / つばさ | Green Car、カフェ / ラウンジ | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/kiha181) |
+| 特急 / 经典｜アルプス | 165系 / アルプス | Green Car、カフェ / ラウンジ | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/165kei) |
+| 特急 / 经典｜ひばり | 485系初期形 / ひばり | Green Car | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/485kei_hibari) |
+| 特急 / 经典｜ゆうづる | 583系 / ゆうづる | 寝台 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/583kei) |
+| 特急 / 经典｜あさかぜ | 20系 / あさかぜ | 寝台 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/20kei_asakaze_syoki) |
+| 特急 / 经典｜あけぼの | 24系 / あけぼの | 寝台、個室 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/24kei_akebono) |
+| 特急 / 经典｜カシオペア | E26系 / カシオペア | 寝台、個室、カフェ / ラウンジ | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.tomytec.co.jp/tomix/products/n/98616.html) |
 | 通勤 / 京浜東北線 | E233系1000番台 / 京浜東北線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.jreast.co.jp/train/local/e233.html) |
 | 通勤 / 上野東京ライン | E233系3000番台 / 上野東京ライン | Green Car | グリーン車連結の通勤・近郊列車 | [资料1](https://www.jreast.co.jp/multi/green/index.html) [资料2](https://www.jreast.co.jp/press/2024/20240910_ho02.pdf) |
 | 通勤 / 山手線 | E235系0番台 / 山手線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.jreast.co.jp/train/local/e235.html) |
@@ -65,6 +75,10 @@
 | 通勤 / 湘南新宿ライン | E233系3000番台 / 湘南新宿ライン | Green Car | グリーン車連結の通勤・近郊列車 | [资料1](https://www.jreast.co.jp/multi/green/index.html) [资料2](https://www.jreast.co.jp/press/2024/20240910_ho02.pdf) |
 | 通勤 / 武蔵野線 | E231系0番台 / 武蔵野線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.jreast.co.jp/train/local/e231.html) |
 | 通勤 / 相模線 | E131系500番台 / 相模線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.jreast.co.jp/train/local/e131.html) |
+| 通勤 / 经典｜国鉄一般色 | キハ20形 / 国鉄一般色 | 标准种别与列车名 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.tomytec.co.jp/tomix/products/n/7422.html) |
+| 通勤 / 经典｜中央線 | 103系 / 中央線 | 标准种别与列车名 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/103kei) |
+| 通勤 / 经典｜東海道本線 | 113系 / 東海道本線 | Green Car | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/113kei_syonan) |
+| 通勤 / 经典｜高崎線 | 115系300番台 / 高崎線 | 标准种别与列车名 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/115kei_300_syonan) |
 | 私铁 / 地方交通 / 東武｜スカイツリー・日光・鬼怒川線 | 東武N100系 / スペーシア X | SPACIA X 文字名牌、個室、カフェ / ラウンジ、Premium Seat | 通常の種別・列車名表示 | [资料1](https://www.tobu.co.jp/railway/special_express/vehicle/) |
 | 私铁 / 地方交通 / 東武｜スカイツリー・日光・鬼怒川線 | 東武100系 / スペーシア | SPACIA 文字名牌、個室 | 通常の種別・列車名表示 | [资料1](https://www.tobu.co.jp/railway/special_express/vehicle/) |
 | 私铁 / 地方交通 / 東武｜スカイツリー・日光・鬼怒川線 | 東武500系 / リバティけごん | Revaty 文字名牌 | 通常の種別・列車名表示 | [资料1](https://www.tobu.co.jp/railway/special_express/vehicle/) |
@@ -129,6 +143,8 @@
 | 特急 / 伯備線 | 273系 / やくも | Green Car | 通常の種別・列車名表示 | [资料1](https://www.jr-odekake.net/railroad/yakumo/) |
 | 特急 / 山陽・伯備線（寝台） | 285系 / サンライズ出雲 | SUNRISE 文字名牌、寝台、個室 | 寝台・個室の標識。Green Car として扱わない | [资料1](https://www.westjr.co.jp/company/info/issue/data/pdf/data2025_15.pdf) [资料2](https://www.jr-odekake.net/railroad/train/category/) |
 | 特急 / 山陽・瀬戸大橋線（寝台） | 285系 / サンライズ瀬戸 | SUNRISE 文字名牌、寝台、個室 | 寝台・個室の標識。Green Car として扱わない | [资料1](https://www.westjr.co.jp/company/info/issue/data/pdf/data2025_15.pdf) [资料2](https://www.jr-odekake.net/railroad/train/category/) |
+| 特急 / 经典｜日本海 | 24系 / 日本海 | 寝台 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/24kei_nihonkai) |
+| 特急 / 经典｜トワイライトエクスプレス | 24系25形 / トワイライトエクスプレス | 寝台、個室、カフェ / ラウンジ | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/24kei_twilight) |
 | 通勤 / 琵琶湖・JR京都・JR神戸線 | 225系 / 新快速 | 标准种别与列车名 | 手动选配 A-SEAT。A-SEAT は対応列車のみ。必要に応じて個別に有効化 | [资料1](https://www.jr-odekake.net/railroad/train/category/) |
 | 通勤 / 琵琶湖・JR京都・JR神戸線 | 223系 / 新快速 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.westjr.co.jp/company/info/issue/data/pdf/data2025_15.pdf) |
 | 通勤 / 琵琶湖・JR京都・JR神戸線 | 321系 / JR京都・神戸線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.westjr.co.jp/company/info/issue/data/pdf/data2025_15.pdf) |
@@ -143,6 +159,8 @@
 | 通勤 / 嵯峨野線 | 221系 / 嵯峨野線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.westjr.co.jp/company/info/issue/data/pdf/data2025_15.pdf) |
 | 通勤 / おおさか東線 | 221系 / おおさか東線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.westjr.co.jp/company/info/issue/data/pdf/data2025_15.pdf) |
 | 通勤 / 山陽本線（広島地区） | 227系0番台 / 山陽本線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.westjr.co.jp/company/info/issue/data/pdf/data2025_15.pdf) |
+| 通勤 / 经典｜首都圏色 | キハ52形 / 首都圏色 | 标准种别与列车名 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/kiha52kei_shutoken) |
+| 通勤 / 经典｜首都圏色 | キハ47形 / 首都圏色 | 标准种别与列车名 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/kiha40) |
 | 私铁 / 地方交通 / 近鉄｜天理線 | 近鉄8A系 / 天理線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://www.kintetsu.jp/kouhou/Train/8a-1a-6a.html) |
 | 私铁 / 地方交通 / 近鉄｜大阪・名古屋線（名阪特急） | 近鉄80000系 / ひのとり | ひのとり 官方图案、Premium Seat | 全席指定・プレミアム車両あり。近鉄公式ひのとり図案 | [资料1](https://www.kintetsu.jp/kouhou/Train/hinotori.html) |
 | 私铁 / 地方交通 / 近鉄｜大阪・名古屋線（名阪特急） | 近鉄21000系 / アーバンライナー | URBAN LINER plus 文字名牌、Deluxe | 通常の種別・列車名表示 | [资料1](https://www.kintetsu.jp/kouhou/Train/list_type.html) [资料2](https://www.kintetsu.jp/kouhou/Train/B06.html) |
@@ -222,6 +240,7 @@
 | 通勤 / 東海道本線（名古屋地区） | 313系5000番台 / 東海道本線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://railway.jr-central.co.jp/train/express/detail_02_07/index.html) |
 | 通勤 / 東海道本線（静岡地区） | 315系3000番台 / 東海道本線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://railway.jr-central.co.jp/315s/index.html) |
 | 通勤 / 関西本線（名古屋地区） | 315系3000番台 / 関西本線 | 标准种别与列车名 | 通常の種別・列車名表示 | [资料1](https://railway.jr-central.co.jp/315s/index.html) |
+| 通勤 / 经典｜首都圏色 | キハ40形2000番台 / 首都圏色 | 标准种别与列车名 | 经典／历史车型。模型演示时间可自行修改，不是2026年实际班次。 | [资料1](https://www.katomodels.com/product/n/kiha40) |
 | 私铁 / 地方交通 / 名鉄｜常滑・空港線 | 名鉄2000系 / ミュースカイ | μSKY 文字名牌、特別車、空港アクセス | 全車特別車 μSKY。JR Green Car ではない | [资料1](https://www.meitetsu.co.jp/location/location/vehicle.html) |
 | 私铁 / 地方交通 / 名鉄｜名古屋本線 | 名鉄2200系 / 名鉄特急 | 特別車 | 一部特別車。JR Green Car ではない | [资料1](https://www.meitetsu.co.jp/location/location/vehicle.html) |
 | 私铁 / 地方交通 / 名鉄｜名古屋本線 | 名鉄1200系 / 名鉄特急 | Panorama super 文字名牌、特別車、展望車 | 通常の種別・列車名表示 | [资料1](https://www.meitetsu.co.jp/library/rolling_stock/detail_exp/1200.html) |

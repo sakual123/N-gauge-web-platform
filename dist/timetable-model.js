@@ -7,7 +7,7 @@
   const trips=id=>data.presets[id]?.departures||[];
   const direction=t=>t.direction||t.destination+'方面';
   const coverage=id=>data.presets[id]?.coverage||{level:'partial',scope:'已收录代表班次，尚未收齐全天'};
-  const coverageLabels={full:'所列范围全天已收齐',partial:'尚有缺口',inactive:'周日无运行班次／历史参考'};
+  const coverageLabels={model:'模型演示 · 未录真实时刻',full:'所列范围全天已收齐',partial:'尚有缺口',inactive:'周日无运行班次／历史参考'};
   function filterTrips(id,filters={}){
     const query=String(filters.q||'').normalize('NFKC').toLowerCase().trim().split(/\s+/).filter(Boolean);
     const period=/^\d{2}-\d{2}$/.test(filters.period||'')?filters.period.split('-').map(Number):null;

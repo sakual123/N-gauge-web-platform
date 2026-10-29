@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..'),ctx={window:{}};vm.createContext(ctx);
 for(const file of ['catalog','catalog-regions','catalog-expanded','special-services','journey-data','timetable-data','timetable-model','model','journey-model'])vm.runInContext(fs.readFileSync(path.join(root,'dist',file+'.js'),'utf8'),ctx,{filename:file});
 const D=ctx.window.RAIL_DATA,M=ctx.window.RAIL_MODEL,J=D.journeyModel,s=M.defaults();
 const row=id=>M.makeRow('test',1,id,'20:08');
-assert.equal(D.vehicles.length,247);assert.equal(D.regions.length,6);
+assert.equal(D.vehicles.length,266);assert.equal(D.regions.length,6);
 for(const v of D.vehicles){const r=row(v.id),info=J.message(s,r);assert(info.title&&info.calls.text&&info.seat.text,v.id);assert(!info.calls.needsCustom,v.id+' default stops');for(const destination of v.destinations)assert(!J.stops({...r,destination},v).needsCustom,v.id+' '+destination);}
 s.rows.forEach((r,i)=>r.time=['20:08','20:17','20:11','20:21'][i]);s.ticker.clock='model';s.ticker.modelTime='20:09';assert.equal(J.nearest(s).id,'inner-first');s.ticker.target='platform1';assert.equal(J.nearest(s).id,'outer-next');s.ticker.target='outer-first';assert.equal(J.nearest(s).id,'outer-first');
 s.ticker.target='nearest';s.ticker.modelTime='23:58';s.rows.forEach((r,i)=>r.time=['00:02','23:59','00:01','23:57'][i]);assert.equal(J.nearest(s).id,'outer-next');s.ticker.modelTime='00:00';assert.equal(J.nearest(s).id,'inner-first');

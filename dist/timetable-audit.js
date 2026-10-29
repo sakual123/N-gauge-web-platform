@@ -5,7 +5,7 @@
  const rows=D.vehicles.flatMap(v=>TT.trips(v.id).map(t=>({v,t,c:TT.coverage(v.id),search:[v.id,v.label,v.series,v.route,t.time,t.origin,t.destination,t.number,t.trainNumber,t.type,t.displayName].filter(Boolean).join(' ').normalize('NFKC').toLowerCase()})));
  function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
  function stat(value,label){const n=el('div',undefined,'stat');n.append(el('strong',Number(value||0).toLocaleString()),el('span',label));return n;}
- $('stats').append(stat(D.vehicles.length,'车辆／服务预设'),stat(rows.length,'参考记录（含共用班次）'),stat(TT.data.coverageCounts.full,'所列范围全天'),stat(TT.data.coverageCounts.partial,'尚有缺口'));
+ $('stats').append(stat(D.vehicles.length,'车辆／服务预设'),stat(rows.length,'参考记录（含共用班次）'),stat(TT.data.coverageCounts.full,'所列范围全天'),stat(TT.data.coverageCounts.partial||0,'尚有缺口'));
  for(const v of D.vehicles){const o=el('option',v.label);o.value=v.id;$('vehicle').append(o);}for(const r of D.regions){const o=el('option',r.label);o.value=r.id;$('region').append(o);}for(const [key,label] of Object.entries(TT.labels)){const o=el('option',label);o.value=key;$('status').append(o);}
  function sourceCell(t){const td=el('td');if(/^https:\/\//.test(t.source)){const a=el('a',t.sourceTitle||'官方来源 ↗');a.href=t.source;a.target='_blank';a.rel='noopener noreferrer';td.append(a);}return td;}
  function render(){

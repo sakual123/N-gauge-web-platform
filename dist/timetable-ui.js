@@ -7,8 +7,8 @@
   function editor(row,state,onApply){
     const all=TT.trips(row.vehicleId),coverage=TT.coverage(row.vehicleId),key=row.id+':'+row.vehicleId;
     const filter={origin:'',direction:'',period:'',q:'',...filterMemory.get(key)};
-    const panel=e('div','timetable-panel'),caption=e('div','timetable-caption','固定班次 · '+TT.data.date+' 周日 · 日本时间');
-    const details=e('details','reference-details'),toggle=e('summary','',`官方参考班次 · ${all.length} 班`),preview=e('p','reference-preview');details.open=openMemory.get(key)||false;details.addEventListener('toggle',()=>openMemory.set(key,details.open));
+    const panel=e('div','timetable-panel'),caption=e('div','timetable-caption',coverage.level==='model'?'模型演示 · 时间可自定':'固定班次 · '+TT.data.date+' 周日 · 日本时间');
+    const details=e('details','reference-details'),toggle=e('summary','',coverage.level==='model'?'历史车型 · 模型演示配置':`官方参考班次 · ${all.length} 班`),preview=e('p','reference-preview');details.open=openMemory.get(key)||false;details.addEventListener('toggle',()=>openMemory.set(key,details.open));
     const summary=e('div','timetable-coverage',`已收录 ${all.length} 班 · ${TT.coverageLabels[coverage.level]||'尚有缺口'}`);summary.dataset.level=coverage.level;
     const scope=e('div','reference-note','范围：'+coverage.scope);
     const grid=e('div','field-grid timetable-filters');

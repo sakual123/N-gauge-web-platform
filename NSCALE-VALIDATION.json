@@ -1,12 +1,12 @@
 {
   "result": "PASS",
-  "assemblies": 89,
+  "assemblies": 96,
   "assemblyCarCountsAndSources": true,
   "assemblyComponentFiltering": true,
   "radiusProducts": 17,
-  "presets": 247,
-  "products": 608,
-  "codedProducts": 603,
+  "presets": 266,
+  "products": 642,
+  "codedProducts": 637,
   "unlistedCodeProducts": 5,
   "multiMakerPresets": 72,
   "makers": [
@@ -21,7 +21,7 @@
     "PERMIL",
     "HEYANONAKA"
   ],
-  "verifiedPresets": 224,
+  "verifiedPresets": 243,
   "variantOnlyPresets": 5,
   "unverifiedPresets": 18,
   "exactDataRoundtrip": true,

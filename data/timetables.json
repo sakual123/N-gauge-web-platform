@@ -4,15 +4,16 @@
   "weekday": "日曜日",
   "timezone": "Asia/Tokyo",
   "frozen": true,
-  "presetCount": 247,
-  "departureCount": 17184,
+  "presetCount": 266,
+  "departureCount": 17203,
   "statusCounts": {
     "holiday": 5528,
     "dated": 11402,
     "calendar": 20,
     "daily": 230,
     "legacy": 2,
-    "weekday": 2
+    "weekday": 2,
+    "model": 19
   },
   "presetStatusCounts": {
     "holiday": 91,
@@ -20,11 +21,13 @@
     "calendar": 4,
     "daily": 7,
     "legacy": 2,
-    "weekday": 2
+    "weekday": 2,
+    "model": 19
   },
   "coverageCounts": {
     "full": 243,
-    "inactive": 4
+    "inactive": 4,
+    "model": 19
   },
   "presets": {
     "kt50000-shimakaze": {
@@ -402871,6 +402874,519 @@
       "region": "shikoku",
       "route": "sq-marineliner",
       "note": "10/25服务时刻已核；车型混用、替代与具体车底另核，不保证本系列执行每一班。"
+    },
+    "classic-kiha20": {
+      "label": "キハ20形 国鉄一般色（国鉄・歴史）",
+      "region": "east",
+      "route": "classic-kiha20",
+      "departures": [
+        {
+          "id": "classic-kiha20-model",
+          "time": "20:00",
+          "origin": "模型駅",
+          "destination": "模型町",
+          "number": "",
+          "type": "普通",
+          "source": "https://www.tomytec.co.jp/tomix/products/n/7422.html",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "classic-kiha52": {
+      "label": "キハ52形 首都圏色（国鉄・歴史）",
+      "region": "west",
+      "route": "classic-kiha52",
+      "departures": [
+        {
+          "id": "classic-kiha52-model",
+          "time": "20:01",
+          "origin": "模型駅",
+          "destination": "模型町",
+          "number": "",
+          "type": "普通",
+          "source": "https://www.katomodels.com/product/n/kiha52kei_shutoken",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "classic-kiha55": {
+      "label": "キハ55形 急行色（国鉄・歴史）",
+      "region": "east",
+      "route": "classic-kiha55",
+      "departures": [
+        {
+          "id": "classic-kiha55-model",
+          "time": "20:02",
+          "origin": "模型駅",
+          "destination": "模型町",
+          "number": "",
+          "type": "急行",
+          "source": "https://www.tomytec.co.jp/tomix/products/n/98111.html",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "classic-kiha58": {
+      "label": "キハ58系 急行形気動車（国鉄・歴史）",
+      "region": "east",
+      "route": "classic-kiha58",
+      "departures": [
+        {
+          "id": "classic-kiha58-model",
+          "time": "20:03",
+          "origin": "模型駅",
+          "destination": "模型町",
+          "number": "",
+          "type": "急行",
+          "source": "https://www.katomodels.com/product/n/kiha58",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "classic-kiha40": {
+      "label": "キハ40形2000番台 首都圏色（国鉄・歴史）",
+      "region": "tokai",
+      "route": "classic-kiha40",
+      "departures": [
+        {
+          "id": "classic-kiha40-model",
+          "time": "20:04",
+          "origin": "模型駅",
+          "destination": "模型町",
+          "number": "",
+          "type": "普通",
+          "source": "https://www.katomodels.com/product/n/kiha40",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "classic-kiha47": {
+      "label": "キハ47形 首都圏色（国鉄・歴史）",
+      "region": "west",
+      "route": "classic-kiha47",
+      "departures": [
+        {
+          "id": "classic-kiha47-model",
+          "time": "20:05",
+          "origin": "模型駅",
+          "destination": "模型町",
+          "number": "",
+          "type": "普通",
+          "source": "https://www.katomodels.com/product/n/kiha40",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "classic-kiha81-inaho": {
+      "label": "キハ81系 いなほ（国鉄・歴史）",
+      "region": "east",
+      "route": "classic-kiha81-inaho",
+      "departures": [
+        {
+          "id": "classic-kiha81-inaho-model",
+          "time": "20:06",
+          "origin": "上野",
+          "destination": "新潟",
+          "number": "",
+          "type": "特急",
+          "source": "https://www.katomodels.com/product/n/kiha81",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "classic-kiha181-tsubasa": {
+      "label": "キハ181系 つばさ（国鉄・歴史）",
+      "region": "east",
+      "route": "classic-kiha181-tsubasa",
+      "departures": [
+        {
+          "id": "classic-kiha181-tsubasa-model",
+          "time": "20:07",
+          "origin": "上野",
+          "destination": "秋田",
+          "number": "",
+          "type": "特急",
+          "source": "https://www.katomodels.com/product/n/kiha181",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl103-chuo": {
+      "label": "103系 中央線",
+      "region": "east",
+      "route": "cl103-chuo",
+      "departures": [
+        {
+          "id": "cl103-chuo-model",
+          "time": "20:08",
+          "origin": "東京",
+          "destination": "高尾",
+          "number": "",
+          "type": "普通",
+          "source": "https://www.katomodels.com/product/n/103kei",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl113-tokaido": {
+      "label": "113系 東海道本線",
+      "region": "east",
+      "route": "cl113-tokaido",
+      "departures": [
+        {
+          "id": "cl113-tokaido-model",
+          "time": "20:09",
+          "origin": "東京",
+          "destination": "熱海",
+          "number": "",
+          "type": "普通",
+          "source": "https://www.katomodels.com/product/n/113kei_syonan",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl115-takasaki": {
+      "label": "115系300番台 高崎線",
+      "region": "east",
+      "route": "cl115-takasaki",
+      "departures": [
+        {
+          "id": "cl115-takasaki-model",
+          "time": "20:10",
+          "origin": "上野",
+          "destination": "高崎",
+          "number": "",
+          "type": "普通",
+          "source": "https://www.katomodels.com/product/n/115kei_300_syonan",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl165-alps": {
+      "label": "165系 アルプス",
+      "region": "east",
+      "route": "cl165-alps",
+      "departures": [
+        {
+          "id": "cl165-alps-model",
+          "time": "20:11",
+          "origin": "新宿",
+          "destination": "松本",
+          "number": "",
+          "type": "急行",
+          "source": "https://www.katomodels.com/product/n/165kei",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl485-hibari": {
+      "label": "485系初期形 ひばり",
+      "region": "east",
+      "route": "cl485-hibari",
+      "departures": [
+        {
+          "id": "cl485-hibari-model",
+          "time": "20:12",
+          "origin": "上野",
+          "destination": "仙台",
+          "number": "",
+          "type": "特急",
+          "source": "https://www.katomodels.com/product/n/485kei_hibari",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl583-yuzuru": {
+      "label": "583系 ゆうづる",
+      "region": "east",
+      "route": "cl583-yuzuru",
+      "departures": [
+        {
+          "id": "cl583-yuzuru-model",
+          "time": "20:13",
+          "origin": "上野",
+          "destination": "青森",
+          "number": "",
+          "type": "寝台特急",
+          "source": "https://www.katomodels.com/product/n/583kei",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl20-asakaze": {
+      "label": "20系 あさかぜ",
+      "region": "east",
+      "route": "cl20-asakaze",
+      "departures": [
+        {
+          "id": "cl20-asakaze-model",
+          "time": "20:14",
+          "origin": "東京",
+          "destination": "博多",
+          "number": "",
+          "type": "寝台特急",
+          "source": "https://www.katomodels.com/product/n/20kei_asakaze_syoki",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl24-akebono": {
+      "label": "24系 あけぼの",
+      "region": "east",
+      "route": "cl24-akebono",
+      "departures": [
+        {
+          "id": "cl24-akebono-model",
+          "time": "20:15",
+          "origin": "上野",
+          "destination": "青森",
+          "number": "",
+          "type": "寝台特急",
+          "source": "https://www.katomodels.com/product/n/24kei_akebono",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl24-nihonkai": {
+      "label": "24系 日本海",
+      "region": "west",
+      "route": "cl24-nihonkai",
+      "departures": [
+        {
+          "id": "cl24-nihonkai-model",
+          "time": "20:16",
+          "origin": "大阪",
+          "destination": "青森",
+          "number": "",
+          "type": "寝台特急",
+          "source": "https://www.katomodels.com/product/n/24kei_nihonkai",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl24-twilight": {
+      "label": "24系25形 トワイライトエクスプレス",
+      "region": "west",
+      "route": "cl24-twilight",
+      "departures": [
+        {
+          "id": "cl24-twilight-model",
+          "time": "20:17",
+          "origin": "大阪",
+          "destination": "札幌",
+          "number": "",
+          "type": "寝台特急",
+          "source": "https://www.katomodels.com/product/n/24kei_twilight",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
+    },
+    "cl26-cassiopeia": {
+      "label": "E26系 カシオペア",
+      "region": "east",
+      "route": "cl26-cassiopeia",
+      "departures": [
+        {
+          "id": "cl26-cassiopeia-model",
+          "time": "20:18",
+          "origin": "上野",
+          "destination": "札幌",
+          "number": "",
+          "type": "寝台特急",
+          "source": "https://www.tomytec.co.jp/tomix/products/n/98616.html",
+          "sourceTitle": "厂家车型资料（非历史时刻表）",
+          "status": "model",
+          "note": "模型演示时间，不是实车或2026-10-25班次。可手动设置；历史编成、停站及席别请按拟再现年代自定义。",
+          "evidence": "仅据厂家资料建立车型；未取得可核实的历史完整时刻，未虚构历史发车表。",
+          "date": "2026-10-25",
+          "timezone": "Asia/Tokyo"
+        }
+      ],
+      "coverage": {
+        "level": "model",
+        "count": 1,
+        "scope": "历史车型模型演示；不计入真实全天班次覆盖"
+      }
     }
   }
 }

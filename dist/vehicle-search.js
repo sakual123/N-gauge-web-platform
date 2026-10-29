@@ -5,7 +5,7 @@
   const compact=value=>fold(value).replace(/[\s・._‐‑‒–—−'’\-]/g,'');
   const entries=D.vehicles.map((vehicle,index)=>{
     const region=D.regions.find(r=>r.id===vehicle.region),category=D.categories.find(c=>c.id===vehicle.category);
-    return {vehicle,index,series:compact(vehicle.series.replace(/系.*$/,'')),label:compact(vehicle.label),text:compact([vehicle.label,vehicle.series,vehicle.series.replace(/系|番台/g,''),vehicle.name,vehicle.en,D.routes[vehicle.route]?.label,D.lines[vehicle.line]?.name,region?.label,category?.label].join(' '))};
+    return {vehicle,index,series:compact(vehicle.series.replace(/系.*$/,'')),label:compact(vehicle.label),text:compact([vehicle.label,vehicle.series,vehicle.series.replace(/系|番台/g,''),vehicle.name,vehicle.en,D.routes[vehicle.route]?.label,D.lines[vehicle.line]?.name,region?.label,category?.label,...(vehicle.searchAliases||[])].join(' '))};
   });
   function search(query){
     const terms=fold(query).replace(/([a-z0-9])([\u3040-\u30ff\u3400-\u9fff])/g,'$1 $2').replace(/([\u3040-\u30ff\u3400-\u9fff])([a-z0-9])/g,'$1 $2').trim().split(/\s+/).map(compact).filter(Boolean);if(!terms.length)return [];
