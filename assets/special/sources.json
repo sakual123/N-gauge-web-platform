@@ -1,0 +1,74 @@
+[
+  {
+    "file": "green-car.png",
+    "url": "https://www.jrhokkaido.co.jp/train/img/m-img1.png",
+    "page": "https://www.jrhokkaido.co.jp/train/tr033_01.html",
+    "author": "JR Hokkaido",
+    "bytes": 1555,
+    "sha256": "51f11b7a78c10569f84940af6c7eb09b57a8a8ea38dc5d8a519c9378dba5c4eb",
+    "modified": false
+  },
+  {
+    "file": "u-seat.png",
+    "url": "https://www.jrhokkaido.co.jp/train/img/m-img4.png",
+    "page": "https://www.jrhokkaido.co.jp/train/tr033_01.html",
+    "author": "JR Hokkaido",
+    "bytes": 1752,
+    "sha256": "13d443d83c35af914463602dccfe9b7b4a361a5717a042a95a479b25dd893993",
+    "modified": false
+  },
+  {
+    "file": "granclass.png",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Granclass_logo.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Granclass_logo.png",
+    "author": "JR East; official-source copy on Wikimedia Commons",
+    "bytes": 4582,
+    "sha256": "09878724a1ed44b8c794dfdf00d8b16680110848104b27c0c344a7b25fdc2655",
+    "modified": false
+  },
+  {
+    "file": "privace.svg",
+    "url": "https://www.hankyu.co.jp/privace/img/c_logo_brand.svg",
+    "page": "https://www.hankyu.co.jp/privace/index.html",
+    "author": "Hankyu",
+    "bytes": 14884,
+    "sha256": "a5a05dde1099f31bd0a6a9f16998c6a4e59d1a1d0dcdaf6947febf0ad1a1e271",
+    "modified": false
+  },
+  {
+    "file": "shimakaze.png",
+    "url": "https://www.kintetsu.co.jp/senden/shimakaze/assets/img/global/logo_white.png",
+    "page": "https://www.kintetsu.co.jp/senden/shimakaze/",
+    "author": "Kintetsu",
+    "bytes": 11420,
+    "sha256": "c4cb6b9438f3d328699cbda0d59cebdc14a7dc3e7d203e755e3470b999530850",
+    "modified": false
+  },
+  {
+    "file": "aoniyoshi.png",
+    "url": "https://www.kintetsu.co.jp/senden/aoniyoshi/images/top/mv_logo.png",
+    "page": "https://www.kintetsu.co.jp/senden/aoniyoshi/",
+    "author": "Kintetsu",
+    "bytes": 34218,
+    "sha256": "6f158b8c2168ba77eed85f1e496270abf23a17873541c7eccb4e6df14598a76d",
+    "modified": false
+  },
+  {
+    "file": "blue-symphony.png",
+    "url": "https://www.kintetsu.co.jp/senden/blue_symphony/assets/img/common/common_footer_logo01.png",
+    "page": "https://www.kintetsu.co.jp/senden/blue_symphony/",
+    "author": "Kintetsu",
+    "bytes": 6235,
+    "sha256": "e25bd9008b7ffa73ae6b2a27d3a6e3abcaf26b85182c8cee68af6b2956df5222",
+    "modified": false
+  },
+  {
+    "file": "premiumcar.png",
+    "url": "https://www.keihan.co.jp/traffic/premiumcar/img/main-lead-01.png",
+    "page": "https://www.keihan.co.jp/traffic/premiumcar/train/",
+    "author": "Keihan",
+    "bytes": 12074,
+    "sha256": "906a6dd89375b56fbedf5340ac59f7d2609849ba46a0d799926761873cf36d91",
+    "modified": false
+  }
+]
