@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="themes.css?v=14-final3">
   <link rel="stylesheet" href="nscale.css?v=14-final3"><link rel="stylesheet" href="formation-guide.css?v=14-final3">
   <link rel="stylesheet" href="experience.css?v=14-final3"><link rel="stylesheet" href="reading.css?v=14-final3">
+  <link rel="stylesheet" href="settings.css?v=16.1">
   <title>模型駅 · 列車ご案内</title>
 </head>
 <body>
@@ -31,8 +32,8 @@
   <button type="button" class="settings-trigger" id="open-settings" aria-label="打开列车设置" aria-controls="settings" aria-expanded="false" title="列车设置"><span aria-hidden="true">···</span></button>
   <button type="button" class="sound-trigger" id="sound-toggle" title="启用日语到站播报" aria-label="切换到站播报声音" aria-pressed="false">♫</button>
   <div class="shade" id="shade" hidden></div>
-  <aside class="editor" id="settings" role="dialog" aria-modal="true" aria-labelledby="settings-title" hidden>
-    <div class="editor-header"><div><p class="editor-eyebrow">MODEL STATION / SETTINGS</p><h1 id="settings-title">列车设置</h1></div><button type="button" class="done" id="close-settings">完成</button></div>
+  <aside class="editor" id="settings" lang="zh-CN" role="dialog" aria-modal="true" aria-labelledby="settings-title" hidden>
+    <div class="editor-header"><h1 id="settings-title">列车设置</h1><button type="button" class="done" id="close-settings">完成</button></div>
     <div class="editor-nav" role="tablist" aria-label="设置分类"><button type="button" role="tab" id="editor-tab-trains" data-editor-view="trains" aria-controls="train-view" aria-selected="true">列车</button><button type="button" role="tab" id="editor-tab-display" data-editor-view="display" aria-controls="display-view" aria-selected="false">屏幕</button><button type="button" role="tab" id="editor-tab-audio" data-editor-view="audio" aria-controls="audio-view" aria-selected="false">声音</button></div>
     <div id="train-tools" data-editor-section="trains"><p class="editor-subtitle" id="catalog-summary"></p><div class="platform-tabs" role="tablist" aria-label="选择站台"><button type="button" class="platform-tab" id="tab-1" role="tab" aria-selected="true" aria-controls="train-view" data-platform="1"><b>1</b>站台 · 外圈</button><button type="button" class="platform-tab" id="tab-2" role="tab" aria-selected="false" aria-controls="train-view" data-platform="2"><b>2</b>站台 · 内圈</button></div><div class="row-selectors" id="row-selectors" role="tablist" aria-label="选择先发或次发列车"></div></div>
     <div class="editor-scroll" id="editor-scroll">

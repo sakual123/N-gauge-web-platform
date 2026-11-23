@@ -1,0 +1,378 @@
+/* Keep the light interface inside the settings drawer. */
+#settings {
+  --surface: #fff;
+  --canvas: #f5f6f8;
+  --fill: #eef0f4;
+  --ink: #20232a;
+  --muted: #535d6d;
+  --line: #d9dee6;
+  --accent: #005bc5;
+  --selection: #e9f2ff;
+  --radius: 16px;
+  --gutter: clamp(16px, 4vw, 28px);
+  --control-font: 1rem;
+  --label-font: .875rem;
+  --detail-font: .8125rem;
+  --body-font: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+  --rounded-font: ui-rounded, "SF Pro Rounded", "Avenir Next", var(--body-font);
+  color-scheme: light;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--canvas);
+  border: 0;
+  width: min(560px, 100%);
+  box-shadow: -14px 16px 54px #080b1555;
+}
+
+html[data-reading="large"] #settings {
+  --control-font: 1.125rem;
+  --label-font: 1rem;
+  --detail-font: .9375rem;
+}
+
+#settings .editor-header {
+  padding: 24px var(--gutter) 16px;
+}
+
+#settings-title {
+  font: 750 clamp(1.65rem, 4vw, 2rem)/1.15 var(--rounded-font);
+  letter-spacing: -.025em;
+}
+
+#settings :is(button, input, select, textarea) { font-family: inherit; }
+#settings :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+#settings a {
+  color: var(--accent);
+  font-size: var(--label-font);
+  font-weight: 600;
+  text-decoration-thickness: from-font;
+  text-underline-offset: .2em;
+}
+#settings a:hover { text-decoration: underline; }
+
+#settings .done {
+  flex-shrink: 0;
+  min-width: 68px;
+  min-height: 44px;
+  padding: 9px 19px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font: 700 var(--label-font)/1.25 var(--rounded-font);
+}
+
+#settings .done:hover { background: #004ca6; }
+
+#settings .editor-nav {
+  gap: 3px;
+  margin: 0 var(--gutter) 14px;
+  padding: 4px;
+  background: #e7ebf1;
+  border: 1px solid #e1e5ec;
+  border-radius: 15px;
+}
+
+#settings .editor-nav button {
+  min-height: 44px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  color: var(--muted);
+  font: 700 var(--label-font)/1.25 var(--rounded-font);
+}
+
+#settings .editor-nav button:hover { background: #ffffff80; }
+#settings .editor-nav button[aria-selected="true"] {
+  color: var(--ink);
+  background: var(--surface);
+  border-color: #e1e5ed;
+  box-shadow: 0 1px 3px #20283a1a;
+}
+
+#settings .editor-subtitle {
+  padding: 0 var(--gutter) 10px;
+  color: var(--muted);
+  font-size: var(--detail-font);
+}
+
+#settings .platform-tabs, #settings .row-selectors {
+  padding-inline: var(--gutter);
+  gap: 9px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#settings .platform-tabs { padding-bottom: 9px; }
+#settings .platform-tab {
+  min-height: 44px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--surface);
+  color: var(--muted);
+  font: 650 var(--label-font)/1.3 var(--rounded-font);
+}
+
+#settings .platform-tab b {
+  font: 750 1.0625rem/1 var(--rounded-font);
+  margin-inline-end: 6px;
+}
+
+#settings .platform-tab[aria-selected="true"] {
+  background: var(--selection);
+  color: var(--accent);
+  border-color: #9fbee9;
+}
+
+#settings .row-selectors {
+  padding-bottom: 14px;
+  border-color: var(--line);
+}
+
+#settings .row-selector {
+  min-height: 80px;
+  padding: 8px 11px 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: inset 3px 0 var(--row-color, var(--line));
+}
+
+#settings .row-selector:hover { border-color: #9bb1ce; }
+#settings .row-selector[aria-selected="true"] {
+  background: #edf4ff;
+  border-color: #7fa8db;
+  color: var(--ink);
+}
+
+#settings .row-pick-top { margin-bottom: 4px; }
+#settings .row-pick-order,
+#settings .row-pick-destination {
+  color: var(--muted);
+  font-size: var(--detail-font);
+  line-height: 1.3;
+  letter-spacing: normal;
+}
+
+#settings .row-pick-order { font-weight: 650; }
+#settings .row-pick-time { font: 750 1.25rem/1.1 var(--rounded-font); font-variant-numeric: tabular-nums; }
+#settings .row-pick-name { font-size: var(--label-font); font-weight: 700; }
+#settings .row-pick-destination { margin-top: 3px; }
+
+#settings .editor-scroll {
+  min-height: 0;
+  padding: 16px var(--gutter) 22px;
+  scrollbar-color: #9ba7b7 transparent;
+  scroll-padding-block: 12px;
+}
+
+#settings .reference-toolbar { padding: 0; margin-bottom: 16px; gap: 8px 14px; }
+#settings .row-editor {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+}
+
+#settings .row-editor h2 {
+  margin: 0 0 13px;
+  gap: 8px;
+  color: var(--ink);
+  font: 750 1.1875rem/1.3 var(--rounded-font);
+}
+
+#settings .row-editor h2 span { color: var(--muted); font-size: var(--detail-font); font-weight: 600; }
+#settings .field-grid { gap: 10px 13px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#settings .field-grid > * { min-width: 0; }
+#settings .form-label {
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: var(--label-font);
+  font-weight: 650;
+}
+
+#settings :is(.control, .nscale-maker-select) {
+  min-height: 46px;
+  max-width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f8f9fb;
+  color: var(--ink);
+  color-scheme: light;
+  font: 600 var(--control-font)/1.4 var(--body-font);
+}
+
+#settings :is(.control, .nscale-maker-select):focus {
+  border-color: var(--accent);
+  background-color: var(--surface);
+}
+
+#settings :is(select.control, select.nscale-maker-select) {
+  appearance: none;
+  padding-inline-end: 32px;
+  text-overflow: ellipsis;
+  background-image: linear-gradient(45deg, transparent 50%, #535d6d 50%), linear-gradient(135deg, #535d6d 50%, transparent 50%);
+  background-position: calc(100% - 17px) 52%, calc(100% - 12px) 52%;
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+}
+
+#settings .check-label {
+  gap: 10px;
+  min-height: 44px;
+  color: var(--ink);
+  font-size: var(--label-font);
+  font-weight: 600;
+}
+
+#settings :is(input[type="checkbox"], input[type="range"]) { accent-color: var(--accent); }
+#settings input[type="checkbox"] { flex-shrink: 0; }
+#settings textarea.control { font-weight: 500; }
+
+#settings :is(.secondary, .small-button, .nscale-copy, .model-jump) {
+  min-height: 44px;
+  padding: 7px 13px;
+  color: var(--accent);
+  background: var(--fill);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font: 650 var(--label-font)/1.35 var(--rounded-font);
+}
+
+#settings :is(.secondary, .small-button, .nscale-copy, .model-jump):hover:not(:disabled) { background: var(--selection); border-color: #afc7e6; }
+#settings :is(button, .control):disabled { color: #626c7b; background: #e9edf2; opacity: .85; cursor: default; }
+#settings .secondary.danger { color: #a02932; background: #fff2f2; }
+#settings :is(#enable-audio, #apply-backup) { color: #fff; background: var(--accent); }
+#settings :is(#enable-audio, #apply-backup):hover:not(:disabled) { color: #fff; background: #004ca6; }
+
+#settings :is(.appearance, .vehicle-quick-search, .service-settings, .journey-settings, .nscale-settings) {
+  min-width: 0;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  background: var(--surface);
+}
+
+#settings :is(.appearance, .service-settings, .journey-settings, .nscale-settings) { padding: 0 13px; }
+#settings :is(.appearance, .service-settings, .journey-settings, .nscale-settings)[open] { padding-bottom: 13px; }
+#settings .appearance { margin-bottom: 12px; }
+#settings .vehicle-quick-search { background: #f2f6fc; margin-bottom: 15px; }
+
+#settings summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  list-style: none;
+  cursor: pointer;
+  color: var(--ink);
+  font: 700 var(--label-font)/1.35 var(--rounded-font);
+}
+
+#settings .appearance > summary { font-size: var(--control-font); }
+#settings summary::-webkit-details-marker { display: none; }
+#settings summary::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-inline-end: 4px;
+  border: solid #5e6b7f;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  flex: 0 0 auto;
+}
+
+#settings details[open] > summary::after { transform: rotate(225deg); }
+#settings .editor-help { border-color: var(--line); margin-top: 14px; padding-top: 2px; }
+#settings .editor-help > summary { color: var(--muted); }
+#settings .vehicle-search-result,
+#settings .backup-preview,
+#settings .nscale-product,
+#settings .nscale-assemblies,
+#settings .nscale-assembly {
+  border-color: var(--line);
+  border-radius: 12px;
+  background: #f7f9fc;
+  color: var(--ink);
+}
+
+#settings .vehicle-search-result:hover:not(:disabled) { background: var(--selection); border-color: #9fbee9; }
+#settings .vehicle-search-route { border-radius: 7px; }
+#settings .vehicle-search-label strong { font-size: var(--label-font); font-weight: 700; }
+#settings .vehicle-search-label small, #settings .vehicle-search-arrow { color: var(--muted); font-size: var(--detail-font); }
+#settings .timetable-panel {
+  background: #f2f6fc !important;
+  border-color: #d7e2f1 !important;
+  border-radius: var(--radius) !important;
+  color: var(--ink);
+}
+
+#settings .reference-details[open] .reference-preview,
+#settings .backup-trains li,
+#settings .nscale-radius { border-color: var(--line); }
+#settings :is(.reference-current, .backup-trains strong, .backup-trains time, .nscale-sku, .nscale-title, .nscale-current, .assembly-heading h4, .assembly-heading > strong) { color: var(--ink); }
+#settings :is(.reference-status, .timetable-coverage, .nscale-maker-name) { color: #21566a; font-weight: 700; }
+#settings :is(.reference-status[data-status="model"], .reference-status[data-status="legacy"], .reference-status[data-status="weekday"], .reference-status[data-status="calendar"], .reference-status[data-status="outdated"], .timetable-coverage[data-level="partial"], .timetable-coverage[data-level="inactive"]) { color: #78501d; }
+#settings :is(
+  .reference-preview, .reference-note, .timetable-caption, .timetable-count,
+  .timetable-help, .theme-note, .service-help, .editor-note, .formation-info,
+  .announcement-status, .announcement-preview, .vehicle-search-status,
+  .backup-name, .backup-trains p, .nscale-note, .nscale-series, .nscale-empty,
+  .nscale-result-count, .nscale-radius, .nscale-radius-note, .nscale-copy-status,
+  .assembly-part-code, .assembly-formula, .assembly-note, .assembly-radius,
+  .assembly-help, .assembly-version
+) {
+  color: var(--muted);
+  font-size: var(--detail-font);
+  line-height: 1.6;
+}
+
+#settings :is(.nscale-tags > span, .nscale-maker-name small) {
+  border-color: #cbd8e7;
+  border-radius: 6px;
+  background: #eaf1fa;
+  color: #334862;
+  font-size: var(--detail-font);
+}
+
+#settings .nscale-radius strong { color: var(--ink); }
+#settings .nscale-empty { border-color: var(--line); }
+#settings .assembly-car { border-color: #8d9eae; border-bottom-color: var(--assembly-color, #8d9eae); }
+#settings .editor-footer {
+  padding: 5px var(--gutter);
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+#settings .editor-footer :is(a, .saving) { font-size: var(--detail-font); }
+#settings .editor-footer .saving { color: var(--muted); }
+#settings .editor-footer a { display: inline-flex; align-items: center; min-height: 38px; }
+
+@media (min-width: 700px) and (min-height: 560px) {
+  #settings {
+    top: max(12px, env(safe-area-inset-top));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    right: max(12px, env(safe-area-inset-right));
+    padding-block: 0;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 460px) {
+  #settings .editor-header { padding-block: 15px 11px; }
+  #settings .editor-nav { margin-bottom: 10px; }
+  #settings .row-editor { padding: 13px; }
+  #settings .row-pick-order { font-size: .75rem; }
+}
+
+@media (max-height: 680px) {
+  #settings .editor-header { padding-block: 9px 8px; }
+  #settings .editor-nav { margin-bottom: 8px; }
+  #settings .platform-tabs { padding-bottom: 6px; }
+  #settings .row-selectors { padding-bottom: 8px; }
+  #settings .row-selector { min-height: 58px; padding-block: 7px; }
+  #settings .editor-scroll { padding-top: 10px; }
+}
