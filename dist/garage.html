@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#121a19">
+  <title>我的车库 · 模型駅</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="garage.css?v=15">
+  <script defer src="garage-store.js?v=15"></script>
+  <script defer src="garage.js?v=15"></script>
+</head>
+<body class="garage-page">
+  <main class="garage">
+    <header class="garage-header">
+      <a href="index.html" class="garage-home">模型駅 <span>返回站台</span></a>
+      <a href="nscale-models.html">查找模型品号</a>
+    </header>
+    <section class="garage-intro" aria-labelledby="garage-title">
+      <div>
+        <h1 id="garage-title">我的车库</h1>
+        <p>记录每列模型车的购买与跑车历史。</p>
+      </div>
+      <button type="button" class="primary" id="add-train">添加列车</button>
+    </section>
+    <dl class="garage-stats">
+      <div><dt>收藏列车</dt><dd id="train-count">0</dd></div>
+      <div><dt>累计跑车</dt><dd id="run-count">0</dd></div>
+      <div><dt>最近跑车</dt><dd id="last-run">暂无记录</dd></div>
+    </dl>
+    <noscript><p>请启用 JavaScript 来查看和编辑车库。</p></noscript>
+    <p id="garage-status" role="status" aria-live="polite"></p>
+    <section aria-label="收藏列车">
+      <label class="garage-search" for="train-search" id="search-field" hidden>
+        <span>查找收藏</span>
+        <input id="train-search" type="search" placeholder="车名、品号或备注" autocomplete="off">
+      </label>
+      <div id="train-list"></div>
+    </section>
+    <footer class="garage-footer">
+      <p>记录保存在此浏览器。可导出备份，换设备时再导入。</p>
+      <div class="actions">
+        <button type="button" id="export-garage">导出备份</button>
+        <button type="button" id="import-garage">导入备份</button>
+        <input type="file" id="garage-file" accept=".json,application/json" hidden>
+      </div>
+    </footer>
+  </main>
+  <dialog id="train-dialog" aria-labelledby="train-form-title">
+    <form id="train-form">
+      <h2 id="train-form-title">添加列车</h2>
+      <label>车名<input name="name" required maxlength="100" placeholder="例如 KATO 789系 超级白鸟" autofocus></label>
+      <label>品号（选填）<input name="sku" maxlength="60" placeholder="例如 10-1237"></label>
+      <label>购买日期（选填）<input name="purchaseDate" type="date"></label>
+      <div class="form-grid">
+        <label>购买价格（选填）<input name="price" type="number" inputmode="decimal" min="0" max="999999999.99" step="0.01" placeholder="0.00"></label>
+        <label>币种<select name="currency"><option value="CNY">人民币 CNY</option><option value="JPY">日元 JPY</option><option value="HKD">港币 HKD</option><option value="USD">美元 USD</option><option value="TWD">新台币 TWD</option><option value="EUR">欧元 EUR</option></select></label>
+      </div>
+      <label>购车备注（选填）<textarea name="note" maxlength="500" rows="2" placeholder="商家、车况或编组"></textarea></label>
+      <p class="form-status" role="alert"></p>
+      <div class="actions"><button type="button" data-cancel>取消</button><button type="submit" class="primary">保存列车</button></div>
+    </form>
+  </dialog>
+  <dialog id="run-dialog" aria-labelledby="run-form-title">
+    <form id="run-form">
+      <h2 id="run-form-title">记录跑车</h2>
+      <p id="run-train-name"></p>
+      <label>跑车日期与时间<input name="startedAt" type="datetime-local" required autofocus></label>
+      <label>跑了多久（分钟，选填）<input name="minutes" type="number" inputmode="numeric" min="1" max="10080" step="1" placeholder="例如 30"></label>
+      <label>本次备注（选填）<textarea name="note" maxlength="500" rows="2" placeholder="轨道、编组或运行情况"></textarea></label>
+      <p class="form-status" role="alert"></p>
+      <div class="actions"><button type="button" data-cancel>取消</button><button type="submit" class="primary">保存跑车记录</button></div>
+    </form>
+  </dialog>
+  <dialog id="import-dialog" aria-labelledby="import-title">
+    <form id="import-form">
+      <h2 id="import-title">导入车库备份</h2>
+      <p id="import-summary"></p>
+      <p>导入会合并记录。重复记录保留此浏览器中的版本。</p>
+      <p class="form-status" role="alert"></p>
+      <div class="actions"><button type="button" data-cancel>取消</button><button type="submit" class="primary">合并备份</button></div>
+    </form>
+  </dialog>
+</body>
+</html>

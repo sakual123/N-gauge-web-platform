@@ -14,6 +14,8 @@ V13 adds Shikoku: ten presets and 154 dated references across Shiokaze, Ishizuch
 
 V14 adds 19 classic/historic presets, 34 products and seven recipes. Theme filters cover JNR classics, KiHa/diesel and sleepers. The 19 new times are explicitly model demonstrations, not historical or current timetables. The previous 247 timetable presets are unchanged. Product notes distinguish JR-era versions, separately purchased locomotives and headmarks.
 
+Open 我的车库 (My garage) at the top left of the board to log a model’s purchase date, price and currency as well as each running session’s time, optional duration and notes. Each train shows its latest run and total sessions. The garage is stored in this browser with its own JSON export and merge import.
+
 ## Features
 
 - **Two model platforms and four departures:** platform 1 is the outer R315 loop; platform 2 is the inner R282 loop. Each has a first and next departure.
